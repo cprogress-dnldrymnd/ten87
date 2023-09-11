@@ -28,4 +28,8 @@ h1 {
         right: 0;
         background: transparent radial-gradient(closest-side at 94% 13%, #FF5932 0%, #DACEBD 100%) 0% 0% no-repeat;
     }
+    .elementor-container {
+        position: relative;
+        z-index: 1;
+    }
 }

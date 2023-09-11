@@ -13,11 +13,12 @@ h1 {
 .home-hero {
     &:before,
     &:after {
-        content: "";
+        content: "" !important;
         position: absolute;
         width: 50%;
         top: 0;
         height: 100%;
+        display: block;
     }
     &:before {
         left: 0;

@@ -4,5 +4,7 @@ Version: 1.0
 Text Domain: ten87
 Template: ten87
 */
+.qodef-h1, h1 {
+  text-transform: initial; }
 
 /*# sourceMappingURL=style.css.map */

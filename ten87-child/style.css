@@ -4,7 +4,21 @@ Version: 1.0
 Text Domain: ten87
 Template: ten87
 */
-.qodef-h1, h1 {
+.qodef-h1,
+h1 {
   text-transform: initial; }
+
+.home-hero:before, .home-hero:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  top: 0;
+  height: 100%; }
+.home-hero:before {
+  left: 0;
+  background: transparent radial-gradient(closest-side at 64% 37%, #FF5932 0%, #DACEBD 100%) 0% 0% no-repeat; }
+.home-hero:after {
+  right: 0;
+  background: transparent radial-gradient(closest-side at 94% 13%, #FF5932 0%, #DACEBD 100%) 0% 0% no-repeat; }
 
 /*# sourceMappingURL=style.css.map */

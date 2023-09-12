@@ -402,6 +402,7 @@ h6 {
     z-index: 2;
     .qodef-content-grid {
         max-width: 1780px;
+        width: 100%;
         &:after {
             content: none !important;
         }

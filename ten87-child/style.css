@@ -50,10 +50,12 @@ h4 {
     #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link:hover svg.hover {
       width: 100%; }
 
-.elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button, .qodef-m-button {
+.elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,
+.qodef-m-button {
   max-width: 385px !important;
   width: 100% !important; }
-  .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button .qodef-qi-button, .qodef-m-button .qodef-qi-button {
+  .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button .qodef-qi-button,
+  .qodef-m-button .qodef-qi-button {
     width: 100%;
     justify-content: flex-start !important; }
 
@@ -62,5 +64,10 @@ h4 {
 
 .elementor-column-hover .elementor-widget-wrap {
   min-height: 100vh; }
+  .elementor-column-hover .elementor-widget-wrap .elementor-element {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px; }
 
 /*# sourceMappingURL=style.css.map */

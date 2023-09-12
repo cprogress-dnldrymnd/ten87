@@ -292,5 +292,7 @@ h6 {
 
 #qodef-page-footer .qodef-content-grid {
   max-width: 1780px; }
+  #qodef-page-footer .qodef-content-grid:after {
+    content: none !important; }
 
 /*# sourceMappingURL=style.css.map */

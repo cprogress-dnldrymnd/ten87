@@ -35,6 +35,11 @@ h1 {
     object-fit: contain;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    transition: 300ms; }
+    #qodef-page-header .qodef-header-logo-link svg.hover {
+      width: 0%; }
+  #qodef-page-header .qodef-header-logo-link:hover svg.hover {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

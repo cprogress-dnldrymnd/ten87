@@ -22,14 +22,30 @@ h1 {
     }
     &:before {
         left: 0;
-        background: transparent radial-gradient(closest-side at 64% 37%, #FF5932 0%, #DACEBD 100%) 0% 0% no-repeat ;
+        background: transparent radial-gradient(closest-side at 64% 37%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
     }
     &:after {
         right: 0;
-        background: transparent radial-gradient(closest-side at 94% 13%, #FF5932 0%, #DACEBD 100%) 0% 0% no-repeat;
+        background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
     }
     .elementor-container {
         position: relative;
         z-index: 1;
+    }
+}
+
+#qodef-page-header {
+    .qodef-header-logo-link {
+        height: 41px;
+        width: 146px;
+        svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }

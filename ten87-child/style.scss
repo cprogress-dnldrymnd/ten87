@@ -54,7 +54,8 @@ h3,
 .qodef-h4,
 h4,
 .qodef-h5,
-h5, .qodef-h6,
+h5,
+.qodef-h6,
 h6 {
     text-transform: initial;
     font-family: "Ten87SansV7", sans-serif;
@@ -199,26 +200,35 @@ h6 {
         }
     }
 }
-
-.qodef-grid-inner {
-    .qodef-grid-item.team {
-        .qodef-e-inner {
-            position: relative;
-        }
-        .qodef-e-content {
-            opacity: 1;
-            z-index: 1;
-            background-color: transparent;
-            height: auto;
-            width: auto;
-            left: 40px;
-            align-items: flex-start;
-            bottom: 40px;
-            top: auto;
-            color: var(--white-color);
-            h5 {
-                color: inherit;
+.qodef-team-list {
+    .qodef-grid-inner {
+        .qodef-grid-item.team {
+            .qodef-e-inner {
+                position: relative;
             }
+            .qodef-e-content {
+                opacity: 1;
+                z-index: 1;
+                background-color: transparent;
+                height: auto;
+                width: auto;
+                left: 40px;
+                align-items: flex-start;
+                bottom: 40px;
+                top: auto;
+                color: var(--white-color);
+                h5 {
+                    color: inherit;
+                }
+            }
+        }
+    }
+    .qodef-m-top-info {
+        .qodef-svg--button-arrow {
+            display: none ;
+        }
+        .qodef-m-more , .qodef-title-inner {
+            flex: 0 0 50%
         }
     }
 }

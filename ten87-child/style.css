@@ -60,4 +60,7 @@ h4 {
 .qodef-qi-section-title > *:not(:last-child) {
   margin-bottom: 1.5rem; }
 
+.elementor-column-hover .elementor-widget-wrap {
+  min-height: 100vh; }
+
 /*# sourceMappingURL=style.css.map */

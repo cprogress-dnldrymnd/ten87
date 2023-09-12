@@ -318,7 +318,8 @@ h6 {
             .inner {
                 color: var(--white-color);
                 max-width: 705px;
-                h3 {
+                h3,
+                .qodef-qi-button {
                     color: inherit;
                 }
             }
@@ -335,6 +336,16 @@ h6 {
     &.qodef-qi-button-bordered {
         .qodef-qi-button {
             background-color: transparent;
+            border: 2px solid ;
+        }
+    }
+}
+
+.button-group-box {
+    display: flex;
+    > div {
+        &:not(:last-child) {
+            margin-right: 1rem;
         }
     }
 }

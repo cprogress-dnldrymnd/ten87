@@ -235,7 +235,8 @@ h6 {
     .post-slider-holder .swiper-slide .elementor-container .inner {
       color: var(--white-color);
       max-width: 705px; }
-      .post-slider-holder .swiper-slide .elementor-container .inner h3 {
+      .post-slider-holder .swiper-slide .elementor-container .inner h3,
+      .post-slider-holder .swiper-slide .elementor-container .inner .qodef-qi-button {
         color: inherit; }
 
 .qodef-qi-button-holder .qodef-qi-button {
@@ -244,6 +245,12 @@ h6 {
   max-width: 385px !important;
   width: 100% !important; }
 .qodef-qi-button-holder.qodef-qi-button-bordered .qodef-qi-button {
-  background-color: transparent; }
+  background-color: transparent;
+  border: 2px solid; }
+
+.button-group-box {
+  display: flex; }
+  .button-group-box > div:not(:last-child) {
+    margin-right: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

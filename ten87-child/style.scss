@@ -304,7 +304,6 @@ h6 {
     }
 }
 
-
 .post-slider-holder {
     .swiper-slide {
         background-size: cover;
@@ -312,5 +311,25 @@ h6 {
         min-height: 100vh;
         display: flex;
         align-items: flex-end;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .elementor-container {
+            width: 100%;
+            .inner {
+                color: var(--white-color);
+                max-width: 705px;
+                h3 {
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+.qodef-qi-button-holder {
+    .qodef-qi-button {
+        border-radius: 50px;
+        font-size: 25px;
+        max-width: 385px !important;
+        width: 100% !important;
     }
 }

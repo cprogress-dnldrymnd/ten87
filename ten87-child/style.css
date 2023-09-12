@@ -227,6 +227,21 @@ h6 {
   background-position: center;
   min-height: 100vh;
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-end;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .post-slider-holder .swiper-slide .elementor-container {
+    width: 100%; }
+    .post-slider-holder .swiper-slide .elementor-container .inner {
+      color: var(--white-color);
+      max-width: 705px; }
+      .post-slider-holder .swiper-slide .elementor-container .inner h3 {
+        color: inherit; }
+
+.qodef-qi-button-holder .qodef-qi-button {
+  border-radius: 50px;
+  font-size: 25px;
+  max-width: 385px !important;
+  width: 100% !important; }
 
 /*# sourceMappingURL=style.css.map */

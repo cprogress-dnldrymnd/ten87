@@ -332,4 +332,9 @@ h6 {
         max-width: 385px !important;
         width: 100% !important;
     }
+    &.qodef-qi-button-bordered {
+        .qodef-qi-button {
+            background-color: transparent;
+        }
+    }
 }

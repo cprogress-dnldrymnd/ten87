@@ -50,6 +50,15 @@ function post_slider($atts)
                                             </span>
                                         </a>
                                     </div>
+                                    <div class="qodef-qi-button-holder qodef-qi-button-bordered">
+                                        <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="" target="_self">
+                                            <span class="qodef-m-text">Hire A Studio</span>
+                                            <span class="qodef-m-icon ">
+                                                <span class="qodef-m-icon-inner">
+                                                    <i aria-hidden="true" class="fas fa-arrow-right"></i> </span>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

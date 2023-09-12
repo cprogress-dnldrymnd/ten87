@@ -180,22 +180,24 @@ h6 {
   .cta-style-1 .qodef-qi-section-title .qodef-m-button {
     width: auto !important; }
 
-.qodef-testimonials-list.qodef-testimonials-list {
+.elementor-widget-obsius_core_testimonials_list {
   max-width: 1420px;
   margin-left: auto;
   margin-right: auto;
-  display: block; }
-  .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner {
+  display: block;
+  position: relative; }
+  .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner {
     display: flex;
     align-items: center;
     padding-bottom: 0; }
-    .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image {
+    .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image {
       flex: 0 0 34%;
       margin-bottom: 0; }
-    .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content {
+    .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content {
       display: flex;
-      flex-direction: column-reverse; }
-      .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title:before {
-        content: '- '; }
+      flex-direction: column-reverse;
+      padding-left: 50px; }
+      .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title:before {
+        content: "- "; }
 
 /*# sourceMappingURL=style.css.map */

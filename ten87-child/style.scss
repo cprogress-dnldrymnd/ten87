@@ -249,25 +249,29 @@ h6 {
         }
     }
 }
-.qodef-testimonials-list.qodef-testimonials-list {
+.elementor-widget-obsius_core_testimonials_list {
     max-width: 1420px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    .qodef-e-inner {
-        display: flex;
-        align-items: center;
-        padding-bottom: 0;
-        .qodef-e-media-image {
-            flex: 0 0 34%;
-            margin-bottom: 0;
-        }
-        .qodef-e-content {
+    position: relative;
+    .qodef-testimonials-list.qodef-testimonials-list {
+        .qodef-e-inner {
             display: flex;
-            flex-direction: column-reverse;
-            .qodef-e-title {
-                &:before {
-                    content: '- ';
+            align-items: center;
+            padding-bottom: 0;
+            .qodef-e-media-image {
+                flex: 0 0 34%;
+                margin-bottom: 0;
+            }
+            .qodef-e-content {
+                display: flex;
+                flex-direction: column-reverse;
+                padding-left: 50px;
+                .qodef-e-title {
+                    &:before {
+                        content: "- ";
+                    }
                 }
             }
         }

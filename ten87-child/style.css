@@ -261,7 +261,8 @@ h6 {
   position: absolute;
   bottom: 100px;
   z-index: 1;
-  left: 0; }
+  left: 0;
+  right: 0; }
   .swiper-navigation-holder .nav-inner {
     max-width: 1780px;
     margin-left: auto;

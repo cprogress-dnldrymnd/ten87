@@ -252,17 +252,19 @@ h6 {
     left: 0;
     right: 0; }
 
-.qodef-qi-button-holder .qodef-qi-button {
-  border-radius: 50px;
-  font-size: 25px;
-  max-width: 385px !important;
-  width: 100% !important;
-  justify-content: flex-start; }
-.qodef-qi-button-holder.qodef-qi-button-white .qodef-qi-button:not(:hover) {
-  color: var(--text-color) !important; }
-.qodef-qi-button-holder.qodef-qi-button-bordered .qodef-qi-button {
-  background-color: transparent;
-  border: 2px solid; }
+.qodef-qi-button-holder {
+  max-width: 350px !important;
+  width: 100%; }
+  .qodef-qi-button-holder .qodef-qi-button {
+    border-radius: 50px;
+    font-size: 25px;
+    width: 100% !important;
+    justify-content: flex-start; }
+  .qodef-qi-button-holder.qodef-qi-button-white .qodef-qi-button:not(:hover) {
+    color: var(--text-color) !important; }
+  .qodef-qi-button-holder.qodef-qi-button-bordered .qodef-qi-button {
+    background-color: transparent;
+    border: 2px solid; }
 
 .button-group-box {
   display: flex; }

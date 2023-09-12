@@ -341,10 +341,11 @@ h6 {
     }
 }
 .qodef-qi-button-holder {
+    max-width: 350px !important;
+    width: 100%;
     .qodef-qi-button {
         border-radius: 50px;
         font-size: 25px;
-        max-width: 385px !important;
         width: 100% !important;
         justify-content: flex-start;
     }

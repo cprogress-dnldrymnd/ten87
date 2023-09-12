@@ -130,4 +130,13 @@ h4 {
   .qodef-grid-inner .qodef-grid-item.team .qodef-e-content h5 {
     color: inherit; }
 
+.cta-style-1 .qodef-qi-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .cta-style-1 .qodef-qi-section-title .qodef-m-title {
+    margin-bottom: 0 !important; }
+  .cta-style-1 .qodef-qi-section-title .qodef-m-button {
+    width: auto !important; }
+
 /*# sourceMappingURL=style.css.map */

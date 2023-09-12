@@ -178,3 +178,17 @@ h4 {
         }
     }
 }
+
+.cta-style-1 {
+    .qodef-qi-section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .qodef-m-title {
+            margin-bottom: 0 !important;
+        }
+        .qodef-m-button {
+            width: auto !important;
+        }
+    }
+}

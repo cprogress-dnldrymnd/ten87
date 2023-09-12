@@ -30,7 +30,8 @@ body {
 
 :root {
   --accent-color: #ff5932;
-  --white-color: #fff; }
+  --white-color: #fff;
+  --text-color: #1D1D1D; }
 
 .qodef-h1,
 h1,
@@ -245,6 +246,8 @@ h6 {
   max-width: 385px !important;
   width: 100% !important;
   justify-content: flex-start; }
+.qodef-qi-button-holder.qodef-qi-button-white .qodef-qi-button {
+  color: var(--text-color); }
 .qodef-qi-button-holder.qodef-qi-button-bordered .qodef-qi-button {
   background-color: transparent;
   border: 2px solid; }

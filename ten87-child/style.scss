@@ -45,6 +45,7 @@ body {
     --accent-color: #ff5932;
     --white-color: #fff;
     --text-color: #1d1d1d;
+    --cream-color: #DACEBD;
 }
 .qodef-h1,
 h1,
@@ -399,10 +400,19 @@ h6 {
 
 
 #qodef-page-footer {
+    z-index: 2;
     .qodef-content-grid {
         max-width: 1780px;
         &:after {
             content: none !important;
         }
     }
+}
+
+.qodef-gradient-background--enabled #qodef-page-wrapper {
+    background-color: var(--cream-color);
+}
+#qodef-page-inner {
+    position: relative;
+    z-index: 2;
 }

@@ -5,7 +5,8 @@ Text Domain: ten87
 Template: ten87
 */
 :root {
-  --accent-color: #ff5932; }
+  --accent-color: #ff5932;
+  --white-color: #fff; }
 
 .qodef-h1,
 h1,
@@ -116,14 +117,17 @@ h4 {
 .qodef-grid-inner .qodef-grid-item.team .qodef-e-inner {
   position: relative; }
 .qodef-grid-inner .qodef-grid-item.team .qodef-e-content {
-  opacity: 1 !important;
-  z-index: 1 !important;
-  background-color: transparent !important;
-  height: auto !important;
-  width: auto !important;
-  left: 40px !important;
-  align-items: flex-start !important;
-  bottom: 40px !important;
-  top: auto !important; }
+  opacity: 1;
+  z-index: 1;
+  background-color: transparent;
+  height: auto;
+  width: auto;
+  left: 40px;
+  align-items: flex-start;
+  bottom: 40px;
+  top: auto;
+  color: var(--white-color); }
+  .qodef-grid-inner .qodef-grid-item.team .qodef-e-content h5 {
+    color: inherit; }
 
 /*# sourceMappingURL=style.css.map */

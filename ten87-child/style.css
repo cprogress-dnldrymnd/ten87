@@ -179,11 +179,12 @@ h6 {
   .cta-style-1 .qodef-qi-section-title .qodef-m-button {
     width: auto !important; }
 
-.qodef-testimonials-list {
+.qodef-testimonials-list.qodef-testimonials-list {
   max-width: 1420px;
   margin-left: auto;
-  margin-right: auto; }
-  .qodef-testimonials-list .qodef-e-inner {
+  margin-right: auto;
+  display: block; }
+  .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner {
     display: flex; }
 
 /*# sourceMappingURL=style.css.map */

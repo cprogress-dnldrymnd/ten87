@@ -34,7 +34,7 @@ $SuisseBPIntl: (
     "Medium": 500
 );
 
-@include font-face("Ten87SansV7Regular", $font-url + "ten87/", "Ten87SansV7Regular", normal, $Ten87SansV7Regular);
+@include font-face("Ten87SansV7", $font-url + "ten87/", "Ten87SansV7", normal, $Ten87SansV7Regular);
 @include font-face("SuisseBPIntl", $font-url + "suisse/", "SuisseBPIntl", normal, $SuisseBPIntl);
 
 body {

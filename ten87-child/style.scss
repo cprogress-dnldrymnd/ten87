@@ -364,14 +364,16 @@ h6 {
     bottom: 100px;
     z-index: 1;
     left: 0;
-    display: flex;
-    max-width: 1780px;
-    margin-left: auto;
-    margin-right: auto;
-    > div {
-        position: static;
-        &:not(:last-child) {
-            margin-right: 1rem;
+    .nav-inner {
+        max-width: 1780px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        > div {
+            position: static;
+            &:not(:last-child) {
+                margin-right: 1rem !important;
+            }
         }
     }
 }

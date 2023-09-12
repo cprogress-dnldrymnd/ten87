@@ -233,7 +233,9 @@ h6 {
   padding-bottom: 180px;
   overflow: hidden; }
   .post-slider-holder .swiper-slide .elementor-container {
-    width: 100%; }
+    width: 100%;
+    position: relative;
+    z-index: 1; }
     .post-slider-holder .swiper-slide .elementor-container .inner {
       color: var(--white-color);
       max-width: 705px; }

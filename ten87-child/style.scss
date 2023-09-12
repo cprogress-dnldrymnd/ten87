@@ -317,6 +317,8 @@ h6 {
         overflow: hidden;
         .elementor-container {
             width: 100%;
+            position: relative;
+            z-index: 1;
             .inner {
                 color: var(--white-color);
                 max-width: 705px;

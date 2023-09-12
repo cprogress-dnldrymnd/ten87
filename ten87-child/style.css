@@ -25,6 +25,9 @@ Template: ten87
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
+body {
+  font-family: 'SuisseBPIntl', sans-serif; }
+
 :root {
   --accent-color: #ff5932;
   --white-color: #fff; }

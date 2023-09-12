@@ -227,10 +227,11 @@ h6 {
         align-items: flex-start;
         margin-bottom: 50px;
         .qodef-svg--button-arrow {
-            display: none ;
+            display: none;
         }
-        .qodef-m-more , .qodef-title-inner {
-            flex: 0 0 50%
+        .qodef-m-more,
+        .qodef-title-inner {
+            flex: 0 0 50%;
         }
     }
 }
@@ -255,5 +256,20 @@ h6 {
     display: block;
     .qodef-e-inner {
         display: flex;
+        align-items: center;
+        padding-bottom: 0;
+        .qodef-e-media-image {
+            flex: 0 0 34%;
+            margin-bottom: 0;
+        }
+        .qodef-e-content {
+            display: flex;
+            flex-direction: column-reverse;
+            .qodef-e-title {
+                &:before {
+                    content: '- ';
+                }
+            }
+        }
     }
 }

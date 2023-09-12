@@ -269,7 +269,11 @@ h6 {
                 flex-direction: column-reverse;
                 padding-left: 50px;
                 padding-bottom: 130px;
+                .qodef-e-text {
+                    font-size: 40px;
+                }
                 .qodef-e-title {
+                    font-size: 30px;
                     &:before {
                         content: "- ";
                     }

@@ -162,10 +162,13 @@ h6 {
   color: var(--white-color); }
   .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-content h5 {
     color: inherit; }
-.qodef-team-list .qodef-m-top-info .qodef-svg--button-arrow {
-  display: none; }
-.qodef-team-list .qodef-m-top-info .qodef-m-more, .qodef-team-list .qodef-m-top-info .qodef-title-inner {
-  flex: 0 0 50%; }
+.qodef-team-list .qodef-m-top-info {
+  align-items: flex-start;
+  margin-bottom: 50px; }
+  .qodef-team-list .qodef-m-top-info .qodef-svg--button-arrow {
+    display: none; }
+  .qodef-team-list .qodef-m-top-info .qodef-m-more, .qodef-team-list .qodef-m-top-info .qodef-title-inner {
+    flex: 0 0 50%; }
 
 .cta-style-1 .qodef-qi-section-title {
   display: flex;

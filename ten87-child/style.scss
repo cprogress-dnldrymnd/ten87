@@ -414,6 +414,10 @@ h6 {
     &:after {
         z-index: 1;
     }
+    &:after {
+        background-color: #ff5932 !important;
+        color: #ff5932 !important;
+    }
 }
 #qodef-page-inner {
     position: relative;

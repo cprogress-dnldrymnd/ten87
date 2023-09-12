@@ -302,6 +302,9 @@ h6 {
   background-color: var(--cream-color); }
   .qodef-gradient-background--enabled #qodef-page-wrapper:before, .qodef-gradient-background--enabled #qodef-page-wrapper:after {
     z-index: 1; }
+  .qodef-gradient-background--enabled #qodef-page-wrapper:after {
+    background-color: #ff5932 !important;
+    color: #ff5932 !important; }
 
 #qodef-page-inner {
   position: relative;

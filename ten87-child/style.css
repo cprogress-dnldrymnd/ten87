@@ -5,7 +5,13 @@ Text Domain: ten87
 Template: ten87
 */
 .qodef-h1,
-h1 {
+h1,
+.qodef-h2,
+h2,
+.qodef-h3,
+h3,
+.qodef-h4,
+h4 {
   text-transform: initial; }
 
 .home-hero:before, .home-hero:after {

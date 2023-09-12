@@ -95,6 +95,19 @@ h4 {
             bottom: 40px;
             left: 40px;
             right: 40px;
+            width: auto;
+            .qodef-m-text {
+                height: 0;
+                overflow: hidden;
+                margin: 0;
+                transition: 300ms;
+            }
+            .qodef-m-button {
+                margin: 0;
+                height: 0;
+                overflow: hidden;
+                transition: 300ms;
+            }
         }
     }
 }

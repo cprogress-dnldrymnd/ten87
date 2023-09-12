@@ -44,7 +44,7 @@ body {
 :root {
     --accent-color: #ff5932;
     --white-color: #fff;
-    --text-color: #1D1D1D;
+    --text-color: #1d1d1d;
 }
 .qodef-h1,
 h1,
@@ -337,7 +337,9 @@ h6 {
     }
     &.qodef-qi-button-white {
         .qodef-qi-button {
-            color: var(--text-color);
+            &:not(:hover) {
+                color: var(--text-color) !important;
+            }
         }
     }
     &.qodef-qi-button-bordered {

@@ -199,12 +199,17 @@ h6 {
       padding-left: 50px; }
       .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title:before {
         content: "- "; }
-  .elementor-widget-obsius_core_testimonials_list .swiper-button-prev, .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
-    left: calc(34% + 100px ) !important;
+  .elementor-widget-obsius_core_testimonials_list .swiper-button-prev {
+    left: calc(34% + 50px) !important; }
+  .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
+    left: calc(34% + 120px) !important; }
+  .elementor-widget-obsius_core_testimonials_list .swiper-button-prev,
+  .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
     right: auto !important;
     bottom: 0 !important;
     transform: none; }
-    .elementor-widget-obsius_core_testimonials_list .swiper-button-prev svg, .elementor-widget-obsius_core_testimonials_list .swiper-button-next svg {
+    .elementor-widget-obsius_core_testimonials_list .swiper-button-prev svg,
+    .elementor-widget-obsius_core_testimonials_list .swiper-button-next svg {
       width: 60px; }
 
 /*# sourceMappingURL=style.css.map */

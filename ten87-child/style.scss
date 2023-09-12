@@ -276,8 +276,14 @@ h6 {
             }
         }
     }
-    .swiper-button-prev, .swiper-button-next {
-        left: calc(34% + 100px )!important;
+    .swiper-button-prev {
+        left: calc(34% + 50px) !important;
+    }
+    .swiper-button-next {
+        left: calc(34% + 120px) !important;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
         right: auto !important;
         bottom: 0 !important;
         transform: none;

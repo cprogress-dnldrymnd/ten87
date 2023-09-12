@@ -32,7 +32,7 @@ body {
   --accent-color: #ff5932;
   --white-color: #fff;
   --text-color: #1d1d1d;
-  --cream-color: #DACEBD; }
+  --cream-color: #dacebd; }
 
 .qodef-h1,
 h1,
@@ -245,10 +245,10 @@ h6 {
       .post-slider-holder .swiper-slide .elementor-container .inner .qodef-qi-button {
         color: inherit; }
   .post-slider-holder .swiper-slide:before {
-    content: '';
+    content: "";
     position: absolute;
     top: auto;
-    background: transparent linear-gradient(180deg, #00000000 0%, #000000E6 100%) 0% 0% no-repeat;
+    background: transparent linear-gradient(180deg, #00000000 0%, #000000e6 100%) 0% 0% no-repeat;
     height: 466px;
     bottom: 0;
     left: 0;
@@ -300,6 +300,8 @@ h6 {
 
 .qodef-gradient-background--enabled #qodef-page-wrapper {
   background-color: var(--cream-color); }
+  .qodef-gradient-background--enabled #qodef-page-wrapper:before, .qodef-gradient-background--enabled #qodef-page-wrapper:after {
+    z-index: 1; }
 
 #qodef-page-inner {
   position: relative;

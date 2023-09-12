@@ -25,10 +25,10 @@ h1 {
   position: relative;
   z-index: 1; }
 
-#qodef-page-header .qodef-header-logo-link {
+#qodef-page-header .qodef-header-logo-link.qodef-header-logo-link {
   height: 41px;
   width: 146px; }
-  #qodef-page-header .qodef-header-logo-link svg {
+  #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link svg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -37,9 +37,9 @@ h1 {
     top: 50%;
     transform: translate(-50%, -50%);
     transition: 300ms; }
-    #qodef-page-header .qodef-header-logo-link svg.hover {
+    #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link svg.hover {
       width: 0%; }
-  #qodef-page-header .qodef-header-logo-link:hover svg.hover {
+  #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link:hover svg.hover {
     width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

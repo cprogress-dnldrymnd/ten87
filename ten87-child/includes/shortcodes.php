@@ -29,7 +29,7 @@ function post_slider($atts)
                     $title = $post->post_title;
                     $post_excerpt = $post->post_excerpt;
                     ?>
-                    <div class="swiper-slide" style="background-image: url();">
+                    <div class="swiper-slide" style="background-image: url(<?= $bg ?>);">
                         <div class="inner">
                             <div class="heading-box">
                                 <h3>

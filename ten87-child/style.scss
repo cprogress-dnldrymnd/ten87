@@ -52,8 +52,9 @@ h1 {
             }
         }
         &:hover {
-            width: 0%;
             svg {
+                width: 0%;
+
                 &.hover {
                     width: 100%;
                 }

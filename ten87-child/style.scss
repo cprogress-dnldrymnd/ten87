@@ -71,9 +71,10 @@ h4 {
 
 
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button {
-    max-width: 385px;
-    width: 100%;
+    max-width: 385px !important;
+    width: 100% !important;
     .qodef-qi-button {
         width: 100%;
+        justify-content: flex-start !important;
     }
 }

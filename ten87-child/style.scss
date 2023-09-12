@@ -313,7 +313,7 @@ h6 {
         display: flex;
         align-items: flex-end;
         padding-top: 100px;
-        padding-bottom: 150px;
+        padding-bottom: 180px;
         .elementor-container {
             width: 100%;
             .inner {
@@ -372,6 +372,7 @@ h6 {
         display: flex;
         > div {
             position: static;
+            transform: none !important;
             &:not(:last-child) {
                 margin-right: 1rem !important;
             }

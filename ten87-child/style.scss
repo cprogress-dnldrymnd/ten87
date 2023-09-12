@@ -276,4 +276,13 @@ h6 {
             }
         }
     }
+    .swiper-button-prev, .swiper-button-next {
+        left: calc(34% + 100px )!important;
+        right: auto !important;
+        bottom: 0 !important;
+        transform: none;
+        svg {
+            width: 60px;
+        }
+    }
 }

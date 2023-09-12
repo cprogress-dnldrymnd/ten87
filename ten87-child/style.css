@@ -139,4 +139,10 @@ h4 {
   .cta-style-1 .qodef-qi-section-title .qodef-m-button {
     width: auto !important; }
 
+.qodef-testimonials-list .qodef-e-inner {
+  display: flex;
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*# sourceMappingURL=style.css.map */

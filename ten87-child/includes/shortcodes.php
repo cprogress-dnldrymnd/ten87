@@ -27,9 +27,19 @@ function post_slider($atts)
                     <?php
                     $bg = get_the_post_thumbnail_url($post->ID, 'full');
                     $title = $post->post_title;
+                    $post_excerpt = $post->post_excerpt;
                     ?>
                     <div class="swiper-slide" style="background-image: url();">
-
+                        <div class="inner">
+                            <div class="heading-box">
+                                <h3>
+                                    <?= $title ?>
+                                </h3>
+                            </div>
+                            <div class="description-box">
+                                <?= wpautop($post_excerpt) ?>
+                            </div>
+                        </div>
                     </div>
                 <?php } ?>
             </div>

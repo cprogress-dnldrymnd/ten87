@@ -262,7 +262,8 @@ h6 {
   bottom: 100px;
   z-index: 1;
   left: 0;
-  right: 0; }
+  right: 0;
+  color: var(--white-color); }
   .swiper-navigation-holder .nav-inner {
     max-width: 1780px;
     margin-left: auto;

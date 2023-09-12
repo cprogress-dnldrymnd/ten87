@@ -121,6 +121,7 @@ h4 {
             bottom: 0;
             background-color: var(--accent-color);
             opacity: 0;
+            transition: 300ms;
         }
         &:hover {
             .elementor-element {

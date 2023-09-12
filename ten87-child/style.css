@@ -259,8 +259,16 @@ h6 {
 
 .swiper-navigation-holder {
   position: absolute;
-  bottom: 100%; }
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+  display: flex;
+  max-width: 1780px;
+  margin-left: auto;
+  margin-right: auto; }
   .swiper-navigation-holder > div {
     position: static; }
+    .swiper-navigation-holder > div:not(:last-child) {
+      margin-right: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

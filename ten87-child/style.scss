@@ -314,6 +314,7 @@ h6 {
         align-items: flex-end;
         padding-top: 100px;
         padding-bottom: 180px;
+        overflow: hidden;
         .elementor-container {
             width: 100%;
             .inner {
@@ -324,6 +325,16 @@ h6 {
                     color: inherit;
                 }
             }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: auto;
+            background: transparent linear-gradient(180deg, #00000000 0%, #000000E6 100%) 0% 0% no-repeat ;
+            height: 466px;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
     }
 }

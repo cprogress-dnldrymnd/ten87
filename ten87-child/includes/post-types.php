@@ -159,3 +159,19 @@ new newPostType(
 		'show_in_rest'  => true,
 	)
 );
+
+
+new newTaxonomy(
+	array(
+		'taxonomy'  => 'studio_category',
+		'post_type' => 'studios',
+		'args'      => array(
+			'hierarchical' => true,
+			'label'        => 'Studio Categories',
+			'query_var'    => true,
+			'rewrite'      => array(
+				'slug'         => 'studio-category',
+			)
+		)
+	)
+);

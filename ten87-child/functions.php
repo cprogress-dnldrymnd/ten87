@@ -14,3 +14,4 @@ if ( ! function_exists( 'obsius_child_theme_enqueue_scripts' ) ) {
 }
 
 require_once('includes/post-types.php');
+require_once('includes/shortcodes.php');

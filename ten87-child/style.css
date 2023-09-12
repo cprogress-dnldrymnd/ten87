@@ -197,7 +197,7 @@ h6 {
       display: flex;
       flex-direction: column-reverse;
       padding-left: 50px;
-      padding-bottom: 130px; }
+      padding-bottom: 80px; }
       .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-text {
         font-size: 40px; }
       .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title {
@@ -216,7 +216,8 @@ h6 {
   .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
     right: auto !important;
     bottom: 0 !important;
-    transform: none; }
+    transform: none;
+    top: auto; }
     .elementor-widget-obsius_core_testimonials_list .swiper-button-prev svg,
     .elementor-widget-obsius_core_testimonials_list .swiper-button-next svg {
       width: 60px; }

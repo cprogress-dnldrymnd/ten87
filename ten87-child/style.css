@@ -290,4 +290,7 @@ h6 {
       .swiper-navigation-holder .nav-inner > div:not(:last-child) {
         margin-right: 1rem !important; }
 
+#qodef-page-footer .qodef-content-grid {
+  max-width: 1780px; }
+
 /*# sourceMappingURL=style.css.map */

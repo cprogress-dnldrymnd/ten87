@@ -243,7 +243,8 @@ h6 {
   border-radius: 50px;
   font-size: 25px;
   max-width: 385px !important;
-  width: 100% !important; }
+  width: 100% !important;
+  justify-content: flex-start; }
 .qodef-qi-button-holder.qodef-qi-button-bordered .qodef-qi-button {
   background-color: transparent;
   border: 2px solid; }

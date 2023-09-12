@@ -412,7 +412,7 @@ h6 {
     background-color: var(--cream-color);
     &:before,
     &:after {
-        z-index: 1;
+        z-index: 1 !important;
     }
     &:after {
         background-color: #ff5932 !important;

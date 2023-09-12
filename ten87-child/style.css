@@ -230,7 +230,7 @@ h6 {
   display: flex;
   align-items: flex-end;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 150px; }
   .post-slider-holder .swiper-slide .elementor-container {
     width: 100%; }
     .post-slider-holder .swiper-slide .elementor-container .inner {
@@ -259,7 +259,7 @@ h6 {
 
 .swiper-navigation-holder {
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   z-index: 1;
   left: 0;
   display: flex;

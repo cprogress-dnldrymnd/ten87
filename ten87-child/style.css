@@ -71,14 +71,18 @@ h4 {
     right: 40px;
     width: auto; }
     .elementor-column-hover .elementor-widget-wrap .elementor-element .qodef-m-text {
-      height: 0;
+      max-height: 0;
       overflow: hidden;
       margin: 0;
       transition: 300ms; }
     .elementor-column-hover .elementor-widget-wrap .elementor-element .qodef-m-button {
       margin: 0;
-      height: 0;
+      max-height: 0;
       overflow: hidden;
       transition: 300ms; }
+  .elementor-column-hover .elementor-widget-wrap:hover .elementor-element .qodef-m-text {
+    max-height: 500px; }
+  .elementor-column-hover .elementor-widget-wrap:hover .elementor-element .qodef-m-button {
+    max-height: 500px; }
 
 /*# sourceMappingURL=style.css.map */

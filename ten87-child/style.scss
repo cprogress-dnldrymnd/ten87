@@ -97,16 +97,26 @@ h4 {
             right: 40px;
             width: auto;
             .qodef-m-text {
-                height: 0;
+                max-height: 0;
                 overflow: hidden;
                 margin: 0;
                 transition: 300ms;
             }
             .qodef-m-button {
                 margin: 0;
-                height: 0;
+                max-height: 0;
                 overflow: hidden;
                 transition: 300ms;
+            }
+        }
+        &:hover {
+            .elementor-element {
+                .qodef-m-text {
+                    max-height: 500px;
+                }
+                .qodef-m-button {
+                    max-height: 500px;
+                }
             }
         }
     }

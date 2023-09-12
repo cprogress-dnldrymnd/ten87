@@ -57,4 +57,7 @@ h4 {
     width: 100%;
     justify-content: flex-start !important; }
 
+> .qodef-qi-section-title:not(:last-child) {
+  margin-bottom: 1.5rem; }
+
 /*# sourceMappingURL=style.css.map */

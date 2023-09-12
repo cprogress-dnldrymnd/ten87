@@ -4,6 +4,27 @@ Version: 1.0
 Text Domain: ten87
 Template: ten87
 */
+@font-face {
+  font-family: "Ten87SansV7Regular";
+  src: url("./assets/fonts/ten87/Ten87SansV7Regular-Regular.eot");
+  src: url("./assets/fonts/ten87/Ten87SansV7Regular-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/ten87/Ten87SansV7Regular-Regular.woff2") format("woff2"), url("./assets/fonts/ten87/Ten87SansV7Regular-Regular.woff") format("woff"), url("./assets/fonts/ten87/Ten87SansV7Regular-Regular.ttf") format("truetype"), url("./assets/fonts/ten87/Ten87SansV7Regular-Regular.svg#Ten87SansV7Regular-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "SuisseBPIntl";
+  src: url("./assets/fonts/suisse/SuisseBPIntl-Regular.eot");
+  src: url("./assets/fonts/suisse/SuisseBPIntl-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/suisse/SuisseBPIntl-Regular.woff2") format("woff2"), url("./assets/fonts/suisse/SuisseBPIntl-Regular.woff") format("woff"), url("./assets/fonts/suisse/SuisseBPIntl-Regular.ttf") format("truetype"), url("./assets/fonts/suisse/SuisseBPIntl-Regular.svg#SuisseBPIntl-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "SuisseBPIntl";
+  src: url("./assets/fonts/suisse/SuisseBPIntl-Medium.eot");
+  src: url("./assets/fonts/suisse/SuisseBPIntl-Medium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/suisse/SuisseBPIntl-Medium.woff2") format("woff2"), url("./assets/fonts/suisse/SuisseBPIntl-Medium.woff") format("woff"), url("./assets/fonts/suisse/SuisseBPIntl-Medium.ttf") format("truetype"), url("./assets/fonts/suisse/SuisseBPIntl-Medium.svg#SuisseBPIntl-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
 :root {
   --accent-color: #ff5932;
   --white-color: #fff; }

@@ -4,7 +4,9 @@ Version: 1.0
 Text Domain: ten87
 Template: ten87
 */
-
+:root {
+    --accent-color: #ff5932;
+}
 .qodef-h1,
 h1,
 .qodef-h2,
@@ -109,6 +111,17 @@ h4 {
                 transition: 300ms;
             }
         }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--accent-color);
+            opacity: 0;
+        }
         &:hover {
             .elementor-element {
                 .qodef-m-text {
@@ -117,6 +130,9 @@ h4 {
                 .qodef-m-button {
                     max-height: 500px;
                 }
+            }
+            &::before {
+                opacity: 0.85;
             }
         }
     }

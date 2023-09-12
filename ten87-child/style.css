@@ -4,6 +4,9 @@ Version: 1.0
 Text Domain: ten87
 Template: ten87
 */
+:root {
+  --accent-color: #ff5932; }
+
 .qodef-h1,
 h1,
 .qodef-h2,
@@ -80,9 +83,20 @@ h4 {
       max-height: 0;
       overflow: hidden;
       transition: 300ms; }
+  .elementor-column-hover .elementor-widget-wrap:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    opacity: 0; }
   .elementor-column-hover .elementor-widget-wrap:hover .elementor-element .qodef-m-text {
     max-height: 500px; }
   .elementor-column-hover .elementor-widget-wrap:hover .elementor-element .qodef-m-button {
     max-height: 500px; }
+  .elementor-column-hover .elementor-widget-wrap:hover::before {
+    opacity: 0.85; }
 
 /*# sourceMappingURL=style.css.map */

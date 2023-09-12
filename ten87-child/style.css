@@ -222,4 +222,11 @@ h6 {
     .elementor-widget-obsius_core_testimonials_list .swiper-button-next svg {
       width: 60px; }
 
+.post-slider-holder .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end; }
+
 /*# sourceMappingURL=style.css.map */

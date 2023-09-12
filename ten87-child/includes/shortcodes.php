@@ -29,15 +29,17 @@ function post_slider($atts)
                     $title = $post->post_title;
                     $post_excerpt = $post->post_excerpt;
                     ?>
-                    <div class="swiper-slide elementor-section.elementor-section-boxed" style="background-image: url(<?= $bg ?>);">
-                        <div class="inner elementor-container">
-                            <div class="heading-box">
-                                <h3>
-                                    <?= $title ?>
-                                </h3>
-                            </div>
-                            <div class="description-box">
-                                <?= wpautop($post_excerpt) ?>
+                    <div class="swiper-slide elementor-section elementor-section-boxed" style="background-image: url(<?= $bg ?>);">
+                        <div class="elementor-container">
+                            <div class="inner">
+                                <div class="heading-box">
+                                    <h3>
+                                        <?= $title ?>
+                                    </h3>
+                                </div>
+                                <div class="description-box">
+                                    <?= wpautop($post_excerpt) ?>
+                                </div>
                             </div>
                         </div>
                     </div>

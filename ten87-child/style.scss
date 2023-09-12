@@ -365,7 +365,6 @@ h6 {
     z-index: 1;
     left: 0;
     right: 0;
-    color: var(--white-color);
 
     .nav-inner {
         max-width: 1780px;
@@ -375,6 +374,7 @@ h6 {
         > div {
             position: static;
             transform: none !important;
+            color: var(--white-color);
             &:not(:last-child) {
                 margin-right: 1rem !important;
             }

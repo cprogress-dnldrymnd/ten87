@@ -80,7 +80,7 @@ h4 {
 }
 
 .qodef-qi-section-title {
-    > & {
+    > * {
         &:not(:last-child) {
             margin-bottom: 1.5rem;
         }

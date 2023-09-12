@@ -26,7 +26,7 @@ Template: ten87
   font-style: normal;
   font-display: swap; }
 body {
-  font-family: 'SuisseBPIntl', sans-serif; }
+  font-family: "SuisseBPIntl", sans-serif; }
 
 :root {
   --accent-color: #ff5932;
@@ -39,8 +39,12 @@ h2,
 .qodef-h3,
 h3,
 .qodef-h4,
-h4 {
-  text-transform: initial; }
+h4,
+.qodef-h5,
+h5, .qodef-h6,
+h6 {
+  text-transform: initial;
+  font-family: "Ten87SansV7Regular", sans-serif; }
 
 .home-hero:before, .home-hero:after {
   content: "" !important;

@@ -257,4 +257,10 @@ h6 {
   .button-group-box > div:not(:last-child) {
     margin-right: 1rem; }
 
+.swiper-navigation-holder {
+  position: absolute;
+  bottom: 100%; }
+  .swiper-navigation-holder > div {
+    position: static; }
+
 /*# sourceMappingURL=style.css.map */

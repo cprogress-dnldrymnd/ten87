@@ -356,3 +356,11 @@ h6 {
         }
     }
 }
+
+.swiper-navigation-holder {
+    position: absolute;
+    bottom: 100%;
+    > div {
+        position: static;
+    }
+}

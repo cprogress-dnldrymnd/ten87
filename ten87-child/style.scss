@@ -102,13 +102,13 @@ h4 {
                 max-height: 0;
                 overflow: hidden;
                 margin: 0;
-                transition: 300ms;
+                transition: 500ms;
             }
             .qodef-m-button {
                 margin: 0;
                 max-height: 0;
                 overflow: hidden;
-                transition: 300ms;
+                transition: 500ms;
             }
         }
 
@@ -121,7 +121,7 @@ h4 {
             bottom: 0;
             background-color: var(--accent-color);
             opacity: 0;
-            transition: 300ms;
+            transition: 500ms;
         }
         &:hover {
             .elementor-element {

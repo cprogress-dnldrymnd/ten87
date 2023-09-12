@@ -77,12 +77,12 @@ h4 {
       max-height: 0;
       overflow: hidden;
       margin: 0;
-      transition: 300ms; }
+      transition: 500ms; }
     .elementor-column-hover .elementor-widget-wrap .elementor-element .qodef-m-button {
       margin: 0;
       max-height: 0;
       overflow: hidden;
-      transition: 300ms; }
+      transition: 500ms; }
   .elementor-column-hover .elementor-widget-wrap:before {
     content: "";
     position: absolute;
@@ -92,7 +92,7 @@ h4 {
     bottom: 0;
     background-color: var(--accent-color);
     opacity: 0;
-    transition: 300ms; }
+    transition: 500ms; }
   .elementor-column-hover .elementor-widget-wrap:hover .elementor-element .qodef-m-text {
     max-height: 500px; }
   .elementor-column-hover .elementor-widget-wrap:hover .elementor-element .qodef-m-button {

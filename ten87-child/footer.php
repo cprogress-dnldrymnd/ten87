@@ -1,7 +1,9 @@
 			</div><!-- close #qodef-page-inner div from header.php -->
 		</div><!-- close #qodef-page-outer div from header.php -->
+		<div class="logo-slider">
+			<?= do_shortcode('[custom_template post_id="5252"]') ; ?>
+		</div>
 		<?php
-		echo do_shortcode('[custom_template post_id="5252"]') ;
 		// Hook to include page footer template
 		do_action( 'obsius_action_page_footer_template' );
 

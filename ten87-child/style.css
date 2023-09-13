@@ -274,6 +274,8 @@ body {
 
 .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-inner {
   position: relative; }
+.qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-image img {
+  width: 100% !important; }
 .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-content {
   opacity: 1;
   z-index: 1;

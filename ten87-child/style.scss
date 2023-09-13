@@ -388,6 +388,11 @@ body {
             .qodef-e-inner {
                 position: relative;
             }
+            .qodef-e-image {
+                img {
+                    width: 100% !important;
+                }
+            }
             .qodef-e-content {
                 opacity: 1;
                 z-index: 1;

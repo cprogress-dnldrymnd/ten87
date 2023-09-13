@@ -66,14 +66,19 @@ body {
         font-weight: 400 !important;
         line-height: 0.8 !important;
     }
-}
 
-.qodef-h1,
-h1 {
-    @media (max-width: 1440px) {
-        font-size: 100px;
+    .qodef-h1,
+    h1 {
+        @media (max-width: 1440px) {
+            font-size: 120px !important;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 80px !important;
+        }
     }
 }
+
 .qodef-qi-button {
     font-family: "Ten87SansV7", sans-serif;
     line-height: 1.2 !important;

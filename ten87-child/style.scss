@@ -108,6 +108,9 @@ h6 {
 
 #qodef-page-header {
     border-bottom: 2px solid var(--text-color);
+    #qodef-page-header-inner:after {
+        content: none !important;
+    }
     .qodef-header-logo-link.qodef-header-logo-link {
         height: 41px;
         width: 146px;

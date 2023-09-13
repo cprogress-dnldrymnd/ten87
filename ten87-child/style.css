@@ -84,6 +84,9 @@ h6 {
   position: relative;
   z-index: 1; }
 
+#qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--svg-path:hover, #qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--textual:hover {
+  color: var(--text-color) !important; }
+
 #qodef-page-header {
   border-bottom: 2px solid var(--text-color); }
   #qodef-page-header #qodef-page-header-inner:after {

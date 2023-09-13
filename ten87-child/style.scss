@@ -592,7 +592,9 @@ body {
 
 .button-group-box {
     display: flex;
+    flex-wrap: wrap;
     > div {
+        margin-bottom: 1rem;
         &:not(:last-child) {
             margin-right: 1rem;
         }

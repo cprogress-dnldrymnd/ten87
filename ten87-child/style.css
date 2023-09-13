@@ -432,9 +432,12 @@ body {
     border: 2px solid; }
 
 .button-group-box {
-  display: flex; }
-  .button-group-box > div:not(:last-child) {
-    margin-right: 1rem; }
+  display: flex;
+  flex-wrap: wrap; }
+  .button-group-box > div {
+    margin-bottom: 1rem; }
+    .button-group-box > div:not(:last-child) {
+      margin-right: 1rem; }
 
 .swiper-navigation-holder {
   position: absolute;

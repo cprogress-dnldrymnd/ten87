@@ -345,6 +345,9 @@ body {
       @media (min-width: 768px) {
         .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content {
           padding-left: 50px; } }
+      @media (max-width: 575px) {
+        .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content {
+          padding-bottom: 40px; } }
     @media (max-width: 767px) {
       .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner {
         flex-direction: column; } }

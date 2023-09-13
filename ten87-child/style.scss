@@ -482,6 +482,9 @@ body {
                 @media (min-width: 768px) {
                     padding-left: 50px;
                 }
+                @media (max-width: 575px) {
+                    padding-bottom: 40px;
+                }
             }
             @media (max-width: 767px) {
                 flex-direction: column;

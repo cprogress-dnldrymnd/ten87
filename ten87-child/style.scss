@@ -118,7 +118,9 @@ h6 {
     }
     .qodef-header-sticky {
         .qodef-header-logo-link.qodef-header-logo-link {
-            color: var(--white-color) !important;
+            svg {
+                color: var(--white-color) !important;
+            }
         }
     }
     .qodef-header-logo-link.qodef-header-logo-link {

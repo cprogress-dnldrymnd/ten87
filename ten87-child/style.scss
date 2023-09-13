@@ -81,6 +81,13 @@ body {
         }
     }
 }
+.qodef-section-title .qodef-m-subtitle-text {
+    line-height: 1 !important;
+    @media(max-width: 575px) {
+        font-size: 40px;
+    }
+}
+
 
 .qodef-qi-button {
     font-family: "Ten87SansV7", sans-serif;
@@ -631,8 +638,4 @@ body {
             border-radius: 10px;
         }
     }
-}
-
-.qodef-section-title .qodef-m-subtitle-text {
-    line-height: 1 !important;
 }

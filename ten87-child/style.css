@@ -64,6 +64,12 @@ body {
   #qodef-page-wrapper h1 {
     font-size: 60px !important; } }
 
+.qodef-section-title .qodef-m-subtitle-text {
+  line-height: 1 !important; }
+  @media (max-width: 575px) {
+    .qodef-section-title .qodef-m-subtitle-text {
+      font-size: 40px; } }
+
 .qodef-qi-button {
   font-family: "Ten87SansV7", sans-serif;
   line-height: 1.2 !important; }
@@ -448,8 +454,5 @@ body {
       display: inline-block;
       background-color: var(--text-color);
       border-radius: 10px; }
-
-.qodef-section-title .qodef-m-subtitle-text {
-  line-height: 1 !important; }
 
 /*# sourceMappingURL=style.css.map */

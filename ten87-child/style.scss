@@ -468,10 +468,10 @@ h6 {
         position: relative;
         .wpcf7-email {
             padding: 18px 30px;
-            border: 2px solid var(--text-color);
+            border: 2px solid var(--text-color) !important;
             border-radius: 50px;
             line-height: 1;
-            color: var(--text-color);
+            color: var(--text-color) !important;
             font-size: 20px;
             margin: 0;
         }

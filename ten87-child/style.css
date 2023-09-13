@@ -369,6 +369,6 @@ h6 {
 #newsletter .wpcf7-not-valid-tip {
   top: 0; }
 #newsletter .wpcf7-response-output {
-  display: none; }
+  display: none !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -416,6 +416,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0; }
+  @media (max-width: 1024px) {
+    .post-slider-holder .swiper-slide {
+      min-height: 500px;
+      padding-bottom: 50px; } }
 
 .qodef-qi-button-holder {
   max-width: 350px !important;

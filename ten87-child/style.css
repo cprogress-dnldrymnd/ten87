@@ -291,8 +291,14 @@ body {
   align-items: center; }
   .cta-style-1 .qodef-qi-section-title .qodef-m-title {
     margin-bottom: 0 !important; }
+    @media (max-width: 1024px) {
+      .cta-style-1 .qodef-qi-section-title .qodef-m-title {
+        margin-bottom: 30px; } }
   .cta-style-1 .qodef-qi-section-title .qodef-m-button {
     width: auto !important; }
+  @media (max-width: 1024px) {
+    .cta-style-1 .qodef-qi-section-title {
+      flex-direction: column; } }
 
 .elementor-widget-obsius_core_testimonials_list {
   max-width: 1420px;

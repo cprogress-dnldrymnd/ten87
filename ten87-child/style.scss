@@ -414,9 +414,15 @@ body {
         align-items: center;
         .qodef-m-title {
             margin-bottom: 0 !important;
+            @media (max-width: 1024px) {
+                margin-bottom: 30px;
+            }
         }
         .qodef-m-button {
             width: auto !important;
+        }
+        @media (max-width: 1024px) {
+            flex-direction: column;
         }
     }
 }

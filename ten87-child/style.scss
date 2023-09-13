@@ -404,13 +404,6 @@ h6 {
     #qodef-page-footer-top-area {
         border-top: 2px solid var(--text-color);
         border-bottom: 2px solid var(--text-color);
-        .qodef-grid-inner {
-            display: flex;
-            align-items: center;
-            &:before, &::after {
-                display: none;
-            }
-        }
     }
     .qodef-content-grid {
         max-width: 1780px;

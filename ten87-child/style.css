@@ -77,7 +77,7 @@ h6 {
   transform-origin: 50% 50%;
   background-color: var(--accent-color);
   color: var(--accent-color);
-  box-shadow: 0 30px 200px 350px currentColor;
+  box-shadow: 0 30px 200px 550px  currentColor;
   opacity: 0;
   animation: qode-fade-in-custom 1s 1, qode-bg-gradient-bottom-left 7s 1s linear infinite; }
 .home-hero .elementor-container {
@@ -404,5 +404,8 @@ h6 {
       display: inline-block;
       background-color: var(--text-color);
       border-radius: 10px; }
+
+.qodef-header-navigation > ul > li > a {
+  font-family: "SuisseBPIntl", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

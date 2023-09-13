@@ -419,7 +419,7 @@ body {
   @media (max-width: 1024px) {
     .post-slider-holder .swiper-slide {
       min-height: 500px;
-      padding-bottom: 50px; } }
+      padding-bottom: 100px; } }
 
 .qodef-qi-button-holder {
   max-width: 350px !important;
@@ -448,7 +448,9 @@ body {
   bottom: 100px;
   z-index: 1;
   left: 0;
-  right: 0; }
+  right: 0;
+  padding-left: 10px;
+  padding-right: 10px; }
   .swiper-navigation-holder .nav-inner {
     max-width: 1780px;
     margin-left: auto;
@@ -458,8 +460,14 @@ body {
       position: static;
       transform: none !important;
       color: var(--white-color); }
+      @media (max-width: 575px) {
+        .swiper-navigation-holder .nav-inner > div svg {
+          width: 40px; } }
       .swiper-navigation-holder .nav-inner > div:not(:last-child) {
         margin-right: 1rem !important; }
+  @media (max-width: 1024px) {
+    .swiper-navigation-holder {
+      bottom: 40px; } }
 
 #qodef-page-footer {
   z-index: 2;

@@ -335,12 +335,14 @@ h6 {
   .social-box ul li:not(:last-child) {
     margin-right: 19px !important; }
 
-#newsletter .wpcf7-email {
-  padding: 18px 30px;
-  border: 2px solid var(--text-color);
-  border-radius: 50px;
-  line-height: 1;
-  color: var(--text-color);
-  font-size: 20px; }
+#newsletter .form-row {
+  position: relative; }
+  #newsletter .form-row .wpcf7-email {
+    padding: 18px 30px;
+    border: 2px solid var(--text-color);
+    border-radius: 50px;
+    line-height: 1;
+    color: var(--text-color);
+    font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

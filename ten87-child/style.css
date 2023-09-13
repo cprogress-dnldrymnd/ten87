@@ -79,7 +79,12 @@ body {
 .qodef-testimonials-list.qodef-testimonials-list
 .qodef-e-inner
 .qodef-e-content
-.qodef-e-text {
+.qodef-e-text,
+#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list
+.qodef-testimonials-list.qodef-testimonials-list
+.qodef-e-inner
+.qodef-e-content
+.qodef-e-title {
   line-height: 1 !important; }
 
 .qodef-section-title .qodef-m-subtitle-text {

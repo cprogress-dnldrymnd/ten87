@@ -93,6 +93,9 @@ body {
             font-size: 60px !important;
         }
     }
+    .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-text {
+        line-height: 1 !important;
+    }
 }
 .qodef-section-title .qodef-m-subtitle-text {
     line-height: 1 !important;
@@ -450,6 +453,7 @@ body {
                 padding-bottom: 80px;
                 .qodef-e-text {
                     font-size: 40px;
+                    line-height: 1;
                 }
                 .qodef-e-title {
                     font-size: 30px;

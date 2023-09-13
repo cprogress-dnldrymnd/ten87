@@ -75,6 +75,8 @@ body {
   #qodef-page-wrapper .qodef-h1,
   #qodef-page-wrapper h1 {
     font-size: 60px !important; } }
+#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-text {
+  line-height: 1 !important; }
 
 .qodef-section-title .qodef-m-subtitle-text {
   line-height: 1 !important; }
@@ -319,7 +321,8 @@ body {
       padding-left: 50px;
       padding-bottom: 80px; }
       .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-text {
-        font-size: 40px; }
+        font-size: 40px;
+        line-height: 1; }
       .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title {
         font-size: 30px; }
         .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title:before {

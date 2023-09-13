@@ -373,7 +373,8 @@ h6 {
 
 #menu-footer-links-bottom {
   display: flex;
-  font-size: 18px; }
+  font-size: 18px;
+  justify-content: flex-end; }
   #menu-footer-links-bottom li {
     display: flex;
     align-items: center;

@@ -117,10 +117,13 @@ h6 {
       width: 0%; }
       #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link:hover svg.hover {
         width: 100%; }
+  #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a {
+    color: var(--text-color) !important; }
+    #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a .qodef-menu-item-text:after {
+      background-color: var(--text-color); }
+    #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:hover, #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:focus, #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:active {
+      color: var(--black-color); }
   #qodef-page-header .qodef-skin--dark .qodef-header-navigation.qodef-header-navigation > ul > li > a {
-    font-family: "SuisseBPIntl", sans-serif;
-    font-size: 25px;
-    text-transform: initial;
     color: var(--text-color) !important; }
     #qodef-page-header .qodef-skin--dark .qodef-header-navigation.qodef-header-navigation > ul > li > a .qodef-menu-item-text:after {
       background-color: var(--text-color); }

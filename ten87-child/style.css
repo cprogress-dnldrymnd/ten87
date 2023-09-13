@@ -116,6 +116,11 @@ h6 {
       width: 0%; }
       #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link:hover svg.hover {
         width: 100%; }
+  #qodef-page-header .qodef-header-navigation > ul > li > a {
+    font-family: "SuisseBPIntl", sans-serif;
+    font-size: 25px;
+    text-transform: initial;
+    color: var(--text-color); }
 
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,
 .qodef-m-button {
@@ -421,10 +426,5 @@ h6 {
       display: inline-block;
       background-color: var(--text-color);
       border-radius: 10px; }
-
-.qodef-header-navigation > ul > li > a {
-  font-family: "SuisseBPIntl", sans-serif;
-  font-size: 25px;
-  text-transform: initial; }
 
 /*# sourceMappingURL=style.css.map */

@@ -99,8 +99,7 @@ h6 {
     content: none !important; }
   #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link {
     height: 41px;
-    width: 146px;
-    color: var(--text-color) !important; }
+    width: 146px; }
     #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link svg {
       position: absolute;
       width: 100%;
@@ -109,7 +108,8 @@ h6 {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      transition: 300ms; }
+      transition: 300ms;
+      color: var(--text-color) !important; }
       #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link svg.hover {
         width: 0%; }
     #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link:hover svg {

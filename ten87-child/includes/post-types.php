@@ -175,3 +175,13 @@ new newTaxonomy(
 		)
 	)
 );
+
+new newPostType(
+	array(
+		'name'          => 'Templates',
+		'singular_name' => 'Template',
+		'icon'          => 'dashicons-media-document',
+		'rewrite'       => array('slug' => 'template'),
+		'supports'      => array('title', 'revisions'),
+	)
+);

@@ -93,7 +93,11 @@ body {
             font-size: 60px !important;
         }
     }
-    .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-text {
+    .elementor-widget-obsius_core_testimonials_list
+        .qodef-testimonials-list.qodef-testimonials-list
+        .qodef-e-inner
+        .qodef-e-content
+        .qodef-e-text {
         line-height: 1 !important;
     }
 }
@@ -445,20 +449,29 @@ body {
             .qodef-e-media-image {
                 flex: 0 0 34%;
                 margin-bottom: 0;
+                img {
+                    @media (max-width: 767px) {
+                        max-width: 300px;
+                    }
+                }
             }
             .qodef-e-content {
                 display: flex;
                 flex-direction: column-reverse;
-                padding-left: 50px;
                 padding-bottom: 80px;
                 .qodef-e-text {
                     font-size: 40px;
-                    line-height: 1;
+                    @media (max-width: 1024px) {
+                        font-size: 30px;
+                    }
                 }
                 .qodef-e-title {
                     font-size: 30px;
                     &:before {
                         content: "- ";
+                    }
+                    @media (max-width: 1024px) {
+                        font-size: 25px;
                     }
                 }
                 &:after {
@@ -466,6 +479,12 @@ body {
                     display: block;
                     margin-bottom: 40px;
                 }
+                @media (min-width: 768px) {
+                    padding-left: 50px;
+                }
+            }
+            @media (max-width: 767px) {
+                flex-direction: column;
             }
         }
     }

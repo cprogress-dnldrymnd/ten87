@@ -508,3 +508,23 @@ h6 {
         display: none !important;
     }
 }
+
+#menu-footer-links-bottom {
+    display: flex;
+    font-size: 18px;
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0 !important;
+        &:not(:last-child):after {
+            content: "";
+            margin-right: 10px !important;
+            margin-left: 10px !important;
+            height: 5px;
+            width: 5px;
+            display: inline-block;
+            background-color: var(--text-color);
+            border-radius: 10px;
+        }
+    }
+}

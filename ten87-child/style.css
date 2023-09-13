@@ -371,4 +371,21 @@ h6 {
 #newsletter .wpcf7-response-output {
   display: none !important; }
 
+#menu-footer-links-bottom {
+  display: flex;
+  font-size: 18px; }
+  #menu-footer-links-bottom li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important; }
+    #menu-footer-links-bottom li:not(:last-child):after {
+      content: "";
+      margin-right: 10px !important;
+      margin-left: 10px !important;
+      height: 5px;
+      width: 5px;
+      display: inline-block;
+      background-color: var(--text-color);
+      border-radius: 10px; }
+
 /*# sourceMappingURL=style.css.map */

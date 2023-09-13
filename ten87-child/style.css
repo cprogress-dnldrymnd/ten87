@@ -4,6 +4,14 @@ Version: 1.0
 Text Domain: ten87
 Template: ten87
 */
+@media (max-width: 782px) {
+  html {
+    margin-top: 0 !important; } }
+
+@media (max-width: 782px) {
+  #wpadminbar {
+    display: none !important; } }
+
 @font-face {
   font-family: "Ten87SansV7";
   src: url("./assets/fonts/ten87/Ten87SansV7-Regular.eot");
@@ -159,6 +167,11 @@ body {
   border: none; }
   #qodef-page-mobile-header .qodef-mobile-header-logo-link.qodef-source--svg-path svg {
     width: 100px; }
+  #qodef-page-mobile-header .qodef-mobile-header-navigation {
+    background-color: var(--cream-color);
+    position: fixed;
+    bottom: 0;
+    top: 70px; }
 
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,
 .qodef-m-button {

@@ -4,6 +4,16 @@ Version: 1.0
 Text Domain: ten87
 Template: ten87
 */
+html {
+    @media(max-width: 782px) {
+        margin-top: 0 !important;
+    }
+}
+#wpadminbar {
+    @media(max-width: 782px) {
+        display: none !important;
+    }
+}
 @mixin font-face($fontFamily, $path, $fileName, $fontStyle: normal, $fontWeight: false) {
     @each $name, $weight in $fontWeight {
         @font-face {
@@ -86,11 +96,10 @@ body {
 }
 .qodef-section-title .qodef-m-subtitle-text {
     line-height: 1 !important;
-    @media(max-width: 575px) {
+    @media (max-width: 575px) {
         font-size: 40px;
     }
 }
-
 
 .qodef-qi-button {
     font-family: "Ten87SansV7", sans-serif;
@@ -231,6 +240,12 @@ body {
         svg {
             width: 100px;
         }
+    }
+    .qodef-mobile-header-navigation {
+        background-color: var(--cream-color);
+        position: fixed;
+        bottom: 0;
+        top: 70px;
     }
 }
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,

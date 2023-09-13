@@ -117,12 +117,12 @@ h6 {
       width: 0%; }
       #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link:hover svg.hover {
         width: 100%; }
-  #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a {
+  #qodef-page-header .qodef-skin--dark .qodef-header-navigation.qodef-header-navigation > ul > li > a {
     font-family: "SuisseBPIntl", sans-serif;
     font-size: 25px;
     text-transform: initial;
     color: var(--text-color) !important; }
-    #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:hover, #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:focus, #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:active {
+    #qodef-page-header .qodef-skin--dark .qodef-header-navigation.qodef-header-navigation > ul > li > a:hover, #qodef-page-header .qodef-skin--dark .qodef-header-navigation.qodef-header-navigation > ul > li > a:focus, #qodef-page-header .qodef-skin--dark .qodef-header-navigation.qodef-header-navigation > ul > li > a:active {
       column-rule-color: var(--black-color); }
 
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,

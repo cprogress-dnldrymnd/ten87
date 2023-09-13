@@ -288,8 +288,14 @@ body {
   .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-content h5 {
     color: inherit;
     font-size: 40px; }
+    @media (max-width: 767px) {
+      .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-content h5 {
+        font-size: 30px; } }
   .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-content p {
     font-size: 30px; }
+    @media (max-width: 767px) {
+      .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-content p {
+        font-size: 25px; } }
 .qodef-team-list .qodef-m-top-info {
   align-items: flex-start;
   margin-bottom: 50px; }

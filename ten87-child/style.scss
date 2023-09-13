@@ -116,7 +116,7 @@ body {
 .qodef-qi-button {
     font-family: "Ten87SansV7", sans-serif;
     line-height: 1.2 !important;
-    @media(max-width: 767px) {
+    @media (max-width: 767px) {
         font-size: 20px !important;
     }
 }
@@ -402,9 +402,15 @@ body {
                 h5 {
                     color: inherit;
                     font-size: 40px;
+                    @media (max-width: 767px) {
+                        font-size: 30px;
+                    }
                 }
                 p {
                     font-size: 30px;
+                    @media (max-width: 767px) {
+                        font-size: 25px;
+                    }
                 }
             }
         }

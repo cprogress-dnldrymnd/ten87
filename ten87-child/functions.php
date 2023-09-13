@@ -24,6 +24,13 @@ function action_wp_footer()
 {
 ?>
 	<script>
+		jQuery(document).ready(function () {
+			jQuery('.qodef-mobile-header-opener').click(function (e) { 
+				jQuery('html').toggleClass('menu-open');
+				e.preventDefault();
+			});
+		});
+
 		var swiper = new Swiper(".mySwiperPostSlider", {
 			navigation: {
 				nextEl: ".swiper-button-next",

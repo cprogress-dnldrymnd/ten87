@@ -404,6 +404,14 @@ body {
         .qodef-title-inner {
             flex: 0 0 50%;
         }
+        .qodef-title-inner {
+            @media (max-width: 1024px) {
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -414,15 +422,9 @@ body {
         align-items: center;
         .qodef-m-title {
             margin-bottom: 0 !important;
-            @media (max-width: 1024px) {
-                margin-bottom: 30px;
-            }
         }
         .qodef-m-button {
             width: auto !important;
-        }
-        @media (max-width: 1024px) {
-            flex-direction: column;
         }
     }
 }

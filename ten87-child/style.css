@@ -284,6 +284,12 @@ body {
   .qodef-team-list .qodef-m-top-info .qodef-m-more,
   .qodef-team-list .qodef-m-top-info .qodef-title-inner {
     flex: 0 0 50%; }
+  @media (max-width: 1024px) {
+    .qodef-team-list .qodef-m-top-info .qodef-title-inner {
+      margin-bottom: 30px; } }
+  @media (max-width: 1024px) {
+    .qodef-team-list .qodef-m-top-info {
+      flex-direction: column; } }
 
 .cta-style-1 .qodef-qi-section-title {
   display: flex;
@@ -291,14 +297,8 @@ body {
   align-items: center; }
   .cta-style-1 .qodef-qi-section-title .qodef-m-title {
     margin-bottom: 0 !important; }
-    @media (max-width: 1024px) {
-      .cta-style-1 .qodef-qi-section-title .qodef-m-title {
-        margin-bottom: 30px; } }
   .cta-style-1 .qodef-qi-section-title .qodef-m-button {
     width: auto !important; }
-  @media (max-width: 1024px) {
-    .cta-style-1 .qodef-qi-section-title {
-      flex-direction: column; } }
 
 .elementor-widget-obsius_core_testimonials_list {
   max-width: 1420px;

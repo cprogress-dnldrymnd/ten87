@@ -292,7 +292,8 @@ h6 {
         margin-right: 1rem !important; }
 
 #qodef-page-footer {
-  z-index: 2; }
+  z-index: 2;
+  font-size: 24px; }
   #qodef-page-footer #qodef-page-footer-top-area {
     border-top: 2px solid var(--text-color);
     border-bottom: 2px solid var(--text-color); }
@@ -305,6 +306,12 @@ h6 {
     color: var(--text-color) !important; }
     #qodef-page-footer .widget a {
       color: var(--text-color) !important; }
+  #qodef-page-footer .menu {
+    display: flex;
+    flex-wrap: wrap; }
+    #qodef-page-footer .menu .menu-item {
+      flex: 0 0 auto;
+      width: 50%; }
 
 .qodef-gradient-background--enabled #qodef-page-wrapper {
   background-color: var(--cream-color); }

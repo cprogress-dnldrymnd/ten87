@@ -400,6 +400,7 @@ h6 {
 
 #qodef-page-footer {
     z-index: 2;
+    font-size: 24px;
     #qodef-page-footer-top-area {
         border-top: 2px solid var(--text-color);
         border-bottom: 2px solid var(--text-color);
@@ -415,6 +416,14 @@ h6 {
         color: var(--text-color) !important;
         a {
             color: var(--text-color) !important;
+        }
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        .menu-item {
+            flex: 0 0 auto;
+            width: 50%;
         }
     }
 }

@@ -418,8 +418,10 @@ h6 {
             color: var(--text-color) !important;
         }
     }
-    .menu {
-        
+    .widget-title {
+        font-size: 30px;
+        color: var(--text-color) !important;
+        margin-bottom: 20px;
     }
 }
 
@@ -448,4 +450,15 @@ h6 {
 .logo-slider {
     position: relative;
     z-index: 2;
+}
+
+.social-box {
+    ul {
+        display: flex;
+        li {
+            &:not(:last-child) {
+                margin-right: 19px;
+            }
+        }
+    }
 }

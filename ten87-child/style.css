@@ -306,6 +306,10 @@ h6 {
     color: var(--text-color) !important; }
     #qodef-page-footer .widget a {
       color: var(--text-color) !important; }
+  #qodef-page-footer .widget-title {
+    font-size: 30px;
+    color: var(--text-color) !important;
+    margin-bottom: 20px; }
 
 .qodef-gradient-background--enabled #qodef-page-wrapper {
   background-color: var(--cream-color); }
@@ -325,5 +329,10 @@ h6 {
 .logo-slider {
   position: relative;
   z-index: 2; }
+
+.social-box ul {
+  display: flex; }
+  .social-box ul li:not(:last-child) {
+    margin-right: 19px; }
 
 /*# sourceMappingURL=style.css.map */

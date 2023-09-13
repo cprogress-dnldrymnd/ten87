@@ -35,22 +35,27 @@ body {
   --cream-color: #dacebd;
   --black-color: #000; }
 
-.qodef-h1,
-h1,
-.qodef-h2,
-h2,
-.qodef-h3,
-h3,
-.qodef-h4,
-h4,
-.qodef-h5,
-h5,
-.qodef-h6,
-h6 {
+#qodef-page-wrapper .qodef-h1,
+#qodef-page-wrapper h1,
+#qodef-page-wrapper .qodef-h2,
+#qodef-page-wrapper h2,
+#qodef-page-wrapper .qodef-h3,
+#qodef-page-wrapper h3,
+#qodef-page-wrapper .qodef-h4,
+#qodef-page-wrapper h4,
+#qodef-page-wrapper .qodef-h5,
+#qodef-page-wrapper h5,
+#qodef-page-wrapper .qodef-h6,
+#qodef-page-wrapper h6 {
   text-transform: initial;
   font-family: "Ten87SansV7", sans-serif;
   font-weight: 400 !important;
   line-height: 0.8 !important; }
+
+@media (max-width: 1440px) {
+  .qodef-h1,
+  h1 {
+    font-size: 100px; } }
 
 .qodef-qi-button {
   font-family: "Ten87SansV7", sans-serif;

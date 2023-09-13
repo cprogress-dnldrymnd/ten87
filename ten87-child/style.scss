@@ -260,6 +260,12 @@ body {
         .qodef-mobile-header-navigation {
             transform: translateY(0);
         }
+        .qodef-opener-icon .qodef-m-icon.qodef--close {
+            visibility: visible
+        }
+        .qodef-opener-icon .qodef-m-icon {
+            visibility: hidden;
+        }
     }
 }
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,

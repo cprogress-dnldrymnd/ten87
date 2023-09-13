@@ -181,6 +181,10 @@ body {
 
 .menu-open #qodef-page-mobile-header .qodef-mobile-header-navigation {
   transform: translateY(0); }
+.menu-open #qodef-page-mobile-header .qodef-opener-icon .qodef-m-icon.qodef--close {
+  visibility: visible; }
+.menu-open #qodef-page-mobile-header .qodef-opener-icon .qodef-m-icon {
+  visibility: hidden; }
 
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,
 .qodef-m-button {

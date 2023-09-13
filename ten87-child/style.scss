@@ -490,9 +490,15 @@ body {
     }
     .swiper-button-prev {
         left: calc(34% + 50px) !important;
+        @media (max-width: 767px) {
+            left: 10px !important;
+        }
     }
     .swiper-button-next {
         left: calc(34% + 120px) !important;
+        @media (max-width: 767px) {
+            left: calc(10px + 120px) !important;
+        }
     }
     .swiper-button-prev,
     .swiper-button-next {

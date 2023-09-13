@@ -350,8 +350,14 @@ body {
         flex-direction: column; } }
   .elementor-widget-obsius_core_testimonials_list .swiper-button-prev {
     left: calc(34% + 50px) !important; }
+    @media (max-width: 767px) {
+      .elementor-widget-obsius_core_testimonials_list .swiper-button-prev {
+        left: 10px !important; } }
   .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
     left: calc(34% + 120px) !important; }
+    @media (max-width: 767px) {
+      .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
+        left: calc(10px + 120px) !important; } }
   .elementor-widget-obsius_core_testimonials_list .swiper-button-prev,
   .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
     right: auto !important;

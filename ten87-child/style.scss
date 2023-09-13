@@ -547,7 +547,9 @@ h6 {
     }
 }
 
-
+#qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--svg-path:hover, #qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--textual:hover {
+    color: var(--text-color) !important;
+}
 .qodef-header-navigation {
     >ul {
         >li {

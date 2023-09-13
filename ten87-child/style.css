@@ -405,6 +405,9 @@ h6 {
       background-color: var(--text-color);
       border-radius: 10px; }
 
+#qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--svg-path:hover, #qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--textual:hover {
+  color: var(--text-color) !important; }
+
 .qodef-header-navigation > ul > li > a {
   font-family: "SuisseBPIntl", sans-serif;
   font-size: 25px;

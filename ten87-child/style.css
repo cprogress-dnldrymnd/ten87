@@ -174,17 +174,20 @@ body {
     background-color: var(--cream-color);
     position: fixed;
     bottom: 0;
-    top: 70px;
+    top: 0;
     display: block !important;
     transform: translateY(-100%);
-    transition: 500ms; }
+    transition: 500ms;
+    padding-top: 70px; }
 
-.menu-open #qodef-page-mobile-header .qodef-mobile-header-navigation {
-  transform: translateY(0); }
-.menu-open #qodef-page-mobile-header .qodef-opener-icon .qodef-m-icon.qodef--close {
-  visibility: visible; }
-.menu-open #qodef-page-mobile-header .qodef-opener-icon .qodef-m-icon {
-  visibility: hidden; }
+.menu-open {
+  overflow: hidden; }
+  .menu-open #qodef-page-mobile-header .qodef-mobile-header-navigation {
+    transform: translateY(0); }
+  .menu-open #qodef-page-mobile-header .qodef-opener-icon .qodef-m-icon.qodef--close {
+    visibility: visible; }
+  .menu-open #qodef-page-mobile-header .qodef-opener-icon .qodef-m-icon {
+    visibility: hidden; }
 
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,
 .qodef-m-button {

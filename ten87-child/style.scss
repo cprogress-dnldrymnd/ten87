@@ -249,13 +249,15 @@ body {
         background-color: var(--cream-color);
         position: fixed;
         bottom: 0;
-        top: 70px;
+        top: 0;
         display: block !important;
         transform: translateY(-100%);
         transition: 500ms;
+        padding-top: 70px;
     }
 }
 .menu-open {
+    overflow: hidden;
     #qodef-page-mobile-header {
         .qodef-mobile-header-navigation {
             transform: translateY(0);

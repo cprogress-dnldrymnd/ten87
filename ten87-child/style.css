@@ -449,4 +449,7 @@ body {
       background-color: var(--text-color);
       border-radius: 10px; }
 
+.qodef-section-title .qodef-m-subtitle-text {
+  line-height: 1 !important; }
+
 /*# sourceMappingURL=style.css.map */

@@ -351,6 +351,11 @@ body {
                 overflow: hidden;
                 transition: 500ms;
             }
+            @media(max-width: 575px) {
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+            }
         }
 
         &:before {

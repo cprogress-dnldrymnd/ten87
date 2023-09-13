@@ -252,6 +252,11 @@ body {
       max-height: 0;
       overflow: hidden;
       transition: 500ms; }
+    @media (max-width: 575px) {
+      .elementor-column-hover .elementor-widget-wrap .elementor-element {
+        bottom: 20px;
+        left: 20px;
+        right: 20px; } }
   .elementor-column-hover .elementor-widget-wrap:before {
     content: "";
     position: absolute;

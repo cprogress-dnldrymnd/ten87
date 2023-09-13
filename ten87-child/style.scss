@@ -94,9 +94,11 @@ h6 {
         transform-origin: 50% 50%;
         background-color: var(--accent-color);
         color: var(--accent-color);
-        box-shadow: 0 30px 200px 550px  currentColor;
+        box-shadow: 0 30px 200px 550px currentColor;
         opacity: 0;
-        animation: qode-fade-in-custom 1s 1, qode-bg-gradient-bottom-left 7s 1s linear infinite;
+        animation:
+            qode-fade-in-custom 1s 1,
+            qode-bg-gradient-bottom-left 7s 1s linear infinite;
     }
     .elementor-container {
         position: relative;
@@ -105,9 +107,11 @@ h6 {
 }
 
 #qodef-page-header {
+    border-bottom: 2px solid var(--text-color);
     .qodef-header-logo-link.qodef-header-logo-link {
         height: 41px;
         width: 146px;
+        color: var(--text-color) !important;
         svg {
             position: absolute;
             width: 100%;
@@ -445,8 +449,8 @@ h6 {
         z-index: 1 !important;
     }
     &:before {
-        background-color: #ff5932 !important;;
-        color: #ff5932 !important;;
+        background-color: #ff5932 !important;
+        color: #ff5932 !important;
     }
     &:after {
         background-color: #ff5932 !important;
@@ -547,13 +551,10 @@ h6 {
     }
 }
 
-#qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--svg-path:hover, #qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--textual:hover {
-    color: var(--text-color) !important;
-}
 .qodef-header-navigation {
-    >ul {
-        >li {
-            >a {
+    > ul {
+        > li {
+            > a {
                 font-family: "SuisseBPIntl", sans-serif;
                 font-size: 25px;
                 text-transform: initial;

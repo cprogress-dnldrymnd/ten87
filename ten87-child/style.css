@@ -348,7 +348,9 @@ body {
   .post-slider-holder .swiper-slide .elementor-container {
     width: 100%;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    padding-left: 10px;
+    padding-right: 10px; }
     .post-slider-holder .swiper-slide .elementor-container .inner {
       color: var(--white-color);
       max-width: 705px; }

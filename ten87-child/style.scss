@@ -489,6 +489,8 @@ body {
             width: 100%;
             position: relative;
             z-index: 1;
+            padding-left: 10px;
+            padding-right: 10px;
             .inner {
                 color: var(--white-color);
                 max-width: 705px;

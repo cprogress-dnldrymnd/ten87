@@ -5,7 +5,7 @@ Text Domain: ten87
 Template: ten87
 */
 @media (max-width: 782px) {
-  html {
+  html[lang="en-US"] {
     margin-top: 0 !important; } }
 
 @media (max-width: 782px) {

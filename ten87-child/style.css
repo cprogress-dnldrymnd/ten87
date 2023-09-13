@@ -85,13 +85,16 @@ h6 {
   position: relative;
   z-index: 1; }
 
-#qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--svg-path:hover, #qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--textual:hover {
+#qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--svg-path:hover,
+#qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--textual:hover {
   color: var(--text-color) !important; }
 
 #qodef-page-header {
   border-bottom: 2px solid var(--text-color); }
   #qodef-page-header #qodef-page-header-inner:after {
     content: none !important; }
+  #qodef-page-header .qodef-header-sticky .qodef-header-logo-link.qodef-header-logo-link {
+    color: var(--white-color) !important; }
   #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link {
     height: 41px;
     width: 146px;

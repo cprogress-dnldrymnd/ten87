@@ -179,6 +179,9 @@ body {
     transform: translateY(-100%);
     transition: 500ms; }
 
+.menu-open #qodef-page-mobile-header .qodef-mobile-header-navigation {
+  transform: translateY(0); }
+
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,
 .qodef-m-button {
   max-width: 385px !important;

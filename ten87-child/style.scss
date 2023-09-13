@@ -5,12 +5,12 @@ Text Domain: ten87
 Template: ten87
 */
 html[lang="en-US"] {
-    @media(max-width: 782px) {
+    @media (max-width: 782px) {
         margin-top: 0 !important;
     }
 }
 #wpadminbar {
-    @media(max-width: 782px) {
+    @media (max-width: 782px) {
         display: none !important;
     }
 }
@@ -253,6 +253,13 @@ body {
         display: block !important;
         transform: translateY(-100%);
         transition: 500ms;
+    }
+}
+.menu-open {
+    #qodef-page-mobile-header {
+        .qodef-mobile-header-navigation {
+            transform: translateY(0);
+        }
     }
 }
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,

@@ -462,3 +462,14 @@ h6 {
         }
     }
 }
+
+#newsletter {
+    .wpcf7-email {
+        padding: 18px 30px;
+        border: 2px solid var(--text-color);
+        border-radius: 50px;
+        line-height: 1;
+        color: var(--text-color);
+        font-size: 20px;
+    }
+}

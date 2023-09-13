@@ -55,6 +55,10 @@ body {
   #qodef-page-wrapper .qodef-h1,
   #qodef-page-wrapper h1 {
     font-size: 120px !important; } }
+@media (max-width: 991px) {
+  #qodef-page-wrapper .qodef-h1,
+  #qodef-page-wrapper h1 {
+    font-size: 100px !important; } }
 @media (max-width: 767px) {
   #qodef-page-wrapper .qodef-h1,
   #qodef-page-wrapper h1 {

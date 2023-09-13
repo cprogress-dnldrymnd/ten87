@@ -293,6 +293,9 @@ h6 {
 
 #qodef-page-footer {
   z-index: 2; }
+  #qodef-page-footer #qodef-page-footer-top-area {
+    border-top: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color); }
   #qodef-page-footer .qodef-content-grid {
     max-width: 1780px;
     width: 100%; }

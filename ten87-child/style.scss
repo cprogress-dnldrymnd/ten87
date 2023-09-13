@@ -166,6 +166,11 @@ h6 {
                             background-color: var(--text-color);
                         }
                     }
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: var(--black-color);
+                    }
                 }
             }
         }
@@ -175,10 +180,16 @@ h6 {
             > ul {
                 > li {
                     > a {
+                        color: var(--text-color) !important;
                         .qodef-menu-item-text {
                             &:after {
                                 background-color: var(--white-color);
                             }
+                        }
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            color: var(--white-color);
                         }
                     }
                 }

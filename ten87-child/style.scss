@@ -411,6 +411,9 @@ h6 {
             content: none !important;
         }
     }
+    .widget {
+        color: var(--text-color);
+    }
 }
 
 .qodef-gradient-background--enabled #qodef-page-wrapper {

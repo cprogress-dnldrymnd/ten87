@@ -301,6 +301,8 @@ h6 {
     width: 100%; }
     #qodef-page-footer .qodef-content-grid:after {
       content: none !important; }
+  #qodef-page-footer .widget {
+    color: var(--text-color); }
 
 .qodef-gradient-background--enabled #qodef-page-wrapper {
   background-color: var(--cream-color); }

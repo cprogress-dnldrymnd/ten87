@@ -163,7 +163,7 @@ h6 {
                     text-transform: initial;
                     .qodef-menu-item-text {
                         &:after {
-                            background-color: var(--text-color);
+                            background-color: var(--white-color);
                         }
                     }
                     &:hover,
@@ -183,7 +183,7 @@ h6 {
                         color: var(--text-color) !important;
                         .qodef-menu-item-text {
                             &:after {
-                                background-color: var(--white-color);
+                                background-color: var(--text-color);
                             }
                         }
                         &:hover,

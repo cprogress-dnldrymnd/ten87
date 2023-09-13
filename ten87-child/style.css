@@ -333,6 +333,6 @@ h6 {
 .social-box ul {
   display: flex; }
   .social-box ul li:not(:last-child) {
-    margin-right: 19px; }
+    margin-right: 19px !important; }
 
 /*# sourceMappingURL=style.css.map */

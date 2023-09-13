@@ -457,7 +457,7 @@ h6 {
         display: flex;
         li {
             &:not(:last-child) {
-                margin-right: 19px;
+                margin-right: 19px !important;
             }
         }
     }

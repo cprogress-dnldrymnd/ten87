@@ -116,6 +116,9 @@ body {
 .qodef-qi-button {
     font-family: "Ten87SansV7", sans-serif;
     line-height: 1.2 !important;
+    @media(max-width: 767px) {
+        font-size: 20px !important;
+    }
 }
 .home-hero {
     &:before,

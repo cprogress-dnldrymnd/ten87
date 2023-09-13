@@ -224,7 +224,15 @@ body {
         }
     }
 }
-
+#qodef-page-mobile-header {
+    background-color: var(--cream-color);
+    border: none;
+    .qodef-mobile-header-logo-link.qodef-source--svg-path {
+        svg {
+            width: 100px;
+        }
+    }
+}
 .elementor-widget-qi_addons_for_elementor_button.elementor-widget-qi_addons_for_elementor_button,
 .qodef-m-button {
     max-width: 385px !important;

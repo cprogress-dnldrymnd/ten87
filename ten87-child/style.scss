@@ -497,7 +497,10 @@ body {
     .swiper-button-next {
         left: calc(34% + 120px) !important;
         @media (max-width: 767px) {
-            left: calc(10px + 120px) !important;
+            left: calc(10px + 80px) !important;
+        }
+        @media (max-width: 575px) {
+            left: calc(10px + 50px) !important;
         }
     }
     .swiper-button-prev,
@@ -508,6 +511,9 @@ body {
         top: auto;
         svg {
             width: 60px;
+            @media (max-width: 575px) {
+                width: 40px;
+            }
         }
     }
 }

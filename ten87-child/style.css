@@ -186,7 +186,10 @@ h6 {
   top: auto;
   color: var(--white-color); }
   .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-content h5 {
-    color: inherit; }
+    color: inherit;
+    font-size: 40px; }
+  .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-content p {
+    font-size: 30px; }
 .qodef-team-list .qodef-m-top-info {
   align-items: flex-start;
   margin-bottom: 50px; }

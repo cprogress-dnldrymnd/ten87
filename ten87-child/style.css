@@ -124,7 +124,7 @@ h6 {
     #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a .qodef-menu-item-text:after {
       background-color: var(--white-color); }
     #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:hover, #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:focus, #qodef-page-header .qodef-header-navigation.qodef-header-navigation > ul > li > a:active {
-      color: var(--black-color); }
+      color: var(--white-color); }
   #qodef-page-header .qodef-skin--dark .qodef-header-navigation.qodef-header-navigation > ul > li > a {
     color: var(--text-color) !important; }
     #qodef-page-header .qodef-skin--dark .qodef-header-navigation.qodef-header-navigation > ul > li > a .qodef-menu-item-text:after {

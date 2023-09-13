@@ -426,5 +426,7 @@ h6 {
 }
 
 .continuos-scroll {
-    
+    .swiper-wrapper {
+        transition-timing-function: linear;
+    }
 }

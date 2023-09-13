@@ -311,4 +311,7 @@ h6 {
   position: relative;
   z-index: 2; }
 
+.continuos-scroll .swiper-wrapper {
+  transition-timing-function: linear; }
+
 /*# sourceMappingURL=style.css.map */

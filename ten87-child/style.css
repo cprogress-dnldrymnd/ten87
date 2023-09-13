@@ -317,4 +317,8 @@ h6 {
 .continuos-scroll .swiper-wrapper {
   transition-timing-function: linear; }
 
+.logo-slider {
+  position: relative;
+  z-index: 2; }
+
 /*# sourceMappingURL=style.css.map */

@@ -260,7 +260,7 @@ body {
             li {
                 a {
                     font-size: 20px;
-                    font-family: 'SuisseBPIntl', sans-serif;
+                    font-family: "SuisseBPIntl", sans-serif;
                     text-transform: initial;
                 }
             }
@@ -274,7 +274,7 @@ body {
             transform: translateY(0);
         }
         .qodef-opener-icon .qodef-m-icon.qodef--close {
-            visibility: visible
+            visibility: visible;
         }
         .qodef-opener-icon .qodef-m-icon {
             visibility: hidden;
@@ -361,6 +361,9 @@ body {
             &::before {
                 opacity: 0.85;
             }
+        }
+        @media (max-width: 1024px) {
+            min-height: 500px;
         }
     }
 }

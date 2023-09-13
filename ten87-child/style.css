@@ -183,7 +183,7 @@ body {
     max-height: 100%; }
     #qodef-page-mobile-header .qodef-mobile-header-navigation ul li a {
       font-size: 20px;
-      font-family: 'SuisseBPIntl', sans-serif;
+      font-family: "SuisseBPIntl", sans-serif;
       text-transform: initial; }
 
 .menu-open {
@@ -254,6 +254,9 @@ body {
     max-height: 500px; }
   .elementor-column-hover .elementor-widget-wrap:hover::before {
     opacity: 0.85; }
+  @media (max-width: 1024px) {
+    .elementor-column-hover .elementor-widget-wrap {
+      min-height: 500px; } }
 
 .qodef-team-list .qodef-grid-inner .qodef-grid-item.team .qodef-e-inner {
   position: relative; }

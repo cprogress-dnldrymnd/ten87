@@ -431,6 +431,10 @@ h6 {
     &:after {
         z-index: 1 !important;
     }
+    &:before {
+        background-color: #ff5932 !important;;
+        color: #ff5932 !important;;
+    }
     &:after {
         background-color: #ff5932 !important;
         color: #ff5932 !important;

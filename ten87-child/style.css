@@ -48,7 +48,8 @@ h5,
 h6 {
   text-transform: initial;
   font-family: "Ten87SansV7", sans-serif;
-  font-weight: 400 !important; }
+  font-weight: 400 !important;
+  line-height: 0.8 !important; }
 
 .qodef-qi-button {
   font-family: "Ten87SansV7", sans-serif;

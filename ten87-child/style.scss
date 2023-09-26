@@ -121,6 +121,7 @@ body {
     }
 }
 .home-hero {
+    &:before,
     &:after {
         content: "" !important;
         position: absolute;
@@ -129,7 +130,10 @@ body {
         height: 100%;
         display: block;
     }
-    
+    &:before {
+        left: 0;
+        background: transparent radial-gradient(closest-side at 64% 37%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
+    }
     &:after {
         background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
         content: "";
@@ -149,6 +153,7 @@ body {
             qode-fade-in-custom 1s 1,
             qode-bg-gradient-bottom-left 7s 1s linear infinite;
     }
+
     .elementor-widget-wrap, .elementor-column, .elementor-container {
         position: static !important;
     }

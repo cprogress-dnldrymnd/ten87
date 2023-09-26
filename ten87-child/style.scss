@@ -149,8 +149,15 @@ body {
             qode-fade-in-custom 1s 1,
             qode-bg-gradient-bottom-left 7s 1s linear infinite;
     }
+    .elementor-widget-wrap, .elementor-column, .elementor-container {
+        position: static !important;
+    }
     .left-gradient {
-        
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        width: 50%;
     }
     .elementor-container {
         position: relative;

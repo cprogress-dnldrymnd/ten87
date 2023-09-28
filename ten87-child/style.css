@@ -100,17 +100,13 @@ body {
     .qodef-qi-button {
       font-size: 20px !important; } }
 
-.home-hero:before, .home-hero:after {
+.home-hero:after {
   content: "" !important;
   position: absolute;
   width: 50%;
   top: 0;
   height: 100%;
   display: block; }
-.home-hero:before {
-  left: 0;
-  background: transparent radial-gradient(closest-side at 64% 37%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
-  animation: qode-fade-in-custom 1s 1, qode-bg-gradient-bottom-left 7s 1s linear infinite; }
 .home-hero:after {
   background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
   content: "";

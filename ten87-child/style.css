@@ -588,6 +588,12 @@ body {
   top: 0;
   left: 0;
   width: 50%;
-  bottom: 0; }
+  bottom: 0;
+  height: 300px !important; }
+
+.blob-1 .qodef-e-blob-element svg {
+  fill: #FF5932;
+  overflow: visible;
+  filter: blur(5vh); }
 
 /*# sourceMappingURL=style.css.map */

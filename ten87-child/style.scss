@@ -801,9 +801,22 @@ body {
 .blob-1 {
     .qodef-e-blob-element {
         svg {
-            fill: #FF5932;
+            fill: #ff5932;
             overflow: visible;
             filter: blur(10vh);
+        }
+    }
+}
+.elementor-element {
+    &.blob-position-2.blob-position-2 {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: auto;
+        width: auto;
+        svg {
+            width: 50vw;
+            height: 50vw;
         }
     }
 }

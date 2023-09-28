@@ -120,7 +120,41 @@ body {
         font-size: 20px !important;
     }
 }
+.home-hero {
+    &:after {
+        content: "" !important;
+        position: absolute;
+        width: 50%;
+        top: 0;
+        height: 100%;
+        display: block;
+    }
 
+    &:after {
+        background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
+        content: "";
+        display: block;
+        width: 4%;
+        height: 0;
+        position: absolute;
+        bottom: -1%;
+        right: 2%;
+        border-radius: 50%;
+        transform-origin: 50% 50%;
+        background-color: var(--accent-color);
+        color: var(--accent-color);
+        box-shadow: 0 30px 200px 550px currentColor;
+        opacity: 0;
+        animation:
+            qode-fade-in-custom 1s 1,
+            qode-bg-gradient-bottom-left 7s 1s linear infinite;
+    }
+
+    .elementor-container {
+        position: relative;
+        z-index: 1;
+    }
+}
 
 #qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--svg-path:hover,
 #qodef-page-header-inner.qodef-skin--dark .qodef-header-logo-link.qodef-source--textual:hover {

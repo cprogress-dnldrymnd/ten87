@@ -129,7 +129,7 @@ body {
         height: 100%;
         display: block;
     }
-   
+
     &:after {
         background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
         content: "";
@@ -150,7 +150,6 @@ body {
             qode-bg-gradient-bottom-left 7s 1s linear infinite;
     }
 
-  
     .elementor-container {
         position: relative;
         z-index: 1;
@@ -349,7 +348,7 @@ body {
                 overflow: hidden;
                 transition: 500ms;
             }
-            @media(max-width: 575px) {
+            @media (max-width: 575px) {
                 bottom: 20px;
                 left: 20px;
                 right: 20px;
@@ -387,7 +386,7 @@ body {
 }
 .qodef-team-list {
     .qodef-grid-inner {
-        .qodef-grid-item.type-team  {
+        .qodef-grid-item.type-team {
             .qodef-e-inner {
                 position: relative;
             }
@@ -788,4 +787,12 @@ body {
             border-radius: 10px;
         }
     }
+}
+
+.custom-glow-icon .qodef-glow-icon-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    bottom: 0;
 }

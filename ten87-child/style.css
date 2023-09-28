@@ -596,4 +596,8 @@ body {
   overflow: visible;
   filter: blur(5vh); }
 
+.overflow-hidden {
+  overflow: hidden;
+  position: relative; }
+
 /*# sourceMappingURL=style.css.map */

@@ -619,4 +619,12 @@ body {
   overflow: hidden;
   position: relative; }
 
+@media (max-width: 991px) {
+  .elementor-element.blob-position-2.blob-position-2 svg {
+    width: 70vw;
+    height: 70vw; }
+  .elementor-element.blog-position-hero.blog-position-hero svg {
+    width: 70vw;
+    height: 70vw; } }
+
 /*# sourceMappingURL=style.css.map */

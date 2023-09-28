@@ -605,6 +605,15 @@ body {
   .elementor-element.blob-position-2.blob-position-2 svg {
     width: 50vw;
     height: 50vw; }
+.elementor-element.blog-position-hero.blog-position-hero {
+  top: 0;
+  left: 0;
+  width: 50%;
+  bottom: 0;
+  text-align: center; }
+  .elementor-element.blog-position-hero.blog-position-hero svg {
+    width: 30vw;
+    height: 30vw; }
 
 .overflow-hidden {
   overflow: hidden;

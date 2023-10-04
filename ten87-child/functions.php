@@ -23,6 +23,8 @@ require_once('includes/shortcodes.php');
 function action_wp_footer()
 {
 ?>
+	<script type="module" src="/assets/javascripts/main.js"></script>
+
 	<script>
 		jQuery(document).ready(function () {
 			jQuery('.qodef-mobile-header-opener').click(function (e) { 
@@ -64,11 +66,3 @@ function custom_template($atts)
 
 
 add_shortcode('custom_template', 'custom_template');
-
-function action_wp_footer() {
-	?>
-	<script type="module" src="/assets/javascripts/main.js"></script>
-	<?php
-}
-
-add_action('wp_footer', 'action_wp_footer');

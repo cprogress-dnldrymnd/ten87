@@ -107,7 +107,7 @@ function anim() {
 
 function hero_cursor() {
 
-    let FollowBox = ".";
+    let FollowBox = ".home-cursor";
     gsap.set(FollowBox, {
         xPercent: -50,
         yPercent: -50,

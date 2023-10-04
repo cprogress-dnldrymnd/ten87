@@ -763,6 +763,11 @@ header #qodef-page-header-inner .qodef-header-navigation {
     overflow: hidden; }
   .home-cursor .text-svg {
     animation: rotation 5s infinite linear; }
+  .home-cursor .arrow-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 @keyframes rotation {
   from {

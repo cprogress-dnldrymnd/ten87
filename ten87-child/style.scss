@@ -1024,6 +1024,9 @@ header {
         width: 80px;
         height: 80px;
     }
+    &:not([style]) {
+        opacity: 0;
+    }
 }
 @keyframes rotation {
     from {

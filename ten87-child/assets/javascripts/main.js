@@ -78,7 +78,7 @@ function createPoints() {
     return points;
 }
 
-document.querySelector(".blob-holder rect").addEventListener("mouseover", () => {
+document.querySelector(".blob-holder path").addEventListener("mouseover", () => {
     noiseStep = 0.01;
 });
 

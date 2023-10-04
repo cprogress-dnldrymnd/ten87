@@ -9,7 +9,7 @@ const root = document.documentElement;
 let hueNoiseOffset = 0;
 let noiseStep = 0.005;
 
-const createNoise2D = new createNoise2D();
+const noise2D = new createNoise2D();
 
 const points = createPoints();
 
@@ -53,7 +53,7 @@ function map(n, start1, end1, start2, end2) {
 }
 
 function noise(x, y) {
-    return createNoise2D.noise2D(x, y);
+    return noise2D.createNoise2D(x, y);
 }
 
 function createPoints() {

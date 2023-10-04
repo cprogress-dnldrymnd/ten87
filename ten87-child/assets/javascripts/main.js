@@ -84,3 +84,28 @@ document.querySelector(".home-hero").addEventListener("mouseover", () => {
 document.querySelector(".elementor-column").addEventListener("mouseleave", () => {
     noiseStep = 0.005;
 });
+
+
+jQuery(document).ready(function () {
+    anim();
+});
+function anim() {
+	let $banner = document.getElementById('hero-banner');
+
+	if ($banner) {
+		$banner.addEventListener("mousemove", e => {
+			let x = e.clientX;
+			let y = e.clientY;
+			gsap.to('.animated-image-1', {
+				x: x * 0.08,
+				y: y * 0.16,
+				duration: 1
+			})
+			gsap.to('.animated-image-2', {
+				x: -x * 0.1,
+				y: -y * 0.15,
+				duration: 1
+			})
+		})
+	}
+}

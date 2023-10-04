@@ -23,11 +23,11 @@ require_once('includes/shortcodes.php');
 function action_wp_footer()
 {
 ?>
-	<script type="module" src="/assets/javascripts/main.js"></script>
+	<script type="module" src="<?= get_stylesheet_directory_uri() ?>/assets/javascripts/main.js"></script>
 
 	<script>
-		jQuery(document).ready(function () {
-			jQuery('.qodef-mobile-header-opener').click(function (e) { 
+		jQuery(document).ready(function() {
+			jQuery('.qodef-mobile-header-opener').click(function(e) {
 				jQuery('html').toggleClass('menu-open');
 				e.preventDefault();
 			});

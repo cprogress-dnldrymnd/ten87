@@ -118,5 +118,5 @@ function hero_cursor() {
       });
     }
     
-    $(window).on('mousemove', moveCircle);
+    jQuery(window).on('mousemove', moveCircle);
 }

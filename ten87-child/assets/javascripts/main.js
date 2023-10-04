@@ -79,7 +79,6 @@ function createPoints() {
 
 document.querySelector(".home-hero").addEventListener("mouseover", () => {
     noiseStep = 0.01;
-    console.log('xxxxx');
 });
 
 document.querySelector(".elementor-column").addEventListener("mouseleave", () => {

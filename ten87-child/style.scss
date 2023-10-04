@@ -1004,6 +1004,9 @@ header {
     z-index: 1;
     width: 1px !important;
     height: 1px !important;
+    margin: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
     .elementor-widget-container {
         position: absolute !important;
         left: 50%;

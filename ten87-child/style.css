@@ -758,8 +758,8 @@ header #qodef-page-header-inner .qodef-header-navigation {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 118px;
-    height: 118px; }
+    width: 0;
+    height: 0; }
   .home-cursor .text-svg {
     animation: rotation 5s infinite linear; }
 

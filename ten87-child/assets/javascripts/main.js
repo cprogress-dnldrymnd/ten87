@@ -110,13 +110,29 @@ function hero_cursor() {
     var $circle = jQuery('.home-cursor');
 
     function moveCircle(e) {
-      TweenLite.to($circle, 0.3, {
-        css: {
-          left: e.pageX,
-          top: e.pageY
-        }
-      });
+        TweenLite.to($circle, 0.3, {
+            css: {
+                left: e.pageX,
+                top: e.pageY
+            }
+        });
     }
-    
-    jQuery(window).on('mousemove', moveCircle);
+
+
+    jQuery("home-hero").hover(
+        function () {
+            jQuery(window).on('mousemove', moveCircle);
+            jQuery('.home-cursor .inner').css({
+                "width": '118px',
+                "height": '118px',
+            });
+        }, function () {
+            jQuery('.home-cursor .inner').css({
+                "width": '0',
+                "height": '0',
+            });
+
+        }
+    );
+
 }

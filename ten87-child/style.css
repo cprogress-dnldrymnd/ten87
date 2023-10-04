@@ -772,7 +772,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
     height: 80px; }
   .home-cursor:not([style]) {
     opacity: 0; }
-    .home-cursor:not([style]) .inner {
+    .home-cursor:not([style]) .elementor-widget-container {
       width: 0;
       height: 0; }
 

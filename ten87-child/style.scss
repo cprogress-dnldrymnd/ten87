@@ -1026,7 +1026,7 @@ header {
     }
     &:not([style]) {
         opacity: 0;
-        .inner {
+        .elementor-widget-container {
             width: 0;
             height: 0;
         }

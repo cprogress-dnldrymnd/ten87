@@ -135,7 +135,7 @@ function hero_cursor() {
         TL.to(FollowBox, {
             scale: 1,
             overwrite: "auto",
-            stagger: { amount: 0.15, from: "start", ease: "none" }
+            stagger: { amount: 0.15, from: "end", ease: "none" }
         });
     });
 

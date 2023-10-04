@@ -749,7 +749,8 @@ header #qodef-page-header-inner .qodef-header-navigation {
   margin-right: 0 !important; }
 
 .home-cursor {
-  position: absolute; }
+  position: absolute;
+  z-index: 999; }
   .home-cursor .text-svg {
     animation: rotation 5s infinite linear; }
 

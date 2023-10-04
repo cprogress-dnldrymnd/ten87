@@ -106,14 +106,17 @@ function anim() {
 }
 
 function hero_cursor() {
-    document.addEventListener("mousemove", e => {
-        let x = e.clientX;
-        let y = e.clientY;
-        var $x = x + 'px';
-        var $y = y + 'px';
-        jQuery('.home-cursor').css({
-            "transform": 'translate(' + $x + ', ' + $y + ')',
+    setTimeout(function () {
+        document.addEventListener("mousemove", e => {
+            let x = e.clientX;
+            let y = e.clientY;
+            var $x = x + 'px';
+            var $y = y + 'px';
+            jQuery('.home-cursor').css({
+                "transform": 'translate(' + $x + ', ' + $y + ')',
+            });
+    
         });
+    }, 1000)
 
-    });
 }

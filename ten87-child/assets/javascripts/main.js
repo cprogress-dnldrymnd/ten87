@@ -107,42 +107,16 @@ function anim() {
 
 function hero_cursor() {
 
-    let FollowBox = ".home-cursor";
-    gsap.set(FollowBox, {
-        xPercent: -50,
-        yPercent: -50,
-        scale: 0
-    });
+    var $circle = jQuery('.home-cursor');
 
-    window.addEventListener("mousemove", (e) => {
-        gsap.to(FollowBox, {
-            duration: 0.5,
-            overwrite: "auto",
-            x: e.clientX,
-            y: e.clientY,
-            stagger: 0.15,
-            ease: "none"
-        });
-
-        let TL = gsap.timeline({
-            defaults: { duration: 0.5, ease: "none" }
-        });
-        TL.to(
-            FollowBox,
-            {
-                overwrite: "auto",
-                scale: 0,
-                stagger: { amount: 0.15, from: "start", ease: "none" }
-            },
-            "<+=2.5"
-        );
-        TL.to(FollowBox, {
-            scale: 1,
-            overwrite: "auto",
-            stagger: { amount: 0.15, from: "end", ease: "none" }
-        });
-
-    });
-
-
+    function moveCircle(e) {
+      TweenLite.to($circle, 0.3, {
+        css: {
+          left: e.pageX,
+          top: e.pageY
+        }
+      });
+    }
+    
+    $(window).on('mousemove', moveCircle);
 }

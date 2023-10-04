@@ -1,5 +1,3 @@
-import SimplexNoise from "https://cdn.skypack.dev/simplex-noise@2.4.0";
-
 // our <path> element
 const path = document.querySelector("path");
 // used to set our custom property values

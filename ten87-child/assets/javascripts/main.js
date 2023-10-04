@@ -85,6 +85,3 @@ document.querySelector(".home-hero path").addEventListener("mouseover", () => {
 document.querySelector(".home-hero path").addEventListener("mouseleave", () => {
     noiseStep = 0.005;
 });
-
-
-.

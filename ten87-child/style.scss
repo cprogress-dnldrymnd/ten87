@@ -219,7 +219,9 @@ body {
         color: var(--accent-color);
         box-shadow: 0 30px 200px 150px currentColor;
         opacity: 0;
-        animation: qode-fade-in-custom 1s 1, qode-bg-gradient-bottom-left 7s 1s linear infinite;
+        animation:
+            qode-fade-in-custom 1s 1,
+            qode-bg-gradient-bottom-left 7s 1s linear infinite;
     }
     .elementor-container {
         position: relative;
@@ -923,5 +925,21 @@ body {
                 height: 70vw;
             }
         }
+    }
+}
+
+.blob-holder {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blob-holder path {
+    cursor: pointer;
+}
+.blob-hero-1 {
+    svg {
+        width: 50vw;
+        height: 50vw;
     }
 }

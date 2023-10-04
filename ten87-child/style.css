@@ -707,11 +707,20 @@ body {
   width: 50vw;
   height: 50vw; }
 
+.blob-holder-2 svg {
+  width: 100vw;
+  height: 100vw; }
+
 .blob-holder-absolute {
   position: absolute !important; }
 
 .blob-hero-1 {
   top: 50% !important;
   transform: translateY(-50%); }
+
+.blob-hero-2 {
+  top: 50% !important;
+  transform: translateY(-50%);
+  right: 0; }
 
 /*# sourceMappingURL=style.css.map */

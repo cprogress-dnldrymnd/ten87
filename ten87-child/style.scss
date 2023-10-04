@@ -121,6 +121,10 @@ body {
     }
 }
 .home-hero {
+    &:after,
+    &:before {
+        display: none !important;
+    }
     /*&:after,
     &:before {
         content: "" !important;

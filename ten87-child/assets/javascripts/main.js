@@ -5,7 +5,6 @@ const path = document.querySelector(".blob-holder path");
 // used to set our custom property values
 const root = document.documentElement;
 
-let hueNoiseOffset = 0;
 let noiseStep = 0.005;
 
 const simplex = new SimplexNoise();

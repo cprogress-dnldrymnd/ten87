@@ -35,15 +35,6 @@ const points = createPoints();
         point.noiseOffsetY += noiseStep;
     }
 
-    const hueNoise = noise(hueNoiseOffset, hueNoiseOffset);
-    const hue = map(hueNoise, -1, 1, 0, 360);
-
-    root.style.setProperty("--startColor", `hsl(${hue}, 100%, 75%)`);
-    root.style.setProperty("--stopColor", `hsl(${hue + 60}, 100%, 75%)`);
-    document.body.style.background = `hsl(${hue + 60}, 75%, 5%)`;
-
-    hueNoiseOffset += noiseStep / 6;
-
     requestAnimationFrame(animate);
 })();
 

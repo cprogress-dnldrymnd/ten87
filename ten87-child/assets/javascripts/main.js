@@ -1,6 +1,6 @@
 // our <path> element
 import { spline } from '../../node_modules/@georgedoescode/spline/spline.js';
-import '../../node_modules/simplex-noise/dist/esm/simplex-noise.js';
+import createNoise2D from '../../node_modules/noise2D-noise/dist/esm/noise2D-noise.js';
 
 const path = document.querySelector("path");
 // used to set our custom property values
@@ -9,7 +9,7 @@ const root = document.documentElement;
 let hueNoiseOffset = 0;
 let noiseStep = 0.005;
 
-const simplex = new SimplexNoise();
+const noise2D = new createNoise2D();
 
 const points = createPoints();
 
@@ -53,7 +53,7 @@ function map(n, start1, end1, start2, end2) {
 }
 
 function noise(x, y) {
-    return simplex.noise2D(x, y);
+    return noise2D.noise2D(x, y);
 }
 
 function createPoints() {

@@ -53,7 +53,7 @@ function map(n, start1, end1, start2, end2) {
 }
 
 function noise(x, y) {
-    return noise2D.createNoise2D(x, y);
+    return noise2D.noise2D(x, y);
 }
 
 function createPoints() {

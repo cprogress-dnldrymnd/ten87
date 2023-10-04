@@ -127,16 +127,21 @@ function hero_cursor() {
         let TL = gsap.timeline({
             defaults: { duration: 0.5, ease: "none" }
         });
-        TL.to(FollowBox, {
-            scale: 0,
-            overwrite: "auto",
-            stagger: { amount: 0.15, from: "start", ease: "none" }
-        });
+        TL.to(
+            FollowBox,
+            {
+                overwrite: "auto",
+                scale: 0,
+                stagger: { amount: 0.15, from: "start", ease: "none" }
+            },
+            "<+=2.5"
+        );
         TL.to(FollowBox, {
             scale: 1,
             overwrite: "auto",
             stagger: { amount: 0.15, from: "end", ease: "none" }
         });
+
     });
 
 

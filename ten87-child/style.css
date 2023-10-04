@@ -700,9 +700,6 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
-.blob-holder path {
-  cursor: pointer; }
-
 .blob-holder-1 svg {
   width: 50vw;
   height: 50vw; }

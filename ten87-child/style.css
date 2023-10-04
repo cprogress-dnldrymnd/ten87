@@ -766,14 +766,16 @@ header #qodef-page-header-inner .qodef-header-navigation {
     overflow: hidden;
     transition: 1000ms; }
   .home-cursor .text-svg {
-    animation: rotation 5s infinite linear; }
+    animation: rotation 5s infinite linear;
+    width: 100%;
+    height: 100%; }
   .home-cursor .arrow-svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px; }
+    width: 50%;
+    height: 50%; }
   .home-cursor:not(.show-cursor) .inner {
     width: 0;
     height: 0; }

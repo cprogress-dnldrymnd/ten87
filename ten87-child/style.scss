@@ -934,7 +934,6 @@ body {
     box-sizing: border-box;
 }
 
-
 .blob-holder-1 {
     svg {
         width: 50vw;
@@ -963,4 +962,13 @@ body {
     transform: translateY(-50%);
     right: 0;
     left: 50%;
+}
+
+header {
+    .qodef-widget-holder {
+        display: none !important;
+    }
+    #qodef-page-header-inner .qodef-header-navigation {
+        margin-right: 0 !important;
+    }
 }

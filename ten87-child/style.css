@@ -721,4 +721,9 @@ body {
   right: 0;
   left: 50%; }
 
+header .qodef-widget-holder {
+  display: none !important; }
+header #qodef-page-header-inner .qodef-header-navigation {
+  margin-right: 0 !important; }
+
 /*# sourceMappingURL=style.css.map */

@@ -117,11 +117,10 @@ function hero_cursor() {
             }
         });
     }
-
+    jQuery(window).on('mousemove', moveCircle);
 
     jQuery(".home-hero").hover(
         function () {
-            jQuery(window).on('mousemove', moveCircle);
             jQuery('.home-cursor .inner').css({
                 "width": '118px',
                 "height": '118px',

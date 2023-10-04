@@ -100,6 +100,9 @@ body {
     .qodef-qi-button {
       font-size: 20px !important; } }
 
+#qodef-page-wrapper:before {
+  display: none !important; }
+
 .home-hero {
     /*&:after,
     &:before {

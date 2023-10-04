@@ -78,10 +78,12 @@ function createPoints() {
     return points;
 }
 
-document.querySelector(".blob-holder path").addEventListener("mouseover", () => {
+document.querySelector(".home-hero path").addEventListener("mouseover", () => {
     noiseStep = 0.01;
 });
 
-document.querySelector(".blob-holder path").addEventListener("mouseleave", () => {
+document.querySelector(".home-hero path").addEventListener("mouseleave", () => {
     noiseStep = 0.005;
 });
+
+

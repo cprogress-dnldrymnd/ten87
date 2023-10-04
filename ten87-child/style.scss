@@ -121,7 +121,8 @@ body {
     }
 }
 .home-hero {
-    &:after {
+    /*&:after,
+    &:before {
         content: "" !important;
         position: absolute;
         width: 50%;
@@ -130,7 +131,25 @@ body {
         display: block;
     }
 
- 
+    &:before {
+        background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
+        display: block;
+        height: 0;
+        position: absolute;
+        transform-origin: 50% 50%;
+        background-color: var(--accent-color);
+        color: var(--accent-color);
+        box-shadow: 0 30px 200px 250px currentColor;
+        opacity: 0;
+        animation:
+            qode-fade-in-custom 1s 1,
+            qode-bg-gradient-bottom-left 7s 1s linear infinite;
+        left: 25%;
+        bottom: 0;
+        right: auto;
+        width: 200px;
+        top: 25%;
+    }
 
     &:after {
         background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
@@ -155,7 +174,7 @@ body {
     .elementor-container {
         position: relative;
         z-index: 1;
-    }
+    }*/
 }
 
 .about-us {

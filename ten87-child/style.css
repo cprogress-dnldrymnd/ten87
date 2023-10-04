@@ -783,6 +783,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
   to {
     transform: rotate(359deg); } }
 #qodef-custom-cursor .qodef-cursor-text-holder {
+  opacity: 1;
   animation: rotation 5s infinite linear;
   width: 118px;
   height: 118px;

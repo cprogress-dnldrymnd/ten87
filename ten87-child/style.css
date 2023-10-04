@@ -750,7 +750,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
 
 .home-cursor {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   width: 1px;
   height: 1px; }
   .home-cursor .inner {

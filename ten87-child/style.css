@@ -770,11 +770,9 @@ header #qodef-page-header-inner .qodef-header-navigation {
     transform: translate(-50%, -50%);
     width: 80px;
     height: 80px; }
-  .home-cursor:not([style]) {
-    opacity: 0; }
-    .home-cursor:not([style]) .elementor-widget-container {
-      width: 0;
-      height: 0; }
+  .home-cursor:not([style]) .elementor-widget-container {
+    width: 0;
+    height: 0; }
 
 @keyframes rotation {
   from {

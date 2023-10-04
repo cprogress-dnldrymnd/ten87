@@ -749,7 +749,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
   margin-right: 0 !important; }
 
 .home-cursor {
-  position: absolute;
+  position: fixed;
   z-index: 999;
   width: 118px;
   height: 118px; }

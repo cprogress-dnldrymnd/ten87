@@ -1003,7 +1003,7 @@ header {
     position: absolute;
     z-index: 1;
     width: 1px !important;
-    height: 1px;
+    height: 1px !important;
     .elementor-widget-container {
         position: absolute !important;
         left: 50%;

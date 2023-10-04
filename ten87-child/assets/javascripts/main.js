@@ -1,5 +1,5 @@
 // our <path> element
-import { spline } from '../../node_modules/@georgedoescode/spline';
+import { spline } from '../../node_modules/@georgedoescode/spline/spline.js';
 import SimplexNoise from '../../node_modules/simplex-noise';
 const path = document.querySelector("path");
 // used to set our custom property values

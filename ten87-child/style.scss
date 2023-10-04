@@ -1015,6 +1015,7 @@ header {
         width: 118px;
         height: 118px;
         overflow: hidden;
+        transition: 1000ms;
     }
     .text-svg {
         animation: rotation 5s infinite linear;
@@ -1027,7 +1028,8 @@ header {
         width: 80px;
         height: 80px;
     }
-    &:not([style]) {
+   
+    &.show-cursor {
         .inner {
             width: 0;
             height: 0;

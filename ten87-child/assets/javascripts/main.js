@@ -120,9 +120,9 @@ function hero_cursor() {
 
     jQuery(".home-hero").hover(
         function () {
-            jQuery('.home-cursor').show();
+            jQuery('.home-cursor').addClass('show-cursor');
         }, function () {
-            jQuery('.home-cursor').hide();
+            jQuery('.home-cursor').removeClass('show-cursor');
         }
     );
 }

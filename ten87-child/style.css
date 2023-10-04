@@ -763,7 +763,8 @@ header #qodef-page-header-inner .qodef-header-navigation {
     transform: translate(-50%, -50%);
     width: 118px;
     height: 118px;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: 1000ms; }
   .home-cursor .text-svg {
     animation: rotation 5s infinite linear; }
   .home-cursor .arrow-svg {
@@ -773,7 +774,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
     transform: translate(-50%, -50%);
     width: 80px;
     height: 80px; }
-  .home-cursor:not([style]) .inner {
+  .home-cursor.show-cursor .inner {
     width: 0;
     height: 0; }
 

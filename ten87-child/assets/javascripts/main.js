@@ -1,7 +1,7 @@
 // our <path> element
 import { spline } from '../../node_modules/@georgedoescode/spline/spline.js';
 import SimplexNoise from '../../node_modules/simplex-noise/dist/esm/simplex-noise.js';
-const path = document.querySelector(".blob-holder path");
+const path = document.querySelector(".blob-holder rect");
 // used to set our custom property values
 const root = document.documentElement;
 
@@ -78,10 +78,10 @@ function createPoints() {
     return points;
 }
 
-document.querySelector(".blob-holder path").addEventListener("mouseover", () => {
+document.querySelector(".blob-holder rect").addEventListener("mouseover", () => {
     noiseStep = 0.01;
 });
 
-document.querySelector(".blob-holder path").addEventListener("mouseleave", () => {
+document.querySelector(".blob-holder rect").addEventListener("mouseleave", () => {
     noiseStep = 0.005;
 });

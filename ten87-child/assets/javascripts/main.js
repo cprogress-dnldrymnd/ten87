@@ -9,7 +9,7 @@ const root = document.documentElement;
 let hueNoiseOffset = 0;
 let noiseStep = 0.005;
 
-const noise2D = new createNoise2D();
+const createNoise2D = new createNoise2D();
 
 const points = createPoints();
 

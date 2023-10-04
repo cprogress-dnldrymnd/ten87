@@ -87,19 +87,33 @@ document.querySelector(".elementor-column").addEventListener("mouseleave", () =>
 */
 jQuery(document).ready(function () {
     anim();
+    hero_cursor();
 });
 function anim() {
-	let $banner = document.getElementById('home-hero');
+    let $banner = document.getElementById('home-hero');
 
-	if ($banner) {
-		$banner.addEventListener("mousemove", e => {
-			let x = e.clientX;
-			let y = e.clientY;
-			gsap.to('.home-hero .blob-holder-absolute .blob-box', {
-				x: x * 0.08,
-				y: y * 0.16,
-				duration: 1
-			})
-		})
-	}
+    if ($banner) {
+        $banner.addEventListener("mousemove", e => {
+            let x = e.clientX;
+            let y = e.clientY;
+            gsap.to('.home-hero .blob-holder-absolute .blob-box', {
+                x: x * 0.08,
+                y: y * 0.16,
+                duration: 1
+            })
+        })
+    }
+}
+
+function hero_cursor() {
+    document.addEventListener("mousemove", e => {
+        let x = e.clientX;
+        let y = e.clientY;
+        $x = x + 'px';
+        $y = y + 'px';
+        jQuery('.home-cursor').css({
+            "transform": 'translate(' + $x + ', ' + $y + ')',
+        });
+
+    });
 }

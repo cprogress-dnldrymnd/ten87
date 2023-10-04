@@ -703,8 +703,8 @@ body {
 .blob-holder path {
   cursor: pointer; }
 
-.blob-hero-1 svg {
+.blob-holder-1 svg {
   width: 50vw;
-  width: 50vw; }
+  height: 50vw; }
 
 /*# sourceMappingURL=style.css.map */

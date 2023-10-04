@@ -808,7 +808,7 @@ body {
         flex-wrap: wrap;
         li {
             svg {
-                @media(max-width: 1400px) {
+                @media (max-width: 1400px) {
                     width: 35px;
                     height: 35px;
                 }
@@ -996,5 +996,20 @@ header {
     }
     #qodef-page-header-inner .qodef-header-navigation {
         margin-right: 0 !important;
+    }
+}
+
+.home-cursor {
+    position: absolute;
+    .text-svg {
+        animation: rotation 2s infinite linear;
+    }
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
     }
 }

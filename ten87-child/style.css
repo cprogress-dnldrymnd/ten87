@@ -748,4 +748,15 @@ header .qodef-widget-holder {
 header #qodef-page-header-inner .qodef-header-navigation {
   margin-right: 0 !important; }
 
+.home-cursor {
+  position: absolute; }
+  .home-cursor .text-svg {
+    animation: rotation 2s infinite linear; }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
 /*# sourceMappingURL=style.css.map */

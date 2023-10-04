@@ -107,7 +107,7 @@ function anim() {
 
 function hero_cursor() {
 
-    let FollowBox = ".home-cursor";
+    let FollowBox = ".";
     gsap.set(FollowBox, {
         xPercent: -50,
         yPercent: -50,
@@ -136,10 +136,10 @@ function hero_cursor() {
             FollowBox,
             {
                 overwrite: "auto",
-                scale: 1,
+                scale: 0,
                 stagger: { amount: 0.15, from: "end", ease: "none" }
             },
-            "<+=2.5"
+            "<+=1"
         );
     });
 

@@ -106,19 +106,23 @@ function anim() {
 }
 
 function hero_cursor() {
+    var $circle = jQuery('.home-cursor');
 
+    function moveCircle(e) {
+        TweenLite.to($circle, 0.3, {
+            css: {
+                left: e.pageX,
+                top: e.pageY
+            }
+        });
+    }
+    jQuery(window).on('mousemove', moveCircle);
 
-    setTimeout(function () {
-        var $circle = jQuery('.home-cursor');
-
-        function moveCircle(e) {
-            TweenLite.to($circle, 0.3, {
-                css: {
-                    left: e.pageX,
-                    top: e.pageY
-                }
-            });
+    $(".home-hero").hover(
+        function () {
+          
+        }, function () {
+            jQuery('.home-cursor').hide();
         }
-        jQuery(window).on('mousemove', moveCircle);
-    }, 1000);
+    );
 }

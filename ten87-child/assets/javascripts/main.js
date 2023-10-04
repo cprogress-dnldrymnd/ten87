@@ -80,6 +80,7 @@ function createPoints() {
 
 document.querySelector(".home-hero path").addEventListener("mouseover", () => {
     noiseStep = 0.01;
+    console.log('xxxxx');
 });
 
 document.querySelector(".home-hero path").addEventListener("mouseleave", () => {

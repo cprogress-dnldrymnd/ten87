@@ -753,7 +753,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
   z-index: 1;
   width: 1px;
   height: 1px; }
-  .home-cursor .inner {
+  .home-cursor .elementor-widget-container {
     position: absolute;
     left: 50%;
     top: 50%;

@@ -95,7 +95,7 @@ function anim() {
 		$banner.addEventListener("mousemove", e => {
 			let x = e.clientX;
 			let y = e.clientY;
-			gsap.to('.home-hero .blob-holder-absolute', {
+			gsap.to('.home-hero .blob-holder-absolute .blob-box', {
 				x: x * 0.08,
 				y: y * 0.16,
 				duration: 1

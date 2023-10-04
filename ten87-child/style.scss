@@ -1044,7 +1044,7 @@ header {
 }
 #qodef-custom-cursor {
     .qodef-cursor-text-holder {
-        opacity: 1;
+        opacity: 1 !important;
         animation: rotation 5s infinite linear;
         width: 118px;
         height: 118px;

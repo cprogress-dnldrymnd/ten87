@@ -1007,7 +1007,7 @@ header {
     margin: 0 !important;
     font-size: 0 !important;
     line-height: 0 !important;
-    .elementor-widget-container {
+    .inner {
         position: absolute !important;
         left: 50%;
         top: 50%;
@@ -1028,7 +1028,7 @@ header {
         height: 80px;
     }
     &:not([style]) {
-        .elementor-widget-container {
+        .inner {
             width: 0;
             height: 0;
         }

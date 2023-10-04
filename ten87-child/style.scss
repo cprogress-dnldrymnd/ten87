@@ -1026,6 +1026,10 @@ header {
     }
     &:not([style]) {
         opacity: 0;
+        .inner {
+            width: 0;
+            height: 0;
+        }
     }
 }
 @keyframes rotation {

@@ -109,8 +109,8 @@ function hero_cursor() {
     document.addEventListener("mousemove", e => {
         let x = e.clientX;
         let y = e.clientY;
-        $x = x + 'px';
-        $y = y + 'px';
+        var $x = x + 'px';
+        var $y = y + 'px';
         jQuery('.home-cursor').css({
             "transform": 'translate(' + $x + ', ' + $y + ')',
         });

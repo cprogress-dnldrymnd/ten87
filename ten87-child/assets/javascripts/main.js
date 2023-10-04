@@ -76,6 +76,7 @@ function createPoints() {
 
     return points;
 }
+/*
 document.querySelector(".home-hero").addEventListener("mouseover", () => {
     noiseStep = 0.01;
 });
@@ -83,7 +84,7 @@ document.querySelector(".home-hero").addEventListener("mouseover", () => {
 document.querySelector(".elementor-column").addEventListener("mouseleave", () => {
     noiseStep = 0.005;
 });
-
+*/
 jQuery(document).ready(function () {
     anim();
 });

@@ -78,11 +78,11 @@ function createPoints() {
     return points;
 }
 
-document.querySelector(".home-hero path").addEventListener("mouseover", () => {
+document.querySelector(".home-hero").addEventListener("mouseover", () => {
     noiseStep = 0.01;
     console.log('xxxxx');
 });
 
-document.querySelector(".home-hero path").addEventListener("mouseleave", () => {
+document.querySelector(".elementor-column").addEventListener("mouseleave", () => {
     noiseStep = 0.005;
 });

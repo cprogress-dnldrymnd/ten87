@@ -580,6 +580,12 @@ body {
     font-size: 30px;
     color: var(--text-color) !important;
     margin-bottom: 20px; }
+    @media (max-width: 1400px) {
+      #qodef-page-footer .widget-title {
+        font-size: 25px; } }
+  @media (max-width: 1400px) {
+    #qodef-page-footer {
+      font-size: 20px; } }
 
 .qodef-gradient-background--enabled #qodef-page-wrapper {
   background-color: var(--cream-color); }
@@ -604,7 +610,12 @@ body {
   z-index: 2; }
 
 .social-box ul {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 1400px) {
+    .social-box ul li svg {
+      width: 35px;
+      height: 35px; } }
   .social-box ul li:not(:last-child) {
     margin-right: 19px !important; }
 

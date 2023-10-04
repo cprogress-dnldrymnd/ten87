@@ -761,6 +761,12 @@ body {
         font-size: 30px;
         color: var(--text-color) !important;
         margin-bottom: 20px;
+        @media (max-width: 1400px) {
+            font-size: 25px;
+        }
+    }
+    @media (max-width: 1400px) {
+        font-size: 20px;
     }
 }
 
@@ -798,7 +804,14 @@ body {
 .social-box {
     ul {
         display: flex;
+        flex-wrap: wrap;
         li {
+            svg {
+                @media(max-width: 1400px) {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
             &:not(:last-child) {
                 margin-right: 19px !important;
             }

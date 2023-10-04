@@ -120,7 +120,7 @@ function hero_cursor() {
 
     jQuery(".home-hero").hover(
         function () {
-          
+            jQuery('.home-cursor').show();
         }, function () {
             jQuery('.home-cursor').hide();
         }

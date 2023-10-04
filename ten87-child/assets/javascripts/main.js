@@ -110,7 +110,7 @@ function hero_cursor() {
     var $circle = jQuery('.home-cursor');
 
     function moveCircle(e) {
-      TweenLite.to($circle, 1, {
+      TweenLite.to($circle, 0, {
         css: {
           left: e.pageX,
           top: e.pageY

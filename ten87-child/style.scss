@@ -1002,6 +1002,8 @@ header {
 .home-cursor {
     position: absolute;
     z-index: 999;
+    width: 118px;
+    height: 118px;
     .text-svg {
         animation: rotation 5s infinite linear;
     }

@@ -118,7 +118,7 @@ function hero_cursor() {
     }
     jQuery(window).on('mousemove', moveCircle);
 
-    $(".home-hero").hover(
+    jQuery(".home-hero").hover(
         function () {
           
         }, function () {

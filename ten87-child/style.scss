@@ -944,6 +944,10 @@ body {
     }
 }
 
+.blob-holder-absolute {
+    position: absolute !important;
+}
+
 .blob-hero-1 {
     top: 50% !important;
     transform: translateY(-50%);

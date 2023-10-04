@@ -1002,10 +1002,10 @@ header {
 .home-cursor {
     position: absolute;
     z-index: 1;
-    width: 1px;
+    width: 1px !important;
     height: 1px;
     .elementor-widget-container {
-        position: absolute;
+        position: absolute !important;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);

@@ -234,8 +234,15 @@ body {
 }
 #qodef-page-header {
     border-bottom: 2px solid var(--text-color);
-    #qodef-page-header-inner:after {
-        content: none !important;
+    #qodef-page-header-inner {
+        max-width: 1820px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        &:after {
+            content: none !important;
+        }
     }
     .qodef-header-sticky {
         .qodef-header-logo-link.qodef-header-logo-link {
@@ -733,11 +740,16 @@ body {
         border-bottom: 2px solid var(--text-color);
     }
     .qodef-content-grid {
-        max-width: 1780px;
+        max-width: 1820px;
         width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
         &:after {
             content: none !important;
         }
+    }
+    .qodef-page-footer-inner-holder {
+        width: 100% !important;
     }
     .widget {
         color: var(--text-color) !important;

@@ -106,17 +106,42 @@ function anim() {
 }
 
 function hero_cursor() {
-    setTimeout(function () {
-        document.addEventListener("mousemove", e => {
-            let x = e.clientX;
-            let y = e.clientY;
-            var $x = x + 'px';
-            var $y = y + 'px';
-            jQuery('.home-cursor').css({
-                "transform": 'translate(' + $x + ', ' + $y + ')',
-            });
-    
+
+    let FollowBox = ".home-cursor";
+    gsap.set(FollowBox, {
+        xPercent: -50,
+        yPercent: -50,
+        scale: 0
+    });
+
+    window.addEventListener("mousemove", (e) => {
+        gsap.to(FollowBox, {
+            duration: 0.5,
+            overwrite: "auto",
+            x: e.clientX,
+            y: e.clientY,
+            stagger: 0.15,
+            ease: "none"
         });
-    }, 1000)
+
+        let TL = gsap.timeline({
+            defaults: { duration: 0.5, ease: "none" }
+        });
+        TL.to(FollowBox, {
+            scale: 1,
+            overwrite: "auto",
+            stagger: { amount: 0.15, from: "start", ease: "none" }
+        });
+        TL.to(
+            FollowBox,
+            {
+                overwrite: "auto",
+                scale: 0,
+                stagger: { amount: 0.15, from: "end", ease: "none" }
+            },
+            "<+=2.5"
+        );
+    });
+
 
 }

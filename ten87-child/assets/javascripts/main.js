@@ -12,7 +12,7 @@ const points = createPoints();
 
 (function animate() {
     path.setAttribute("d", spline(points, 1, true));
-    path2.setAttribute("d", spline(points, 1, true));
+    path2.setAttribute("d", spline(points, 2, true));
 
     // for every point...
     for (let i = 0; i < points.length; i++) {

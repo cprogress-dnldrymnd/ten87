@@ -22,8 +22,8 @@ const points = createPoints();
         const nX = noise(point.noiseOffsetX, point.noiseOffsetX);
         const nY = noise(point.noiseOffsetY, point.noiseOffsetY);
         // map this noise value to a new value, somewhere between it's original location -20 and it's original location + 20
-        const x = map(nX, -1, 1, point.originX - 10, point.originX + 10);
-        const y = map(nY, -1, 1, point.originY - 10, point.originY + 10);
+        const x = map(nX, -1, 1, point.originX - 5, point.originX + 5);
+        const y = map(nY, -1, 1, point.originY - 5, point.originY + 5);
 
         // update the point's current coordinates
         point.x = x;

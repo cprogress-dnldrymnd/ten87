@@ -522,7 +522,8 @@ body {
     background-color: transparent;
     border: 2px solid; }
     .qodef-qi-button-holder.qodef-qi-button-bordered .qodef-qi-button:hover {
-      background-color: #000; }
+      background-color: #000;
+      border-color: #000; }
 
 .button-group-box {
   display: flex;

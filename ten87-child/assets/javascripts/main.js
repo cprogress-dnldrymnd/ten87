@@ -4,15 +4,42 @@ import SimplexNoise from '../../node_modules/simplex-noise/dist/esm/simplex-nois
 const path = document.querySelector(".blob-holder path");
 const path2 = document.querySelector(".blob-holder-2 path");
 
-let noiseStep = 0.005;
 
 const simplex = new SimplexNoise();
 
 const points = createPoints();
+var noiseStep = 0.005;
 
 (function animate() {
     path.setAttribute("d", spline(points, 1, true));
-    path2.setAttribute("d", spline(points, 2, true));
+
+    // for every point...
+    for (let i = 0; i < points.length; i++) {
+        const point = points[i];
+
+        // return a pseudo random value between -1 / 1 based on this point's current x, y positions in "time"
+        const nX = noise(point.noiseOffsetX, point.noiseOffsetX);
+        const nY = noise(point.noiseOffsetY, point.noiseOffsetY);
+        // map this noise value to a new value, somewhere between it's original location -20 and it's original location + 20
+        const x = map(nX, -1, 1, point.originX - 20, point.originX + 20);
+        const y = map(nY, -1, 1, point.originY - 20, point.originY + 20);
+
+        // update the point's current coordinates
+        point.x = x;
+        point.y = y;
+
+        // progress the point's x, y values through "time"
+        point.noiseOffsetX += noiseStep;
+        point.noiseOffsetY += noiseStep;
+    }
+
+    requestAnimationFrame(animate);
+})();
+
+var noiseStep = 0.2;
+
+(function animate() {
+    path2.setAttribute("d", spline(points, 1, true));
 
     // for every point...
     for (let i = 0; i < points.length; i++) {

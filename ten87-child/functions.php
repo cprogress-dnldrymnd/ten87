@@ -58,6 +58,7 @@ function action_wp_footer()
 				delay: 0,
 				disableOnInteraction: true,
 			},
+			speed: 5000,
 			spaceBetween: 30,
 		});
 	</script>

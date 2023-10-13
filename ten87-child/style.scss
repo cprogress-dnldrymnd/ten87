@@ -939,6 +939,9 @@ body {
         transition-timing-function: linear;
         .swiper-slide {
             width: auto !important;
+            img {
+                display: inline-block;
+            }
         }
     }
 }

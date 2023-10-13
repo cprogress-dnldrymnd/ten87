@@ -625,6 +625,8 @@ body {
     transition-timing-function: linear; }
     .continuos-scroll .swiper-wrapper .swiper-slide {
       width: auto !important; }
+      .continuos-scroll .swiper-wrapper .swiper-slide img {
+        display: inline-block; }
 
 .logo-slider {
   position: relative;

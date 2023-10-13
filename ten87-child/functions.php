@@ -53,10 +53,6 @@ function action_wp_footer()
 		});
 
 		jQuery(document).ready(function() {
-			jQuery('.swiper-logo-slider .swiper-slide').each(function(index, element) {
-				$img_width = jQuery(this).find('img').width();
-				jQuery(this).css('width', $img_width + 'px');
-			});
 
 			setTimeout(function() {
 				var swiperLogo = new Swiper(".swiper-logo-slider", {

@@ -11,6 +11,8 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 		wp_enqueue_style('obsius-swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
 		wp_enqueue_style('obsius-child-style', get_stylesheet_directory_uri() . '/style.css', array($main_style));
 		wp_enqueue_script('obsius-swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
+		wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js');
+		wp_enqueue_script('module_handle', get_stylesheet_directory_uri().'/assets/javascripts/main.js');
 	}
 
 	add_action('wp_enqueue_scripts', 'obsius_child_theme_enqueue_scripts');

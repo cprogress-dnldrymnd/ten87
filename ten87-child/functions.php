@@ -56,7 +56,7 @@ function action_wp_footer()
 			loop: true,
 			autoplay: {
 				delay: 0,
-				disableOnInteraction: false,
+				disableOnInteraction: true,
 			},
 			spaceBetween: 30,
 		});

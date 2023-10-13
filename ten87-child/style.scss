@@ -955,6 +955,11 @@ body {
         flex-wrap: wrap;
 
         li {
+            a {
+                &:hover {
+                    color: var(--accent-color);
+                }
+            }
             svg {
                 @media (max-width: 1400px) {
                     width: 35px;

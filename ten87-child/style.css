@@ -619,10 +619,12 @@ body {
   position: relative;
   z-index: 2; }
 
-.continuos-scroll .swiper-wrapper {
-  transition-timing-function: linear; }
-  .continuos-scroll .swiper-wrapper .swiper-slide {
-    width: auto !important; }
+.continuos-scroll {
+  pointer-events: none !important; }
+  .continuos-scroll .swiper-wrapper {
+    transition-timing-function: linear; }
+    .continuos-scroll .swiper-wrapper .swiper-slide {
+      width: auto !important; }
 
 .logo-slider {
   position: relative;

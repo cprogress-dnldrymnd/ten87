@@ -127,4 +127,3 @@ function hero_cursor() {
     );
 }
 
-

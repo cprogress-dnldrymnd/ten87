@@ -934,6 +934,7 @@ body {
 }
 
 .continuos-scroll {
+    pointer-events: none !important;
     .swiper-wrapper {
         transition-timing-function: linear;
         .swiper-slide {

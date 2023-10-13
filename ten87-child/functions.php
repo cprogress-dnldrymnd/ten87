@@ -61,7 +61,7 @@ function action_wp_footer()
 			slidesPerView: 'auto',
 			freeMode: true,
 			speed: 5000,
-			spaceBetween: 30,
+			spaceBetween: 70,
 		});
 	</script>
 <?php

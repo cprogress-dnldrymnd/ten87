@@ -495,7 +495,8 @@ body {
     padding-left: 10px;
     padding-right: 10px; }
     .post-slider-holder .swiper-slide .elementor-container .inner {
-      color: var(--white-color); }
+      color: var(--white-color);
+      width: 100%; }
       .post-slider-holder .swiper-slide .elementor-container .inner .description-box {
         max-width: 705px; }
       .post-slider-holder .swiper-slide .elementor-container .inner h3,

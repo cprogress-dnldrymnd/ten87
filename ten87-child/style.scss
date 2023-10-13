@@ -741,8 +741,9 @@ body {
 
             .inner {
                 color: var(--white-color);
-                max-width: 705px;
-
+                .description-box {
+                    max-width: 705px;
+                }
                 h3,
                 .qodef-qi-button {
                     color: inherit;

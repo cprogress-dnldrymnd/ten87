@@ -52,6 +52,13 @@ function action_wp_footer()
 			},
 		});
 
+		jQuery(document).ready(function() {
+			jQuery('.swiper-logo-slider .swiper-slide').each(function(index, element) {
+				$img_width = jQuery(this).find('img').outerWidth();
+				jQuery(this).css('width', $img_width + 'px');
+			});
+		});
+
 		var swiperLogo = new Swiper(".swiper-logo-slider", {
 			loop: true,
 			autoplay: {

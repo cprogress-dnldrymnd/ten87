@@ -126,3 +126,5 @@ function hero_cursor() {
         }
     );
 }
+
+

@@ -56,6 +56,7 @@ function action_wp_footer()
 			slidesPerView: "auto",
 			autoplay: true,
 			spaceBetween: 30,
+			loop: true,
 		});
 	</script>
 <?php

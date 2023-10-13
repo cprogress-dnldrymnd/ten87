@@ -53,9 +53,9 @@ function action_wp_footer()
 		});
 
 		var swiperLogo = new Swiper(".swiper-logo-slider", {
+			loop: true,
 			autoplay: true,
 			spaceBetween: 30,
-			loop: true,
 		});
 	</script>
 <?php

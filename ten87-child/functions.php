@@ -56,7 +56,7 @@ function action_wp_footer()
 			loop: true,
 			autoplay: {
 				delay: 0,
-				disableOnInteraction: true,
+				disableOnInteraction: false,
 			},
 			slidesPerView: 'auto',
 			speed: 5000,

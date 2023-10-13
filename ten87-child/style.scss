@@ -939,9 +939,7 @@ body {
         transition-timing-function: linear;
         .swiper-slide {
             width: auto !important;
-            img {
-                display: inline-block;
-            }
+            max-width: inherit !important;
         }
     }
 }
@@ -949,9 +947,6 @@ body {
 .logo-slider {
     position: relative;
     z-index: 2;
-    .swiper-wrapper {
-        align-items: center;
-    }
 }
 
 .social-box {

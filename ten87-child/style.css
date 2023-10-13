@@ -624,15 +624,12 @@ body {
   .continuos-scroll .swiper-wrapper {
     transition-timing-function: linear; }
     .continuos-scroll .swiper-wrapper .swiper-slide {
-      width: auto !important; }
-      .continuos-scroll .swiper-wrapper .swiper-slide img {
-        display: inline-block; }
+      width: auto !important;
+      max-width: inherit !important; }
 
 .logo-slider {
   position: relative;
   z-index: 2; }
-  .logo-slider .swiper-wrapper {
-    align-items: center; }
 
 .social-box ul {
   display: flex;

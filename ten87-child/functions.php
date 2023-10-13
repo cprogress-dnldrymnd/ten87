@@ -45,28 +45,7 @@ function action_wp_footer()
 			});
 		});
 
-		var swiper = new Swiper(".mySwiperPostSlider", {
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-
-		jQuery(document).ready(function() {
-
-			setTimeout(function() {
-				var swiperLogo = new Swiper(".swiper-logo-slider", {
-					loop: true,
-					autoplay: {
-						delay: 0,
-						disableOnInteraction: false,
-					},
-					slidesPerView: 'auto',
-					speed: 5000,
-					spaceBetween: 70,
-				});
-			}, 1000);
-		});
+		
 	</script>
 <?php
 }

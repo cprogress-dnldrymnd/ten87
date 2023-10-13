@@ -937,6 +937,7 @@ body {
     .swiper-wrapper {
         transition-timing-function: linear;
         .swiper-slide {
+            width: auto !important;
         }
     }
 }

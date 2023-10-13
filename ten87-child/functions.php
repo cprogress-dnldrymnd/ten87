@@ -54,6 +54,7 @@ function action_wp_footer()
 
 		var swiperLogo = new Swiper(".swiper-logo-slider", {
 			slidesPerView: "auto",
+			autoplay: true,
 			spaceBetween: 30,
 		});
 	</script>

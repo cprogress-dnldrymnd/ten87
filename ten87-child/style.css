@@ -634,7 +634,7 @@ body {
 .social-box ul {
   display: flex;
   flex-wrap: wrap; }
-  .social-box ul li a:hover {
+  .social-box ul li a:hover svg {
     color: var(--accent-color); }
   @media (max-width: 1400px) {
     .social-box ul li svg {

@@ -21,11 +21,12 @@ html[lang="en-US"] {
         @font-face {
             font-family: $fontFamily;
             src: url("#{$path + $fileName}-#{$name}.eot");
-            src: url("#{$path + $fileName}-#{$name}.eot?#iefix") format("embedded-opentype"),
-            url("#{$path + $fileName}-#{$name}.woff2") format("woff2"),
-            url("#{$path + $fileName}-#{$name}.woff") format("woff"),
-            url("#{$path + $fileName}-#{$name}.ttf") format("truetype"),
-            url("#{$path + $fileName}-#{$name}.svg##{$fileName}-#{$name}") format("svg");
+            src:
+                url("#{$path + $fileName}-#{$name}.eot?#iefix") format("embedded-opentype"),
+                url("#{$path + $fileName}-#{$name}.woff2") format("woff2"),
+                url("#{$path + $fileName}-#{$name}.woff") format("woff"),
+                url("#{$path + $fileName}-#{$name}.ttf") format("truetype"),
+                url("#{$path + $fileName}-#{$name}.svg##{$fileName}-#{$name}") format("svg");
 
             font-weight: $weight;
             font-style: $fontStyle;
@@ -61,7 +62,6 @@ body {
 }
 
 #qodef-page-wrapper {
-
     .qodef-h1,
     h1,
     .qodef-h2,
@@ -99,8 +99,16 @@ body {
         }
     }
 
-    .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-text,
-    .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title {
+    .elementor-widget-obsius_core_testimonials_list
+        .qodef-testimonials-list.qodef-testimonials-list
+        .qodef-e-inner
+        .qodef-e-content
+        .qodef-e-text,
+    .elementor-widget-obsius_core_testimonials_list
+        .qodef-testimonials-list.qodef-testimonials-list
+        .qodef-e-inner
+        .qodef-e-content
+        .qodef-e-title {
         line-height: 1 !important;
     }
 }
@@ -129,7 +137,6 @@ body {
 }
 
 .home-hero {
-
     &:after,
     &:before {
         display: none !important;
@@ -309,9 +316,9 @@ body {
     }
 
     .qodef-header-navigation.qodef-header-navigation {
-        >ul {
-            >li {
-                >a {
+        > ul {
+            > li {
+                > a {
                     font-family: "SuisseBPIntl", sans-serif;
                     font-size: 25px;
                     text-transform: initial;
@@ -334,9 +341,9 @@ body {
 
     .qodef-skin--dark {
         .qodef-header-navigation.qodef-header-navigation {
-            >ul {
-                >li {
-                    >a {
+            > ul {
+                > li {
+                    > a {
                         color: var(--text-color) !important;
 
                         .qodef-menu-item-text {
@@ -426,7 +433,7 @@ body {
 }
 
 .qodef-qi-section-title {
-    >* {
+    > * {
         &:not(:last-child) {
             margin-bottom: 1.5rem;
         }
@@ -680,7 +687,9 @@ body {
 
     .swiper-button-prev {
         left: calc(34% + 50px) !important;
-
+        img {
+            transform: rotate(180deg);
+        }
         @media (max-width: 767px) {
             left: 10px !important;
         }
@@ -705,7 +714,7 @@ body {
         transform: none;
         top: auto;
 
-        svg {
+        img {
             width: 60px;
 
             @media (max-width: 575px) {
@@ -802,7 +811,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    >div {
+    > div {
         margin-bottom: 1rem;
 
         &:not(:last-child) {
@@ -826,7 +835,7 @@ body {
         margin-right: auto;
         display: flex;
 
-        >div {
+        > div {
             position: static;
             transform: none !important;
             color: var(--white-color);

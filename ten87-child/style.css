@@ -623,6 +623,8 @@ body {
   pointer-events: none !important; }
   .continuos-scroll .swiper-wrapper {
     transition-timing-function: linear; }
+    .continuos-scroll .swiper-wrapper .swiper-slide {
+      width: auto !important; }
 
 .logo-slider {
   position: relative;

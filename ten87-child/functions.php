@@ -51,6 +51,13 @@ function action_wp_footer()
 				prevEl: ".swiper-button-prev",
 			},
 		});
+
+		var swiperLogo = new Swiper(".swiper-logo-slider", {
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
 	</script>
 <?php
 }

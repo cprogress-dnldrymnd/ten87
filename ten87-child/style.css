@@ -498,7 +498,8 @@ body {
       color: var(--white-color);
       width: 100%; }
       .post-slider-holder .swiper-slide .elementor-container .inner .description-box {
-        max-width: 705px; }
+        max-width: 705px;
+        margin-bottom: 25px; }
       .post-slider-holder .swiper-slide .elementor-container .inner h3,
       .post-slider-holder .swiper-slide .elementor-container .inner .qodef-qi-button {
         color: inherit; }

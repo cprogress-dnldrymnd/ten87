@@ -75,8 +75,16 @@ body {
   #qodef-page-wrapper .qodef-h1,
   #qodef-page-wrapper h1 {
     font-size: 60px !important; } }
-#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-text,
-#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title {
+#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list
+.qodef-testimonials-list.qodef-testimonials-list
+.qodef-e-inner
+.qodef-e-content
+.qodef-e-text,
+#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list
+.qodef-testimonials-list.qodef-testimonials-list
+.qodef-e-inner
+.qodef-e-content
+.qodef-e-title {
   line-height: 1 !important; }
 
 .qodef-section-title .qodef-m-subtitle-text {
@@ -463,12 +471,12 @@ body {
     bottom: 0 !important;
     transform: none;
     top: auto; }
-    .elementor-widget-obsius_core_testimonials_list .swiper-button-prev svg,
-    .elementor-widget-obsius_core_testimonials_list .swiper-button-next svg {
+    .elementor-widget-obsius_core_testimonials_list .swiper-button-prev img,
+    .elementor-widget-obsius_core_testimonials_list .swiper-button-next img {
       width: 60px; }
       @media (max-width: 575px) {
-        .elementor-widget-obsius_core_testimonials_list .swiper-button-prev svg,
-        .elementor-widget-obsius_core_testimonials_list .swiper-button-next svg {
+        .elementor-widget-obsius_core_testimonials_list .swiper-button-prev img,
+        .elementor-widget-obsius_core_testimonials_list .swiper-button-next img {
           width: 40px; } }
 
 .post-slider-holder .swiper-slide {
@@ -532,6 +540,9 @@ body {
     margin-bottom: 1rem; }
     .button-group-box > div:not(:last-child) {
       margin-right: 1rem; }
+
+.swiper-button-prev img {
+  transform: rotate(180deg); }
 
 .swiper-navigation-holder {
   position: absolute;

@@ -58,7 +58,6 @@ function action_wp_footer()
 				delay: 0,
 				disableOnInteraction: false,
 			},
-			slidesPerView: 'auto',
 			freeMode: true,
 			speed: 5000,
 			spaceBetween: 70,

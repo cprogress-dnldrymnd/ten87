@@ -53,10 +53,8 @@ function action_wp_footer()
 		});
 
 		var swiperLogo = new Swiper(".swiper-logo-slider", {
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
+			slidesPerView: "auto",
+			spaceBetween: 30,
 		});
 	</script>
 <?php

@@ -687,9 +687,6 @@ body {
 
     .swiper-button-prev {
         left: calc(34% + 50px) !important;
-        img {
-            transform: rotate(180deg);
-        }
         @media (max-width: 767px) {
             left: 10px !important;
         }
@@ -819,7 +816,11 @@ body {
         }
     }
 }
-
+.swiper-button-prev {
+    img {
+        transform: rotate(180deg);
+    }
+}
 .swiper-navigation-holder {
     position: absolute;
     bottom: 100px;

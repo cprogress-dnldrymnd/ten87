@@ -57,18 +57,20 @@ function action_wp_footer()
 				$img_width = jQuery(this).find('img').outerWidth();
 				jQuery(this).css('width', $img_width + 'px');
 			});
-		});
 
-		var swiperLogo = new Swiper(".swiper-logo-slider", {
-			loop: true,
-			autoplay: {
-				delay: 0,
-				disableOnInteraction: false,
-			},
-			slidesPerView: 'auto',
-			freeMode: true,
-			speed: 5000,
-			spaceBetween: 70,
+			setTimeout(function() {
+				var swiperLogo = new Swiper(".swiper-logo-slider", {
+					loop: true,
+					autoplay: {
+						delay: 0,
+						disableOnInteraction: false,
+					},
+					slidesPerView: 'auto',
+					freeMode: true,
+					speed: 5000,
+					spaceBetween: 70,
+				});
+			}, 1000);
 		});
 	</script>
 <?php

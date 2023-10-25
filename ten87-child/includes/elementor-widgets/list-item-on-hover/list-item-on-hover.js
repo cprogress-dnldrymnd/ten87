@@ -1,6 +1,5 @@
 jQuery(document).ready(function () {
 
-  console.log(document.querySelectorAll('.list-item-content li').childNodes[0].nodeValue);
   var listitem = document.getElementsByClassName('list-item');
   for (var i = 0; i < listitem.length; i++) {
     var list_index = listitem[i];

@@ -104,16 +104,24 @@ function post_slider($atts)
 add_shortcode('post_slider', 'post_slider');
 
 
-function archive_title() {
+function archive_title()
+{
+    ob_start();
     $object = get_queried_object();
-    return $object->name;
+    $title = $object->name;
+    $desc = $object->description;
+?>
+    <div class="qodef-section-title">
+        <h1 class="qodef-shortcode qodef-m  qodef-custom-font qodef-custom-font-223 qodef-layout--simple qodef-alignment--left">
+            <?= $title ?>
+        </h1>
+        <div class="qodef-section-title">
+            <?= wpautop($desc) ?>
+        </div>
+    </div>
+
+<?php
+    return ob_get_clean();
 }
 
-add_shortcode('archive_title', 'archive_title');
-
-function archive_description() {
-    $object = get_queried_object();
-    return $object->description;
-}
-
-add_shortcode('archive_description', 'archive_description');
+add_shortcode('page_heading', 'page_heading');

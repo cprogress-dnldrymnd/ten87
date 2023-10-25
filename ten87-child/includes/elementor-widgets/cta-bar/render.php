@@ -14,6 +14,9 @@
             <?php } ?>
             <div class="icon">
                 <img src="<?= $settings['icon']['url'] ?>" alt="">
+                <pre>
+                    <?= var_dump($settings['icon']) ?>
+                </pre>
             </div>
             <?php
             if ($settings['cta_url']) {

@@ -1437,7 +1437,7 @@ body.has-custom-page-heading {
             right: 0;
 
             &:hover {
-                z-index: 2;
+                z-index: 99;
 
                 .list-item-title {
                     h2 {

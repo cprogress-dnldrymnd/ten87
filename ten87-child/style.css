@@ -909,6 +909,9 @@ body.has-custom-page-heading #qodef-page-header {
   position: relative; }
   .list-item-on-hover .list-item-box.fixed-positioning > .list-item {
     position: absolute; }
+    .list-item-on-hover .list-item-box.fixed-positioning > .list-item .list-item-content {
+      margin-top: var(--offset);
+      position: relative; }
   .list-item-on-hover .list-item-box > .list-item {
     position: relative;
     left: 0;
@@ -933,8 +936,7 @@ body.has-custom-page-heading #qodef-page-header {
         margin: 0;
         padding-bottom: 100px; }
     .list-item-on-hover .list-item-box .list-item-inner .list-item-content {
-      width: 70%;
-      margin-top: var(--offset); }
+      width: 70%; }
       .list-item-on-hover .list-item-box .list-item-inner .list-item-content ul {
         list-style: none;
         padding: 0; }
@@ -968,7 +970,7 @@ body.has-custom-page-heading #qodef-page-header {
         position: absolute;
         top: 0;
         right: 0;
-        left: 30%;
+        left: 0;
         font-size: 39px; }
         .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li {
           display: flex;

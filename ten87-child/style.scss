@@ -1412,6 +1412,11 @@ body.has-custom-page-heading {
         &.fixed-positioning {
             >.list-item {
                 position: absolute;
+
+                .list-item-content {
+                    margin-top: var(--offset);
+                    position: relative;
+                }
             }
         }
 
@@ -1463,7 +1468,7 @@ body.has-custom-page-heading {
 
             .list-item-content {
                 width: 70%;
-                margin-top: var(--offset);
+
                 ul {
                     list-style: none;
                     padding: 0;
@@ -1521,7 +1526,7 @@ body.has-custom-page-heading {
                     position: absolute;
                     top: 0;
                     right: 0;
-                    left: 30%;
+                    left: 0;
                     font-size: 39px;
 
                     >li {

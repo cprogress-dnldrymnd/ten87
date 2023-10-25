@@ -1409,21 +1409,27 @@ body.has-custom-page-heading {
     .list-item-box {
         position: relative;
 
+        &.fixed-positioning {
+            >.list-item {
+                position: absolute;
+            }
+        }
+
         >.list-item {
             position: relative;
             left: 0;
             right: 0;
-            &.fixed-positioning {
-                position: absolute;
-            }
+
             &:hover {
                 z-index: 2;
+
                 .list-item-content {
                     >ul {
                         >li {
                             opacity: 1;
                             transform: translateY(0);
                             visibility: visible;
+
                             &:hover {
                                 >ul {
                                     >li {
@@ -1468,6 +1474,7 @@ body.has-custom-page-heading {
                         padding-bottom: 20px;
                         opacity: 0;
                         visibility: hidden;
+
                         &:nth-child(1) {
                             transition-delay: 0;
                         }

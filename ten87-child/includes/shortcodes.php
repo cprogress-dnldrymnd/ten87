@@ -56,4 +56,4 @@ function location_map()
 <?php
 }
 
-add_action('location_map', 'location_map');
+add_shortcode('location_map', 'location_map');

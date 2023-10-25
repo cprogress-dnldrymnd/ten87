@@ -1410,27 +1410,24 @@ body.has-custom-page-heading {
         position: relative;
 
         >.list-item {
-            &.active {
-                .list-item-title {
-                    h2 {
-                        color: var(--accent-color);
-                    }
-                }
-
-                .list-item-content {
-                    >ul {
-                        display: block;
-                    }
-                }
-            }
-
-            &.activate-animation {
+            position: relative;
+            &:hover {
+                z-index: 2;
                 .list-item-content {
                     >ul {
                         >li {
                             opacity: 1;
                             transform: translateY(0);
                             visibility: visible;
+                            &:hover {
+                                >ul {
+                                    >li {
+                                        opacity: 1;
+                                        transform: translateY(0);
+                                        visibility: visible;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -1450,7 +1447,6 @@ body.has-custom-page-heading {
                 h2 {
                     margin: 0;
                     padding-bottom: 100px;
-                    transition: 300ms;
                 }
             }
 
@@ -1467,9 +1463,8 @@ body.has-custom-page-heading {
                         padding-bottom: 20px;
                         opacity: 0;
                         visibility: hidden;
-
                         &:nth-child(1) {
-                            transition-delay: 0ms;
+                            transition-delay: 0;
                         }
 
                         &:nth-child(2) {
@@ -1516,7 +1511,6 @@ body.has-custom-page-heading {
                     right: 0;
                     left: 30%;
                     font-size: 39px;
-                    display: none;
 
                     >li {
                         display: flex;

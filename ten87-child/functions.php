@@ -47,10 +47,10 @@ require_once('includes/elementor.php');
 
 function action_wp_footer()
 {
-	?>
+?>
 	<script>
-		jQuery(document).ready(function () {
-			jQuery('.qodef-mobile-header-opener').click(function (e) {
+		jQuery(document).ready(function() {
+			jQuery('.qodef-mobile-header-opener').click(function(e) {
 				jQuery('html').toggleClass('menu-open');
 				e.preventDefault();
 			});
@@ -61,26 +61,9 @@ function action_wp_footer()
 					prevEl: ".swiper-button-prev",
 				},
 			});
-			jQuery('.list-item-on-hover .list-item').hover(function () {
-				var $this = jQuery(this);
-				$this.addClass('active');
-				setTimeout(function () {
-					$this.addClass('activate-animation');
-				}, 300);
-
-
-			}, function () {
-				var $this = jQuery(this);
-				$this.removeClass('activate-animation');
-				setTimeout(function () {
-					$this.removeClass('active');
-				}, 450);
-
-			}
-			);
 		});
 	</script>
-	<?php
+<?php
 }
 
 add_action('wp_footer', 'action_wp_footer');
@@ -111,7 +94,7 @@ add_shortcode('custom_template', 'custom_template');
 function swiper_navigation()
 {
 	ob_start();
-	?>
+?>
 	<div class="swiper-navigation-holder">
 		<div class="nav-inner">
 			<div class="swiper-button-prev">
@@ -122,7 +105,7 @@ function swiper_navigation()
 			</div>
 		</div>
 	</div>
-	<?php
+<?php
 	return ob_get_clean();
 }
 
@@ -165,8 +148,7 @@ function get__theme_option($value)
 	}
 }
 
-function show_custom_banner()
-{
+function show_custom_banner() {
 
 	$show_custom_page_heading = get__post_meta('show_custom_page_heading');
 

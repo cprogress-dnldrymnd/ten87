@@ -7,6 +7,9 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 	function obsius_child_theme_enqueue_scripts()
 	{
 		$main_style = 'obsius-main';
+		wp_register_script( 'elementor-image-slider-js', get_stylesheet_directory_uri().'/includes/elementor-widgets/image-slider/elementor-image-slider-js.js' );
+		wp_register_script( 'elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js' );
+		wp_register_style( 'elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css' );
 
 		wp_enqueue_style('obsius-swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
 		wp_enqueue_style('obsius-child-style', get_stylesheet_directory_uri() . '/style.css', array($main_style));
@@ -30,6 +33,7 @@ add_filter('script_loader_tag', 'set_scripts_type_attribute', 10, 3);
 
 require_once('includes/post-types.php');
 require_once('includes/shortcodes.php');
+require_once('includes/elementor.php');
 
 
 function action_wp_footer()

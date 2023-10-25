@@ -918,6 +918,8 @@ body.has-custom-page-heading #qodef-page-header {
     right: 0; }
     .list-item-on-hover .list-item-box > .list-item:hover {
       z-index: 2; }
+      .list-item-on-hover .list-item-box > .list-item:hover .list-item-title h2 {
+        color: var(--accent-color); }
       .list-item-on-hover .list-item-box > .list-item:hover .list-item-content > ul > li {
         opacity: 1;
         transform: translateY(0);

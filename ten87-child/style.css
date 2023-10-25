@@ -913,5 +913,13 @@ body.has-custom-page-heading #qodef-page-header {
     width: 30%; }
   .list-item-on-hover .list-item-box > .list-item-inner .list-item-content {
     width: 70%; }
+    .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul {
+      list-style: none;
+      padding: 0; }
+    .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li {
+      display: flex; }
+      .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li > ul {
+        flex: 0 0 auto;
+        width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

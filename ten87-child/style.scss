@@ -1392,7 +1392,8 @@ body.has-custom-page-heading {
         li {
             padding-bottom: 20px;
             padding-top: 20px;
-            border-bottom: 2px solid ;
+            border-bottom: 2px solid;
+
             &:first-child {
                 border-top: 2px solid;
             }
@@ -1406,16 +1407,33 @@ body.has-custom-page-heading {
 
 .list-item-on-hover {
     .list-item-box {
-        > .list-item-inner {
+        >.list-item-inner {
             display: flex;
-            > div {
+
+            >div {
                 flex: 0 0 auto;
             }
+
             .list-item-title {
                 width: 30%;
             }
+
             .list-item-content {
                 width: 70%;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                }
+                >ul {
+                    >li {
+                        display: flex;
+
+                        >ul {
+                            flex: 0 0 auto;
+                            width: 50%;
+                        }
+                    }
+                }
             }
         }
     }

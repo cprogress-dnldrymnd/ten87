@@ -853,4 +853,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
     height: 100%;
     object-fit: cover; }
 
+.ten87-map .wpsl-map.wpsl-map {
+  min-height: 80vh; }
+
 /*# sourceMappingURL=style.css.map */

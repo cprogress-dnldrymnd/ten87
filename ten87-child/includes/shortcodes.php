@@ -44,3 +44,16 @@ function post_slider($atts)
 }
 
 add_shortcode('post_slider', 'post_slider');
+
+
+
+function location_map()
+{
+?>
+    <div class="map">
+        <?= do_shortcode('[wp_simple_locator_map]') ?>
+    </div>
+<?php
+}
+
+add_action('location_map', 'location_map');

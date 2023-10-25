@@ -161,4 +161,12 @@ function show_custom_banner() {
 
 	return $show_custom_banner;
 }
-
+add_filter('body_class', 'custom_class');
+function custom_class($classes)
+{
+	$show_custom_banner = show_custom_banner();
+	if ($show_custom_banner) {
+		$classes[] = 'has-custom-page-heading';
+	}
+	return $classes;
+}

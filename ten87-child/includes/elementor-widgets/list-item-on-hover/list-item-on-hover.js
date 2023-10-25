@@ -8,7 +8,7 @@ jQuery(document).ready(function () {
   var listparent = document.querySelectorAll('.list-item-content > ul');
 
   listparent.forEach(function (item, index) {
-    var listitem = listparent[index].querySelectorAll('li');
+    var listitem = listparent[index].querySelectorAll('>li');
     for (var i = 0; i < listitem.length; i++) {
       var list_index = listitem[i];
       $offset = list_index.offsetTop;

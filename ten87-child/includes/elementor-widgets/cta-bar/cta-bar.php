@@ -59,6 +59,30 @@ class Elementor_CTA_Bar extends \Elementor\Widget_Base
             ]
         );
 
+        $this->add_control(
+			'icon',
+			[
+				'label' => esc_html__( 'Icon', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::ICONS,
+				'default' => [
+					'value' => 'fas fa-circle',
+					'library' => 'fa-solid',
+				],
+				'recommended' => [
+					'fa-solid' => [
+						'circle',
+						'dot-circle',
+						'square-full',
+					],
+					'fa-regular' => [
+						'circle',
+						'dot-circle',
+						'square-full',
+					],
+				],
+			]
+		);
+
         $this->end_controls_section();
     }
 

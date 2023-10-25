@@ -102,3 +102,11 @@ function post_slider($atts)
 }
 
 add_shortcode('post_slider', 'post_slider');
+
+
+function archive_title() {
+    $object = get_queried_object();
+    return $object->name;
+}
+
+add_shortcode('post_slider', 'post_slider');

@@ -905,59 +905,61 @@ body.has-custom-page-heading #qodef-page-header {
     .list-with-underline ul {
       font-size: 39px; } }
 
-.list-item-on-hover .list-item-box > .list-item-inner {
-  display: flex; }
-  .list-item-on-hover .list-item-box > .list-item-inner > div {
-    flex: 0 0 auto; }
-  .list-item-on-hover .list-item-box > .list-item-inner .list-item-title {
-    width: 30%; }
-    .list-item-on-hover .list-item-box > .list-item-inner .list-item-title h2 {
-      margin: 0;
-      padding-bottom: 100px; }
-  .list-item-on-hover .list-item-box > .list-item-inner .list-item-content {
-    width: 70%; }
-    .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul {
-      list-style: none;
-      padding: 0; }
-      .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li {
-        transform: translateY(-30px);
-        transition: 300ms;
-        opacity: 0; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(1) {
-          transition-delay: 0; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(2) {
-          transition-delay: 50ms; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(3) {
-          transition-delay: 100ms; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(4) {
-          transition-delay: 150ms; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(5) {
-          transition-delay: 200ms; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(6) {
-          transition-delay: 250ms; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(7) {
-          transition-delay: 300ms; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(8) {
-          transition-delay: 350ms; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(9) {
-          transition-delay: 400ms; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(10) {
-          transition-delay: 450ms; }
-    .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 30%;
-      font-size: 39px; }
-      .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li {
-        display: flex;
-        justify-content: space-between; }
-        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li > ul {
-          flex: 0 0 auto;
-          width: 50%;
-          font-size: 30px; }
-  .list-item-on-hover .list-item-box > .list-item-inner:hover .list-item-content ul > li {
-    opacity: 1;
-    transform: translateY(0); }
+.list-item-on-hover .list-item-box {
+  position: relative; }
+  .list-item-on-hover .list-item-box > .list-item-inner {
+    display: flex; }
+    .list-item-on-hover .list-item-box > .list-item-inner > div {
+      flex: 0 0 auto; }
+    .list-item-on-hover .list-item-box > .list-item-inner .list-item-title {
+      width: 30%; }
+      .list-item-on-hover .list-item-box > .list-item-inner .list-item-title h2 {
+        margin: 0;
+        padding-bottom: 100px; }
+    .list-item-on-hover .list-item-box > .list-item-inner .list-item-content {
+      width: 70%; }
+      .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul {
+        list-style: none;
+        padding: 0; }
+        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li {
+          transform: translateY(-30px);
+          transition: 300ms;
+          opacity: 0; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(1) {
+            transition-delay: 0; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(2) {
+            transition-delay: 50ms; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(3) {
+            transition-delay: 100ms; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(4) {
+            transition-delay: 150ms; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(5) {
+            transition-delay: 200ms; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(6) {
+            transition-delay: 250ms; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(7) {
+            transition-delay: 300ms; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(8) {
+            transition-delay: 350ms; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(9) {
+            transition-delay: 400ms; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(10) {
+            transition-delay: 450ms; }
+      .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 30%;
+        font-size: 39px; }
+        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li {
+          display: flex;
+          justify-content: space-between; }
+          .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li > ul {
+            flex: 0 0 auto;
+            width: 50%;
+            font-size: 30px; }
+    .list-item-on-hover .list-item-box > .list-item-inner:hover .list-item-content ul > li {
+      opacity: 1;
+      transform: translateY(0); }
 
 /*# sourceMappingURL=style.css.map */

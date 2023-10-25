@@ -1246,9 +1246,7 @@ header {
     }
 }
 
-.tax-studio_category,
-.post-type-archive-studios,
-.single-studios {
+body.has-custom-page-heading {
     .qodef-page-title {
         display: none !important;
     }

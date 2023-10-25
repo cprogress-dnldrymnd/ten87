@@ -41,6 +41,13 @@ function action_wp_footer()
 				jQuery('html').toggleClass('menu-open');
 				e.preventDefault();
 			});
+
+			var swiper = new Swiper(".mySwiperPostSlider", {
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
 		});
 	</script>
 <?php

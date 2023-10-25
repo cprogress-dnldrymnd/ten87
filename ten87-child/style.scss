@@ -1410,7 +1410,7 @@ body.has-custom-page-heading {
         position: relative;
         &:hover {
             .list-item-inner .list-item-content ul li {
-                transition-duration: var(--transition-delay-hover);
+                transition-delay: var(--transition-delay-hover);
             }
         }
         &.fixed-positioning {

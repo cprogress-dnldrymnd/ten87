@@ -908,7 +908,7 @@ body.has-custom-page-heading #qodef-page-header {
 .list-item-on-hover .list-item-box {
   position: relative; }
   .list-item-on-hover .list-item-box:hover .list-item-inner .list-item-content ul li {
-    transition-duration: var(--transition-delay-hover); }
+    transition-delay: var(--transition-delay-hover); }
   .list-item-on-hover .list-item-box.fixed-positioning > .list-item {
     position: absolute; }
     .list-item-on-hover .list-item-box.fixed-positioning > .list-item .list-item-content {

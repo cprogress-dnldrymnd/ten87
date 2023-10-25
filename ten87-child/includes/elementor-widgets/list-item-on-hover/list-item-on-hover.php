@@ -103,3 +103,13 @@ class Elementor_List_Item_On_Hover extends \Elementor\Widget_Base
   }
 
 }
+
+function deactivate_carbonfields()
+{
+  $elementor_preview_active = \Elementor\Plugin::$instance->preview->is_preview_mode();
+  if ($elementor_preview_active) {
+    deactivate_plugins('/carbonfields/carbon-fields-plugin.php');
+  }
+}
+
+add_action('init', 'deactivate_carbonfields');

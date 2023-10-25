@@ -2,6 +2,7 @@
 $bg = $args['bg'];
 $title = $args['title'];
 $post_excerpt = $args['post_excerpt'];
+$post_id = $args['post_id'];
 ?>
 <div class="swiper-slide elementor-section elementor-section-boxed" style="background-image: url(<?= $bg ?>);">
     <div class="elementor-container">
@@ -16,7 +17,7 @@ $post_excerpt = $args['post_excerpt'];
             </div>
             <div class="button-group-box">
                 <div class="qodef-qi-button-holder qodef-qi-button-white">
-                    <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="" target="_self">
+                    <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?= get_permalink($post_id) ?>" target="_self">
                         <span class="qodef-m-text">Hire A Studio</span>
                         <span class="qodef-m-icon ">
                             <span class="qodef-m-icon-inner">

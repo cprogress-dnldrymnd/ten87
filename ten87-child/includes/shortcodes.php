@@ -29,6 +29,7 @@ function post_slider($atts)
                         'bg' => get_the_post_thumbnail_url($post->ID, 'full'),
                         'title' => $post->post_title,
                         'post_excerpt' => $post->post_excerpt,
+                        'post_id' => $post->ID
                     );
                   
                     get_template_part('template-parts/studio/studio-swiper-slide', 'null', $args);

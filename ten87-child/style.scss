@@ -1506,6 +1506,11 @@ body.has-custom-page-heading {
                 h2 {
                     margin: 0;
                     padding-bottom: 100px;
+
+                    @media(max-width: 991px) {
+                        padding-bottom: 20px;
+                        padding-top: 20px;
+                    }
                 }
 
                 @media(max-width: 991px) {
@@ -1525,6 +1530,7 @@ body.has-custom-page-heading {
                         transition: 300ms;
                         padding-bottom: 20px;
                         transition-delay: var(--transition-delay);
+
                         @media(min-width: 992px) {
                             transform: translateY(-30px);
                             opacity: 0;

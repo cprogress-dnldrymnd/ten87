@@ -109,4 +109,11 @@ function archive_title() {
     return $object->name;
 }
 
-add_shortcode('post_slider', 'post_slider');
+add_shortcode('archive_title', 'archive_title');
+
+function archive_description() {
+    $object = get_queried_object();
+    return $object->description;
+}
+
+add_shortcode('archive_description', 'archive_description');

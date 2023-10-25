@@ -224,8 +224,7 @@ add_filter('manage_templates_posts_columns', 'set_custom_edit_templates_columns'
 function set_custom_edit_templates_columns($columns)
 {
 	unset($columns['author']);
-	$columns['templates_author'] = __('Author', 'your_text_domain');
-	$columns['publisher'] = __('Publisher', 'your_text_domain');
+	$columns['shortcode'] = __('Author', 'your_text_domain');
 
 	return $columns;
 }

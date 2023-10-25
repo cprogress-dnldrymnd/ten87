@@ -861,6 +861,7 @@ body {
 
             svg,
             img {
+                width: 60px;
                 @media (max-width: 767px) {
                     width: 40px;
                 }

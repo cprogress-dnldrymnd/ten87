@@ -4,7 +4,7 @@ class Elementor_CTA_Bar extends \Elementor\Widget_Base
 
     public function get_name()
     {
-        return 'widget_name';
+        return 'cta_bar';
     }
 
     public function get_title()

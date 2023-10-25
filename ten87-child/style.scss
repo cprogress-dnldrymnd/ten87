@@ -1411,6 +1411,11 @@ body.has-custom-page-heading {
 
         >.list-item {
             &.active {
+                .list-item-title {
+                    h2 {
+                        color: var(--accent-color);
+                    }
+                }
                 .list-item-content {
                     >ul {
                         display: block;

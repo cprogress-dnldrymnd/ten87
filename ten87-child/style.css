@@ -907,6 +907,8 @@ body.has-custom-page-heading #qodef-page-header {
 
 .list-item-on-hover .list-item-box {
   position: relative; }
+  .list-item-on-hover .list-item-box > .list-item.active .list-item-title h2 {
+    color: var(--accent-color); }
   .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul {
     display: block; }
   .list-item-on-hover .list-item-box > .list-item.activate-animation .list-item-content > ul > li {

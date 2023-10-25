@@ -67,12 +67,16 @@ function action_wp_footer()
 				jQuery(this).css('height', $height + 'px');
 				jQuery(this).addClass('fixed-positioning');
 			});
-			
+
 			jQuery('.list-item-box .list-item').each(function (index, element) {
-						console.log(jQuery(this).offset().top);
+				console.log(jQuery(this).offset().top);
 			});
-			var el = document.querySelector('.list-item-box .list-item:last-child');
-			console.log(el.offsetLeft, el.offsetTop);
+			var listitem = document.getElementsByClassName('list-item');
+
+			for (var i = 0; i < listitem.length; i++) {
+				var list_index = list[i];
+				console.log(list_index.offsetTop);
+			}
 		});
 	</script>
 	<?php

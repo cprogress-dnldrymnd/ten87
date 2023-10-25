@@ -863,7 +863,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
 .image-slider .swiper-navigation-holder {
   bottom: 45px; }
   @media (min-width: 768px) {
-    .image-slider .swiper-navigation-holder {
+    .image-slider .swiper-navigation-holder .nav-inner > div img {
       width: 50px; } }
 
 .ten87-map .wpsl-map.wpsl-map {

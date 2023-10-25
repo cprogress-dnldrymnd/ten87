@@ -108,3 +108,17 @@ function swiper_navigation()
 <?php
 	return ob_get_clean();
 }
+
+function show_custom_banner() {
+
+	$show_custom_page_heading = carbon_get_the_post_meta('show_custom_page_heading');
+
+	if (get_post_type() == 'studios' || is_tax('studio_category') || is_post_type_archive('studio') || $show_custom_page_heading) {
+		$show_custom_banner = true;
+	}
+	else {
+		$show_custom_banner = false;
+	}
+
+	return $show_custom_banner;
+}

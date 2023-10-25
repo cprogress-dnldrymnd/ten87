@@ -793,7 +793,17 @@ body {
             }
         }
     }
-
+    &.qodef-qi-button-black {
+        .qodef-qi-button {
+            &:not(:hover) {
+                color: var(--white-color) !important;
+                background-color: var(--black-color);
+            }
+            &:hover {
+                background-color: #ff5932;
+            }
+        }
+    }
     &.qodef-qi-button-bordered {
         .qodef-qi-button {
             background-color: transparent;
@@ -1221,7 +1231,9 @@ header {
     }
 }
 
-.tax-studio_category, .post-type-archive-studios, .single-studios {
+.tax-studio_category,
+.post-type-archive-studios,
+.single-studios {
     .qodef-page-title {
         display: none !important;
     }
@@ -1235,7 +1247,7 @@ header {
     #qodef-page-header {
         position: absolute;
         left: 0;
-        top:0;
+        top: 0;
         right: 0;
     }
 }

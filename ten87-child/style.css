@@ -529,6 +529,11 @@ body {
     color: var(--text-color) !important; }
   .qodef-qi-button-holder.qodef-qi-button-white .qodef-qi-button:hover {
     background-color: #ff5932; }
+  .qodef-qi-button-holder.qodef-qi-button-black .qodef-qi-button:not(:hover) {
+    color: var(--white-color) !important;
+    background-color: var(--black-color); }
+  .qodef-qi-button-holder.qodef-qi-button-black .qodef-qi-button:hover {
+    background-color: #ff5932; }
   .qodef-qi-button-holder.qodef-qi-button-bordered .qodef-qi-button {
     background-color: transparent;
     border: 2px solid; }
@@ -808,13 +813,19 @@ header #qodef-page-header-inner .qodef-header-navigation {
     transform: rotate(0deg); }
   to {
     transform: rotate(359deg); } }
-.tax-studio_category .qodef-page-title, .post-type-archive-studios .qodef-page-title, .single-studios .qodef-page-title {
+.tax-studio_category .qodef-page-title,
+.post-type-archive-studios .qodef-page-title,
+.single-studios .qodef-page-title {
   display: none !important; }
-.tax-studio_category #qodef-page-outer #qodef-page-inner, .post-type-archive-studios #qodef-page-outer #qodef-page-inner, .single-studios #qodef-page-outer #qodef-page-inner {
+.tax-studio_category #qodef-page-outer #qodef-page-inner,
+.post-type-archive-studios #qodef-page-outer #qodef-page-inner,
+.single-studios #qodef-page-outer #qodef-page-inner {
   max-width: 100%;
   width: 100%;
   padding: 0; }
-.tax-studio_category #qodef-page-header, .post-type-archive-studios #qodef-page-header, .single-studios #qodef-page-header {
+.tax-studio_category #qodef-page-header,
+.post-type-archive-studios #qodef-page-header,
+.single-studios #qodef-page-header {
   position: absolute;
   left: 0;
   top: 0;

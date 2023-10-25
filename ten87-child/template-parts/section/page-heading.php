@@ -55,7 +55,7 @@ if (is_archive()) {
                 <?= wpautop($desc) ?>
             </div>
             <div class="button-group-box">
-                <div class="qodef-qi-button-holder qodef-qi-button-white">
+                <div class="qodef-qi-button-holder qodef-qi-button-black">
                     <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="" target="_self">
                         <span class="qodef-m-text">Hire A Studio</span>
                         <span class="qodef-m-icon ">

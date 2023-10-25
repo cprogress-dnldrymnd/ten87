@@ -67,11 +67,11 @@ function action_wp_footer()
 				$this.addClass('active');
 				setTimeout(function () {
 					$this.addClass('activate-animation');
-				}, 100);
+				}, 300);
 
 
 			}, function () {
-				jQuery(this).removeClass('active');
+				jQuery(this).removeClass('activate-animation');
 			}
 			);
 		});

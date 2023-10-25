@@ -1,12 +1,12 @@
 <div class="list-item-on-hover">
   <?php
   if ($settings['list']) {
-    echo '<dl>';
+    echo '<div class="list-item-box" >';
     foreach ($settings['list'] as $item) {
-      echo '<dt class="elementor-repeater-item-' . esc_attr($item['_id']) . '">' . $item['list_title'] . '</dt>';
-      echo '<dd>' . $item['list_content'] . '</dd>';
+      echo '<div class="elementor-repeater-item-' . esc_attr($item['_id']) . '">' . $item['list_title'] . '</div>';
+      echo '<dd>' . $item['list_content'] . '</div>';
     }
-    echo '</dl>';
+    echo '</div>';
   }
   ?>
 </div>

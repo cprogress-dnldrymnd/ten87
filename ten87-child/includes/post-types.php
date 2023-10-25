@@ -192,3 +192,15 @@ function wpa_studio_post_link($post_link, $id = 0)
 	return $post_link;
 }
 add_filter('post_type_link', 'wpa_studio_post_link', 1, 3);
+
+function archive_rewrite_rules()
+{
+	add_rewrite_rule(
+		'^studios/(.*)/(.*)/?$',
+		'index.php?post_type=studios&name=$matches[2]',
+		'top'
+	);
+	flush_rewrite_rules(); // use only once
+}
+
+add_action('init', 'archive_rewrite_rules');

@@ -1,7 +1,12 @@
 <?php
 $object = get_queried_object();
-$title = $object->name;
-$desc = $object->description;
+if ($object) {
+    $title = $object->name;
+    $desc = $object->description;
+} else {
+    $title = get_the_title();
+    $desc = get_the_excerpt();
+}
 ?>
 
 <div class="page-heading elementor-section elementor-section-boxed home-hero" id="home-hero">

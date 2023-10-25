@@ -996,9 +996,13 @@ body.has-custom-page-heading #qodef-page-header {
                 margin-left: 0; }
                 .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li > ul li {
                   flex: 0 0 auto;
-                  width: 50%;
+                  width: 33.333333%;
                   padding-left: 10px;
                   padding-right: 10px; } }
+    @media (max-width: 991px) and (max-width: 767px) {
+      .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li > ul li {
+        width: 50%; } }
+
             @media (min-width: 992px) {
               .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li > ul {
                 position: absolute;

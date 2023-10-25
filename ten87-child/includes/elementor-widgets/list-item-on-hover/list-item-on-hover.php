@@ -52,13 +52,7 @@ class Elementor_List_Item_On_Hover extends \Elementor\Widget_Base
             'default'     => esc_html__('List Title', 'textdomain'),
             'label_block' => true,
           ],
-          [
-            'name'       => 'list_content',
-            'label'      => esc_html__('Content', 'textdomain'),
-            'type'       => \Elementor\Controls_Manager::WYSIWYG,
-            'default'    => esc_html__('List Content', 'textdomain'),
-            'show_label' => false,
-          ],
+          
           [
             'name'       => 'list_content',
             'label'      => esc_html__('Content', 'textdomain'),

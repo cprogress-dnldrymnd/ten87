@@ -171,6 +171,7 @@ new newTaxonomy(
 			'query_var'    => true,
 			'rewrite'      => array(
 				'slug'         => 'studios',
+				'with_front' => true
 			)
 		)
 	)

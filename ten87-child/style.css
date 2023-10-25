@@ -909,14 +909,10 @@ body.has-custom-page-heading #qodef-page-header {
   position: relative; }
   .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul {
     display: block; }
-    .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul > li {
-      opacity: 1;
-      transform: translateY(0);
-      visibility: visible; }
-      .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul > li:hover > ul > li {
-        opacity: 1;
-        transform: translateY(0);
-        visibility: visible; }
+  .list-item-on-hover .list-item-box > .list-item.activate-animation .list-item-content > ul > li {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible; }
   .list-item-on-hover .list-item-box .list-item-inner {
     display: flex; }
     .list-item-on-hover .list-item-box .list-item-inner > div {

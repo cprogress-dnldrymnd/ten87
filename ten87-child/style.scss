@@ -1414,19 +1414,17 @@ body.has-custom-page-heading {
                 .list-item-content {
                     >ul {
                         display: block;
+                    }
+                }
+            }
+
+            &.activate-animation {
+                .list-item-content {
+                    >ul {
                         >li {
                             opacity: 1;
                             transform: translateY(0);
                             visibility: visible;
-                            &:hover {
-                                >ul {
-                                    >li {
-                                        opacity: 1;
-                                        transform: translateY(0);
-                                        visibility: visible;
-                                    }
-                                }
-                            }
                         }
                     }
                 }
@@ -1455,13 +1453,14 @@ body.has-custom-page-heading {
                 ul {
                     list-style: none;
                     padding: 0;
-                    
+
                     li {
                         transform: translateY(-30px);
                         transition: 300ms;
                         padding-bottom: 20px;
                         opacity: 0;
                         visibility: hidden;
+
                         &:nth-child(1) {
                             transition-delay: 0;
                         }
@@ -1511,6 +1510,7 @@ body.has-custom-page-heading {
                     left: 30%;
                     font-size: 39px;
                     display: none;
+
                     >li {
                         display: flex;
                         justify-content: space-between;

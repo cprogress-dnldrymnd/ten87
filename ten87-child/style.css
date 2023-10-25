@@ -857,11 +857,9 @@ header #qodef-page-header-inner .qodef-header-navigation {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-.image-slider .swiper-navigation-holder {
-  bottom: 45px; }
-  @media (min-width: 768px) {
-    .image-slider .swiper-navigation-holder {
-      width: 50px; } }
+@media (min-width: 768px) {
+  .image-slider .swiper-navigation-holder {
+    width: 50px; } }
 
 .ten87-map .wpsl-map.wpsl-map {
   min-height: 80vh; }

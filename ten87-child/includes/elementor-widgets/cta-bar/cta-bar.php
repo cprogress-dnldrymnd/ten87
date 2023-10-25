@@ -1,5 +1,5 @@
 <?php
-class Elementor_Image_Slider extends \Elementor\Widget_Base
+class Elementor_CTA_Bar extends \Elementor\Widget_Base
 {
 
     public function get_name()

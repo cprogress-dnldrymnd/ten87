@@ -69,7 +69,7 @@ function action_wp_footer()
 			});
 			
 			jQuery('.list-item-box .list-item').each(function (index, element) {
-						console.log(jQuery(this).offsetTop);
+						console.log(jQuery(this).offset().top);
 			});
 			var el = document.querySelector('.list-item-box .list-item:last-child');
 			console.log(el.offsetLeft, el.offsetTop);

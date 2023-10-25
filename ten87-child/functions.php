@@ -67,7 +67,6 @@ function action_wp_footer()
 				jQuery(this).addClass('activate-animation');
 
 			}, function () {
-				jQuery(this).removeClass('activate-animation');
 				jQuery(this).removeClass('active');
 			}
 			);

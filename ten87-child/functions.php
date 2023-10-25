@@ -63,7 +63,6 @@ function action_wp_footer()
 			});
 			jQuery('.list-item-on-hover .list-item').hover(function () {
 				var $this = jQuery(this);
-				jQuery('.list-item-on-hover .list-item').removeClass('active');
 				$this.addClass('active');
 				setTimeout(function () {
 					$this.addClass('activate-animation');

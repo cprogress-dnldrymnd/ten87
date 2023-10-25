@@ -1417,6 +1417,7 @@ body.has-custom-page-heading {
                             opacity: 1;
                             transform: translateY(0);
                             visibility: visible;
+                            display: flex;
                             &:hover {
                                 >ul {
                                     >li {

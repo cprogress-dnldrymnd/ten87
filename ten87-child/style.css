@@ -465,7 +465,7 @@ body {
     top: auto; }
     .elementor-widget-obsius_core_testimonials_list .swiper-button-prev img,
     .elementor-widget-obsius_core_testimonials_list .swiper-button-next img {
-      width: 60px; }
+      width: 55px; }
       @media (max-width: 767px) {
         .elementor-widget-obsius_core_testimonials_list .swiper-button-prev img,
         .elementor-widget-obsius_core_testimonials_list .swiper-button-next img {
@@ -567,7 +567,7 @@ body {
       color: var(--white-color); }
       .swiper-navigation-holder .nav-inner > div svg,
       .swiper-navigation-holder .nav-inner > div img {
-        width: 60px; }
+        width: 55px; }
         @media (max-width: 767px) {
           .swiper-navigation-holder .nav-inner > div svg,
           .swiper-navigation-holder .nav-inner > div img {

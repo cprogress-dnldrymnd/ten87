@@ -808,5 +808,9 @@ header #qodef-page-header-inner .qodef-header-navigation {
     transform: rotate(0deg); }
   to {
     transform: rotate(359deg); } }
+.tax-studio_category .qodef-page-title {
+  display: none !important; }
+.tax-studio_category .qodef-page-inner {
+  max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

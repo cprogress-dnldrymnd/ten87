@@ -17,7 +17,7 @@ $post_id = $args['post_id'];
             </div>
             <div class="button-group-box">
                 <div class="qodef-qi-button-holder qodef-qi-button-white">
-                    <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?= get_permalink($post_id) ?>" target="_self">
+                    <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="" target="_self">
                         <span class="qodef-m-text">Hire A Studio</span>
                         <span class="qodef-m-icon ">
                             <span class="qodef-m-icon-inner">
@@ -36,7 +36,7 @@ $post_id = $args['post_id'];
                     </a>
                 </div>
                 <div class="qodef-qi-button-holder qodef-qi-button-bordered">
-                    <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?= get_permalink($post->ID) ?>" target="_self">
+                    <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?= get_permalink($post_id) ?>" target="_self">
                         <span class="qodef-m-text">Learn More</span>
                         <span class="qodef-m-icon ">
                             <span class="qodef-m-icon-inner">

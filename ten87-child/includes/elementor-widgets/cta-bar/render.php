@@ -16,6 +16,7 @@
             <?php } ?>
             <div class="icon">
                 <img src="<?= $settings['icon']['value']['url'] ?>" alt="">
+                <img src="<?= $settings['icon']['value']['url'] ?>" alt="">
             </div>
         </div>
         <?php

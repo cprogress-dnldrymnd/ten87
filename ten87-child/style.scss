@@ -1307,6 +1307,7 @@ body.has-custom-page-heading {
 
     .swiper-navigation-holder {
         bottom: 5vw !important;
+
         .nav-inner {
             >div {
                 img {
@@ -1379,6 +1380,26 @@ body.has-custom-page-heading {
             @media(max-width: 767px) {
                 flex-direction: column;
             }
+        }
+    }
+}
+
+.list-with-underline {
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding-bottom: 20px;
+            padding-top: 20px;
+            border-bottom: 2px solid ;
+            &:first-child {
+                border-top: 2px solid;
+            }
+        }
+
+        @media (min-width: 992px) {
+            font-size: 39px;
         }
     }
 }

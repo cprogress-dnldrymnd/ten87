@@ -892,4 +892,17 @@ body.has-custom-page-heading #qodef-page-header {
     .cta-bar .container .row {
       flex-direction: column; } }
 
+.list-with-underline ul {
+  list-style: none;
+  padding: 0; }
+  .list-with-underline ul li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid; }
+    .list-with-underline ul li:first-child {
+      border-top: 2px solid; }
+  @media (min-width: 992px) {
+    .list-with-underline ul {
+      font-size: 39px; } }
+
 /*# sourceMappingURL=style.css.map */

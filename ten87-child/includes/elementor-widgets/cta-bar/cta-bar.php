@@ -9,12 +9,12 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Ten87 Image Slider ', 'textdomain');
+        return esc_html__('Ten87 CTA BAR ', 'textdomain');
     }
 
     public function get_icon()
     {
-        return 'eicon-gallery-grid';
+        return 'eicon-editor-link';
     }
 
     public function get_categories()
@@ -24,7 +24,7 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
 
     public function get_keywords()
     {
-        return ['image', 'slider'];
+        return ['cta', 'button'];
     }
 
 
@@ -41,11 +41,21 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
 
 
         $this->add_control(
-            'images',
+            'cta_text',
             [
-                'label' => esc_html__('Images', 'textdomain'),
-                'type' => \Elementor\Controls_Manager::GALLERY,
-                'default' => [],
+                'label' => esc_html__('CTA Heading', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => 'Lorem ipsum dolor sit',
+            ]
+        );
+
+        $this->add_control(
+            'cta_url',
+            [
+                'label' => esc_html__('CTA URL', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::URL,
+                'options' => [ 'url', 'is_external', 'nofollow' ],
+                'label_block' => true,
             ]
         );
 

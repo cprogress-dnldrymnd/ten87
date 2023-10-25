@@ -187,8 +187,4 @@ new newPostType(
 	)
 );
 
-function action_init() {
-	flush_rewrite_rules();
-}
-
-add_action('init', 'action_init');
+flush_rewrite_rules();

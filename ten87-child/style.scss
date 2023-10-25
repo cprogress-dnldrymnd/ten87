@@ -855,7 +855,7 @@ body {
             transform: none !important;
             color: var(--white-color);
 
-            svg {
+            svg, img {
                 @media (max-width: 575px) {
                     width: 40px;
                 }

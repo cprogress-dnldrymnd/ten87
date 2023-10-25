@@ -1,5 +1,5 @@
 <?php
-class Elementor_CTA_Bar extends \Elementor\Widget_Base
+class Elementor_List_Item_On_Hover extends \Elementor\Widget_Base
 {
 
   public function get_name()

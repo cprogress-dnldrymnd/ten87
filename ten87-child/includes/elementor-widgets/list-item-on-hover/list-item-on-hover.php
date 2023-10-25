@@ -52,7 +52,7 @@ class Elementor_List_Item_On_Hover extends \Elementor\Widget_Base
             'default'     => esc_html__('List Title', 'textdomain'),
             'label_block' => true,
           ],
-          
+
           [
             'name'       => 'list_content',
             'label'      => esc_html__('Content', 'textdomain'),
@@ -78,6 +78,10 @@ class Elementor_List_Item_On_Hover extends \Elementor\Widget_Base
     $this->end_controls_section();
   }
 
+  public function get_script_depends()
+  {
+    return ['list-item-on-hover-js'];
+  }
   /**
    * Render oEmbed widget output on the frontend.
    *

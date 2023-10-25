@@ -1431,6 +1431,9 @@ body.has-custom-page-heading {
                     padding: 0;
 
                     li {
+                        transform: translateY(-30px);
+                        transition: 300ms;
+                        opacity: 0;
                         &:nth-child(1) {
                             transition-delay: 0;
                         }
@@ -1488,6 +1491,16 @@ body.has-custom-page-heading {
                             flex: 0 0 auto;
                             width: 50%;
                             font-size: 30px;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .list-item-content {
+                    ul {
+                        >li {
+                            transform: translateY(0);
                         }
                     }
                 }

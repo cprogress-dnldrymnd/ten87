@@ -1416,6 +1416,7 @@ body.has-custom-page-heading {
                         color: var(--accent-color);
                     }
                 }
+
                 .list-item-content {
                     >ul {
                         display: block;
@@ -1449,6 +1450,7 @@ body.has-custom-page-heading {
                 h2 {
                     margin: 0;
                     padding-bottom: 100px;
+                    transition: 300ms;
                 }
             }
 

@@ -5,11 +5,21 @@ jQuery(document).ready(function () {
     $offset = list_index.offsetTop;
     list_index.style.cssText = 'top: ' + $offset + 'px; --offset: -' + $offset + 'px';
   }
+  var listparent = document.querySelectorAll('.list-item-content > ul');
+
+  listparent.forEach(function (item, index) {
+    console.log(item);
+  });
+
   var listitem = document.querySelectorAll('.list-item-content > ul > li');
+
+
+
   for (var i = 0; i < listitem.length; i++) {
     var list_index = listitem[i];
     $offset = list_index.offsetTop;
     list_index.style.cssText = '--offset: -' + $offset + 'px; --transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + listitem.length + 'ms';
+
   }
 
   var listitem = document.querySelectorAll('.list-item-content > ul > li > ul > li');

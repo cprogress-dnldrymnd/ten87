@@ -967,7 +967,6 @@ body.has-custom-page-heading #qodef-page-header {
         left: 30%;
         font-size: 39px; }
         .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li {
-          display: flex;
           justify-content: space-between; }
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li > ul {
             flex: 0 0 auto;

@@ -913,12 +913,12 @@ body.has-custom-page-heading #qodef-page-header {
       opacity: 1;
       transform: translateY(0);
       visibility: visible;
-      display: block; }
+      display: flex !important; }
       .list-item-on-hover .list-item-box > .list-item:hover .list-item-content > ul > li:hover > ul > li {
         opacity: 1;
         transform: translateY(0);
         visibility: visible;
-        display: block; }
+        display: flex !important; }
   .list-item-on-hover .list-item-box .list-item-inner {
     display: flex; }
     .list-item-on-hover .list-item-box .list-item-inner > div {
@@ -939,7 +939,7 @@ body.has-custom-page-heading #qodef-page-header {
           padding-bottom: 20px;
           opacity: 0;
           visibility: hidden;
-          display: none; }
+          display: none !important; }
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content ul li:nth-child(1) {
             transition-delay: 0; }
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content ul li:nth-child(2) {

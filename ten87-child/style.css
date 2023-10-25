@@ -1029,6 +1029,9 @@ body.has-custom-page-heading #qodef-page-header {
                 position: absolute;
                 flex: 0 0 auto;
                 width: 50%; } }
+          @media (max-width: 991px) {
+            .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li {
+              flex-direction: column; } }
         @media (max-width: 1439px) {
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
             font-size: 30px; } }
@@ -1038,6 +1041,9 @@ body.has-custom-page-heading #qodef-page-header {
         @media (min-width: 992px) {
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
             position: absolute; } }
+      @media (max-width: 991px) {
+        .list-item-on-hover .list-item-box .list-item-inner .list-item-content {
+          width: 100%; } }
     @media (max-width: 991px) {
       .list-item-on-hover .list-item-box .list-item-inner {
         flex-wrap: wrap; } }

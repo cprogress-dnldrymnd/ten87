@@ -68,8 +68,8 @@ function action_wp_footer()
 				jQuery(this).addClass('fixed-positioning');
 			});
 
-			var el = document.querySelector('.list-item');
-			console.log(el.offsetLeft, el.offsetTop);
+			var el = document.querySelector('div');
+console.log(el.offsetLeft, el.offsetTop);
 		});
 	</script>
 	<?php

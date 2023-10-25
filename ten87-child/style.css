@@ -866,7 +866,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
     position: relative;
     overflow: hidden; }
     .cta-bar .container .row .icon-box img {
-      transition: 300ms; }
+      transition: 500ms; }
       .cta-bar .container .row .icon-box img.hover {
         position: absolute;
         top: 0;

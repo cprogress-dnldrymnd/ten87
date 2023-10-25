@@ -911,16 +911,25 @@ body.has-custom-page-heading #qodef-page-header {
     flex: 0 0 auto; }
   .list-item-on-hover .list-item-box > .list-item-inner .list-item-title {
     width: 30%; }
+    .list-item-on-hover .list-item-box > .list-item-inner .list-item-title h2 {
+      margin: 0; }
   .list-item-on-hover .list-item-box > .list-item-inner .list-item-content {
     width: 70%; }
     .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul {
       list-style: none;
       padding: 0; }
-    .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li {
-      display: flex;
-      justify-content: space-between; }
-      .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li > ul {
-        flex: 0 0 auto;
-        width: 50%; }
+    .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 30%;
+      font-size: 39px; }
+      .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li {
+        display: flex;
+        justify-content: space-between; }
+        .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li > ul {
+          flex: 0 0 auto;
+          width: 50%;
+          font-size: 30px; }
 
 /*# sourceMappingURL=style.css.map */

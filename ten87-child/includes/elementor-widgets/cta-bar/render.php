@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row">
             <?php
-            if ( ! empty( $settings['cta_url']['url'] ) ) {
-                $this->add_link_attributes( 'cta_url', $settings['cta_url'] );
+            if (!empty($settings['cta_url']['url'])) {
+                $this->add_link_attributes('cta_url', $settings['cta_url']);
             }
-            if ($settings['cta_url']['url']) {
-                echo '<a' . $this->get_render_attribute_string('cta_url');
+            if ($settings['cta_url']) {
+                echo '<a' . $this->get_render_attribute_string('cta_url') . '>';
             }
             ?>
             <?php if ($settings['cta_text']) { ?>
@@ -15,6 +15,11 @@
             <div class="icon">
 
             </div>
+            <?php
+            if ($settings['cta_url']) {
+                echo '</a>';
+            }
+            ?>
         </div>
     </div>
 </div>

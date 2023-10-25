@@ -10,7 +10,7 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 		wp_register_script('elementor-image-slider-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/image-slider/elementor-image-slider-js.js');
 		wp_register_script('elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
 		wp_register_style('elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
-		wp_register_style('list-item-on-hover-js', get_stylesheet_directory_uri().'includes/elementor-widgets/list-item-on-hover/list-item-on-hover.js');
+		wp_register_style('list-item-on-hover-js', get_stylesheet_directory_uri().'/includes/elementor-widgets/list-item-on-hover/list-item-on-hover.js');
 
 		wp_enqueue_style('obsius-swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
 		wp_enqueue_style('obsius-child-style', get_stylesheet_directory_uri() . '/style.css', array($main_style));

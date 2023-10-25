@@ -7,6 +7,8 @@ if ($object) {
     $title = get_the_title();
     $desc = get_the_excerpt();
 }
+
+var_dump($object);
 ?>
 
 <div class="page-heading elementor-section elementor-section-boxed home-hero" id="home-hero">

@@ -1016,5 +1016,11 @@ body.has-custom-page-heading #qodef-page-header {
             position: absolute;
             top: 0;
             right: 0; }
+            @media (max-width: 1199px) {
+              .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li > ul {
+                font-size: 25px; } }
+        @media (max-width: 1199px) {
+          .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
+            font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

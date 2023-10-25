@@ -162,7 +162,7 @@ new newPostType(
 		'name'          => 'Studios',
 		'singular_name' => 'Studio',
 		'icon'          => 'dashicons-media-text',
-		'rewrite'       => array('slug' => 'studios/%studio_category%', 'with_front' => true),
+		'rewrite'       => array('slug' => 'studios', 'with_front' => true),
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => true,
@@ -180,25 +180,27 @@ new newPostType(
 	)
 );
 
-function wpa_studio_post_link( $post_link, $id = 0 ){
-    $post = get_post($id);  
-    if ( is_object( $post ) ){
-        $terms = wp_get_object_terms( $post->ID, 'studio_category' );
-        if( $terms ){
-            return str_replace( '%studio_category%' , $terms[0]->slug , $post_link );
-        }
-    } 
-    return $post_link;  
+function wpa_studio_post_link($post_link, $id = 0)
+{
+	$post = get_post($id);
+	if (is_object($post)) {
+		$terms = wp_get_object_terms($post->ID, 'studio_category');
+		if ($terms) {
+			return str_replace('studios', 'studios/' . $terms[0]->slug, $post_link);
+		}
+	}
+	return $post_link;
 }
-add_filter( 'post_type_link', 'wpa_studio_post_link', 1, 3 );
+add_filter('post_type_link', 'wpa_studio_post_link', 1, 3);
 
-function archive_rewrite_rules() {
-    add_rewrite_rule(
-        '^studios/(.*)/(.*)/?$',
-        'index.php?post_type=studios&name=$matches[2]',
-        'top'
-    );
-    flush_rewrite_rules(); // use only once
+function archive_rewrite_rules()
+{
+	add_rewrite_rule(
+		'^studios/(.*)/(.*)/?$',
+		'index.php?post_type=studios&name=$matches[2]',
+		'top'
+	);
+	flush_rewrite_rules(); // use only once
 }
 
-add_action( 'init', 'archive_rewrite_rules' );
+add_action('init', 'archive_rewrite_rules');

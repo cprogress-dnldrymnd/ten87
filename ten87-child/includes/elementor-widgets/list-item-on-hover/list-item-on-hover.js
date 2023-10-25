@@ -1,5 +1,5 @@
 jQuery(document).ready(function () {
-  document.querySelectorAll('.list-item-content').textContent = "";
+  document.querySelectorAll('.list-item-content li').textContent = "";
   var listitem = document.getElementsByClassName('list-item');
   for (var i = 0; i < listitem.length; i++) {
     var list_index = listitem[i];

@@ -50,7 +50,7 @@ add_shortcode('post_slider', 'post_slider');
 function location_map()
 {
 ?>
-    <div class="map">
+    <div class="ten87-map">
         <?= do_shortcode('[wp_simple_locator_map]') ?>
     </div>
 <?php

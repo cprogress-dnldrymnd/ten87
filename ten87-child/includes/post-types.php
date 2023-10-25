@@ -170,7 +170,7 @@ new newPostType(
 		'singular_name' => 'Studio',
 		'icon'          => 'dashicons-media-text',
 		'rewrite'       => array('slug' => 'studios'),
-		'has_archive'   => 'studios',
+		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => true,
 	)

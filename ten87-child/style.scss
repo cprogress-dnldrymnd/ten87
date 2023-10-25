@@ -1429,7 +1429,7 @@ body.has-custom-page-heading {
             }
         }
 
-       
+
 
         >.list-item {
             position: relative;
@@ -1500,7 +1500,8 @@ body.has-custom-page-heading {
                         padding-bottom: 20px;
                         opacity: 0;
                         visibility: hidden;
-
+                        transition-delay: var(--transition-delay);
+                        /*
                         &:nth-child(1) {
                             transition-delay: 0;
                         }
@@ -1540,6 +1541,7 @@ body.has-custom-page-heading {
                         &:nth-child(10) {
                             transition-delay: 450ms;
                         }
+                        */
                     }
                 }
 

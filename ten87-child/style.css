@@ -928,10 +928,14 @@ body.has-custom-page-heading #qodef-page-header {
         opacity: 1;
         transform: translateY(0);
         visibility: visible; }
-        .list-item-on-hover .list-item-box > .list-item:hover .list-item-content > ul > li:hover > ul > li {
-          opacity: 1;
-          transform: translateY(0);
-          visibility: visible; }
+        .list-item-on-hover .list-item-box > .list-item:hover .list-item-content > ul > li:hover {
+          color: var(--accent-color); }
+          .list-item-on-hover .list-item-box > .list-item:hover .list-item-content > ul > li:hover > ul {
+            color: var(--text-color); }
+            .list-item-on-hover .list-item-box > .list-item:hover .list-item-content > ul > li:hover > ul > li {
+              opacity: 1;
+              transform: translateY(0);
+              visibility: visible; }
   .list-item-on-hover .list-item-box .list-item-inner {
     display: flex; }
     .list-item-on-hover .list-item-box .list-item-inner > div {

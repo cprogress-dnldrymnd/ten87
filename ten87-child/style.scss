@@ -1416,11 +1416,12 @@ body.has-custom-page-heading {
                 .list-item-content {
                     margin-top: var(--offset);
                     position: relative;
+
                     >ul {
 
                         >li {
                             >ul {
-                               margin-top: var(--offset);
+                                margin-top: var(--offset);
                             }
                         }
                     }
@@ -1454,7 +1455,11 @@ body.has-custom-page-heading {
                             visibility: visible;
 
                             &:hover {
+                                color: var(--accent-color);
+
                                 >ul {
+                                    color: var(--text-color);
+
                                     >li {
                                         opacity: 1;
                                         transform: translateY(0);

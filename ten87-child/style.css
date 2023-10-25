@@ -910,8 +910,8 @@ body.has-custom-page-heading #qodef-page-header {
   .list-item-on-hover .list-item-box > .list-item-inner > div {
     flex: 0 0 auto; }
   .list-item-on-hover .list-item-box > .list-item-inner .list-item-title {
-    width: 0 0 33.333333%; }
+    width: 30%; }
   .list-item-on-hover .list-item-box > .list-item-inner .list-item-content {
-    width: 66.666667%; }
+    width: 70%; }
 
 /*# sourceMappingURL=style.css.map */

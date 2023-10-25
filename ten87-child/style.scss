@@ -1413,8 +1413,14 @@ body.has-custom-page-heading {
 
             .list-item {
                 &:hover {
-                    .list-item-inner .list-item-content ul li {
+                    .list-item-inner .list-item-content>ul>li {
                         transition-delay: var(--transition-delay-hover);
+
+                        &:hover {
+                            &>ul>li {
+                                transition-delay: var(--transition-delay-hover);
+                            }
+                        }
                     }
                 }
             }

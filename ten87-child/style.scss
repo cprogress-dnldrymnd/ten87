@@ -708,8 +708,12 @@ body {
         img {
             width: 60px;
 
-            @media (max-width: 575px) {
+            @media (max-width: 767px) {
                 width: 40px;
+            }
+
+            @media (max-width: 575px) {
+                width: 30px;
             }
         }
     }
@@ -855,9 +859,14 @@ body {
             transform: none !important;
             color: var(--white-color);
 
-            svg, img {
-                @media (max-width: 575px) {
+            svg,
+            img {
+                @media (max-width: 767px) {
                     width: 40px;
+                }
+
+                @media (max-width: 575px) {
+                    width: 30px;
                 }
             }
 
@@ -1352,6 +1361,7 @@ header {
                     }
                 }
             }
+
             @media(max-width: 767px) {
                 flex-direction: column;
             }

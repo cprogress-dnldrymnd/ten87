@@ -62,7 +62,6 @@ function custom_template($atts)
 	if (class_exists("\\Elementor\\Plugin")) {
 		$pluginElementor = \Elementor\Plugin::instance();
 		$contentElementor = $pluginElementor->frontend->get_builder_content($post_id);
-		add_action($pluginElementor->frontend->enqueue_styles($post_id));
 	}
 
 	return $contentElementor;

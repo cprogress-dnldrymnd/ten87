@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
   } else {
     jQuery('.list-item-content').each(function (index, element) {
       $height = jQuery(this).outerHeight();
-      jQuery(this).css('height', $height + 'px');
+      jQuery(this).css('--height', $height + 'px');
     });
 
   }

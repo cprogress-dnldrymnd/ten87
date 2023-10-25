@@ -1023,7 +1023,10 @@ body.has-custom-page-heading #qodef-page-header {
       @media (max-width: 991px) {
         .list-item-on-hover .list-item-box .list-item-inner .list-item-content {
           width: 100%;
-          transition: 300ms; } }
+          transition: 300ms;
+          height: 0; }
+          .list-item-on-hover .list-item-box .list-item-inner .list-item-content.active {
+            height: var(--height); } }
     @media (max-width: 991px) {
       .list-item-on-hover .list-item-box .list-item-inner {
         flex-wrap: wrap; } }

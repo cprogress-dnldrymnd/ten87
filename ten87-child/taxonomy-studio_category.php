@@ -4,13 +4,15 @@ $object = get_queried_object();
 $title = $object->name;
 $desc = $object->description;
 ?>
-<div class="page-heading">
-    <div class="qodef-section-title">
-        <h1 class="qodef-shortcode qodef-m  qodef-custom-font qodef-custom-font-223 qodef-layout--simple qodef-alignment--left">
-            <?= $title ?>
-        </h1>
+<div class="page-heading elementor-section">
+    <div class="elementor-container">
         <div class="qodef-section-title">
-            <?= wpautop($desc) ?>
+            <h1 class="qodef-shortcode qodef-m  qodef-custom-font qodef-custom-font-223 qodef-layout--simple qodef-alignment--left">
+                <?= $title ?>
+            </h1>
+            <div class="qodef-section-title">
+                <?= wpautop($desc) ?>
+            </div>
         </div>
     </div>
 </div>

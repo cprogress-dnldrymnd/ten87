@@ -76,7 +76,7 @@ if (is_archive()) {
                 </div>
                 <div class="qodef-qi-button-holder qodef-qi-button-bordered">
                     <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?= get_permalink($post_id) ?>" target="_self">
-                        <span class="qodef-m-text">Learn More</span>
+                        <span class="qodef-m-text">Find Us</span>
                         <span class="qodef-m-icon ">
                             <span class="qodef-m-icon-inner">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Group_45" data-name="Group 45" width="20.939" height="18.739" viewBox="0 0 20.939 18.739">

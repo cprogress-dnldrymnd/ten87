@@ -879,5 +879,8 @@ header #qodef-page-header-inner .qodef-header-navigation {
     transform: translateY(-100%); }
   .cta-bar .container .row:hover .icon-box img.hover {
     transform: translateY(0); }
+  @media (max-width: 767px) {
+    .cta-bar .container .row {
+      flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */

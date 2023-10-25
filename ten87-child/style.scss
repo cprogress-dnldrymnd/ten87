@@ -1443,6 +1443,7 @@ body.has-custom-page-heading {
                             }
                         }
                     }
+
                     @media(min-width: 992px) {
                         margin-top: var(--offset);
                     }
@@ -1571,7 +1572,7 @@ body.has-custom-page-heading {
                 }
 
                 >ul {
-                    position: absolute;
+
                     top: 0;
                     right: 0;
                     left: 0;
@@ -1582,10 +1583,7 @@ body.has-custom-page-heading {
                         justify-content: space-between;
 
                         >ul {
-                            flex: 0 0 auto;
-                            width: 50%;
                             font-size: 30px;
-                            position: absolute;
                             top: 0;
                             right: 0;
 
@@ -1596,6 +1594,12 @@ body.has-custom-page-heading {
                             @media(max-width: 1199px) {
                                 font-size: 20px;
                             }
+
+                            @media(min-width: 992px) {
+                                position: absolute;
+                                flex: 0 0 auto;
+                                width: 50%;
+                            }
                         }
                     }
 
@@ -1605,6 +1609,10 @@ body.has-custom-page-heading {
 
                     @media(max-width: 1199px) {
                         font-size: 25px;
+                    }
+
+                    @media(min-width: 992px) {
+                        position: absolute;
                     }
                 }
             }

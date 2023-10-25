@@ -1007,7 +1007,6 @@ body.has-custom-page-heading #qodef-page-header {
                         }
                         */ }
       .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
-        position: absolute;
         top: 0;
         right: 0;
         left: 0;
@@ -1016,10 +1015,7 @@ body.has-custom-page-heading #qodef-page-header {
           display: flex;
           justify-content: space-between; }
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li > ul {
-            flex: 0 0 auto;
-            width: 50%;
             font-size: 30px;
-            position: absolute;
             top: 0;
             right: 0; }
             @media (max-width: 1439px) {
@@ -1028,12 +1024,20 @@ body.has-custom-page-heading #qodef-page-header {
             @media (max-width: 1199px) {
               .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li > ul {
                 font-size: 20px; } }
+            @media (min-width: 992px) {
+              .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li > ul {
+                position: absolute;
+                flex: 0 0 auto;
+                width: 50%; } }
         @media (max-width: 1439px) {
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
             font-size: 30px; } }
         @media (max-width: 1199px) {
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
             font-size: 25px; } }
+        @media (min-width: 992px) {
+          .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
+            position: absolute; } }
     @media (max-width: 991px) {
       .list-item-on-hover .list-item-box .list-item-inner {
         flex-wrap: wrap; } }

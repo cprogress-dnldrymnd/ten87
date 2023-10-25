@@ -1495,6 +1495,12 @@ body.has-custom-page-heading {
                             flex: 0 0 auto;
                             width: 50%;
                             font-size: 30px;
+                            >li {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 30%;
+                            }
                         }
                     }
                 }

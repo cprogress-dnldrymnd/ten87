@@ -33,22 +33,24 @@
 		</div>
 	<?php } ?>
 
-	<?php
-	if (get_post_type() == 'studios') {
-		get_template_part('template-parts/section/page-heading');
-	}
-	?>
 
 	<div id="qodef-page-wrapper" class="<?php echo esc_attr(obsius_get_page_wrapper_classes()); ?>">
 		<?php
 		// Hook to include page header template
 		do_action('obsius_action_page_header_template');
 		?>
+
+		<?php
+		if (get_post_type() == 'studios') {
+			get_template_part('template-parts/section/page-heading');
+		}
+		?>
 		<div id="qodef-page-outer">
 			<?php
-			// Include title template
-			get_template_part('title');
-
+			if (get_post_type() != 'studios') {
+				// Include title template
+				get_template_part('title');
+			}
 			// Hook to include additional content before page inner content
 			do_action('obsius_action_before_page_inner');
 			?>

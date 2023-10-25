@@ -13,8 +13,7 @@ class newPostType
 		$this->icon = $param['icon'];
 		$this->supports = $param['supports'];
 		$this->show_in_rest = isset($param['show_in_rest']) ? $param['show_in_rest'] : false;
-		$this->exclude_from_search = isset($param['exclude_from_search']) ? $param['exclude_from_search'] : false;
-		;
+		$this->exclude_from_search = isset($param['exclude_from_search']) ? $param['exclude_from_search'] : false;;
 		$this->publicly_queryable = isset($param['publicly_queryable']) ? $param['publicly_queryable'] : true;
 		$this->show_in_admin_bar = isset($param['show_in_admin_bar']) ? $param['show_in_admin_bar'] : true;
 		$this->has_archive = isset($param['has_archive']) ? $param['has_archive'] : true;
@@ -22,8 +21,7 @@ class newPostType
 
 		if (isset($param['rewrite'])) {
 			$this->rewrite = $param['rewrite'];
-		}
-		else {
+		} else {
 			$this->rewrite = array('slug' => strtolower($this->name));
 		}
 	}
@@ -62,7 +60,6 @@ class newPostType
 				'show_in_admin_bar'   => $this->show_in_admin_bar,
 			)
 		);
-
 	}
 }
 /*-----------------------------------------------------------------------------------*/
@@ -81,7 +78,6 @@ class newTaxonomy
 		$this->taxonomy = $param['taxonomy'];
 		$this->post_type = $param['post_type'];
 		$this->args = $param['args'];
-
 	}
 
 	function create_taxonomy()
@@ -122,7 +118,6 @@ class newTaxonomy
 			}
 			echo '</select>';
 		}
-
 	}
 	function change_table_column_titles($columns)
 	{
@@ -144,17 +139,30 @@ class newTaxonomy
 		$columns[$this->taxonomy] = $this->taxonomy;
 		return $columns;
 	}
-
-
 }
 
+new newTaxonomy(
+	array(
+		'taxonomy'  => 'studio_category',
+		'post_type' => 'studios',
+		'args'      => array(
+			'hierarchical' => true,
+			'label'        => 'Studio Categories',
+			'query_var'    => true,
+			'rewrite'      => array(
+				'slug'         => 'studios',
+				'with_front' => true
+			)
+		)
+	)
+);
 
 new newPostType(
 	array(
 		'name'          => 'Studios',
 		'singular_name' => 'Studio',
 		'icon'          => 'dashicons-media-text',
-		'rewrite'       => array('slug' => 'studios'),
+		'rewrite'       => array('slug' => 'studios', 'with_front' => true),
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => true,

@@ -55,7 +55,7 @@ class newPostType
 				'public'              => true,
 				'has_archive'         => $this->has_archive,
 				'hierarchical'        => $this->hierarchical,
-				'taxonomies'          => array($this->taxonomies),
+				'taxonomies'          => $this->taxonomies,
 				'rewrite'             => $this->rewrite,
 				'menu_icon'           => $this->icon,
 				'capability_type'     => 'page',

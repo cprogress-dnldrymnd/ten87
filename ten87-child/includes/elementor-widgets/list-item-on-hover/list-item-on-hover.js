@@ -16,7 +16,7 @@ jQuery(document).ready(function () {
   for (var i = 0; i < listitem.length; i++) {
     var list_index = listitem[i];
     $offset = list_index.offsetTop;
-    list_index.style.cssText = '--transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + (50 * listitem.length) + 'ms';
+    list_index.style.cssText = '--transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + (50 * listitem.length) + 50 + 'ms';
   }
 
   jQuery('.list-item-box').each(function (index, element) {

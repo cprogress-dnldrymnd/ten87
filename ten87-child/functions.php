@@ -68,6 +68,9 @@ function action_wp_footer()
 				jQuery(this).addClass('fixed-positioning');
 			});
 			
+			jQuery('.list-item-box .list-item').each(function (index, element) {
+						console.log(jQuery(this).offsetTop);
+			});
 			var el = document.querySelector('.list-item-box .list-item:last-child');
 			console.log(el.offsetLeft, el.offsetTop);
 		});

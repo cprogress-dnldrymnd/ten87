@@ -108,7 +108,7 @@ function deactivate_carbonfields()
 {
   $elementor_preview_active = \Elementor\Plugin::$instance->preview->is_preview_mode();
   if ($elementor_preview_active) {
-    deactivate_plugins('/carbonfields/carbon-fields-plugin.php');
+    deactivate_plugins('/carbon-fields/carbon-fields-plugin.php');
   }
 }
 

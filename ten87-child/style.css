@@ -924,7 +924,7 @@ body.has-custom-page-heading #qodef-page-header {
         .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li {
           transform: translateY(-30px);
           transition: 300ms;
-          padding-bottom: 30px;
+          padding-bottom: 10px;
           opacity: 0; }
           .list-item-on-hover .list-item-box > .list-item-inner .list-item-content ul li:nth-child(1) {
             transition-delay: 0; }

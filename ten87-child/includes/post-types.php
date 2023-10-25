@@ -150,7 +150,7 @@ new newTaxonomy(
 			'label'        => 'Studio Categories',
 			'query_var'    => true,
 			'rewrite'      => array(
-				'slug'         => 'studios/%studio_category%',
+				'slug'         => 'studios',
 				'with_front' => true
 			)
 		)
@@ -162,7 +162,7 @@ new newPostType(
 		'name'          => 'Studios',
 		'singular_name' => 'Studio',
 		'icon'          => 'dashicons-media-text',
-		'rewrite'       => array('slug' => 'studios', 'with_front' => true),
+		'rewrite'       => array('slug' => 'studios/%studio_category%', 'with_front' => true),
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => true,

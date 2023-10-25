@@ -62,10 +62,11 @@ function action_wp_footer()
 				},
 			});
 			jQuery('.list-item-on-hover .list-item').hover(function () {
+				var $this = jQuery(this);
 				jQuery('.list-item-on-hover .list-item').removeClass('active');
-				jQuery(this).addClass('active');
+				$this.addClass('active');
 				setTimeout(function () {
-					jQuery(this).addClass('activate-animation');
+					$this.addClass('activate-animation');
 				}, 100);
 
 

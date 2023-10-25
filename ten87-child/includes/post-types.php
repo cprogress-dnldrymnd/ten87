@@ -213,7 +213,31 @@ add_action('init', 'archive_rewrite_rules');
 add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
 function prefix_disable_gutenberg($current_status, $post_type)
 {
-    // Use your post type key instead of 'product'
-    if ($post_type === 'studios') return false;
-    return $current_status;
+	// Use your post type key instead of 'product'
+	if ($post_type === 'studios') return false;
+	return $current_status;
+}
+
+
+// Add the custom columns to the templates post type:
+add_filter('manage_templates_posts_columns', 'set_custom_edit_templates_columns');
+function set_custom_edit_templates_columns($columns)
+{
+	unset($columns['author']);
+	$columns['templates_author'] = __('Author', 'your_text_domain');
+	$columns['publisher'] = __('Publisher', 'your_text_domain');
+
+	return $columns;
+}
+
+// Add the data to the custom columns for the templates post type:
+add_action('manage_templates_posts_custom_column', 'custom_templates_column', 10, 2);
+function custom_templates_column($column, $post_id)
+{
+	switch ($column) {
+
+		case 'shortcode':
+			echo '<input value="custom_template post-id=' + $post_id + '"/>';
+			break;
+	}
 }

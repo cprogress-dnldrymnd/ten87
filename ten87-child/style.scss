@@ -1317,18 +1317,9 @@ header {
             margin-left: -10px;
             margin-right: -10px;
 
-            >a {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: auto;
-                margin-left: -10px;
-                margin-right: -10px;
-
-                >div {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
+            >div {
+                padding-left: 10px;
+                padding-right: 10px;
             }
         }
     }

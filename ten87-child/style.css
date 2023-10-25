@@ -862,15 +862,8 @@ header #qodef-page-header-inner .qodef-header-navigation {
   width: auto;
   margin-left: -10px;
   margin-right: -10px; }
-  .cta-bar .container .row > a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .cta-bar .container .row > a > div {
-      padding-left: 10px;
-      padding-right: 10px; }
+  .cta-bar .container .row > div {
+    padding-left: 10px;
+    padding-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

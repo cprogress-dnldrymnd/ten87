@@ -10,7 +10,9 @@
             }
             ?>
             <?php if ($settings['cta_text']) { ?>
-                <h2><?= $settings['cta_text'] ?></h2>
+                <div class="heading">
+                    <h2><?= $settings['cta_text'] ?></h2>
+                </div>
             <?php } ?>
             <div class="icon">
                 <img src="<?= $settings['icon']['value']['url'] ?>" alt="">

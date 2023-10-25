@@ -859,7 +859,7 @@ header #qodef-page-header-inner .qodef-header-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: auto;
   margin-left: -10px;
   margin-right: -10px; }
   .cta-bar .container .row > a {

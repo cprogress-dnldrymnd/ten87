@@ -1,8 +1,7 @@
 jQuery(document).ready(function () {
-  jQuery('.list-item-content li').each(function () {
-    console.log(jQuery(this).text());
-  });
-  console.log(document.querySelectorAll('.list-item-content li').textContent);
+  (".list-item-content li").contents().filter(function () {
+    return this.nodeType == Node.TEXT_NODE;
+  })[0].nodeValue = "The text you want to replace with"
   var listitem = document.getElementsByClassName('list-item');
   for (var i = 0; i < listitem.length; i++) {
     var list_index = listitem[i];

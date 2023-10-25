@@ -29,7 +29,7 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
 
     public function get_keywords()
     {
-        return ['partners'];
+        return ['image', 'slider'];
     }
 
 

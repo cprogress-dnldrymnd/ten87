@@ -1419,7 +1419,9 @@ body.has-custom-page-heading {
                 }
             }
         }
-
+        &:not(.fixed-positioning) {
+            opacity: 0;
+        }
         >.list-item {
             position: relative;
             left: 0;

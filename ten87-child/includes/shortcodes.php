@@ -104,7 +104,7 @@ function post_slider($atts)
 add_shortcode('post_slider', 'post_slider');
 
 
-function archive_title()
+function page_heading()
 {
     ob_start();
     $object = get_queried_object();

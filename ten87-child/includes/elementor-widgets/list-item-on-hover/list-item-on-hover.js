@@ -6,11 +6,10 @@ jQuery(document).ready(function () {
     list_index.style.cssText = 'top: ' + $offset + 'px; --offset: -' + $offset + 'px';
   }
   var listitem = document.querySelectorAll('.list-item-content > ul > li');
-
   for (var i = 0; i < listitem.length; i++) {
     var list_index = listitem[i];
     $offset = list_index.offsetTop;
-    list_index.style.cssText = '--offset: -' + $offset + 'px';
+    list_index.style.cssText = '--offset: -' + $offset + 'px; transition-delay: ' + (i * 50) + 'ms';
   }
 
   jQuery('.list-item-box').each(function (index, element) {

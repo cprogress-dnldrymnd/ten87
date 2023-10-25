@@ -7,9 +7,9 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 	function obsius_child_theme_enqueue_scripts()
 	{
 		$main_style = 'obsius-main';
-		wp_register_script( 'elementor-image-slider-js', get_stylesheet_directory_uri().'/includes/elementor-widgets/image-slider/elementor-image-slider-js.js' );
-		wp_register_script( 'elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js' );
-		wp_register_style( 'elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css' );
+		wp_register_script('elementor-image-slider-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/image-slider/elementor-image-slider-js.js');
+		wp_register_script('elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
+		wp_register_style('elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
 
 		wp_enqueue_style('obsius-swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
 		wp_enqueue_style('obsius-child-style', get_stylesheet_directory_uri() . '/style.css', array($main_style));
@@ -47,11 +47,11 @@ function action_wp_footer()
 			});
 
 			var swiper = new Swiper(".mySwiperPostSlider", {
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
 		});
 	</script>
 <?php
@@ -80,3 +80,22 @@ function custom_template($atts)
 
 
 add_shortcode('custom_template', 'custom_template');
+
+
+function swiper_navigation()
+{
+	ob_start();
+?>
+	<div class="swiper-navigation-holder">
+		<div class="nav-inner">
+			<div class="swiper-button-prev">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/arrow.svg' ?>" alt="">
+			</div>
+			<div class="swiper-button-next">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/arrow.svg' ?>" alt="">
+			</div>
+		</div>
+	</div>
+<?php
+	return ob_get_clean();
+}

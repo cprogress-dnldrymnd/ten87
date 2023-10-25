@@ -16,16 +16,7 @@
                     ?>
                 <?php } ?>
             </div>
-            <div class="swiper-navigation-holder">
-                <div class="nav-inner">
-                    <div class="swiper-button-prev">
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/images/arrow.svg' ?>" alt="">
-                    </div>
-                    <div class="swiper-button-next">
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/images/arrow.svg' ?>" alt="">
-                    </div>
-                </div>
-            </div>
+            <?= swiper_navigation() ?>
         </div>
     </div>
 <?php } ?>

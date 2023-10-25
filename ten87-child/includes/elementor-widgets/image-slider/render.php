@@ -9,5 +9,6 @@
                 </div>
             <?php } ?>
         </div>
+        <?= swiper_navigation() ?>
     </div>
 </div>

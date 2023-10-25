@@ -198,7 +198,7 @@ function archive_rewrite_rules() {
         'index.php?post_type=studios&name=$matches[2]',
         'top'
     );
-    //flush_rewrite_rules(); // use only once
+    flush_rewrite_rules(); // use only once
 }
 
 add_action( 'init', 'archive_rewrite_rules' );

@@ -109,9 +109,48 @@ function swiper_navigation()
 	return ob_get_clean();
 }
 
+function get__post_meta($value)
+{
+	if (function_exists('carbon_get_the_post_meta')) {
+		return carbon_get_the_post_meta($value);
+	}
+	else {
+		return 'Error: Carbonfield not activated';
+	}
+}
+
+function get__term_meta($term_id, $value)
+{
+	if (function_exists('carbon_get_term_meta')) {
+		return carbon_get_term_meta($term_id, $value);
+	}
+	else {
+		return 'Error: Carbonfield not activated';
+	}
+}
+
+function get__post_meta_by_id($id, $value)
+{
+	if (function_exists('carbon_get_post_meta')) {
+		return carbon_get_post_meta($id, $value);
+	}
+	else {
+		return 'Error: Carbonfield not activated';
+	}
+}
+function get__theme_option($value)
+{
+	if (function_exists('carbon_get_theme_option')) {
+		return carbon_get_theme_option($value);
+	}
+	else {
+		return 'Error: Carbonfield not activated';
+	}
+}
+
 function show_custom_banner() {
 
-	$show_custom_page_heading = carbon_get_the_post_meta('show_custom_page_heading');
+	$show_custom_page_heading = get__post_meta('show_custom_page_heading');
 
 	if (get_post_type() == 'studios' || is_tax('studio_category') || is_post_type_archive('studio') || $show_custom_page_heading) {
 		$show_custom_banner = true;
@@ -122,3 +161,4 @@ function show_custom_banner() {
 
 	return $show_custom_banner;
 }
+

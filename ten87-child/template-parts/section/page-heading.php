@@ -4,8 +4,11 @@ if (is_archive()) {
     $title = $object->name;
     $desc = $object->description;
 } else {
-    $title = get_the_title();
-    $desc = get_the_excerpt();
+
+    $alt_title = get__post_meta('alt_title');
+    $description = get__post_meta('description');
+    $title = $alt_title ? $alt_title : get_the_title();
+    $desc = $description? $description : get_the_excerpt();
 }
 ?>
 

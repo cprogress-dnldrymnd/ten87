@@ -814,5 +814,10 @@ header #qodef-page-header-inner .qodef-header-navigation {
   max-width: 100%;
   width: 100%;
   padding: 0; }
+.tax-studio_category #qodef-page-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0; }
 
 /*# sourceMappingURL=style.css.map */

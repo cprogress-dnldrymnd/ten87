@@ -934,7 +934,8 @@ body.has-custom-page-heading #qodef-page-header {
           transition: 300ms;
           padding-bottom: 20px;
           opacity: 0;
-          visibility: hidden; }
+          visibility: hidden;
+          display: none; }
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content ul li:nth-child(1) {
             transition-delay: 0; }
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content ul li:nth-child(2) {

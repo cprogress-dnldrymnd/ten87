@@ -1454,13 +1454,14 @@ body.has-custom-page-heading {
                 ul {
                     list-style: none;
                     padding: 0;
-
+                    
                     li {
                         transform: translateY(-30px);
                         transition: 300ms;
                         padding-bottom: 20px;
                         opacity: 0;
                         visibility: hidden;
+                        display: none;
                         &:nth-child(1) {
                             transition-delay: 0;
                         }

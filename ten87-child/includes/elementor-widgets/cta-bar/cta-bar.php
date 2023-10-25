@@ -34,7 +34,7 @@ class Elementor_CTA_Bar extends \Elementor\Widget_Base
         $this->start_controls_section(
             'content_section',
             [
-                'label' => esc_html__('Partners Slider', 'elementor-oembed-widget'),
+                'label' => esc_html__('CTA Settings', 'elementor-oembed-widget'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );

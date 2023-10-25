@@ -52,26 +52,3 @@ function post_slider($atts)
 }
 
 add_shortcode('post_slider', 'post_slider');
-
-
-function page_heading()
-{
-    ob_start();
-    $object = get_queried_object();
-    $title = $object->name;
-    $desc = $object->description;
-?>
-    <div class="qodef-section-title">
-        <h1 class="qodef-shortcode qodef-m  qodef-custom-font qodef-custom-font-223 qodef-layout--simple qodef-alignment--left">
-            <?= $title ?>
-        </h1>
-        <div class="qodef-section-title">
-            <?= wpautop($desc) ?>
-        </div>
-    </div>
-
-<?php
-    return ob_get_clean();
-}
-
-add_shortcode('page_heading', 'page_heading');

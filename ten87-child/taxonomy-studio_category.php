@@ -1,14 +1,27 @@
 <?php
 get_header();
+$object = get_queried_object();
+$title = $object->name;
+$desc = $object->description;
 ?>
-<?= do_shortcode('[custom_template post_id=5791]'); ?>
+<div class="page-heading">
+    <div class="qodef-section-title">
+        <h1 class="qodef-shortcode qodef-m  qodef-custom-font qodef-custom-font-223 qodef-layout--simple qodef-alignment--left">
+            <?= $title ?>
+        </h1>
+        <div class="qodef-section-title">
+            <?= wpautop($desc) ?>
+        </div>
+    </div>
+</div>
 <?php if (have_posts()) { ?>
     <div class="post-slider-holder">
         <div class="swiper mySwiperPostSlider">
             <div class="swiper-wrapper">
-            <?php while (have_posts()) { the_post()?>
+                <?php while (have_posts()) {
+                    the_post() ?>
                     <?php
-                     $args = array(
+                    $args = array(
                         'bg' => get_the_post_thumbnail_url(get_the_ID(), 'full'),
                         'title' => get_the_title(),
                         'post_excerpt' => get_the_excerpt($post)

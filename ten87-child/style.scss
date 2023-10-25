@@ -1408,9 +1408,10 @@ body.has-custom-page-heading {
 .list-item-on-hover {
     .list-item-box {
         position: relative;
+
         >.list-item-inner {
             display: flex;
-            
+
             >div {
                 flex: 0 0 auto;
             }
@@ -1434,7 +1435,9 @@ body.has-custom-page-heading {
                     li {
                         transform: translateY(-30px);
                         transition: 300ms;
+                        padding-bottom: 30px;
                         opacity: 0;
+
                         &:nth-child(1) {
                             transition-delay: 0;
                         }
@@ -1499,10 +1502,19 @@ body.has-custom-page-heading {
 
             &:hover {
                 .list-item-content {
-                    ul {
+                    >ul {
                         >li {
                             opacity: 1;
                             transform: translateY(0);
+
+                            &:hover {
+                                >ul {
+                                    >li {
+                                        opacity: 1;
+                                        transform: translateY(0);
+                                    }
+                                }
+                            }
                         }
                     }
                 }

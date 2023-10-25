@@ -823,6 +823,10 @@ header #qodef-page-header-inner .qodef-header-navigation {
   max-width: 100%;
   width: 100%;
   padding: 0; }
+  .tax-studio_category #qodef-page-outer #qodef-page-inner > .ten87-map,
+  .post-type-archive-studios #qodef-page-outer #qodef-page-inner > .ten87-map,
+  .single-studios #qodef-page-outer #qodef-page-inner > .ten87-map {
+    display: none !important; }
 .tax-studio_category #qodef-page-header,
 .post-type-archive-studios #qodef-page-header,
 .single-studios #qodef-page-header {

@@ -9,7 +9,7 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Image Slider', 'textdomain');
+        return esc_html__('Ten87 Image Slider ', 'textdomain');
     }
 
     public function get_icon()
@@ -24,7 +24,7 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
 
     public function get_categories()
     {
-        return ['basic'];
+        return ['Ten87'];
     }
 
     public function get_keywords()

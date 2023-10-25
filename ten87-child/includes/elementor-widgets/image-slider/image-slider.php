@@ -14,7 +14,7 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
 
     public function get_icon()
     {
-        return 'eicon-code';
+        return 'eicon-gallery-grid';
     }
 
     public function get_custom_help_url()

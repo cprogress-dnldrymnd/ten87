@@ -71,7 +71,12 @@ function action_wp_footer()
 
 
 			}, function () {
-				jQuery(this).removeClass('activate-animation');
+				var $this = jQuery(this);
+				$this.removeClass('activate-animation');
+				setTimeout(function () {
+					$this.removeClass('active');
+				}, 300);
+
 			}
 			);
 		});

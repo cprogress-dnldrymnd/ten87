@@ -26,9 +26,9 @@ function post_slider($atts)
                 <?php foreach ($posts as $post) { ?>
                     <?php
                     $args = array(
-                        $bg => get_the_post_thumbnail_url($post->ID, 'full'),
-                        $title => $post->post_title,
-                        $post_excerpt => $post->post_excerpt,
+                        'bg' => get_the_post_thumbnail_url($post->ID, 'full'),
+                        'title' => $post->post_title,
+                        'post_excerpt' => $post->post_excerpt,
                     );
                     ?>
                     <?php

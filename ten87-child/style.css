@@ -857,9 +857,20 @@ header #qodef-page-header-inner .qodef-header-navigation {
 
 .cta-bar .container .row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px; }
   .cta-bar .container .row > a {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: -10px;
+    margin-right: -10px; }
+    .cta-bar .container .row > a > div {
+      padding-left: 10px;
+      padding-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

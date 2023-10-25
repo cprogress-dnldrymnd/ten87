@@ -34,52 +34,51 @@ class Elementor_CTA_Bar extends \Elementor\Widget_Base
     $this->start_controls_section(
       'content_section',
       [
-        'label' => esc_html__('CTA Settings', 'elementor-oembed-widget'),
+        'label' => esc_html__('Settings', 'elementor-oembed-widget'),
         'tab'   => \Elementor\Controls_Manager::TAB_CONTENT,
       ]
     );
 
-
     $this->add_control(
-      'cta_text',
+      'list',
       [
-        'label'   => esc_html__('CTA Heading', 'textdomain'),
-        'type'    => \Elementor\Controls_Manager::TEXT,
-        'default' => 'Lorem ipsum dolor sit',
-      ]
-    );
-
-    $this->add_control(
-      'cta_url',
-      [
-        'label'       => esc_html__('CTA URL', 'textdomain'),
-        'type'        => \Elementor\Controls_Manager::URL,
-        'options'     => ['url', 'is_external', 'nofollow'],
-        'label_block' => true,
-      ]
-    );
-
-    $this->add_control(
-      'icon',
-      [
-        'label'       => esc_html__('Icon', 'textdomain'),
-        'type'        => \Elementor\Controls_Manager::ICONS,
+        'label'       => esc_html__('List Item', 'textdomain'),
+        'type'        => \Elementor\Controls_Manager::REPEATER,
+        'fields'      => [
+          [
+            'name'        => 'list_title',
+            'label'       => esc_html__('Title', 'textdomain'),
+            'type'        => \Elementor\Controls_Manager::TEXT,
+            'default'     => esc_html__('List Title', 'textdomain'),
+            'label_block' => true,
+          ],
+          [
+            'name'       => 'list_content',
+            'label'      => esc_html__('Content', 'textdomain'),
+            'type'       => \Elementor\Controls_Manager::WYSIWYG,
+            'default'    => esc_html__('List Content', 'textdomain'),
+            'show_label' => false,
+          ],
+          [
+            'name'      => 'list_color',
+            'label'     => esc_html__('Color', 'textdomain'),
+            'type'      => \Elementor\Controls_Manager::COLOR,
+            'selectors' => [
+              '{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}}'
+            ],
+          ]
+        ],
         'default'     => [
-          'value'   => 'fas fa-circle',
-          'library' => 'fa-solid',
-        ],
-        'recommended' => [
-          'fa-solid'   => [
-            'circle',
-            'dot-circle',
-            'square-full',
+          [
+            'list_title'   => esc_html__('Title #1', 'textdomain'),
+            'list_content' => esc_html__('Item content. Click the edit button to change this text.', 'textdomain'),
           ],
-          'fa-regular' => [
-            'circle',
-            'dot-circle',
-            'square-full',
+          [
+            'list_title'   => esc_html__('Title #2', 'textdomain'),
+            'list_content' => esc_html__('Item content. Click the edit button to change this text.', 'textdomain'),
           ],
         ],
+        'title_field' => '{{{ list_title }}}',
       ]
     );
 

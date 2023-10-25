@@ -57,7 +57,7 @@
 		?>
 		<div id="qodef-page-outer">
 			<?php
-			if ($show_custom_banner) {
+			if (!$show_custom_banner) {
 				// Include title template
 				get_template_part('title');
 			}

@@ -30,7 +30,7 @@ function post_slider($atts)
                     $post_excerpt = $post->post_excerpt;
                     ?>
                     <?php
-                    include(get_stylesheet_directory() . '/template-parts/studio-swiper-slide');
+                    include(get_stylesheet_directory() . '/template-parts/studio/studio-swiper-slide');
                     ?>
                 <?php } ?>
             </div>

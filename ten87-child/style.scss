@@ -1225,7 +1225,9 @@ header {
     .qodef-page-title {
         display: none !important;
     }
-    .qodef-page-inner {
-        max-width: 100%;
+    .qodef-page-outer {
+        #qodef-page-inner {
+            max-width: 100%;
+        }
     }
 }

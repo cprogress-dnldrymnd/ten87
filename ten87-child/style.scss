@@ -1463,7 +1463,7 @@ body.has-custom-page-heading {
 
             .list-item-content {
                 width: 70%;
-
+                margin-top: var(--offset);
                 ul {
                     list-style: none;
                     padding: 0;

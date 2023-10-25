@@ -31,6 +31,15 @@ function set_scripts_type_attribute($tag, $handle, $src)
 }
 add_filter('script_loader_tag', 'set_scripts_type_attribute', 10, 3);
 
+/*-----------------------------------------------------------------------------------*/
+/* Register Carbofields
+/*-----------------------------------------------------------------------------------*/
+add_action('carbon_fields_register_fields', 'tissue_paper_register_custom_fields');
+function tissue_paper_register_custom_fields()
+{
+	require_once('includes/post-meta.php');
+}
+
 require_once('includes/post-types.php');
 require_once('includes/shortcodes.php');
 require_once('includes/elementor.php');
@@ -89,10 +98,10 @@ function swiper_navigation()
 	<div class="swiper-navigation-holder">
 		<div class="nav-inner">
 			<div class="swiper-button-prev">
-				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/arrow.svg' ?>" alt="">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/arrow.svg' ?>">
 			</div>
 			<div class="swiper-button-next">
-				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/arrow.svg' ?>" alt="">
+				<img src="<?= get_stylesheet_directory_uri() . '/assets/images/arrow.svg' ?>">
 			</div>
 		</div>
 	</div>

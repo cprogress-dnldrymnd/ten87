@@ -1408,11 +1408,18 @@ body.has-custom-page-heading {
 .list-item-on-hover {
     .list-item-box {
         position: relative;
+
         &:hover {
-            .list-item-inner .list-item-content ul li {
-                transition-delay: var(--transition-delay-hover);
+
+            .list-item {
+                &:not(:hover) {
+                    .list-item-inner .list-item-content ul li {
+                        transition-delay: var(--transition-delay-hover);
+                    }
+                }
             }
         }
+
         &.fixed-positioning {
             >.list-item {
                 position: absolute;

@@ -107,23 +107,24 @@ function anim() {
 
 function hero_cursor() {
     var $circle = jQuery('.home-cursor');
-
-    function moveCircle(e) {
-        TweenLite.to($circle, 0.3, {
-            css: {
-                left: e.pageX,
-                top: e.pageY
-            }
-        });
-    }
-    jQuery(window).on('mousemove', moveCircle);
-
-    jQuery(".home-hero").hover(
-        function () {
-            jQuery('.home-cursor').addClass('show-cursor');
-        }, function () {
-            jQuery('.home-cursor').removeClass('show-cursor');
+    if ($circle.length > 0) {
+        function moveCircle(e) {
+            TweenLite.to($circle, 0.3, {
+                css: {
+                    left: e.pageX,
+                    top: e.pageY
+                }
+            });
         }
-    );
+        jQuery(window).on('mousemove', moveCircle);
+
+        jQuery(".home-hero").hover(
+            function () {
+                jQuery('.home-cursor').addClass('show-cursor');
+            }, function () {
+                jQuery('.home-cursor').removeClass('show-cursor');
+            }
+        );
+    }
 }
 

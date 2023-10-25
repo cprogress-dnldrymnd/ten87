@@ -30,8 +30,7 @@ function post_slider($atts)
                         'title' => $post->post_title,
                         'post_excerpt' => $post->post_excerpt,
                     );
-                    ?>
-                    <?php
+                  
                     get_template_part('template-parts/studio/studio-swiper-slide', 'null', $args);
                     ?>
                 <?php } ?>

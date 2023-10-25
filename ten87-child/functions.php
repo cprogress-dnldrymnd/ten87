@@ -67,15 +67,12 @@ function action_wp_footer()
 				jQuery(this).css('height', $height + 'px');
 				jQuery(this).addClass('fixed-positioning');
 			});
-
-			jQuery('.list-item-box .list-item').each(function (index, element) {
-				console.log(jQuery(this).offset().top);
-			});
 			var listitem = document.getElementsByClassName('list-item');
 
 			for (var i = 0; i < listitem.length; i++) {
 				var list_index = listitem[i];
-				console.log(list_index.offsetTop);
+				$offset = list_index.offsetTop;
+				list_index.css('top', $offset + 'px');
 			}
 		});
 	</script>

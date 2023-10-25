@@ -16,14 +16,16 @@ jQuery(document).ready(function () {
     }
   });
 
+  var listparent = document.querySelectorAll('.list-item-content > ul > li > ul');
+  listparent.forEach(function (item, index) {
+    var listitem = listparent[index].children
+    for (var i = 0; i < listitem.length; i++) {
+      var list_index = listitem[i];
+      $offset = list_index.offsetTop;
+      list_index.style.cssText = '--transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + ((i * 50) * listitem.length) + 'ms';
+    }
+  });
 
-
-  var listitem = document.querySelectorAll('.list-item-content > ul > li > ul > li');
-  for (var i = 0; i < listitem.length; i++) {
-    var list_index = listitem[i];
-    $offset = list_index.offsetTop;
-    list_index.style.cssText = '--transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + ((i * 50) * listitem.length) + 'ms';
-  }
 
   jQuery('.list-item-box').each(function (index, element) {
     $height = jQuery(this).outerHeight();

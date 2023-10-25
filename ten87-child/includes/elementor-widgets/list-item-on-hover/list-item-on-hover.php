@@ -96,4 +96,10 @@ class Elementor_List_Item_On_Hover extends \Elementor\Widget_Base
 
     include(__DIR__ . '/render.php');
   }
+
+  protected function content_template()
+  {
+    include(__DIR__ . '/render.php');
+  }
+
 }

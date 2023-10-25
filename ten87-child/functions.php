@@ -62,6 +62,12 @@ function action_wp_footer()
 				},
 			});
 
+
+			for (var i = 0; i < listitem.length; i++) {
+				var list_index = listitem[i];
+				$offset = list_index.offsetTop;
+				list_index.style.cssText = 'top: ' + $offset + 'px';
+			}
 			jQuery('.list-item-box').each(function (index, element) {
 				$height = jQuery(this).outerHeight();
 				jQuery(this).css('height', $height + 'px');
@@ -69,11 +75,7 @@ function action_wp_footer()
 			});
 			var listitem = document.getElementsByClassName('list-item');
 
-			for (var i = 0; i < listitem.length; i++) {
-				var list_index = listitem[i];
-				$offset = list_index.offsetTop;
-				list_index.style.cssText = 'top: ' + $offset + 'px';
-			}
+
 		});
 	</script>
 	<?php

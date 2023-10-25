@@ -958,12 +958,11 @@ body.has-custom-page-heading #qodef-page-header {
           .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li > ul {
             flex: 0 0 auto;
             width: 50%;
-            font-size: 30px; }
-            .list-item-on-hover .list-item-box > .list-item-inner .list-item-content > ul > li > ul > li {
-              position: absolute;
-              top: 0;
-              right: 0;
-              left: 30%; }
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 30%; }
     .list-item-on-hover .list-item-box > .list-item-inner:hover .list-item-content > ul > li {
       opacity: 1;
       transform: translateY(0); }

@@ -1495,12 +1495,10 @@ body.has-custom-page-heading {
                             flex: 0 0 auto;
                             width: 50%;
                             font-size: 30px;
-                            >li {
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                                left: 30%;
-                            }
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            left: 30%;
                         }
                     }
                 }
@@ -1512,6 +1510,7 @@ body.has-custom-page-heading {
                         >li {
                             opacity: 1;
                             transform: translateY(0);
+
                             &:hover {
                                 >ul {
                                     >li {

@@ -1412,7 +1412,7 @@ body.has-custom-page-heading {
         &:hover {
 
             .list-item {
-                &:not(:hover) {
+                &:hover {
                     .list-item-inner .list-item-content ul li {
                         transition-delay: var(--transition-delay-hover);
                     }

@@ -13,7 +13,7 @@
                 <h2><?= $settings['cta_text'] ?></h2>
             <?php } ?>
             <div class="icon">
-                <?php var_dump($settings['icon']) ?>
+                <img src="<?= $settings['icon']['url'] ?>" alt="">
             </div>
             <?php
             if ($settings['cta_url']) {

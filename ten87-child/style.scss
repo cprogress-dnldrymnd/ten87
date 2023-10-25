@@ -1413,11 +1413,11 @@ body.has-custom-page-heading {
             &.active {
                 .list-item-content {
                     >ul {
+                        display: block;
                         >li {
                             opacity: 1;
                             transform: translateY(0);
                             visibility: visible;
-                            display: flex;
                             &:hover {
                                 >ul {
                                     >li {
@@ -1511,7 +1511,7 @@ body.has-custom-page-heading {
                     right: 0;
                     left: 30%;
                     font-size: 39px;
-
+                    display: none;
                     >li {
                         display: flex;
                         justify-content: space-between;

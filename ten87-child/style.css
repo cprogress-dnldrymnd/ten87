@@ -907,15 +907,16 @@ body.has-custom-page-heading #qodef-page-header {
 
 .list-item-on-hover .list-item-box {
   position: relative; }
-  .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul > li {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-    display: flex; }
-    .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul > li:hover > ul > li {
+  .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul {
+    display: block; }
+    .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul > li {
       opacity: 1;
       transform: translateY(0);
       visibility: visible; }
+      .list-item-on-hover .list-item-box > .list-item.active .list-item-content > ul > li:hover > ul > li {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible; }
   .list-item-on-hover .list-item-box .list-item-inner {
     display: flex; }
     .list-item-on-hover .list-item-box .list-item-inner > div {
@@ -962,7 +963,8 @@ body.has-custom-page-heading #qodef-page-header {
         top: 0;
         right: 0;
         left: 30%;
-        font-size: 39px; }
+        font-size: 39px;
+        display: none; }
         .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li {
           display: flex;
           justify-content: space-between; }

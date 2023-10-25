@@ -60,13 +60,12 @@ class Elementor_List_Item_On_Hover extends \Elementor\Widget_Base
             'show_label' => false,
           ],
           [
-            'name'      => 'list_color',
-            'label'     => esc_html__('Color', 'textdomain'),
-            'type'      => \Elementor\Controls_Manager::COLOR,
-            'selectors' => [
-              '{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}}'
-            ],
-          ]
+            'name'       => 'list_content',
+            'label'      => esc_html__('Content', 'textdomain'),
+            'type'       => \Elementor\Controls_Manager::WYSIWYG,
+            'default'    => esc_html__('List Content', 'textdomain'),
+            'show_label' => false,
+          ],
         ],
         'default'     => [
           [

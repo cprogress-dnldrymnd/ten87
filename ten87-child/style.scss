@@ -1420,13 +1420,16 @@ body.has-custom-page-heading {
 
             .list-item-content {
                 width: 70%;
+
                 ul {
                     list-style: none;
                     padding: 0;
                 }
+
                 >ul {
                     >li {
                         display: flex;
+                        justify-content: space-between;
 
                         >ul {
                             flex: 0 0 auto;

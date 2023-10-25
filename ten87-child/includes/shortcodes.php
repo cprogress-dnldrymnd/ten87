@@ -25,12 +25,14 @@ function post_slider($atts)
             <div class="swiper-wrapper">
                 <?php foreach ($posts as $post) { ?>
                     <?php
-                    $bg = get_the_post_thumbnail_url($post->ID, 'full');
-                    $title = $post->post_title;
-                    $post_excerpt = $post->post_excerpt;
+                    $args = array(
+                        $bg => get_the_post_thumbnail_url($post->ID, 'full'),
+                        $title => $post->post_title,
+                        $post_excerpt => $post->post_excerpt,
+                    );
                     ?>
                     <?php
-                    include(get_stylesheet_directory() . '/template-parts/studio/studio-swiper-slide');
+                    get_template_part('template-parts/studio/studio-swiper-slide', 'null', $args);
                     ?>
                 <?php } ?>
             </div>

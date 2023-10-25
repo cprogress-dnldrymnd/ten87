@@ -1,3 +1,9 @@
+<?php
+$bg = $args['bg'];
+$title = $args['title'];
+$post_excerpt = $args['post_excerpt'];
+?>
+
 <div class="post-slider-holder">
     <div class="swiper mySwiperPostSlider">
         <div class="swiper-wrapper">

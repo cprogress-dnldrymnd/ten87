@@ -71,10 +71,11 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
 
         include(__DIR__ . '/render.php');
     }
+    /*
     public function get_style_depends()
     {
         return ['elementor-swiper-css'];
-    }
+    }*/
     public function get_script_depends()
     {
         return ['swiper', 'elementor-image-slider-js'];

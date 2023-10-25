@@ -33,6 +33,13 @@
 		</div>
 	<?php } ?>
 
+	<?php
+	if(get_post_type() == 'studios' || is_tax('studio_category') || is_post_type_archive('studio')) {
+		$show_custom_banner = true;
+	} else {
+		$show_custom_banner = false;
+	}
+	?>
 
 	<div id="qodef-page-wrapper" class="<?php echo esc_attr(obsius_get_page_wrapper_classes()); ?>">
 		<?php
@@ -41,13 +48,13 @@
 		?>
 
 		<?php
-		if (get_post_type() == 'studios') {
+		if ($show_custom_banner) {
 			get_template_part('template-parts/section/page-heading');
 		}
 		?>
 		<div id="qodef-page-outer">
 			<?php
-			if (get_post_type() != 'studios') {
+			if ($show_custom_banner) {
 				// Include title template
 				get_template_part('title');
 			}

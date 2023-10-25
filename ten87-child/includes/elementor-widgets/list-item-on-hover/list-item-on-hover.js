@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
     for (var i = 0; i < listitem.length; i++) {
       var list_index = listitem[i];
       $offset = list_index.offsetTop;
-      list_index.style.cssText = '--offset: -' + $offset + 'px; --transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + listitem.length + 'ms';
+      list_index.style.cssText = '--offset: -' + $offset + 'px; --transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + ((listitem.length * 50) + (i * 50)) + 'ms';
     }
   });
 
@@ -22,7 +22,7 @@ jQuery(document).ready(function () {
     for (var i = 0; i < listitem.length; i++) {
       var list_index = listitem[i];
       $offset = list_index.offsetTop;
-      list_index.style.cssText = '--transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + ((i * 50) * listitem.length) + 'ms';
+      list_index.style.cssText = '--transition-delay: ' + (i * 50) + 'ms; --transition-delay-hover: ' + ((listitem.length * 50) + (i * 50)) + 'ms';
     }
   });
 

@@ -1,6 +1,6 @@
 <?php
-$object = get_queried_object();
-if ($object) {
+if (is_archive()) {
+    $object = get_queried_object();
     $title = $object->name;
     $desc = $object->description;
 } else {

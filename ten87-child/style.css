@@ -957,6 +957,7 @@ body.has-custom-page-heading #qodef-page-header {
           width: 50%;
           font-size: 30px; }
   .list-item-on-hover .list-item-box > .list-item-inner:hover .list-item-content ul > li {
+    opacity: 1;
     transform: translateY(0); }
 
 /*# sourceMappingURL=style.css.map */

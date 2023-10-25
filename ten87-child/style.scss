@@ -1242,6 +1242,9 @@ header {
             max-width: 100%;
             width: 100%;
             padding: 0;
+            > .ten87-map {
+                display: none !important;
+            }
         }
     }
     #qodef-page-header {

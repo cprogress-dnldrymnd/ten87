@@ -15,8 +15,10 @@
                 </div>
             <?php } ?>
             <div class="icon">
-                <img src="<?= $settings['icon']['value']['url'] ?>" alt="">
-                <img src="<?= $settings['icon']['value']['url'] ?>" alt="">
+                <div class="icon-box">
+                    <img class="top" src="<?= $settings['icon']['value']['url'] ?>" alt="">
+                    <img class="hover" src="<?= $settings['icon']['value']['url'] ?>" alt="">
+                </div>
             </div>
         </div>
         <?php

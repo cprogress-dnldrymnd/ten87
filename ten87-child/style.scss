@@ -1317,9 +1317,40 @@ header {
             margin-left: -10px;
             margin-right: -10px;
 
+            .icon-box {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    transition: 300ms;
+
+                    &.hover {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: translateY(100%);
+                    }
+                }
+
+            }
+
             >div {
                 padding-left: 10px;
                 padding-right: 10px;
+            }
+
+            &:hover {
+                .icon-box {
+                    img {
+                        &.top {
+                            transform: translateY(-100%);
+                        }
+
+                        &.hover {
+                            transform: translateY(0);
+                        }
+                    }
+                }
             }
         }
     }

@@ -862,8 +862,22 @@ header #qodef-page-header-inner .qodef-header-navigation {
   width: auto;
   margin-left: -10px;
   margin-right: -10px; }
+  .cta-bar .container .row .icon-box {
+    position: relative;
+    overflow: hidden; }
+    .cta-bar .container .row .icon-box img {
+      transition: 300ms; }
+      .cta-bar .container .row .icon-box img.hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(100%); }
   .cta-bar .container .row > div {
     padding-left: 10px;
     padding-right: 10px; }
+  .cta-bar .container .row:hover .icon-box img.top {
+    transform: translateY(-100%); }
+  .cta-bar .container .row:hover .icon-box img.hover {
+    transform: translateY(0); }
 
 /*# sourceMappingURL=style.css.map */

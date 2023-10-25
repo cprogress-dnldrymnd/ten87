@@ -18,6 +18,9 @@ class newPostType
 		$this->show_in_admin_bar = isset($param['show_in_admin_bar']) ? $param['show_in_admin_bar'] : true;
 		$this->has_archive = isset($param['has_archive']) ? $param['has_archive'] : true;
 		$this->hierarchical = isset($param['hierarchical']) ? $param['hierarchical'] : false;
+		$this->taxonomies = isset($param['taxonomies']) ? $param['taxonomies'] : false;
+
+
 
 		if (isset($param['rewrite'])) {
 			$this->rewrite = $param['rewrite'];
@@ -52,6 +55,7 @@ class newPostType
 				'public'              => true,
 				'has_archive'         => $this->has_archive,
 				'hierarchical'        => $this->hierarchical,
+				'taxonomies'          => $this->taxonomies,
 				'rewrite'             => $this->rewrite,
 				'menu_icon'           => $this->icon,
 				'capability_type'     => 'page',
@@ -166,6 +170,7 @@ new newPostType(
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => true,
+		'taxonomies'    => array('studio_category'),
 	)
 );
 

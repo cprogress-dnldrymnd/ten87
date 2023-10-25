@@ -186,10 +186,10 @@ function wpa_course_post_link( $post_link, $id = 0 ){
         $terms = wp_get_object_terms( $post->ID, 'studio_category' );
         if( $terms ){
             return str_replace( '%studio_category%' , $terms[0]->slug , $post_link );
-        } else {
-            return str_replace( '%studio_category%' , '' , $post_link );
-		}
-    }
-    return $post_link;  
+        }
+    } else {
+		return str_replace( '%studio_category%' , '' , $post_link );
+
+	}
 }
 add_filter( 'post_type_link', 'wpa_course_post_link', 1, 3 );

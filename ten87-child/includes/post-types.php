@@ -224,7 +224,7 @@ add_filter('manage_templates_posts_columns', 'set_custom_edit_templates_columns'
 function set_custom_edit_templates_columns($columns)
 {
 	unset($columns['author']);
-	$columns['shortcode'] = __('Author', 'your_text_domain');
+	$columns['shortcode'] = __('Shortcode', 'your_text_domain');
 
 	return $columns;
 }
@@ -234,7 +234,6 @@ add_action('manage_templates_posts_custom_column', 'custom_templates_column', 10
 function custom_templates_column($column, $post_id)
 {
 	switch ($column) {
-
 		case 'shortcode':
 			echo '<input value="[custom_template post-id=' . $post_id . ']" readonly/>';
 			break;

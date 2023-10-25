@@ -43,7 +43,7 @@ $desc = $object->description;
     </div>
     <div class="elementor-container">
         <div class="qodef-section-title">
-            <h1 class="qodef-shortcode qodef-m  qodef-custom-font qodef-custom-font-223 qodef-layout--simple qodef-alignment--left">
+            <h1 class="heading">
                 <?= $title ?>
             </h1>
             <div class="qodef-section-title">

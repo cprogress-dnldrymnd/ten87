@@ -148,19 +148,6 @@ class newTaxonomy
 
 }
 
-new newPostType(
-	array(
-		'name'          => 'Studios',
-		'singular_name' => 'Studio',
-		'icon'          => 'dashicons-media-text',
-		'rewrite'       => array('slug' => 'studios'),
-		'has_archive'   => 'studios',
-		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
-		'show_in_rest'  => true,
-	)
-);
-
-
 new newTaxonomy(
 	array(
 		'taxonomy'  => 'studio_category',
@@ -176,6 +163,19 @@ new newTaxonomy(
 		)
 	)
 );
+
+new newPostType(
+	array(
+		'name'          => 'Studios',
+		'singular_name' => 'Studio',
+		'icon'          => 'dashicons-media-text',
+		'rewrite'       => array('slug' => 'studios'),
+		'has_archive'   => 'studios',
+		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
+		'show_in_rest'  => true,
+	)
+);
+
 
 new newPostType(
 	array(

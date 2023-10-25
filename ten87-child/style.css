@@ -562,7 +562,7 @@ body {
       transform: none !important;
       color: var(--white-color); }
       @media (max-width: 575px) {
-        .swiper-navigation-holder .nav-inner > div svg {
+        .swiper-navigation-holder .nav-inner > div svg, .swiper-navigation-holder .nav-inner > div img {
           width: 40px; } }
       .swiper-navigation-holder .nav-inner > div:not(:last-child) {
         margin-right: 1rem !important; }

@@ -236,7 +236,7 @@ function custom_templates_column($column, $post_id)
 	switch ($column) {
 
 		case 'shortcode':
-			echo '<input value="custom_template post-id=' + $post_id + '"/>';
+			echo '<input value="custom_template post-id=' . $post_id . '"/>';
 			break;
 	}
 }

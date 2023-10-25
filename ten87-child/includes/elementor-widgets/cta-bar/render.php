@@ -13,7 +13,9 @@
                 <h2><?= $settings['cta_text'] ?></h2>
             <?php } ?>
             <div class="icon">
-
+                <div class="my-icon-wrapper">
+                    <?php \Elementor\Icons_Manager::render_icon($settings['icon'], ['aria-hidden' => 'true']); ?>
+                </div>
             </div>
             <?php
             if ($settings['cta_url']) {

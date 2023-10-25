@@ -77,6 +77,6 @@ class Elementor_Image_Slider extends \Elementor\Widget_Base
     }
     public function get_script_depends()
     {
-        return ['elementor-swiper-js', 'elementor-image-slider-js'];
+        return ['swiper', 'elementor-image-slider-js'];
     }
 }

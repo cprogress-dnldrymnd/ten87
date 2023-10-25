@@ -186,5 +186,3 @@ new newPostType(
 		'supports'      => array('title', 'revisions'),
 	)
 );
-
-flush_rewrite_rules();

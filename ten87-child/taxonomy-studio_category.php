@@ -4,7 +4,7 @@ $object = get_queried_object();
 $title = $object->name;
 $desc = $object->description;
 ?>
-<div class="page-heading elementor-section elementor-section-boxed">
+<div class="page-heading elementor-section elementor-section-boxed home-hero">
     <div class="blob-holder-absolute blob-holder-1 blob-hero-1">
         <!-- Draw everything relative to a 200x200 canvas, this will then scale to any resolution -->
         <div class="blob-holder blob-box">

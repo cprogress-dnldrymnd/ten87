@@ -150,7 +150,7 @@ new newTaxonomy(
 			'label'        => 'Studio Categories',
 			'query_var'    => true,
 			'rewrite'      => array(
-				'slug'         => 'studios',
+				'slug'         => 'studios/%studio_category%',
 				'with_front' => true
 			)
 		)
@@ -179,3 +179,15 @@ new newPostType(
 		'supports'      => array('title', 'revisions'),
 	)
 );
+
+function wpa_course_post_link( $post_link, $id = 0 ){
+    $post = get_post($id);  
+    if ( is_object( $post ) ){
+        $terms = wp_get_object_terms( $post->ID, 'studio_category' );
+        if( $terms ){
+            return str_replace( '%studio_category%' , $terms[0]->slug , $post_link );
+        }
+    }
+    return $post_link;  
+}
+add_filter( 'post_type_link', 'wpa_course_post_link', 1, 3 );

@@ -3,8 +3,11 @@
   if ($settings['list']) {
     echo '<div class="list-item-box" >';
     foreach ($settings['list'] as $item) {
+      echo '<div class="list-item-inner" >';
       echo '<div class="elementor-repeater-item-' . esc_attr($item['_id']) . '">' . $item['list_title'] . '</div>';
       echo '<div>' . $item['list_content'] . '</div>';
+      echo '</div>';
+
     }
     echo '</div>';
   }

@@ -74,7 +74,7 @@ function action_wp_footer()
 			var listitem = document.getElementsByClassName('list-item');
 
 			for (var i = 0; i < listitem.length; i++) {
-				var list_index = list[i];
+				var list_index = listitem[i];
 				console.log(list_index.offsetTop);
 			}
 		});

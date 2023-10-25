@@ -1,6 +1,7 @@
 jQuery(document).ready(function () {
-  document.querySelectorAll('.list-item-content li').textContent = "";
-
+  jQuery('.list-item-content li').each(function () {
+    console.log((this).text());
+  });
   console.log(document.querySelectorAll('.list-item-content li').textContent);
   var listitem = document.getElementsByClassName('list-item');
   for (var i = 0; i < listitem.length; i++) {

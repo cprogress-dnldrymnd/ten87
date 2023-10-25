@@ -74,7 +74,7 @@ function action_wp_footer()
 				$this.removeClass('activate-animation');
 				setTimeout(function () {
 					$this.removeClass('active');
-				}, 300);
+				}, 450);
 
 			}
 			);

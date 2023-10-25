@@ -27,11 +27,11 @@ jQuery(document).ready(function () {
     }
   });
 
-
-  jQuery('.list-item-box').each(function (index, element) {
-    $height = jQuery(this).outerHeight();
-    jQuery(this).css('height', $height + 'px');
-    jQuery(this).addClass('fixed-positioning');
-  });
-
+  if (window.innerWidth > 992) {
+    jQuery('.list-item-box').each(function (index, element) {
+      $height = jQuery(this).outerHeight();
+      jQuery(this).css('height', $height + 'px');
+      jQuery(this).addClass('fixed-positioning');
+    });
+  }
 });

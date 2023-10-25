@@ -62,6 +62,7 @@ function action_wp_footer()
 				},
 			});
 
+			var listitem = document.getElementsByClassName('list-item');
 
 			for (var i = 0; i < listitem.length; i++) {
 				var list_index = listitem[i];
@@ -73,7 +74,6 @@ function action_wp_footer()
 				jQuery(this).css('height', $height + 'px');
 				jQuery(this).addClass('fixed-positioning');
 			});
-			var listitem = document.getElementsByClassName('list-item');
 
 
 		});

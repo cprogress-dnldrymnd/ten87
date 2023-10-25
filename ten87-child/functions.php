@@ -66,7 +66,10 @@ function action_wp_footer()
 				$height = jQuery(this).outerHeight();
 				jQuery(this).css('height', $height + 'px');
 				jQuery(this).addClass('fixed-positioning');
-			});;
+			});
+
+			var el = document.querySelector('.list-item-box .list-item');
+			console.log(el.offsetLeft, el.offsetTop);
 		});
 	</script>
 	<?php

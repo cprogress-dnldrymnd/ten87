@@ -808,13 +808,13 @@ header #qodef-page-header-inner .qodef-header-navigation {
     transform: rotate(0deg); }
   to {
     transform: rotate(359deg); } }
-.tax-studio_category .qodef-page-title {
+.tax-studio_category .qodef-page-title, .post-type-archive-studios .qodef-page-title {
   display: none !important; }
-.tax-studio_category #qodef-page-outer #qodef-page-inner {
+.tax-studio_category #qodef-page-outer #qodef-page-inner, .post-type-archive-studios #qodef-page-outer #qodef-page-inner {
   max-width: 100%;
   width: 100%;
   padding: 0; }
-.tax-studio_category #qodef-page-header {
+.tax-studio_category #qodef-page-header, .post-type-archive-studios #qodef-page-header {
   position: absolute;
   left: 0;
   top: 0;

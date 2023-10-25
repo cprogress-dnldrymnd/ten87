@@ -1410,6 +1410,7 @@ body.has-custom-page-heading {
         position: relative;
 
         >.list-item {
+            z-index: -1;
             &:hover {
                 .list-item-content {
                     >ul {
@@ -1417,12 +1418,14 @@ body.has-custom-page-heading {
                             opacity: 1;
                             transform: translateY(0);
                             visibility: visible;
+                            display: block;
                             &:hover {
                                 >ul {
                                     >li {
                                         opacity: 1;
                                         transform: translateY(0);
                                         visibility: visible;
+                                        display: block;
                                     }
                                 }
                             }
@@ -1461,6 +1464,7 @@ body.has-custom-page-heading {
                         padding-bottom: 20px;
                         opacity: 0;
                         visibility: hidden;
+                        display: none;
                         &:nth-child(1) {
                             transition-delay: 0;
                         }

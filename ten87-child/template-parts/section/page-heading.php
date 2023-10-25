@@ -55,7 +55,7 @@ if (is_archive()) {
                 <?= wpautop($desc) ?>
             </div>
 
-            <?php if (get_post_type() == 'studio') { ?>
+            <?php if (get_post_type() == 'studios') { ?>
                 <div class="button-group-box">
                     <div class="qodef-qi-button-holder qodef-qi-button-black">
                         <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="" target="_self">

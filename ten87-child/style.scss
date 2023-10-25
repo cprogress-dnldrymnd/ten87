@@ -1409,7 +1409,29 @@ body.has-custom-page-heading {
     .list-item-box {
         position: relative;
 
-        >.list-item-inner {
+        >.list-item {
+            &:hover {
+                .list-item-content {
+                    >ul {
+                        >li {
+                            opacity: 1;
+                            transform: translateY(0);
+
+                            &:hover {
+                                >ul {
+                                    >li {
+                                        opacity: 1;
+                                        transform: translateY(0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .list-item-inner {
             display: flex;
 
             >div {
@@ -1503,25 +1525,7 @@ body.has-custom-page-heading {
                 }
             }
 
-            &:hover {
-                .list-item-content {
-                    >ul {
-                        >li {
-                            opacity: 1;
-                            transform: translateY(0);
 
-                            &:hover {
-                                >ul {
-                                    >li {
-                                        opacity: 1;
-                                        transform: translateY(0);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }

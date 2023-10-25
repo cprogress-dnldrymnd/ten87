@@ -41,5 +41,10 @@ jQuery(document).ready(function () {
       jQuery(this).css('--height', $height + 'px');
     });
 
+    jQuery('.list-item-title').click(function (e) { 
+      jQuery('.list-item-content').removeClass('active');
+      jQuery(this).next().addClass('active');
+    });
+
   }
 });

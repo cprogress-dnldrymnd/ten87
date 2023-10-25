@@ -1411,7 +1411,7 @@ body.has-custom-page-heading {
 
         >.list-item {
             z-index: -1;
-
+            /*
             &:hover {
                 .list-item-content {
                     >ul {
@@ -1419,15 +1419,14 @@ body.has-custom-page-heading {
                             opacity: 1;
                             transform: translateY(0);
                             visibility: visible;
-                            display: flex !important;
-
+                            display: block;
                             &:hover {
                                 >ul {
                                     >li {
                                         opacity: 1;
                                         transform: translateY(0);
                                         visibility: visible;
-                                        display: flex !important;
+                                        display: block;
                                     }
                                 }
                             }
@@ -1436,7 +1435,7 @@ body.has-custom-page-heading {
                 }
             }
         }
-
+        */
         .list-item-inner {
             display: flex;
 
@@ -1467,7 +1466,6 @@ body.has-custom-page-heading {
                         opacity: 0;
                         visibility: hidden;
                         display: none !important;
-
                         &:nth-child(1) {
                             transition-delay: 0;
                         }
@@ -1518,7 +1516,9 @@ body.has-custom-page-heading {
                     font-size: 39px;
 
                     >li {
+                        display: flex;
                         justify-content: space-between;
+
                         >ul {
                             flex: 0 0 auto;
                             width: 50%;

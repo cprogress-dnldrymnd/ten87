@@ -1431,16 +1431,20 @@ body.has-custom-page-heading {
                 position: absolute;
 
                 .list-item-content {
-                    margin-top: var(--offset);
                     position: relative;
 
                     >ul {
 
                         >li {
                             >ul {
-                                margin-top: var(--offset);
+                                @media(min-width: 992px) {
+                                    margin-top: var(--offset);
+                                }
                             }
                         }
+                    }
+                    @media(min-width: 992px) {
+                        margin-top: var(--offset);
                     }
                 }
             }
@@ -1501,6 +1505,10 @@ body.has-custom-page-heading {
                 h2 {
                     margin: 0;
                     padding-bottom: 100px;
+                }
+
+                @media(max-width: 991px) {
+                    width: 100%;
                 }
             }
 
@@ -1601,7 +1609,9 @@ body.has-custom-page-heading {
                 }
             }
 
-
+            @media(max-width: 991px) {
+                flex-wrap: wrap;
+            }
         }
     }
 }

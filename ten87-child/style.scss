@@ -1621,6 +1621,8 @@ body.has-custom-page-heading {
                         @media(max-width: 991px) {
                             flex-direction: column;
                             margin-bottom: 20px;
+                            border-bottom: 1px solid;
+                            padding-bottom: 20px;
                         }
                     }
 

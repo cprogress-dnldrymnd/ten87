@@ -1463,7 +1463,9 @@ body.has-custom-page-heading {
 
                 .list-item-title {
                     h2 {
-                        color: var(--accent-color);
+                        @media (min-width: 992px) {
+                            color: var(--accent-color);
+                        }
                     }
                 }
 
@@ -1475,7 +1477,6 @@ body.has-custom-page-heading {
                             visibility: visible;
 
                             &:hover {
-                                color: var(--accent-color);
 
                                 >ul {
                                     color: var(--text-color);
@@ -1485,6 +1486,10 @@ body.has-custom-page-heading {
                                         transform: translateY(0);
                                         visibility: visible;
                                     }
+                                }
+
+                                @media (min-width: 992px) {
+                                    color: var(--accent-color);
                                 }
                             }
                         }
@@ -1506,14 +1511,17 @@ body.has-custom-page-heading {
                 h2 {
                     margin: 0;
                     padding-bottom: 100px;
+
                     svg {
                         margin-left: 1rem;
-                            width: 30px;
-                                height: 30px;
+                        width: 30px;
+                        height: 30px;
+
                         @media (min-width: 992px) {
                             display: none;
                         }
                     }
+
                     @media(max-width: 991px) {
                         padding-bottom: 20px;
                         padding-top: 20px;
@@ -1582,6 +1590,7 @@ body.has-custom-page-heading {
                                     width: 33.333333%;
                                     padding-left: 10px;
                                     padding-right: 10px;
+
                                     @media (max-width: 767px) {
                                         width: 50%;
                                     }
@@ -1617,18 +1626,31 @@ body.has-custom-page-heading {
                     width: 100%;
                     transition: 300ms;
                     overflow: hidden;
-                    &.height-zero {
-                        height: 0;
-                    }
-                    &.active {
-                        height: var(--height);
-                    }
+
                 }
             }
 
-            @media(max-width: 991px) {
-                flex-wrap: wrap;
+            &.height-zero {
+                .list-item-content {
+                    height: 0;
+                }
+            }
+
+            &.active {
+                .list-item-content {
+                    height: var(--height);
+                }
+
+                .list-item-title {
+                    h2 {
+                        color: var(--accent-color);
+                    }
+                }
+
+                @media(max-width: 991px) {
+                    flex-wrap: wrap;
+                }
+
             }
         }
     }
-}

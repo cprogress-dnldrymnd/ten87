@@ -39,6 +39,7 @@ jQuery(document).ready(function () {
     jQuery('.list-item-content').each(function (index, element) {
       $height = jQuery(this).outerHeight();
       jQuery(this).css('--height', $height + 'px');
+      jQuery('.list-item-content').addClass('height-zero');
     });
 
     jQuery('.list-item-title').click(function (e) { 

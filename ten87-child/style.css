@@ -1025,6 +1025,8 @@ body.has-custom-page-heading #qodef-page-header {
           width: 100%;
           transition: 300ms;
           overflow: hidden; }
+          .list-item-on-hover .list-item-box .list-item-inner .list-item-content.height-zero {
+            height: 0; }
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content.active {
             height: var(--height); } }
     @media (max-width: 991px) {

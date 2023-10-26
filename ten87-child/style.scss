@@ -1608,6 +1608,9 @@ body.has-custom-page-heading {
                     width: 100%;
                     transition: 300ms;
                     overflow: hidden;
+                    &.height-zero {
+                        height: 0;
+                    }
                     &.active {
                         height: var(--height);
                     }

@@ -42,7 +42,6 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.list-item-title').click(function (e) { 
-      jQuery('.list-item-content').parent().removeClass('active');
       if (jQuery(this).parent().hasClass('active')) {
         jQuery(this).parent().removeClass('active')
       } else {

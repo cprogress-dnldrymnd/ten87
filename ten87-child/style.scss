@@ -1627,32 +1627,31 @@ body.has-custom-page-heading {
                     transition: 300ms;
                     overflow: hidden;
 
-                }
-            }
+                    &.height-zero {
+                        height: 0;
+                    }
 
-            &.height-zero {
-                .list-item-content {
-                    height: 0;
-                }
-            }
-
-            &.active {
-                .list-item-content {
-                    height: var(--height);
-                }
-
-                .list-item-title {
-                    h2 {
-                        color: var(--accent-color);
+                    &.active {
+                        height: var(--height);
                     }
                 }
+            }
 
-                @media(max-width: 991px) {
-                    flex-wrap: wrap;
+            @media(max-width: 991px) {
+                flex-wrap: wrap;
+
+                &.active {
+                    .list-item-content {
+                        height: var(--height);
+                    }
+
+                    .list-item-title {
+                        h2 {
+                            color: var(--accent-color);
+                        }
+                    }
                 }
-
             }
         }
-
     }
 }

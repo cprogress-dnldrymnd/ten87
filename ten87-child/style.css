@@ -1035,15 +1035,17 @@ body.has-custom-page-heading #qodef-page-header {
         .list-item-on-hover .list-item-box .list-item-inner .list-item-content {
           width: 100%;
           transition: 300ms;
-          overflow: hidden; } }
-    .list-item-on-hover .list-item-box .list-item-inner.height-zero .list-item-content {
-      height: 0; }
-    .list-item-on-hover .list-item-box .list-item-inner.active .list-item-content {
-      height: var(--height); }
-    .list-item-on-hover .list-item-box .list-item-inner.active .list-item-title h2 {
-      color: var(--accent-color); }
+          overflow: hidden; }
+          .list-item-on-hover .list-item-box .list-item-inner .list-item-content.height-zero {
+            height: 0; }
+          .list-item-on-hover .list-item-box .list-item-inner .list-item-content.active {
+            height: var(--height); } }
     @media (max-width: 991px) {
-      .list-item-on-hover .list-item-box .list-item-inner.active {
-        flex-wrap: wrap; } }
+      .list-item-on-hover .list-item-box .list-item-inner {
+        flex-wrap: wrap; }
+        .list-item-on-hover .list-item-box .list-item-inner.active .list-item-content {
+          height: var(--height); }
+        .list-item-on-hover .list-item-box .list-item-inner.active .list-item-title h2 {
+          color: var(--accent-color); } }
 
 /*# sourceMappingURL=style.css.map */

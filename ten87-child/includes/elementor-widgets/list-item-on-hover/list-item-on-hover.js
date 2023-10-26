@@ -41,13 +41,9 @@ jQuery(document).ready(function () {
       jQuery(this).parent().css('--height', $height + 'px');
     });
 
-    jQuery('.list-item-title').click(function (e) { 
+    jQuery('.list-item-title').click(function (e) {
       jQuery('.list-item-inner.active)').removeClass('active');
-      if (jQuery(this).parent().hasClass('active')) {
-        jQuery(this).parent().removeClass('active')
-      } else {
-        jQuery(this).parent().addClass('active')
-      }
+      jQuery(this).parent().addClass('active')
     });
 
     jQuery('.list-item-content').parent().addClass('height-zero');

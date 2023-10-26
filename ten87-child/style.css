@@ -950,10 +950,19 @@ body.has-custom-page-heading #qodef-page-header {
       .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 {
         margin: 0;
         padding-bottom: 100px; }
+        .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 svg {
+          margin-left: 1rem;
+          width: 30px;
+          height: 30px; }
+          @media (min-width: 992px) {
+            .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 svg {
+              display: none; } }
         @media (max-width: 991px) {
           .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 {
             padding-bottom: 20px;
-            padding-top: 20px; } }
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-around; } }
       @media (max-width: 991px) {
         .list-item-on-hover .list-item-box .list-item-inner .list-item-title {
           width: 100%; } }

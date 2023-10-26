@@ -43,9 +43,9 @@ jQuery(document).ready(function () {
 
     jQuery('.list-item-title').click(function (e) { 
       jQuery('.list-item-content').removeClass('active');
-      jQuery(this).next().addClass('active');
+      jQuery(this).next().toggleClass('active');
     });
-    
+
     jQuery('.list-item-content').addClass('height-zero');
 
   }

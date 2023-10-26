@@ -1626,19 +1626,17 @@ body.has-custom-page-heading {
                     width: 100%;
                     transition: 300ms;
                     overflow: hidden;
-
-                    &.height-zero {
-                        height: 0;
-                    }
-
-                    &.active {
-                        height: var(--height);
-                    }
                 }
             }
 
             @media(max-width: 991px) {
                 flex-wrap: wrap;
+
+                &.height-zero {
+                    .list-item-content {
+                        height: 0;
+                    }
+                }
 
                 &.active {
                     .list-item-content {

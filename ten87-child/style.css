@@ -1021,7 +1021,8 @@ body.has-custom-page-heading #qodef-page-header {
                 width: 50%; } }
           @media (max-width: 991px) {
             .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li {
-              flex-direction: column; } }
+              flex-direction: column;
+              margin-bottom: 30px; } }
         @media (max-width: 1439px) {
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
             font-size: 30px; } }

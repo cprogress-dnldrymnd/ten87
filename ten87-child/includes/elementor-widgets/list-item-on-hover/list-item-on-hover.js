@@ -42,7 +42,7 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.list-item-title').click(function (e) { 
-      jQuery('.list-item-inner:not(.active)').removeClass('active');
+      jQuery('.list-item-inner.active)').removeClass('active');
       if (jQuery(this).parent().hasClass('active')) {
         jQuery(this).parent().removeClass('active')
       } else {

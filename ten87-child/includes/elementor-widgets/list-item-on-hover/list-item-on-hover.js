@@ -43,7 +43,11 @@ jQuery(document).ready(function () {
 
     jQuery('.list-item-title').click(function (e) { 
       jQuery('.list-item-content').parent().removeClass('active');
-      jQuery(this).parent().toggleClass('active');
+      if (jQuery(this).parent().hasClass('active')) {
+        jQuery(this).parent().removeClass('active')
+      } else {
+        jQuery(this).parent().addClass('active')
+      }
     });
 
     jQuery('.list-item-content').parent().addClass('height-zero');

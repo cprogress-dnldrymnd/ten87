@@ -962,7 +962,7 @@ body.has-custom-page-heading #qodef-page-header {
             padding-bottom: 20px;
             padding-top: 20px;
             display: flex;
-            justify-content: space-around; } }
+            justify-content: space-between; } }
       @media (max-width: 991px) {
         .list-item-on-hover .list-item-box .list-item-inner .list-item-title {
           width: 100%; } }

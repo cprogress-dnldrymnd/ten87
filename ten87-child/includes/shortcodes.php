@@ -68,6 +68,7 @@ function location_map_by_id($id)
     $query = new WP_Query($args);
     while ($query->have_posts()) {
         $query->the_post();
+        echo get_the_title();
         do_shortcode('[wp_simple_locator_map]'); 
     }
     wp_reset_postdata();

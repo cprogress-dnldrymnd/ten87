@@ -367,7 +367,6 @@ body {
 #qodef-page-mobile-header {
     background-color: var(--cream-color);
     border: none;
-
     .qodef-mobile-header-logo-link.qodef-source--svg-path {
         svg {
             width: 100px;
@@ -1276,12 +1275,16 @@ body.has-custom-page-heading {
         top: 0;
         right: 0;
     }
+    @media(max-width: 1024px) {
+        border-top: 1px solid ;
+    }
 }
 
 .page-heading {
-    padding-top: 300px;
+    padding-top: 16vw;
     padding-bottom: 100px;
-
+    padding-left: 10px;
+    padding-right: 10px;
     .heading {
         margin-bottom: 30px;
     }

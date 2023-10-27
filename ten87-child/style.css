@@ -838,10 +838,15 @@ body.has-custom-page-heading #qodef-page-header {
   left: 0;
   top: 0;
   right: 0; }
+@media (max-width: 1024px) {
+  body.has-custom-page-heading {
+    border-top: 1px solid; } }
 
 .page-heading {
-  padding-top: 300px;
-  padding-bottom: 100px; }
+  padding-top: 16vw;
+  padding-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px; }
   .page-heading .heading {
     margin-bottom: 30px; }
   .page-heading .qodef-section-title {

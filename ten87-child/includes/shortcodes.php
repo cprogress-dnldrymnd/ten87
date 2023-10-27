@@ -62,7 +62,7 @@ function location_map_by_id($id)
 {
     ob_start();
     $args = array(
-        'post_type' => 'page',
+        'post_type' => 'studios',
         'p' => 5801
     );
     $query = new WP_Query($args);

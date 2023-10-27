@@ -1273,16 +1273,16 @@ body.has-custom-page-heading {
         margin-top: 0 !important;
     }
 
-    #qodef-page-header, #qodef-page-mobile-header {
+    #qodef-page-header,
+    #qodef-page-mobile-header {
         position: absolute;
         left: 0;
         top: 0;
         right: 0;
-        @media(max-width: 1024px) {
-            border-bottom: 1px solid ;
+        @media (max-width: 1024px) {
+            border-bottom: 1px solid;
         }
     }
-    
 }
 
 .page-heading {
@@ -1294,6 +1294,9 @@ body.has-custom-page-heading {
         margin-bottom: 30px;
         h1 {
             line-height: 1 !important;
+            @media (max-width: 767px) {
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -1307,6 +1310,9 @@ body.has-custom-page-heading {
         @media (min-width: 992px) {
             font-size: 51px;
         }
+    }
+    @media (max-width: 575px) {
+        margin-top: 80px;
     }
 }
 

@@ -1349,7 +1349,7 @@ body.has-custom-page-heading {
 .ten87-map {
     .wpsl-map.wpsl-map {
         min-height: 80vh;
-
+        margin-bottom: 0;
         @media (max-width: 767px) {
             min-height: 400px;
         }

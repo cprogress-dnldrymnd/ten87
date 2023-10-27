@@ -885,7 +885,8 @@ body.has-custom-page-heading #qodef-page-mobile-header {
       width: 50px; } }
 
 .ten87-map .wpsl-map.wpsl-map {
-  min-height: 80vh; }
+  min-height: 80vh;
+  margin-bottom: 0; }
   @media (max-width: 767px) {
     .ten87-map .wpsl-map.wpsl-map {
       min-height: 400px; } }

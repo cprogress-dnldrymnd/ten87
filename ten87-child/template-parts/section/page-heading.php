@@ -80,7 +80,7 @@ if (is_archive()) {
                         </a>
                     </div>
                     <div class="qodef-qi-button-holder qodef-qi-button-bordered">
-                        <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="<?= get_permalink($post_id) ?>" target="_self">
+                        <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="#find-us" target="_self">
                             <span class="qodef-m-text">Find Us</span>
                             <span class="qodef-m-icon ">
                                 <span class="qodef-m-icon-inner">

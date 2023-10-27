@@ -55,3 +55,5 @@ function location_map()
     </div>
 <?php
 }
+
+add_shortcode('location_map', 'location_map');

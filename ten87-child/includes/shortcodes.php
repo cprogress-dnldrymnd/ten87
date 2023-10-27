@@ -60,11 +60,18 @@ add_shortcode('location_map', 'location_map');
 
 function location_map_by_id($id)
 {
+    ob_start();
     $args = array(
         'post_type' => 'page',
         'p' => 5801
     );
     $query = new WP_Query($args);
+    while ($query->have_posts()) {
+        $query->the_post();
+        do_shortcode('[wp_simple_locator_map]'); 
+    }
+    wp_reset_postdata();
+    return ob_get_clean();
 }
 
 add_shortcode('location_map_by_id', 'location_map_by_id');

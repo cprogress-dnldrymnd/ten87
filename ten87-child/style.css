@@ -75,8 +75,16 @@ body {
   #qodef-page-wrapper .qodef-h1,
   #qodef-page-wrapper h1 {
     font-size: 60px !important; } }
-#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-text,
-#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content .qodef-e-title {
+#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list
+.qodef-testimonials-list.qodef-testimonials-list
+.qodef-e-inner
+.qodef-e-content
+.qodef-e-text,
+#qodef-page-wrapper .elementor-widget-obsius_core_testimonials_list
+.qodef-testimonials-list.qodef-testimonials-list
+.qodef-e-inner
+.qodef-e-content
+.qodef-e-title {
   line-height: 1 !important; }
 
 .qodef-section-title .qodef-m-subtitle-text {
@@ -945,11 +953,11 @@ body.has-custom-page-heading #qodef-page-header {
             color: var(--accent-color); } }
   .list-item-on-hover .list-item-box .list-item-inner {
     display: flex; }
+    @media (max-width: 991px) {
+      .list-item-on-hover .list-item-box .list-item-inner {
+        border-bottom: 1px solid; } }
     .list-item-on-hover .list-item-box .list-item-inner > div {
       flex: 0 0 auto; }
-      @media (max-width: 991px) {
-        .list-item-on-hover .list-item-box .list-item-inner > div {
-          border-bottom: 1px solid; } }
     .list-item-on-hover .list-item-box .list-item-inner .list-item-title {
       width: 30%; }
       .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 {

@@ -50,11 +50,6 @@ add_shortcode('post_slider', 'post_slider');
 function location_map()
 {
 ?>
-    <div class="qodef-shortcode qodef-m  qodef-qi-section-title  qodef-decoration--italic  qodef-link--underline-draw qodef-subtitle-icon--left">
-        <h2 class="qodef-m-title">
-            Find Us
-        </h2>
-    </div>
     <div class="ten87-map">
         <?= do_shortcode('[wp_simple_locator_map]') ?>
     </div>

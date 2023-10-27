@@ -1292,6 +1292,9 @@ body.has-custom-page-heading {
     padding-right: 10px;
     .heading {
         margin-bottom: 30px;
+        h1 {
+            line-height: 1 !important;
+        }
     }
 
     .qodef-section-title {

@@ -851,6 +851,8 @@ body.has-custom-page-heading #qodef-page-header, body.has-custom-page-heading #q
   padding-right: 10px; }
   .page-heading .heading {
     margin-bottom: 30px; }
+    .page-heading .heading h1 {
+      line-height: 1 !important; }
   .page-heading .qodef-section-title {
     line-height: 1.2; }
     @media (min-width: 992px) {

@@ -947,6 +947,9 @@ body.has-custom-page-heading #qodef-page-header {
     display: flex; }
     .list-item-on-hover .list-item-box .list-item-inner > div {
       flex: 0 0 auto; }
+      @media (max-width: 991px) {
+        .list-item-on-hover .list-item-box .list-item-inner > div {
+          border-bottom: 1px solid; } }
     .list-item-on-hover .list-item-box .list-item-inner .list-item-title {
       width: 30%; }
       .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 {

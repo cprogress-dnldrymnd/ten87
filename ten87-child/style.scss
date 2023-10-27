@@ -1657,6 +1657,13 @@ body.has-custom-page-heading {
                         height: 0;
                     }
                 }
+                &:not(.height-zero) {
+                    .list-item-content {
+                        position: absolute;
+                        transform: translateX(-103%);
+                        opacity: 0;
+                    }
+                }
 
                 &.active {
                     .list-item-content {

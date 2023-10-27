@@ -1057,6 +1057,10 @@ body.has-custom-page-heading #qodef-page-header {
         flex-wrap: wrap; }
         .list-item-on-hover .list-item-box .list-item-inner.height-zero .list-item-content {
           height: 0; }
+        .list-item-on-hover .list-item-box .list-item-inner:not(.height-zero) .list-item-content {
+          position: absolute;
+          transform: translateX(-103%);
+          opacity: 0; }
         .list-item-on-hover .list-item-box .list-item-inner.active .list-item-content {
           height: var(--height); }
         .list-item-on-hover .list-item-box .list-item-inner.active .list-item-title h2 {

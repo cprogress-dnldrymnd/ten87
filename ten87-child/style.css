@@ -866,7 +866,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
         font-size: 51px; } }
   @media (max-width: 575px) {
     .page-heading {
-      margin-top: 80px; } }
+      padding-top: 80px; } }
 
 .image-slider .swiper-slide .image-box {
   padding: 25% 0;

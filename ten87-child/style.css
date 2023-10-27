@@ -833,14 +833,11 @@ body.has-custom-page-heading #qodef-page-outer #qodef-page-inner {
   padding: 0; }
   body.has-custom-page-heading #qodef-page-outer #qodef-page-inner > .ten87-map {
     display: none !important; }
-body.has-custom-page-heading #qodef-page-header {
+body.has-custom-page-heading #qodef-page-header, body.has-custom-page-heading #qodef-page-mobile-header {
   position: absolute;
   left: 0;
   top: 0;
   right: 0; }
-@media (max-width: 1024px) {
-  body.has-custom-page-heading {
-    border-top: 1px solid; } }
 
 .page-heading {
   padding-top: 16vw;

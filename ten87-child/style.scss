@@ -1503,6 +1503,9 @@ body.has-custom-page-heading {
 
             >div {
                 flex: 0 0 auto;
+                @media(max-width: 991px) {
+                    border-bottom: 1px solid;
+                }
             }
 
             .list-item-title {

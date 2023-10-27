@@ -1269,6 +1269,10 @@ body.has-custom-page-heading {
         }
     }
 
+    #qodef-page-outer {
+        margin-top: 0 !important;
+    }
+
     #qodef-page-header, #qodef-page-mobile-header {
         position: absolute;
         left: 0;

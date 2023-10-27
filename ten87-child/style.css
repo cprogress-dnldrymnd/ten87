@@ -852,12 +852,11 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   padding-left: 10px;
   padding-right: 10px; }
   .page-heading .heading {
-    margin-bottom: 30px; }
-    .page-heading .heading h1 {
-      line-height: 1 !important; }
-      @media (max-width: 767px) {
-        .page-heading .heading h1 {
-          margin-bottom: 10px; } }
+    margin-bottom: 30px;
+    line-height: 1 !important; }
+    @media (max-width: 767px) {
+      .page-heading .heading {
+        margin-bottom: 10px; } }
   .page-heading .qodef-section-title {
     line-height: 1.2; }
     .page-heading .qodef-section-title p:last-child {

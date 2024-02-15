@@ -610,6 +610,8 @@ body {
     color: var(--text-color) !important; }
     #qodef-page-footer .widget a {
       color: var(--text-color) !important; }
+      #qodef-page-footer .widget a:hover, #qodef-page-footer .widget a:active, #qodef-page-footer .widget a:focus {
+        text-decoration: underline; }
   #qodef-page-footer .widget-title {
     font-size: 30px;
     color: var(--text-color) !important;

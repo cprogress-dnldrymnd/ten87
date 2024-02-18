@@ -139,10 +139,10 @@ function anim() {
         })
     }
 
-    let $blob_footer_holder = document.getElementById('blob-footer-holder');
+    let $body = document.getElementsByTagName('body');
 
-    if ($blob_footer_holder) {
-        $blob_footer_holder.addEventListener("mousemove", e => {
+    if ($body) {
+        $body.addEventListener("mousemove", e => {
             let x = e.clientX;
             let y = e.clientY;
             gsap.to('#blob-footer-holder .blob-box', {

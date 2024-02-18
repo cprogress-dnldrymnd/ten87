@@ -198,32 +198,6 @@ body {
     }*/
 }
 
-.about-us {
-    &:after {
-        background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
-        content: "";
-        display: block;
-        width: 200px;
-        height: 0;
-        position: absolute;
-        top: -1%;
-        left: 2%;
-        border-radius: 50%;
-        transform-origin: 50% 50%;
-        background-color: var(--accent-color);
-        color: var(--accent-color);
-        box-shadow: 0 30px 200px 350px currentColor;
-        opacity: 0;
-        animation:
-            qode-fade-in-custom 1s 1,
-            qode-bg-gradient-bottom-left 7s 1s linear infinite;
-    }
-
-    .elementor-container {
-        position: relative;
-        z-index: 1;
-    }
-}
 
 .our-community {
     &:after {

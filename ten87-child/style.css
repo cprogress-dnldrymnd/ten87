@@ -1081,4 +1081,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
           .list-item-on-hover .list-item-box .list-item-inner.active .list-item-title h2 .icon svg:first-child {
             opacity: 0; } }
 
+.qodef-gradient-background--enabled.qodef--html-loaded.qodef-gradient--bottom-left #qodef-page-wrapper:after {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */

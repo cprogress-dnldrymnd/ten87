@@ -3,9 +3,7 @@ import { spline } from '../../node_modules/@georgedoescode/spline/spline.js';
 import SimplexNoise from '../../node_modules/simplex-noise/dist/esm/simplex-noise.js';
 const path = document.querySelector(".blob-holder path");
 const path2 = document.querySelector(".blob-holder-2 path");
-
-
-
+const path3 = document.querySelector(".blob-holder-3 path");
 
 let noiseStep = 0.005;
 
@@ -13,39 +11,33 @@ const simplex = new SimplexNoise();
 
 const points = createPoints();
 
+(function animate() {
+    path.setAttribute("d", spline(points, 1, true));
+    path2.setAttribute("d", spline(points, 3, true));
+    path3.setAttribute("d", spline(points, 3, true));
 
+    // for every point...
+    for (let i = 0; i < points.length; i++) {
+        const point = points[i];
 
-jQuery('.blob-box').each(function (index, element) {
-    var path = jQuery(this).find('path');
-    (function animate() {
-        path.setAttribute("d", spline(points, 1, true));
+        // return a pseudo random value between -1 / 1 based on this point's current x, y positions in "time"
+        const nX = noise(point.noiseOffsetX, point.noiseOffsetX);
+        const nY = noise(point.noiseOffsetY, point.noiseOffsetY);
+        // map this noise value to a new value, somewhere between it's original location -20 and it's original location + 20
+        const x = map(nX, -1, 1, point.originX - 5, point.originX + 5);
+        const y = map(nY, -1, 1, point.originY - 5, point.originY + 5);
 
-        // for every point...
-        for (let i = 0; i < points.length; i++) {
-            const point = points[i];
+        // update the point's current coordinates
+        point.x = x;
+        point.y = y;
 
-            // return a pseudo random value between -1 / 1 based on this point's current x, y positions in "time"
-            const nX = noise(point.noiseOffsetX, point.noiseOffsetX);
-            const nY = noise(point.noiseOffsetY, point.noiseOffsetY);
-            // map this noise value to a new value, somewhere between it's original location -20 and it's original location + 20
-            const x = map(nX, -1, 1, point.originX - 5, point.originX + 5);
-            const y = map(nY, -1, 1, point.originY - 5, point.originY + 5);
+        // progress the point's x, y values through "time"
+        point.noiseOffsetX += noiseStep;
+        point.noiseOffsetY += noiseStep;
+    }
 
-            // update the point's current coordinates
-            point.x = x;
-            point.y = y;
-
-            // progress the point's x, y values through "time"
-            point.noiseOffsetX += noiseStep;
-            point.noiseOffsetY += noiseStep;
-        }
-
-        requestAnimationFrame(animate);
-    })();
-
-
-});
-
+    requestAnimationFrame(animate);
+})();
 
 function map(n, start1, end1, start2, end2) {
     return ((n - start1) / (end1 - start1)) * (end2 - start2) + start2;

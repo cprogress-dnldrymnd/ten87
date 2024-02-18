@@ -16,7 +16,7 @@ const points = createPoints();
 
 
 jQuery('.blob-box').each(function (index, element) {
-    var path = jQuery(this);
+    var path = jQuery(this).find('path');
     (function animate() {
         path.setAttribute("d", spline(points, 1, true));
 

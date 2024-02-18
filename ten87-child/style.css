@@ -765,13 +765,18 @@ body {
     width: 50vw;
     height: 50vw; }
 
-.blob-footer {
+.blob-footer-holder {
+  overflow: hidden;
   position: absolute;
   left: 0;
   bottom: 0; }
-  .blob-footer svg {
-    width: 100vw;
-    height: 100vw; }
+  .blob-footer-holder .blob-footer {
+    position: absolute;
+    left: -50%;
+    bottom: -50vw; }
+    .blob-footer-holder .blob-footer svg {
+      width: 100vw;
+      height: 100vw; }
 
 header .qodef-widget-holder {
   display: none !important; }

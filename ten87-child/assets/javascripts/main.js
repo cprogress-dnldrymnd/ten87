@@ -105,6 +105,20 @@ function anim() {
             })
         })
     }
+
+    let $about_us = document.getElementById('about-us');
+
+    if ($about_us) {
+        $about_us.addEventListener("mousemove", e => {
+            let x = e.clientX;
+            let y = e.clientY;
+            gsap.to('#about-us .blob-box', {
+                x: x * 0.08,
+                y: y * 0.16,
+                duration: 1
+            })
+        })
+    }
 }
 
 function hero_cursor() {

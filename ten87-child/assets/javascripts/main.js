@@ -5,6 +5,7 @@ const path = document.querySelector(".blob-holder path");
 const path2 = document.querySelector(".blob-holder-2 path");
 const path3 = document.querySelector(".blob-holder-3 path");
 const path4 = document.querySelector(".blob-holder-4 path");
+const path5= document.querySelector(".blob-footer path");
 
 let noiseStep = 0.005;
 
@@ -17,6 +18,7 @@ const points = createPoints();
     path2.setAttribute("d", spline(points, 3, true));
     path3.setAttribute("d", spline(points, 3, true));
     path4.setAttribute("d", spline(points, 3, true));
+    path5.setAttribute("d", spline(points, 3, true));
 
     // for every point...
     for (let i = 0; i < points.length; i++) {

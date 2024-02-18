@@ -119,6 +119,22 @@ function anim() {
             })
         })
     }
+
+
+    let $our_community = document.getElementById('our-community');
+
+    if ($our_community) {
+        $our_community.addEventListener("mousemove", e => {
+            let x = e.clientX;
+            let y = e.clientY;
+            gsap.to('#our_community .blob-box', {
+                x: x * 0.08,
+                y: y * 0.16,
+                duration: 1
+            })
+        })
+    }
+    
 }
 
 function hero_cursor() {

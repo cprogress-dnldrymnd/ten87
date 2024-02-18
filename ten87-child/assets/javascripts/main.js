@@ -138,21 +138,6 @@ function anim() {
             })
         })
     }
-
-    let $body = document.getElementsByTagName('body');
-
-    if ($body) {
-        $body.addEventListener("mousemove", e => {
-            let x = e.clientX;
-            let y = e.clientY;
-            gsap.to('#blob-footer-holder .blob-box', {
-                x: x * 0.08,
-                y: y * 0.16,
-                duration: 1
-            })
-        })
-    }
-    
 }
 
 function hero_cursor() {

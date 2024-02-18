@@ -198,7 +198,6 @@ body {
     }*/
 }
 
-
 .our-community {
     &:after {
         background: transparent radial-gradient(closest-side at 94% 13%, #ff5932 0%, #dacebd 100%) 0% 0% no-repeat;
@@ -893,7 +892,9 @@ body {
 
         a {
             color: var(--text-color) !important;
-            &:hover, &:active, &:focus {
+            &:hover,
+            &:active,
+            &:focus {
                 text-decoration: underline;
             }
         }
@@ -1167,6 +1168,15 @@ body {
     transform: translateY(-50%);
     right: 0;
     left: 50%;
+}
+
+.blob-about-us {
+    left: -30%;
+    top: -30vw;
+    svg {
+        width: 80vw;
+        height: 80vw;
+    }
 }
 
 header {

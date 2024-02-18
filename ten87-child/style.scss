@@ -1684,3 +1684,8 @@ body.has-custom-page-heading {
         }
     }
 }
+
+
+.qodef-gradient-background--enabled.qodef--html-loaded.qodef-gradient--bottom-left #qodef-page-wrapper:after{
+    display: none !important;
+}

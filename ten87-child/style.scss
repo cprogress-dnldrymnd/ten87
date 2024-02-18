@@ -1163,6 +1163,12 @@ body {
         height: 50vw;
     }
 }
+
+.blob-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 header {
     .qodef-widget-holder {
         display: none !important;

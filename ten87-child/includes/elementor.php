@@ -6,10 +6,12 @@ function register_new_widgets($widgets_manager)
 	require_once(__DIR__ . '/elementor-widgets/image-slider/image-slider.php');
 	require_once(__DIR__ . '/elementor-widgets/cta-bar/cta-bar.php');
 	require_once(__DIR__ . '/elementor-widgets/list-item-on-hover/list-item-on-hover.php');
+	require_once(__DIR__ . '/elementor-widgets/blob/blob.php');
 
 	$widgets_manager->register(new \Elementor_CTA_Bar());
 	$widgets_manager->register(new \Elementor_Image_Slider());
 	$widgets_manager->register(new \Elementor_List_Item_On_Hover());
+	$widgets_manager->register(new \Elementor_Blob());
 }
 add_action('elementor/widgets/register', 'register_new_widgets');
 

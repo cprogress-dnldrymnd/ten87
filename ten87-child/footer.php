@@ -11,7 +11,7 @@
 			do_action('obsius_action_before_wrapper_close_tag');
 			?>
 			</div><!-- close #qodef-page-wrapper div from header.php -->
-			<div class="blob-footer-holder">
+			<div class="blob-footer-holder" id="blob-footer-holder">
 				<div class="blob-box blob-footer">
 					<svg viewBox="0 0 200 200">
 						<defs>

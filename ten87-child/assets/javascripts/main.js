@@ -138,6 +138,20 @@ function anim() {
             })
         })
     }
+
+    let $blob_footer_holder = document.getElementById('blob-footer-holder');
+
+    if ($blob_footer_holder) {
+        $blob_footer_holder.addEventListener("mousemove", e => {
+            let x = e.clientX;
+            let y = e.clientY;
+            gsap.to('#blob-footer-holder .blob-box', {
+                x: x * 0.08,
+                y: y * 0.16,
+                duration: 1
+            })
+        })
+    }
     
 }
 

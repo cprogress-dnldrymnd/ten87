@@ -129,7 +129,7 @@ function anim() {
         $our_community.addEventListener("mousemove", e => {
             let x = e.clientX;
             let y = e.clientY;
-            gsap.to('#our_community .blob-box', {
+            gsap.to('#our-community .blob-box', {
                 x: x * 0.08,
                 y: y * 0.16,
                 duration: 1

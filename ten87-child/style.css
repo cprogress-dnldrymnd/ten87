@@ -769,6 +769,9 @@ body {
   position: absolute;
   left: 0;
   bottom: 0; }
+  .blob-footer svg {
+    width: 100vw;
+    height: 100vw; }
 
 header .qodef-widget-holder {
   display: none !important; }

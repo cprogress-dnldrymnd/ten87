@@ -123,13 +123,13 @@ function anim() {
     }
 
 
-    let $our_community = document.getElementById('our-community');
+    let $our_community = document.getElementById('our-community-home');
 
     if ($our_community) {
         $our_community.addEventListener("mousemove", e => {
             let x = e.clientX;
             let y = e.clientY;
-            gsap.to('#our-community .blob-box', {
+            gsap.to('#our-community-home .blob-box', {
                 x: x * 0.08,
                 y: y * 0.16,
                 duration: 1

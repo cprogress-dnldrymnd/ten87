@@ -244,7 +244,7 @@ function custom_templates_column($column, $post_id)
 add_post_type_support('team', 'editor');
 
 
-function action_obsius_core_filter_post_excerpt_length($custom_excerpt_length) {
+function action_obsius_core_filter_post_excerpt_length() {
 	return 1000;
 }
 add_filter('obsius_core_filter_post_excerpt_length', 'action_obsius_core_filter_post_excerpt_length');

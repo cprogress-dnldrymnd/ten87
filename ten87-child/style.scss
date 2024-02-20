@@ -1706,3 +1706,28 @@ body.has-custom-page-heading {
 .qodef-gradient-background--enabled.qodef--html-loaded.qodef-gradient--bottom-left #qodef-page-wrapper:after {
     display: none !important;
 }
+
+.single-post {
+    .qodef-e-text {
+        font-size: 20px;
+        line-height: 1.2;
+        h2 {
+            margin-top: 2rem;
+        }
+        > * {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.top-list-item-wrapper {
+    .top-list-item {
+        h2 {
+            color: var(--accent-color);
+        }
+        .subheading {
+            font-size: 35px;
+            color: var(--black-color);
+        }
+    }
+}

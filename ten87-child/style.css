@@ -1099,4 +1099,18 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 .qodef-gradient-background--enabled.qodef--html-loaded.qodef-gradient--bottom-left #qodef-page-wrapper:after {
   display: none !important; }
 
+.single-post .qodef-e-text {
+  font-size: 20px;
+  line-height: 1.2; }
+  .single-post .qodef-e-text h2 {
+    margin-top: 2rem; }
+  .single-post .qodef-e-text > * {
+    margin-bottom: 1.5rem; }
+
+.top-list-item-wrapper .top-list-item h2 {
+  color: var(--accent-color); }
+.top-list-item-wrapper .top-list-item .subheading {
+  font-size: 35px;
+  color: var(--black-color); }
+
 /*# sourceMappingURL=style.css.map */

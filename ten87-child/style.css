@@ -1106,14 +1106,15 @@ body.has-custom-page-heading #qodef-page-mobile-header {
     margin-top: 2rem; }
   .single-post .qodef-e-text > * {
     margin-bottom: 1.5rem; }
-.single-post .spotify {
+.single-post .spotify a {
   font-size: 0;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="%231d1d1d"><g clip-path="url(%23clip0_1512_1524)"><path d="M4.31667 70C4.31667 87.4048 11.2307 104.097 23.5378 116.404C35.8449 128.711 52.5368 135.625 69.9417 135.625C87.3465 135.625 104.038 128.711 116.346 116.404C128.653 104.097 135.567 87.4048 135.567 70C135.567 52.5952 128.653 35.9032 116.346 23.5961C104.038 11.289 87.3465 4.375 69.9417 4.375C52.5368 4.375 35.8449 11.289 23.5378 23.5961C11.2307 35.9032 4.31667 52.5952 4.31667 70V70Z" stroke="white" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M40.8333 45.7917C51.1743 41.2774 62.6025 39.8589 73.7333 41.7084C84.9739 43.0071 95.5941 47.5471 104.3 54.7751" stroke="white" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.0917 68.4248C48.3156 64.0793 59.5678 62.7436 70.525 64.5748C81.5273 65.8554 91.9426 70.2238 100.567 77.1748" stroke="white" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 90.9416C45.2003 86.6599 56.4023 85.3456 67.3167 87.1499C78.3505 88.4179 88.793 92.8094 97.4167 99.8083" stroke="white" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_1512_1524"><rect width="140" height="140" fill="white"/></clipPath></defs></svg>');
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="none"><g clip-path="url(%23clip0_1512_1524)"><path d="M4.31667 70C4.31667 87.4048 11.2307 104.097 23.5378 116.404C35.8449 128.711 52.5368 135.625 69.9417 135.625C87.3465 135.625 104.038 128.711 116.346 116.404C128.653 104.097 135.567 87.4048 135.567 70C135.567 52.5952 128.653 35.9032 116.346 23.5961C104.038 11.289 87.3465 4.375 69.9417 4.375C52.5368 4.375 35.8449 11.289 23.5378 23.5961C11.2307 35.9032 4.31667 52.5952 4.31667 70V70Z" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M40.8333 45.7917C51.1743 41.2774 62.6025 39.8589 73.7333 41.7084C84.9739 43.0071 95.5941 47.5471 104.3 54.7751" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.0917 68.4248C48.3156 64.0793 59.5678 62.7436 70.525 64.5748C81.5273 65.8554 91.9426 70.2238 100.567 77.1748" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 90.9416C45.2003 86.6599 56.4023 85.3456 67.3167 87.1499C78.3505 88.4179 88.793 92.8094 97.4167 99.8083" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_1512_1524"><rect width="140" height="140" fill="%231d1d1d"/></clipPath></defs></svg>');
   width: 50px;
   height: 50px;
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: inline-block; }
 
 .top-list-item-wrapper .top-list-item h2 {
   color: var(--accent-color); }

@@ -12,7 +12,7 @@ if ( post_password_required() ) {
 	if ( ! empty( $excerpt ) && 0 !== intval( $excerpt_length ) ) {
 		$new_excerpt = substr( $excerpt, 0, intval( $excerpt_length ) );
 		?>
-		<p itemprop="description" class="qodef-e-excerpt"><?php echo esc_html( strip_tags( strip_shortcodes( $new_excerpt ) ) ); ?></p>
+		<p itemprop="description" class="qodef-e-excerpt xxxxx"><?php echo esc_html( strip_tags( strip_shortcodes( $new_excerpt ) ) ); ?></p>
 		<?php
 	}
 }

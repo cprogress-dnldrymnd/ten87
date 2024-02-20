@@ -247,4 +247,4 @@ add_post_type_support('team', 'editor');
 function action_obsius_core_filter_post_excerpt_length() {
 	return 1000;
 }
-add_filter('obsius_core_filter_post_excerpt_length', 'action_obsius_core_filter_post_excerpt_length');
+add_filter('obsius_core_filter_post_excerpt_length', 'action_obsius_core_filter_post_excerpt_length', 99);

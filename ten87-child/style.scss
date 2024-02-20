@@ -1722,18 +1722,7 @@ body.has-custom-page-heading {
         }
     }
 
-    .spotify {
-        a {
-            font-size: 0;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="none"><g clip-path="url(%23clip0_1512_1524)"><path d="M4.31667 70C4.31667 87.4048 11.2307 104.097 23.5378 116.404C35.8449 128.711 52.5368 135.625 69.9417 135.625C87.3465 135.625 104.038 128.711 116.346 116.404C128.653 104.097 135.567 87.4048 135.567 70C135.567 52.5952 128.653 35.9032 116.346 23.5961C104.038 11.289 87.3465 4.375 69.9417 4.375C52.5368 4.375 35.8449 11.289 23.5378 23.5961C11.2307 35.9032 4.31667 52.5952 4.31667 70V70Z" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M40.8333 45.7917C51.1743 41.2774 62.6025 39.8589 73.7333 41.7084C84.9739 43.0071 95.5941 47.5471 104.3 54.7751" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.0917 68.4248C48.3156 64.0793 59.5678 62.7436 70.525 64.5748C81.5273 65.8554 91.9426 70.2238 100.567 77.1748" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 90.9416C45.2003 86.6599 56.4023 85.3456 67.3167 87.1499C78.3505 88.4179 88.793 92.8094 97.4167 99.8083" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_1512_1524"><rect width="140" height="140" fill="%231d1d1d"/></clipPath></defs></svg>');
-            width: 50px;
-            height: 50px;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: inline-block;
-        }
-    }
+    
 }
 
 .top-list-item-wrapper {
@@ -1772,5 +1761,31 @@ body.has-custom-page-heading {
             font-size: 35px;
             color: var(--black-color);
         }
+    }
+}
+
+
+.spotify-icon {
+    a {
+        font-size: 0;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="none"><g clip-path="url(%23clip0_1512_1524)"><path d="M4.31667 70C4.31667 87.4048 11.2307 104.097 23.5378 116.404C35.8449 128.711 52.5368 135.625 69.9417 135.625C87.3465 135.625 104.038 128.711 116.346 116.404C128.653 104.097 135.567 87.4048 135.567 70C135.567 52.5952 128.653 35.9032 116.346 23.5961C104.038 11.289 87.3465 4.375 69.9417 4.375C52.5368 4.375 35.8449 11.289 23.5378 23.5961C11.2307 35.9032 4.31667 52.5952 4.31667 70V70Z" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M40.8333 45.7917C51.1743 41.2774 62.6025 39.8589 73.7333 41.7084C84.9739 43.0071 95.5941 47.5471 104.3 54.7751" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M38.0917 68.4248C48.3156 64.0793 59.5678 62.7436 70.525 64.5748C81.5273 65.8554 91.9426 70.2238 100.567 77.1748" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 90.9416C45.2003 86.6599 56.4023 85.3456 67.3167 87.1499C78.3505 88.4179 88.793 92.8094 97.4167 99.8083" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_1512_1524"><rect width="140" height="140" fill="%231d1d1d"/></clipPath></defs></svg>');
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+}
+.website-icon {
+    a {
+        font-size: 0;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140" fill="none"><path d="M17.5 30.625C23.6142 22.4768 31.5411 15.8635 40.6533 11.3088C49.7655 6.75403 59.8129 4.38281 70 4.38281C80.1871 4.38281 90.2345 6.75403 99.3467 11.3088C108.459 15.8635 116.386 22.4768 122.5 30.625" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M45.5 30.625C51.0883 14.6883 59.9783 4.375 70 4.375C80.0217 4.375 88.9175 14.6883 94.5 30.625" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M135.625 109.375H4.375" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.375 30.625H135.625" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M122.5 109.375C116.386 117.523 108.459 124.137 99.3467 128.691C90.2345 133.246 80.1871 135.617 70 135.617C59.8129 135.617 49.7655 133.246 40.6533 128.691C31.5411 124.137 23.6142 117.523 17.5 109.375" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M94.5 109.375C88.9175 125.318 80.0217 135.625 70 135.625C59.9783 135.625 51.0883 125.318 45.5 109.375" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.125 48.125V64.8025C13.126 68.2597 13.4679 71.7083 14.1458 75.0983L17.5 91.875L26.25 65.625L35 91.875L38.3542 75.0983C39.035 71.7087 39.3769 68.2598 39.375 64.8025V48.125" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M56.875 48.125V64.8025C56.876 68.2597 57.2179 71.7083 57.8958 75.0983L61.25 91.875L70 65.625L78.75 91.875L82.1042 75.0983C82.785 71.7087 83.1269 68.2598 83.125 64.8025V48.125" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M100.625 48.125V64.8025C100.626 68.2597 100.968 71.7083 101.646 75.0983L105 91.875L113.75 65.625L122.5 91.875L125.854 75.0983C126.535 71.7087 126.877 68.2598 126.875 64.8025V48.125" stroke="%231d1d1d" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        width: 50px;
+        height: 50px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
     }
 }

@@ -1711,6 +1711,9 @@ body.has-custom-page-heading {
     .qodef-e-text {
         font-size: 20px;
         line-height: 1.2;
+        a {
+            color: var(--accent-color);
+        }
         h2 {
             margin-top: 2rem;
         }

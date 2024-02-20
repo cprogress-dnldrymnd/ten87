@@ -1102,6 +1102,8 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 .single-post .qodef-e-text {
   font-size: 20px;
   line-height: 1.2; }
+  .single-post .qodef-e-text a {
+    color: var(--accent-color); }
   .single-post .qodef-e-text h2 {
     margin-top: 2rem; }
   .single-post .qodef-e-text > * {

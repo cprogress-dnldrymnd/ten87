@@ -1161,7 +1161,13 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   display: inline-block; }
 
 .qodef-icon-font-awesome.fa-ad:before {
-  content: "";
-  background-image: url("https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/ra.png"); }
+  content: '';
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/ra.png);
+  background-position: center; }
 
 /*# sourceMappingURL=style.css.map */

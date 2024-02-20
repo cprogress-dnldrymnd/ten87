@@ -239,3 +239,6 @@ function custom_templates_column($column, $post_id)
 			break;
 	}
 }
+
+
+add_post_type_support('team', 'editor');

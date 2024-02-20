@@ -1161,13 +1161,20 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   display: inline-block; }
 
 .qodef-icon-font-awesome.fa-ad:before {
-  content: '';
-  width: 35px;
-  height: 35px;
+  content: "";
+  width: 30px;
+  height: 30px;
   display: inline-block;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/ra.png);
   background-position: center; }
+
+.qodef-team-member-social-icons {
+  display: flex;
+  align-items: center;
+  line-height: 1; }
+  .qodef-team-member-social-icons .qodef-team-member-social-icon {
+    margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */

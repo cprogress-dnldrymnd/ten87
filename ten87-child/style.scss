@@ -1721,8 +1721,6 @@ body.has-custom-page-heading {
             margin-bottom: 1.5rem;
         }
     }
-
-    
 }
 
 .top-list-item-wrapper {
@@ -1764,7 +1762,6 @@ body.has-custom-page-heading {
     }
 }
 
-
 .spotify-icon {
     a {
         font-size: 0;
@@ -1787,5 +1784,12 @@ body.has-custom-page-heading {
         background-size: contain;
         background-repeat: no-repeat;
         display: inline-block;
+    }
+}
+
+.qodef-icon-font-awesome.fa-ad {
+    &:before {
+        content: "";
+        background-image: url('https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/ra.png');
     }
 }

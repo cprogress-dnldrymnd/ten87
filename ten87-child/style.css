@@ -1160,4 +1160,8 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   background-repeat: no-repeat;
   display: inline-block; }
 
+.qodef-icon-font-awesome.fa-ad:before {
+  content: "";
+  background-image: url("https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/ra.png"); }
+
 /*# sourceMappingURL=style.css.map */

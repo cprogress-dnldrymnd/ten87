@@ -1741,6 +1741,9 @@ body.has-custom-page-heading {
             display: flex;
             align-items: center;
             color: var(--accent-color);
+            @media(min-width: 1281px) {
+                font-size: 60px;
+            } 
             &:before {
                 counter-increment: section;
                 content: counter(section);

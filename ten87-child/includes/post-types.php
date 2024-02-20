@@ -242,9 +242,3 @@ function custom_templates_column($column, $post_id)
 
 
 add_post_type_support('team', 'editor');
-
-function mytheme_custom_excerpt_length($length)
-{
-	return 1000;
-}
-add_filter('excerpt_length', 'mytheme_custom_excerpt_length', 999);

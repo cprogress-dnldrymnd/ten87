@@ -249,4 +249,4 @@ function action_obsius_core_get_custom_post_type_excerpt() {
 	return 'xxxxxxxxxxx';
 }
 
-add_filter('obsius_core_get_custom_post_type_excerpt', 'action_obsius_core_get_custom_post_type_excerpt');
+apply_filters('obsius_core_get_custom_post_type_excerpt', 'action_obsius_core_get_custom_post_type_excerpt');

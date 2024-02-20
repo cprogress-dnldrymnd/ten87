@@ -245,7 +245,7 @@ add_post_type_support('team', 'editor');
 
 apply_filters( 'obsius_core_filter_post_excerpt_length', 500, 9999 );
 
-function action_obsius_core_get_custom_post_type_excerpt() {
-	return 'xxxxxxxxxxx';
+function action_obsius_core_get_custom_post_type_excerpt($custom_excerpt_length) {
+	return 500;
 }
 add_filter('obsius_core_get_custom_post_type_excerpt', 'action_obsius_core_get_custom_post_type_excerpt', 9999);

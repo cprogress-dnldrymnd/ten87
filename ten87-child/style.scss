@@ -1737,13 +1737,20 @@ body.has-custom-page-heading {
     counter-reset: section;
 
     .top-list-item {
+        > * {
+            margin-bottom: 1.5rem;
+            padding-left: 70px;
+        }
         h2 {
             display: flex;
             align-items: center;
-            @media(min-width: 1281px) {
+            margin-bottom: 0 !important;
+            padding-left: 0 !important;
+            @media (min-width: 1281px) {
                 font-size: 60px;
-            } 
+            }
             &:before {
+                color: var(--accent-color);
                 counter-increment: section;
                 content: counter(section);
                 width: 50px;
@@ -1755,7 +1762,7 @@ body.has-custom-page-heading {
                 font-size: 40px;
                 border-radius: 50%;
                 flex: 0 0 50px;
-                margin-right: 1rem;
+                margin-right: 20px;
             }
         }
         .subheading {

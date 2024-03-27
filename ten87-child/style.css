@@ -1211,9 +1211,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 .qodef-addons-blog-list.qodef-item-layout--boxed .qodef-info--top > * {
   font-family: "SuisseBPIntl", sans-serif; }
 
-.qodef-addons-blog-list {
-  display: none; }
-  .qodef-addons-blog-list .qodef-grid-inner {
-    gap: 50px; }
+.qodef-addons-blog-list .qodef-grid-inner {
+  gap: 50px; }
 
 /*# sourceMappingURL=style.css.map */

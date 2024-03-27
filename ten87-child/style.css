@@ -1183,4 +1183,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   .qodef-team-member-social-icons .qodef-team-member-social-icon {
     margin-right: 10px; }
 
+.single-studios .logo-slider {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */

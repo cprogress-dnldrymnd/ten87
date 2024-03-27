@@ -1183,7 +1183,8 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   .qodef-team-member-social-icons .qodef-team-member-social-icon {
     margin-right: 10px; }
 
-.single-studios .logo-slider, .page-id-205 .logo-slider {
+.single-studios .logo-slider,
+.page-id-205 .logo-slider {
   display: none; }
 
 /*blog*/
@@ -1214,7 +1215,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 .qodef-addons-blog-list .qodef-grid-inner {
   gap: 50px; }
 
-img {
+.qodef-m-image img {
   border-radius: 20px; }
 
 /*# sourceMappingURL=style.css.map */

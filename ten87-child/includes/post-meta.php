@@ -16,6 +16,14 @@ Container::make('post_meta', __('Page Heading Settings'))
 			Field::make('text', 'alt_title', __('Alt title'))
 				->set_help_text('Leave blank to use title'),
 			Field::make('text', 'description', __('Description'))
-			->set_help_text('Leave blank to use excerpt'),
+				->set_help_text('Leave blank to use excerpt'),
 		)
 	);
+
+Container::make('theme_options', __('Theme Options'))
+	->add_fields(array(
+		Field::make('text', 'tiktok_url', __('Tiktok URL')),
+		Field::make('text', 'instagram_url', __('Instagram URL')),
+		Field::make('text', 'facebook_url', __('Facebook URL')),
+		Field::make('text', 'linkedin_url', __('Linkedin URL')),
+	));

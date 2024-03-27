@@ -1221,4 +1221,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   .qodef-h1, h1 {
     font-size: 80px !important; } }
 
+#qodef-page-inner {
+  padding-top: 50px !important; }
+
 /*# sourceMappingURL=style.css.map */

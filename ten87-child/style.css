@@ -1219,7 +1219,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 
 @media (min-width: 1680px) {
   .qodef-h2,
-  h2 {
+  h2:not(.widgettitle) {
     font-size: 60px !important; } }
 
 /*# sourceMappingURL=style.css.map */

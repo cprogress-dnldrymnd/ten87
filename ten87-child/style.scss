@@ -1863,7 +1863,7 @@ h1 {
 }
 
 .qodef-h2,
-h2 {
+h2:not(.widgettitle) {
     @media (min-width: 1680px) {
         font-size: 60px !important;
     }

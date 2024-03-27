@@ -1215,7 +1215,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 .qodef-addons-blog-list .qodef-grid-inner {
   gap: 50px; }
 
-.qodef-m-image img {
+.qodef-m-image.qodef-m-image img {
   border-radius: 20px; }
 
 /*# sourceMappingURL=style.css.map */

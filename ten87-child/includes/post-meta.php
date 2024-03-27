@@ -19,7 +19,14 @@ Container::make('post_meta', __('Page Heading Settings'))
 				->set_help_text('Leave blank to use excerpt'),
 		)
 	);
-
+	Container::make('post_meta', __('Page Options'))
+	->where('post_type', '=', 'page')
+	->set_context('side')
+	->add_fields(
+		array(
+			Field::make('checkbox', 'hide_partners_logos', __('Hide Partners Logos')),
+		)
+	);
 Container::make('theme_options', __('Theme Options'))
 	->add_fields(array(
 		Field::make('text', 'tiktok_url', __('Tiktok URL')),

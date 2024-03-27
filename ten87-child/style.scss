@@ -1814,7 +1814,8 @@ body.has-custom-page-heading {
         margin-right: 10px;
     }
 }
-.single-studios, .page-id-205 {
+.single-studios,
+.page-id-205 {
     .logo-slider {
         display: none;
     }
@@ -1857,7 +1858,8 @@ body.has-custom-page-heading {
         gap: 50px;
     }
 }
-
-img {
-    border-radius: 20px;
+.qodef-m-image {
+    img {
+        border-radius: 20px;
+    }
 }

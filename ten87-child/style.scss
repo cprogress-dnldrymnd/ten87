@@ -570,7 +570,7 @@ body {
             padding-bottom: 0;
 
             .qodef-e-media-image {
-                flex: 0 0 34%;
+                flex: 0 0 25%;
                 margin-bottom: 0;
 
                 img {
@@ -631,7 +631,7 @@ body {
     }
 
     .swiper-button-prev {
-        left: calc(34% + 50px) !important;
+        left: calc(25% + 50px) !important;
 
         @media (max-width: 767px) {
             left: 10px !important;
@@ -639,7 +639,7 @@ body {
     }
 
     .swiper-button-next {
-        left: calc(34% + 120px) !important;
+        left: calc(25% + 120px) !important;
 
         @media (max-width: 767px) {
             left: calc(10px + 80px) !important;

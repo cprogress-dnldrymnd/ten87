@@ -375,7 +375,7 @@ body {
     align-items: center;
     padding-bottom: 0; }
     .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image {
-      flex: 0 0 34%;
+      flex: 0 0 25%;
       margin-bottom: 0; }
       @media (max-width: 767px) {
         .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image img {
@@ -413,12 +413,12 @@ body {
       .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner {
         flex-direction: column; } }
   .elementor-widget-obsius_core_testimonials_list .swiper-button-prev {
-    left: calc(34% + 50px) !important; }
+    left: calc(25% + 50px) !important; }
     @media (max-width: 767px) {
       .elementor-widget-obsius_core_testimonials_list .swiper-button-prev {
         left: 10px !important; } }
   .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
-    left: calc(34% + 120px) !important; }
+    left: calc(25% + 120px) !important; }
     @media (max-width: 767px) {
       .elementor-widget-obsius_core_testimonials_list .swiper-button-next {
         left: calc(10px + 80px) !important; } }

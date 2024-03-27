@@ -1183,8 +1183,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   .qodef-team-member-social-icons .qodef-team-member-social-icon {
     margin-right: 10px; }
 
-.single-studios .logo-slider,
-.page-id-205 .logo-slider {
+.single-studios .logo-slider {
   display: none; }
 
 /*blog*/
@@ -1217,5 +1216,9 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 
 .qodef-m-image.qodef-m-image img {
   border-radius: 20px; }
+
+@media (min-width: 767px) {
+  .qodef-h1, h1 {
+    font-size: 80px !important; } }
 
 /*# sourceMappingURL=style.css.map */

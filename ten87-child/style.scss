@@ -1862,3 +1862,10 @@ body.has-custom-page-heading {
         border-radius: 20px;
     }
 }
+
+
+.qodef-h1, h1 {
+    @media(min-width: 767px) {
+        font-size: 80px !important;
+    }
+}

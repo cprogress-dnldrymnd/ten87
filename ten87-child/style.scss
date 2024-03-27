@@ -77,7 +77,7 @@ body {
         text-transform: initial;
         font-family: "Ten87SansV7", sans-serif;
         font-weight: 400 !important;
-        line-height: 0.8 !important;
+        line-height: 1 !important;
     }
 
     .qodef-h1,
@@ -1814,8 +1814,47 @@ body.has-custom-page-heading {
         margin-right: 10px;
     }
 }
-.single-studios {
+.single-studios, .page-id-205 {
     .logo-slider {
         display: none;
+    }
+}
+
+/*blog*/
+
+.qodef-addons-blog-list .qodef-e-media-image a,
+.qodef-addons-blog-list .qodef-e-media-image a img,
+.qodef-addons-blog-list .qodef-e-media-image {
+    width: 100% !important;
+    display: block;
+}
+
+.qodef-addons-blog-list.qodef-item-layout--boxed .qodef-e-inner {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.qodef-addons-blog-list.qodef-item-layout--boxed .qodef-e-media {
+    margin-bottom: 30px;
+}
+
+.qodef-addons-blog-list.qodef-item-layout--boxed .qodef-e-read-more {
+    width: 100%;
+}
+
+.qodef-addons-blog-list.qodef-item-layout--boxed .qodef-e-read-more a {
+    max-width: 350px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.qodef-addons-blog-list.qodef-item-layout--boxed .qodef-info--top > * {
+    font-family: "SuisseBPIntl", sans-serif;
+}
+
+.qodef-addons-blog-list {
+    display: none;
+    .qodef-grid-inner {
+        gap: 50px;
     }
 }

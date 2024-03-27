@@ -80,25 +80,6 @@ body {
         line-height: 1 !important;
     }
 
-    .qodef-h1,
-    h1 {
-        @media (max-width: 1440px) {
-            font-size: 120px !important;
-        }
-
-        @media (max-width: 991px) {
-            font-size: 100px !important;
-        }
-
-        @media (max-width: 767px) {
-            font-size: 80px !important;
-        }
-
-        @media (max-width: 575px) {
-            font-size: 60px !important;
-        }
-    }
-
     .elementor-widget-obsius_core_testimonials_list
         .qodef-testimonials-list.qodef-testimonials-list
         .qodef-e-inner
@@ -1867,6 +1848,13 @@ body.has-custom-page-heading {
 h1 {
     @media (min-width: 767px) {
         font-size: 80px !important;
+    }
+    @media (max-width: 767px) {
+        font-size: 80px !important;
+    }
+
+    @media (max-width: 575px) {
+        font-size: 60px !important;
     }
 }
 

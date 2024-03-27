@@ -553,6 +553,15 @@ body {
 #qodef-page-footer {
   z-index: 2;
   font-size: 24px; }
+  #qodef-page-footer .qodef-page-footer-inner-holder.qodef-page-footer-inner-holder .widget-title,
+  #qodef-page-footer .qodef-page-footer-inner-holder.qodef-page-footer-inner-holder .widgettitle.widgettitle {
+    font-size: 30px;
+    color: var(--accent-color) !important;
+    margin-bottom: 20px; }
+    @media (max-width: 1400px) {
+      #qodef-page-footer .qodef-page-footer-inner-holder.qodef-page-footer-inner-holder .widget-title,
+      #qodef-page-footer .qodef-page-footer-inner-holder.qodef-page-footer-inner-holder .widgettitle.widgettitle {
+        font-size: 25px; } }
   #qodef-page-footer #qodef-page-footer-top-area {
     border-top: 2px solid var(--text-color);
     border-bottom: 2px solid var(--text-color); }
@@ -572,13 +581,6 @@ body {
       color: var(--text-color) !important; }
       #qodef-page-footer .widget a:hover, #qodef-page-footer .widget a:active, #qodef-page-footer .widget a:focus {
         text-decoration: underline; }
-  #qodef-page-footer .widget-title {
-    font-size: 30px;
-    color: var(--text-color) !important;
-    margin-bottom: 20px; }
-    @media (max-width: 1400px) {
-      #qodef-page-footer .widget-title {
-        font-size: 25px; } }
   @media (max-width: 1400px) {
     #qodef-page-footer {
       font-size: 20px; } }

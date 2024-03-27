@@ -838,6 +838,18 @@ body {
 #qodef-page-footer {
     z-index: 2;
     font-size: 24px;
+    .qodef-page-footer-inner-holder.qodef-page-footer-inner-holder {
+        .widget-title,
+        .widgettitle.widgettitle {
+            font-size: 30px;
+            color: var(--accent-color) !important;
+            margin-bottom: 20px;
+
+            @media (max-width: 1400px) {
+                font-size: 25px;
+            }
+        }
+    }
 
     #qodef-page-footer-top-area {
         border-top: 2px solid var(--text-color);
@@ -870,16 +882,6 @@ body {
             &:focus {
                 text-decoration: underline;
             }
-        }
-    }
-
-    .widget-title {
-        font-size: 30px;
-        color: var(--text-color) !important;
-        margin-bottom: 20px;
-
-        @media (max-width: 1400px) {
-            font-size: 25px;
         }
     }
 

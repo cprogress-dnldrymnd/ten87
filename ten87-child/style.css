@@ -559,7 +559,8 @@ body {
     color: var(--accent-color) !important;
     margin-bottom: 20px !important;
     text-transform: initial;
-    font-weight: 500 !important; }
+    font-weight: 500 !important;
+    font-family: "Ten87SansV7", sans-serif !important; }
     @media (max-width: 1400px) {
       #qodef-page-footer .qodef-page-footer-inner-holder.qodef-page-footer-inner-holder .widget-title,
       #qodef-page-footer .qodef-page-footer-inner-holder.qodef-page-footer-inner-holder .widgettitle.widgettitle {

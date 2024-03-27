@@ -1218,10 +1218,16 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   border-radius: 20px; }
 
 @media (min-width: 767px) {
-  .qodef-h1, h1 {
+  .qodef-h1,
+  h1 {
     font-size: 80px !important; } }
 
 #qodef-page-inner {
   padding-top: 50px !important; }
+
+@media (min-width: 1680px) {
+  .qodef-h2,
+  h2 {
+    font-size: 60px !important; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -19,7 +19,7 @@ Container::make('post_meta', __('Page Heading Settings'))
 				->set_help_text('Leave blank to use excerpt'),
 		)
 	);
-	Container::make('post_meta', __('Page Options'))
+Container::make('post_meta', __('Page Options'))
 	->where('post_type', '=', 'page')
 	->set_context('side')
 	->add_fields(

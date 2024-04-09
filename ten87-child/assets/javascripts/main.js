@@ -94,6 +94,7 @@ document.querySelector(".elementor-column").addEventListener("mouseleave", () =>
 jQuery(document).ready(function () {
     anim();
     hero_cursor();
+    sticky_header();
 });
 function anim() {
     let $banner = document.getElementById('home-hero');
@@ -164,3 +165,6 @@ function hero_cursor() {
 }
 
 
+function sticky_header() {
+    jQuery('.dqodef-header-sticky').removeClass('qodef-appearance--up').addClass('qodef-appearance--down');
+}

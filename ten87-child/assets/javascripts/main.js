@@ -166,5 +166,5 @@ function hero_cursor() {
 
 
 function sticky_header() {
-    jQuery('.dqodef-header-sticky').removeClass('qodef-appearance--up').addClass('qodef-appearance--down');
+    jQuery('.qodef-header-sticky').removeClass('qodef-appearance--up').addClass('qodef-appearance--down');
 }

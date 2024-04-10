@@ -1938,18 +1938,19 @@ body {
                         margin-left: auto;
                         margin-right: auto;
                         border-radius: 10px;
-                    } 
+                    }
                 }
             }
         }
         .content-box {
             padding: 2rem;
             h4 {
-                font-family: 'Ten87SansV7', sans-serif;
+                font-family: "Ten87SansV7", sans-serif;
                 font-weight: bold;
                 margin: 0;
             }
-            .position-box, .description-box {
+            .position-box,
+            .description-box {
                 margin-bottom: 1rem;
             }
         }
@@ -1962,7 +1963,10 @@ body {
 .qodef-team-member-social-icon {
     font-size: 40px;
 }
-
-#qodef-page-outer {
-    margin-top: 0 !important;
-} 
+body {
+    &:not(.home) {
+        #qodef-page-outer {
+            margin-top: 0 !important;
+        }
+    }
+}

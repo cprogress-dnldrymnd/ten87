@@ -1287,10 +1287,11 @@ body.modal-active {
     #modal-form .modal-content .content-box {
       padding: 2rem; }
       #modal-form .modal-content .content-box h4 {
-        font-family: 'Ten87SansV7', sans-serif;
+        font-family: "Ten87SansV7", sans-serif;
         font-weight: bold;
         margin: 0; }
-      #modal-form .modal-content .content-box .position-box, #modal-form .modal-content .content-box .description-box {
+      #modal-form .modal-content .content-box .position-box,
+      #modal-form .modal-content .content-box .description-box {
         margin-bottom: 1rem; }
 
 .qodef-team-list .qodef-team-member-social-icons {
@@ -1299,7 +1300,7 @@ body.modal-active {
 .qodef-team-member-social-icon {
   font-size: 40px; }
 
-#qodef-page-outer {
+body:not(.home) #qodef-page-outer {
   margin-top: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */

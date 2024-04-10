@@ -1225,9 +1225,6 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   h1 {
     font-size: 60px !important; } }
 
-#qodef-page-inner {
-  padding-top: 50px !important; }
-
 @media (min-width: 1680px) {
   .qodef-h2,
   h2:not(.widgettitle) {

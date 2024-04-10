@@ -220,7 +220,6 @@ function action_obsius_action_before_body_tag_close()
 				$description = jQuery('.post-' + $post_id + ' .qodef-e-excerpt').html();
 				$socials = jQuery('.post-' + $post_id + ' .qodef-team-member-social-icons').html();
 
-			
 
 				jQuery('#modal-form .image-box img').attr('src', $image);
 				jQuery('#modal-form .name-box h4').html($name);

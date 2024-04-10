@@ -1233,12 +1233,36 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   h2:not(.widgettitle) {
     font-size: 60px !important; } }
 
+body.modal-active {
+  overflow: hidden; }
+
 #modal-form {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 9999; }
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto; }
+  #modal-form .modal-form-backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5); }
+  #modal-form .modal-content {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    overflow: hidden; }
+    #modal-form .modal-content .content-box {
+      padding: 2rem; }
 
 /*# sourceMappingURL=style.css.map */

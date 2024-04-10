@@ -183,7 +183,6 @@ new newPostType(
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => false,
-		'publicly_queryable' => false
 	)
 );
 

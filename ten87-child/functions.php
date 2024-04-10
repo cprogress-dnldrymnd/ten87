@@ -175,3 +175,14 @@ function custom_class($classes)
 	}
 	return $classes;
 }
+
+
+function action_obsius_action_before_body_tag_close() {
+	?>
+	<div class="modal-form" id="modal-form">
+		
+	</div>
+	<?php
+}
+
+add_action('obsius_action_before_body_tag_close', 'action_obsius_action_before_body_tag_close');

@@ -1231,9 +1231,21 @@ body.has-custom-page-heading #qodef-page-mobile-header {
     font-size: 60px !important; } }
 
 body.modal-active {
-  overflow: hidden; }
-  body.modal-active #modal-form {
+  overflow: hidden;
+  padding-right: 17px; }
+  body.modal-active #modal-form, body.modal-active .modal-form-backdrop {
     transform: translateX(0); }
+
+.modal-form-backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  transition: 300ms;
+  transform: translateX(100%); }
 
 #modal-form {
   position: fixed;
@@ -1243,14 +1255,8 @@ body.modal-active {
   bottom: 0;
   z-index: 99999;
   transform: translateX(100%);
-  transition: 500ms; }
-  #modal-form .modal-form-backdrop {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8); }
+  transition: 600ms;
+  overflow: auto; }
   #modal-form .modal-content {
     max-width: 1000px;
     margin-left: auto;

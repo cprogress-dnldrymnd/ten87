@@ -210,6 +210,7 @@ function action_obsius_action_before_body_tag_close()
 	</div>
 	<script>
 		jQuery(document).ready(function() {
+			console.log('.post-6866 .qodef-e-title').html();
 			jQuery('.modal-trigger').click(function(e) {
 				$post_id = jQuery(this).attr('post_id');
 

@@ -174,6 +174,17 @@ new newPostType(
 	)
 );
 
+new newPostType(
+	array(
+		'name'          => 'Fundings',
+		'singular_name' => 'Funding',
+		'icon'          => 'dashicons-media-text',
+		'has_archive'   => true,
+		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
+		'show_in_rest'  => false,
+		'publicly_queryable' => false
+	)
+);
 
 new newPostType(
 	array(

@@ -328,6 +328,14 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
+  .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content .modal-trigger {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    display: inline-block;
+    padding: 0;
+    text-decoration: underline;
+    font-family: "Ten87SansV7", sans-serif; }
 .qodef-team-list .qodef-m-top-info {
   align-items: flex-start;
   margin-bottom: 50px; }

@@ -175,24 +175,24 @@ function custom_class($classes)
 function action_obsius_action_before_body_tag_close()
 {
 ?>
+	<div class="modal-form-backdrop modal-close"></div>
 	<div class="modal-form" id="modal-form">
-		<div class="modal-form-backdrop modal-close"></div>
 		<div class="modal-content">
 			<div class="row">
 				<div class="content-holder">
 					<div class="image-box">
-						<img src="https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/screenshot-2024-01-23-at-11-43-50.png" alt="">
+						<img src="" alt="">
 					</div>
 					<div class="content-box">
 						<div class="name-box">
-							<h4>DJ BORING</h4>
+							<h4></h4>
 						</div>
 						<div class="position-box">
-							<span>DJ / Producer</span>
+							<span></span>
 						</div>
 						<div class="description-box">
 							<p>
-								Watching DJ BORING in action is the antithesis of his mundane pseudonym; vibrant, energising, fun and full of passion, Tristan Hallis puts his all into every set. Over the last few years he has ascended rapidly thanks to his dazzling displays, impeccable selection and high quality productions. The Australian selector takes great pride in his digging capabilities, constantly searching for lesser-known gems from years gone by, and pairing them up with more recent cuts that are equally exceptional.
+
 							</p>
 						</div>
 						<div class="social-box">
@@ -211,7 +211,7 @@ function action_obsius_action_before_body_tag_close()
 	<script>
 		jQuery(document).ready(function() {
 			console.log(jQuery('.post-6866 .qodef-e-title').html());
-			jQuery(document).on("click", ".modal-trigger", function(){
+			jQuery(document).on("click", ".modal-trigger", function() {
 				$post_id = jQuery(this).attr('post_id');
 
 				$image = jQuery('.post-' + $post_id + ' .qodef-e-media-image img').attr('src');

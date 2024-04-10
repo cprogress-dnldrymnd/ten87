@@ -1274,5 +1274,9 @@ body.modal-active {
           color: var(--accent-color); }
     #modal-form .modal-content .content-box {
       padding: 2rem; }
+      #modal-form .modal-content .content-box h4 {
+        font-family: 'Ten87SansV7', sans-serif;
+        font-weight: bold;
+        margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */

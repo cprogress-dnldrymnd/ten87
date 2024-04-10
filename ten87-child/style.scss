@@ -1921,6 +1921,12 @@ body {
                     border-radius: 20px;
                     overflow: hidden;
                 }
+                &:last-child {
+                    text-align: center;
+                    font-size: 40px;
+                    color: var(--accent-color);
+
+                }
             }
         }
         .content-box {

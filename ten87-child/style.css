@@ -1268,6 +1268,10 @@ body.modal-active {
           background-color: var(--white-color);
           border-radius: 20px;
           overflow: hidden; }
+        #modal-form .modal-content .row > div:last-child {
+          text-align: center;
+          font-size: 40px;
+          color: var(--accent-color); }
     #modal-form .modal-content .content-box {
       padding: 2rem; }
 

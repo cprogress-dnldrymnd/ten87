@@ -228,7 +228,6 @@ function action_obsius_action_before_body_tag_close()
 				jQuery('#modal-form .social-box').html($socials);
 
 				jQuery('body').addClass('modal-active');
-				e.preventDefault();
 
 			});
 

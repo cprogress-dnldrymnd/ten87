@@ -109,7 +109,7 @@ function swiper_navigation()
 			</div>
 		</div>
 	</div>
-<?php
+	<?php
 	return ob_get_clean();
 }
 
@@ -174,32 +174,34 @@ function custom_class($classes)
 
 function action_obsius_action_before_body_tag_close()
 {
-?>
-	<div class="modal-form" id="modal-form">
-		<div class="modal-form-backdrop"></div>
-		<div class="modal-content">
-			<div class="image-box">
-				<img src="https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/screenshot-2024-01-23-at-11-43-50.png" alt="">
-			</div>
-			<div class="content-box">
-				<div class="name-box">
-					<h4>DJ BORING</h4>
+	if (is_post_type_archive('team')) {
+	?>
+		<div class="modal-form" id="modal-form">
+			<div class="modal-form-backdrop"></div>
+			<div class="modal-content">
+				<div class="image-box">
+					<img src="https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/screenshot-2024-01-23-at-11-43-50.png" alt="">
 				</div>
-				<div class="position-box">
-					<span>DJ / Producer</span>
-				</div>
-				<div class="description-box">
-					<p>
-						Watching DJ BORING in action is the antithesis of his mundane pseudonym; vibrant, energising, fun and full of passion, Tristan Hallis puts his all into every set. Over the last few years he has ascended rapidly thanks to his dazzling displays, impeccable selection and high quality productions. The Australian selector takes great pride in his digging capabilities, constantly searching for lesser-known gems from years gone by, and pairing them up with more recent cuts that are equally exceptional.
-					</p>
-				</div>
-				<div class="social-box">
+				<div class="content-box">
+					<div class="name-box">
+						<h4>DJ BORING</h4>
+					</div>
+					<div class="position-box">
+						<span>DJ / Producer</span>
+					</div>
+					<div class="description-box">
+						<p>
+							Watching DJ BORING in action is the antithesis of his mundane pseudonym; vibrant, energising, fun and full of passion, Tristan Hallis puts his all into every set. Over the last few years he has ascended rapidly thanks to his dazzling displays, impeccable selection and high quality productions. The Australian selector takes great pride in his digging capabilities, constantly searching for lesser-known gems from years gone by, and pairing them up with more recent cuts that are equally exceptional.
+						</p>
+					</div>
+					<div class="social-box">
 
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 <?php
+	}
 }
 
 add_action('obsius_action_before_body_tag_close', 'action_obsius_action_before_body_tag_close');

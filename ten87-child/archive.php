@@ -18,7 +18,7 @@
                                         <?php the_title() ?>
                                     </h5>
                                     <div itemprop="description" class="qodef-e-excerpt">
-                                        <?php the_excerpt() ?>
+                                        <?php the_content() ?>
                                     </div>
                                     <p>
                                         <button class="modal-trigger" post_id="<?php the_ID() ?>">Read More </button>

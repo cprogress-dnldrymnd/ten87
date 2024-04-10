@@ -10,7 +10,7 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 		wp_register_script('elementor-image-slider-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/image-slider/elementor-image-slider-js.js');
 		wp_register_script('elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
 		wp_register_style('elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
-		wp_register_script('list-item-on-hover-js', get_stylesheet_directory_uri().'/includes/elementor-widgets/list-item-on-hover/list-item-on-hover.js');
+		wp_register_script('list-item-on-hover-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/list-item-on-hover/list-item-on-hover.js');
 
 		wp_enqueue_style('obsius-swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
 		wp_enqueue_style('obsius-child-style', get_stylesheet_directory_uri() . '/style.css', array($main_style));
@@ -48,10 +48,10 @@ require_once('includes/elementor.php');
 
 function action_wp_footer()
 {
-	?>
+?>
 	<script>
-		jQuery(document).ready(function () {
-			jQuery('.qodef-mobile-header-opener').click(function (e) {
+		jQuery(document).ready(function() {
+			jQuery('.qodef-mobile-header-opener').click(function(e) {
 				jQuery('html').toggleClass('menu-open');
 				e.preventDefault();
 			});
@@ -63,11 +63,11 @@ function action_wp_footer()
 				},
 			});
 
-			
+
 
 		});
 	</script>
-	<?php
+<?php
 }
 
 add_action('wp_footer', 'action_wp_footer');
@@ -98,7 +98,7 @@ add_shortcode('custom_template', 'custom_template');
 function swiper_navigation()
 {
 	ob_start();
-	?>
+?>
 	<div class="swiper-navigation-holder">
 		<div class="nav-inner">
 			<div class="swiper-button-prev">
@@ -109,7 +109,7 @@ function swiper_navigation()
 			</div>
 		</div>
 	</div>
-	<?php
+<?php
 	return ob_get_clean();
 }
 
@@ -117,8 +117,7 @@ function get__post_meta($value)
 {
 	if (function_exists('carbon_get_the_post_meta')) {
 		return carbon_get_the_post_meta($value);
-	}
-	else {
+	} else {
 		return 'Error: Carbonfield not activated';
 	}
 }
@@ -127,8 +126,7 @@ function get__term_meta($term_id, $value)
 {
 	if (function_exists('carbon_get_term_meta')) {
 		return carbon_get_term_meta($term_id, $value);
-	}
-	else {
+	} else {
 		return 'Error: Carbonfield not activated';
 	}
 }
@@ -137,8 +135,7 @@ function get__post_meta_by_id($id, $value)
 {
 	if (function_exists('carbon_get_post_meta')) {
 		return carbon_get_post_meta($id, $value);
-	}
-	else {
+	} else {
 		return 'Error: Carbonfield not activated';
 	}
 }
@@ -146,8 +143,7 @@ function get__theme_option($value)
 {
 	if (function_exists('carbon_get_theme_option')) {
 		return carbon_get_theme_option($value);
-	}
-	else {
+	} else {
 		return 'Error: Carbonfield not activated';
 	}
 }
@@ -159,8 +155,7 @@ function show_custom_banner()
 
 	if (get_post_type() == 'studios' || is_tax('studio_category') || is_post_type_archive('studio') || $show_custom_page_heading) {
 		$show_custom_banner = true;
-	}
-	else {
+	} else {
 		$show_custom_banner = false;
 	}
 
@@ -177,12 +172,31 @@ function custom_class($classes)
 }
 
 
-function action_obsius_action_before_body_tag_close() {
-	?>
+function action_obsius_action_before_body_tag_close()
+{
+?>
 	<div class="modal-form" id="modal-form">
-		
+		<div class="modal-content">
+			<div class="image-box">
+				<img src="https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/screenshot-2024-01-23-at-11-43-50.png" alt="">
+			</div>
+			<div class="name-box">
+				<h4>DJ BORING</h4>
+			</div>
+			<div class="position-box">
+				<span>DJ / Producer</span>
+			</div>
+			<div class="description-box">
+				<p>
+					Watching DJ BORING in action is the antithesis of his mundane pseudonym; vibrant, energising, fun and full of passion, Tristan Hallis puts his all into every set. Over the last few years he has ascended rapidly thanks to his dazzling displays, impeccable selection and high quality productions. The Australian selector takes great pride in his digging capabilities, constantly searching for lesser-known gems from years gone by, and pairing them up with more recent cuts that are equally exceptional.
+				</p>
+			</div>
+			<div class="social-box">
+
+			</div>
+		</div>
 	</div>
-	<?php
+<?php
 }
 
 add_action('obsius_action_before_body_tag_close', 'action_obsius_action_before_body_tag_close');

@@ -219,7 +219,7 @@ function action_obsius_action_before_body_tag_close()
 				$description = jQuery(this).find('.post-' + $post_id + ' .qodef-e-excerpt').text();
 				$socials = jQuery(this).find('.post-' + $post_id + ' qodef-team-member-social-icons').html();
 
-				console.log($image);
+				console.log('.post-' + $post_id + ' .qodef-e-media-image img');
 				console.log($name);
 				console.log($position);
 				console.log($description);

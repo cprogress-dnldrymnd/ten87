@@ -220,17 +220,13 @@ function action_obsius_action_before_body_tag_close()
 				$description = jQuery('.post-' + $post_id + ' .qodef-e-excerpt').html();
 				$socials = jQuery('.post-' + $post_id + ' .qodef-team-member-social-icons').html();
 
-				console.log('.post-' + $post_id + ' .qodef-e-media-image img');
-				console.log($name);
-				console.log($position);
-				console.log($description);
-				console.log($socials);
+			
 
 				jQuery('#modal-form .image-box img').attr('src', $image);
 				jQuery('#modal-form .name-box h4').html($name);
 				jQuery('#modal-form .position-box span').html($position);
-				jQuery('#modal-form .description-box').html($position);
-				jQuery('#modal-form .description-box').html($socials);
+				jQuery('#modal-form .description-box').html($description);
+				jQuery('#modal-form .social-box').html($socials);
 
 				jQuery('body').addClass('modal-active');
 				e.preventDefault();

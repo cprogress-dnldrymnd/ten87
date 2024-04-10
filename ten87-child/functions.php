@@ -214,11 +214,11 @@ function action_obsius_action_before_body_tag_close()
 			jQuery('.modal-trigger').click(function(e) {
 				$post_id = jQuery(this).attr('post_id');
 
-				$image = jQuery(this).find('.post-' + $post_id + ' .qodef-e-media-image img').attr('src');
-				$name = jQuery(this).find('.post-' + $post_id + ' .qodef-e-title').html();
-				$position = jQuery(this).find('.post-' + $post_id + ' .qodef-e-role').html();
-				$description = jQuery(this).find('.post-' + $post_id + ' .qodef-e-excerpt').html();
-				$socials = jQuery(this).find('.post-' + $post_id + ' .qodef-team-member-social-icons').html();
+				$image = jQuery('.post-' + $post_id + ' .qodef-e-media-image img').attr('src');
+				$name = jQuery('.post-' + $post_id + ' .qodef-e-title').html();
+				$position = jQuery('.post-' + $post_id + ' .qodef-e-role').html();
+				$description = jQuery('.post-' + $post_id + ' .qodef-e-excerpt').html();
+				$socials = jQuery('.post-' + $post_id + ' .qodef-team-member-social-icons').html();
 
 				console.log('.post-' + $post_id + ' .qodef-e-media-image img');
 				console.log($name);

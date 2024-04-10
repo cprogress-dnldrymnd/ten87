@@ -1233,4 +1233,12 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   h2:not(.widgettitle) {
     font-size: 60px !important; } }
 
+#modal-form {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999; }
+
 /*# sourceMappingURL=style.css.map */

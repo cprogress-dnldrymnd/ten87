@@ -196,6 +196,7 @@ function action_obsius_action_before_body_tag_close()
 			</div>
 		</div>
 	</div>
+	<div class="modal-form-backdrop"></div>
 <?php
 }
 

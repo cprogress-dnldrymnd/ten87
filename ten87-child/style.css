@@ -320,15 +320,14 @@ body {
     @media (max-width: 767px) {
       .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content h5 {
         font-size: 30px; } }
-  .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content p {
+  .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content .qodef-e-role {
+    font-size: 20px; }
+  .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content .description {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
-    @media (max-width: 767px) {
-      .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content p {
-        font-size: 25px; } }
 .qodef-team-list .qodef-m-top-info {
   align-items: flex-start;
   margin-bottom: 50px; }

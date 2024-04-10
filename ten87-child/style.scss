@@ -486,15 +486,16 @@ body {
                     }
                 }
 
-                p {
+              
+                .qodef-e-role {
+                    font-size: 20px;
+                }
+                .description {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
-                    @media (max-width: 767px) {
-                        font-size: 25px;
-                    }
                 }
             }
         }

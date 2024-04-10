@@ -177,33 +177,35 @@ function action_obsius_action_before_body_tag_close()
 ?>
 	<div class="modal-form-backdrop modal-close"></div>
 	<div class="modal-form" id="modal-form">
-		<div class="inner">
-			<div class="modal-content">
-				<div class="row">
-					<div class="content-holder">
-						<div class="image-box">
-							<img src="" alt="">
-						</div>
-						<div class="content-box">
-							<div class="name-box">
-								<h4></h4>
+		<div class="modal-holder">
+			<div class="inner">
+				<div class="modal-content">
+					<div class="row">
+						<div class="content-holder">
+							<div class="image-box">
+								<img src="" alt="">
 							</div>
-							<div class="position-box">
-								<span></span>
-							</div>
-							<div class="description-box">
-								<p>
+							<div class="content-box">
+								<div class="name-box">
+									<h4></h4>
+								</div>
+								<div class="position-box">
+									<span></span>
+								</div>
+								<div class="description-box">
+									<p>
 
-								</p>
-							</div>
-							<div class="social-box">
+									</p>
+								</div>
+								<div class="social-box">
 
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="close-holder">
-						<div class="modal-close">
-							&#10006;
+						<div class="close-holder">
+							<div class="modal-close">
+								&#10006;
+							</div>
 						</div>
 					</div>
 				</div>

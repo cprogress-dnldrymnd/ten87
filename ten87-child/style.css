@@ -1298,7 +1298,8 @@ body.modal-active {
 
 .qodef-team-list .qodef-team-member-social-icons {
   margin-top: 1rem; }
-  .qodef-team-list .qodef-team-member-social-icons .qodef-team-member-social-icon {
-    font-size: 40px; }
+
+.qodef-team-member-social-icon {
+  font-size: 40px; }
 
 /*# sourceMappingURL=style.css.map */

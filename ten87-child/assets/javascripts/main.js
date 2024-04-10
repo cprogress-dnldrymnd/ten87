@@ -95,6 +95,7 @@ jQuery(document).ready(function () {
     anim();
     hero_cursor();
     sticky_header();
+    community();
 });
 
 function community() {
@@ -114,6 +115,12 @@ function community() {
         jQuery('body').addClass('modal-active');
         e.preventDefault();
 
+    });
+
+    jQuery('.modal-close').click(function (e) { 
+        jQuery('body').removeClass('modal-active');
+
+        e.preventDefault();
     });
 }
 

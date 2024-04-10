@@ -177,7 +177,7 @@ function action_obsius_action_before_body_tag_close()
 	if (is_post_type_archive('team')) {
 	?>
 		<div class="modal-form" id="modal-form">
-			<div class="modal-form-backdrop"></div>
+			<div class="modal-form-backdrop modal-close"></div>
 			<div class="modal-content">
 				<div class="image-box">
 					<img src="https://ten87.theprogressteam.co.uk/wp-content/uploads/2024/02/screenshot-2024-01-23-at-11-43-50.png" alt="">

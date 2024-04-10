@@ -1235,7 +1235,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 
 body.modal-active {
   overflow: hidden; }
-  body.modal-active #modal-form .modal-content {
+  body.modal-active #modal-form {
     transform: translateX(0); }
 
 #modal-form {
@@ -1248,7 +1248,9 @@ body.modal-active {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: auto; }
+  overflow: auto;
+  transform: translateX(100%);
+  transition: 500ms; }
   #modal-form .modal-form-backdrop {
     position: fixed;
     left: 0;
@@ -1264,9 +1266,7 @@ body.modal-active {
     background-color: var(--white-color);
     border-radius: 20px;
     overflow: hidden;
-    position: relative;
-    transform: translateX(100%);
-    transition: 500ms; }
+    position: relative; }
     #modal-form .modal-content .content-box {
       padding: 2rem; }
 

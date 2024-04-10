@@ -1884,9 +1884,7 @@ body {
     &.modal-active {
         overflow: hidden;
         #modal-form {
-            .modal-content {
-                transform: translateX(0);
-            }
+            transform: translateX(0);
         }
     }
 }
@@ -1901,6 +1899,8 @@ body {
     align-items: center;
     justify-content: center;
     overflow: auto;
+    transform: translateX(100%);
+    transition: 500ms;
     .modal-form-backdrop {
         position: fixed;
         left: 0;
@@ -1918,8 +1918,7 @@ body {
         border-radius: 20px;
         overflow: hidden;
         position: relative;
-        transform: translateX(100%);
-        transition: 500ms;
+
         .content-box {
             padding: 2rem;
         }

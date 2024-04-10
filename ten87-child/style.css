@@ -1235,6 +1235,8 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 
 body.modal-active {
   overflow: hidden; }
+  body.modal-active #modal-form .modal-content {
+    transform: translateX(0); }
 
 #modal-form {
   position: fixed;

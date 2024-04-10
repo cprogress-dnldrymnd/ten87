@@ -5,7 +5,7 @@ const path = document.querySelector(".blob-holder path");
 const path2 = document.querySelector(".blob-holder-2 path");
 const path3 = document.querySelector(".blob-holder-3 path");
 const path4 = document.querySelector(".blob-holder-4 path");
-const path5= document.querySelector(".blob-footer path");
+const path5 = document.querySelector(".blob-footer path");
 
 let noiseStep = 0.005;
 
@@ -96,6 +96,27 @@ jQuery(document).ready(function () {
     hero_cursor();
     sticky_header();
 });
+
+function community() {
+    jQuery('.modal-trigger').click(function (e) {
+        $image = jQuery(this).parents('.qodef-grid-item').find('.qodef-e-media-image img').attr('src');
+        $name = jQuery(this).parents('.qodef-grid-item').find('.qodef-e-title').text();
+        $position = jQuery(this).parents('.qodef-grid-item').find('.qodef-e-role').text();
+        $description = jQuery(this).parents('.qodef-grid-item').find('.qodef-e-excerpt').text();
+        $socials = jQuery(this).parents('.qodef-grid-item').find('.qodef-team-member-social-icons').html();
+
+        jQuery('#modal-form .image-box img').attr('src', $image);
+        jQuery('#modal-form .name-box h4').html($name);
+        jQuery('#modal-form .position-box span').html($position);
+        jQuery('#modal-form .description-box').html($position);
+        jQuery('#modal-form .description-box').html($social-box);
+
+        jQuery('body').addClass('modal-active');
+        e.preventDefault();
+
+    });
+}
+
 function anim() {
     let $banner = document.getElementById('home-hero');
 

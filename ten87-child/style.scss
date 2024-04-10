@@ -1883,6 +1883,11 @@ h2:not(.widgettitle) {
 body {
     &.modal-active {
         overflow: hidden;
+        #modal-form {
+            .modal-content {
+                transform: translateX(0);
+            }
+        }
     }
 }
 #modal-form {

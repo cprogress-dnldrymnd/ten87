@@ -1911,6 +1911,11 @@ body {
         margin-right: auto;
   
         position: relative;
+        .image-box {
+            img {
+                width: 100%;
+            }
+        }
         .row {
             display: flex;
             align-items: center;

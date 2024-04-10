@@ -202,11 +202,11 @@ function action_obsius_action_before_body_tag_close()
 	<script>
 		jQuery(document).ready(function() {
 			jQuery('.modal-trigger').click(function(e) {
-				$image = jQuery(this).parents('.qodef-grid-item').find('.qodef-e-media-image img').attr('src');
-				$name = jQuery(this).parents('.qodef-grid-item').find('.qodef-e-title').text();
-				$position = jQuery(this).parents('.qodef-grid-item').find('.qodef-e-role').text();
-				$description = jQuery(this).parents('.qodef-grid-item').find('.qodef-e-excerpt').text();
-				$socials = jQuery(this).parents('.qodef-grid-item').find('.qodef-team-member-social-icons').html();
+				$image = jQuery(this).parent('.qodef-grid-item').find('.qodef-e-media-image img').attr('src');
+				$name = jQuery(this).parent('.qodef-grid-item').find('.qodef-e-title').text();
+				$position = jQuery(this).parent('.qodef-grid-item').find('.qodef-e-role').text();
+				$description = jQuery(this).parent('.qodef-grid-item').find('.qodef-e-excerpt').text();
+				$socials = jQuery(this).parent('.qodef-grid-item').find('.qodef-team-member-social-icons').html();
 
 				jQuery('#modal-form .image-box img').attr('src', $image);
 				jQuery('#modal-form .name-box h4').html($name);

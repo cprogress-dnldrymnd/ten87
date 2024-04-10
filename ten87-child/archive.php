@@ -10,16 +10,16 @@
                             <div class="qodef-e-inner">
                                 <div class="qodef-e-image">
                                     <div class="qodef-e-media-image">
-                                        <img fetchpriority="high" decoding="async" width="1080" height="1080" src="<?= get_the_post_thumbnail_url( get_the_ID(), 'large' ) ?>" class="attachment-full size-full wp-post-image" alt="">
+                                        <img fetchpriority="high" decoding="async" width="1080" height="1080" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large') ?>" class="attachment-full size-full wp-post-image" alt="">
                                     </div>
                                 </div>
                                 <div class="qodef-e-content">
                                     <h5 itemprop="name" class="qodef-e-title entry-title">
                                         <?php the_title() ?>
                                     </h5>
-                                    <p itemprop="description" class="qodef-e-excerpt">
+                                    <div itemprop="description" class="qodef-e-excerpt">
                                         <?php the_excerpt() ?>
-                                    </p>
+                                    </div>
                                     <p>
                                         <button class="modal-trigger" post_id="<?php the_ID() ?>">Read More </button>
                                     </p>

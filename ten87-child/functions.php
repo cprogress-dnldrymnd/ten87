@@ -211,7 +211,7 @@ function action_obsius_action_before_body_tag_close()
 	<script>
 		jQuery(document).ready(function() {
 			console.log(jQuery('.post-6866 .qodef-e-title').html());
-			jQuery('.modal-trigger').click(function(e) {
+			jQuery(".modal-trigger").on("click", function() {
 				$post_id = jQuery(this).attr('post_id');
 
 				$image = jQuery('.post-' + $post_id + ' .qodef-e-media-image img').attr('src');

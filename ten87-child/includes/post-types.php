@@ -179,6 +179,7 @@ new newPostType(
 		'name'          => 'Fundings',
 		'singular_name' => 'Funding',
 		'icon'          => 'dashicons-media-text',
+		'rewrite'       => array('slug' => 'funding-for-musicians', 'with_front' => true),
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => false,

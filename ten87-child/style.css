@@ -322,7 +322,7 @@ body {
         font-size: 30px; } }
   .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content .qodef-e-role {
     font-size: 20px; }
-  .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content .description {
+  .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content .qodef-e-excerpt {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

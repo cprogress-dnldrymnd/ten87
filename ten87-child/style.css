@@ -1314,5 +1314,7 @@ body:not(.home) #qodef-page-outer {
   max-width: 100% !important;
   padding-left: 50px;
   padding-right: 50px; }
+  .post-type-archive-fundings .qodef-m-content .qodef-page-title, .post-type-archive-fundings #qodef-page-inner .qodef-page-title {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -212,7 +212,7 @@ function action_obsius_action_before_body_tag_close()
 				jQuery('#modal-form .name-box h4').html($name);
 				jQuery('#modal-form .position-box span').html($position);
 				jQuery('#modal-form .description-box').html($position);
-				jQuery('#modal-form .description-box').html($social - box);
+				jQuery('#modal-form .description-box').html($socials);
 
 				jQuery('body').addClass('modal-active');
 				e.preventDefault();

@@ -1880,7 +1880,8 @@ body {
     &.modal-active {
         overflow: hidden;
         padding-right: 17px;
-        #modal-form, .modal-form-backdrop {
+        #modal-form,
+        .modal-form-backdrop {
             transform: translateX(0);
         }
     }
@@ -1895,6 +1896,35 @@ body {
     z-index: 9999;
     transition: 300ms;
     transform: translateX(100%);
+    display: flex;
+    justify-content: flex-end;
+    .close-holder-wrapper {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .close-holder {
+        text-align: center;
+        font-size: 40px;
+        color: var(--accent-color);
+        flex: 0  0 50%;
+        position: relative;
+        .modal-close {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+    }
 }
 #modal-form {
     position: fixed;
@@ -1929,22 +1959,6 @@ body {
                     border-radius: 20px;
                     overflow: hidden;
                 }
-                &:last-child {
-                    text-align: center;
-                    font-size: 40px;
-                    color: var(--accent-color);
-                    .modal-close {
-                        background-color: rgba(255, 255, 255, 0.9);
-                        width: 70px;
-                        height: 70px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                        border-radius: 10px;
-                    }
-                }
             }
         }
         .content-box {
@@ -1976,15 +1990,13 @@ body {
     }
 }
 
-
-
 .post-type-archive-fundings {
-    .qodef-m-content, #qodef-page-inner {
+    .qodef-m-content,
+    #qodef-page-inner {
         width: 100% !important;
         max-width: 100% !important;
         padding-left: 50px;
         padding-right: 50px;
-       
     }
     .qodef-page-title {
         display: none;

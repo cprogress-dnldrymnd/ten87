@@ -175,7 +175,15 @@ function custom_class($classes)
 function action_obsius_action_before_body_tag_close()
 {
 ?>
-	<div class="modal-form-backdrop modal-close"></div>
+	<div class="modal-form-backdrop modal-close">
+		<div class="close-holder-wrapper">
+			<div class="close-holder">
+				<div class="modal-close">
+					&#10006;
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="modal-form" id="modal-form">
 		<div class="modal-holder">
 			<div class="inner">
@@ -202,11 +210,7 @@ function action_obsius_action_before_body_tag_close()
 								</div>
 							</div>
 						</div>
-						<div class="close-holder">
-							<div class="modal-close">
-								&#10006;
-							</div>
-						</div>
+
 					</div>
 				</div>
 			</div>

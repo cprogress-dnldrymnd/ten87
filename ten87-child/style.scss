@@ -1912,6 +1912,9 @@ body {
         background-color: var(--white-color);
         border-radius: 20px;
         overflow: hidden;
+        position: relative;
+        transform: translateX(100%);
+        transition: 500ms;
         .content-box {
             padding: 2rem;
         }

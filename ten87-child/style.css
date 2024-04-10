@@ -1261,7 +1261,10 @@ body.modal-active {
     margin-right: auto;
     background-color: var(--white-color);
     border-radius: 20px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative;
+    transform: translateX(100%);
+    transition: 500ms; }
     #modal-form .modal-content .content-box {
       padding: 2rem; }
 

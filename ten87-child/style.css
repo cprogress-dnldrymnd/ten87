@@ -1274,11 +1274,28 @@ body.modal-active {
           text-align: center;
           font-size: 40px;
           color: var(--accent-color); }
+          #modal-form .modal-content .row > div:last-child .modal-close {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px; }
     #modal-form .modal-content .content-box {
       padding: 2rem; }
       #modal-form .modal-content .content-box h4 {
         font-family: 'Ten87SansV7', sans-serif;
         font-weight: bold;
         margin: 0; }
+      #modal-form .modal-content .content-box .position-box, #modal-form .modal-content .content-box .description-box {
+        margin-bottom: 1rem; }
+
+.qodef-team-list .qodef-team-member-social-icons {
+  margin-top: 1rem; }
+  .qodef-team-list .qodef-team-member-social-icons .qodef-team-member-social-icon {
+    font-size: 40px; }
 
 /*# sourceMappingURL=style.css.map */

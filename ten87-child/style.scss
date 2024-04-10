@@ -1930,7 +1930,17 @@ body {
                     text-align: center;
                     font-size: 40px;
                     color: var(--accent-color);
-
+                    .modal-close {
+                        background-color: rgba(255, 255, 255, 0.9);
+                        width: 70px;
+                        height: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 10px;
+                    } 
                 }
             }
         }
@@ -1941,6 +1951,16 @@ body {
                 font-weight: bold;
                 margin: 0;
             }
+            .position-box, .description-box {
+                margin-bottom: 1rem;
+            }
         }
+    }
+}
+
+.qodef-team-list .qodef-team-member-social-icons {
+    margin-top: 1rem;
+    .qodef-team-member-social-icon {
+        font-size: 40px;
     }
 }

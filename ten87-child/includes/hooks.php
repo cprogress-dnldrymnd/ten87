@@ -14,6 +14,7 @@ function action_after_header()
     );
 
     $templates = get_posts($args);
+    echo 'test';
 }
 
 add_action('after_header', 'action_after_header');

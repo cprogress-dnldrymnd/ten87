@@ -255,20 +255,23 @@ function custom_templates_column($column, $post_id)
 add_post_type_support('team', 'editor');
 
 
-function action_obsius_core_filter_post_excerpt_length() {
+function action_obsius_core_filter_post_excerpt_length()
+{
 	return 500;
 }
 add_filter('obsius_core_filter_post_excerpt_length', 'action_obsius_core_filter_post_excerpt_length');
 
 
 
-function action_register_post_type_args( $args, $post_type ) {
-    if ( $post_type == "team" ) {
-        $args['rewrite'] = array(
-            'slug' => 'community-2'
-        );
-    }
+function action_register_post_type_args($args, $post_type)
+{
+	if ($post_type == "team") {
+		$args['rewrite'] = array(
+			'slug' => 'community-2'
+		);
+		$args['has_archive'] = true;
+	}
 
-    return $args;
+	return $args;
 }
-add_filter( 'register_post_type_args', 'action_register_post_type_args', 20, 2 );
+add_filter('register_post_type_args', 'action_register_post_type_args', 20, 2);

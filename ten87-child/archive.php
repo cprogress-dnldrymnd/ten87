@@ -1,7 +1,6 @@
 <?php get_header() ?>
 <?= do_shortcode('[custom_template post_id=7114]') ?>
 
-<?php do_action('before_archive'); ?>
 <section class="archive-section">
     <div class="elementor-element elementor-element-d906c2c elementor-widget elementor-widget-obsius_core_team_list" data-id="d906c2c" data-element_type="widget" id="our-community" data-widget_type="obsius_core_team_list.default">
         <div class="elementor-widget-container">
@@ -36,5 +35,4 @@
         </div>
     </div>
 </section>
-<?php do_action('after_archive'); ?>
 <?php get_footer() ?>

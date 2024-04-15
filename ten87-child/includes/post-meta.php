@@ -34,3 +34,31 @@ Container::make('theme_options', __('Theme Options'))
 		Field::make('text', 'facebook_url', __('Facebook URL')),
 		Field::make('text', 'linkedin_url', __('Linkedin URL')),
 	));
+
+
+Container::make('post_meta', __('Page Options'))
+	->where('post_type', '=', 'templates')
+	->set_context('side')
+	->add_fields(
+		array(
+			Field::make('select', 'display_location', __('Display Location'))
+				->add_options(array(
+					'shortcode' => __('Custom(via shortcode)'),
+					'after_header' => __('After Header'),
+					'before_footer' => __('Before Footer'),
+				)),
+			Field::make('select', 'display_location_settings', __('Display Location Condition'))
+				->add_options(array(
+					'' => __('Sitewide'),
+					'post_type' => __('Post Type'),
+					'post_type_archive' => __('Post Type Archive'),
+				))
+				->set_conditional_logic(array(
+					array(
+						'field' => 'display_location',
+						'value' => 'shortcode', // Optional, defaults to "". Should be an array if "IN" or "NOT IN" operators are used.
+						'compare' => '!=', // Optional, defaults to "=". Available operators: =, <, >, <=, >=, IN, NOT IN
+					)
+				)),
+		)
+	);

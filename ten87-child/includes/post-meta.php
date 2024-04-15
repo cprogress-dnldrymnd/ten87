@@ -36,7 +36,7 @@ Container::make('theme_options', __('Theme Options'))
 	));
 
 
-Container::make('post_meta', __('Page Options'))
+Container::make('post_meta', __('Template Options'))
 	->where('post_type', '=', 'templates')
 	->set_context('side')
 	->add_fields(

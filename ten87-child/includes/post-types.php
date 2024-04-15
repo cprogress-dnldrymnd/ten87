@@ -274,4 +274,4 @@ function action_register_post_type_args($args, $post_type)
 
 	return $args;
 }
-add_filter('register_post_type_args', 'action_register_post_type_args', 99, 2);
+add_filter('register_post_type_args', 'action_register_post_type_args', 999, 2);

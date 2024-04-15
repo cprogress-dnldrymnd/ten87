@@ -47,7 +47,7 @@ Container::make('post_meta', __('Page Options'))
 					'after_header' => __('After Header'),
 					'before_footer' => __('Before Footer'),
 				)),
-			Field::make('select', 'display_location_settings', __('Display Location Condition'))
+			Field::make('select', 'display_location_condition', __('Display Location Condition'))
 				->add_options(array(
 					'' => __('Sitewide'),
 					'post_type' => __('Post Type'),
@@ -58,6 +58,33 @@ Container::make('post_meta', __('Page Options'))
 						'field' => 'display_location',
 						'value' => 'shortcode', // Optional, defaults to "". Should be an array if "IN" or "NOT IN" operators are used.
 						'compare' => '!=', // Optional, defaults to "=". Available operators: =, <, >, <=, >=, IN, NOT IN
+					)
+				)),
+			Field::make('multiselect', 'display_location_post_type', __('Select Post Type'))
+				->add_options(array(
+					'page' => __('Page'),
+					'post' => __('Posts'),
+					'fundings' => __('Fundings'),
+					'team' => __('Community'),
+				))
+				->set_conditional_logic(array(
+					array(
+						'field' => 'display_location_condition',
+						'value' => 'post_type', // Optional, defaults to "". Should be an array if "IN" or "NOT IN" operators are used.
+						'compare' => '=', // Optional, defaults to "=". Available operators: =, <, >, <=, >=, IN, NOT IN
+					)
+				)),
+			Field::make('multiselect', 'display_location_post_type_achive', __('Select Post Type'))
+				->add_options(array(
+					'post' => __('Posts'),
+					'fundings' => __('Fundings'),
+					'team' => __('Community'),
+				))
+				->set_conditional_logic(array(
+					array(
+						'field' => 'display_location_condition',
+						'value' => 'post_type', // Optional, defaults to "". Should be an array if "IN" or "NOT IN" operators are used.
+						'compare' => '=', // Optional, defaults to "=". Available operators: =, <, >, <=, >=, IN, NOT IN
 					)
 				)),
 		)

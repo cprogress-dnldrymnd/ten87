@@ -12,7 +12,7 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 		wp_register_style('elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
 
 		if (is_post_type_archive('fundings')) {
-			wp_enqueue_style('data-aos', 'https://unpkg.com/aos@2.3.4/dist/aos.js');
+			wp_enqueue_style('data-aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
 		}
 
 		wp_enqueue_style('obsius-child-style', get_stylesheet_directory_uri() . '/style.css', array($main_style));

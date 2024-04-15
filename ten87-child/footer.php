@@ -1,9 +1,11 @@
+			<?php do_action('before_footer'); ?>
+			
 			</div><!-- close #qodef-page-inner div from header.php -->
 			</div><!-- close #qodef-page-outer div from header.php -->
 			<?php
 			$hide_partners_logos = get__post_meta('hide_partners_logos');
 			?>
-			<?php do_action('before_footer'); ?>
+
 			<?php if (!$hide_partners_logos) { ?>
 				<div class="logo-slider">
 					<?= do_shortcode('[custom_template post_id="5252"]'); ?>

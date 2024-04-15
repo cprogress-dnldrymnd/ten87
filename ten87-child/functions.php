@@ -10,12 +10,19 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 		wp_register_script('elementor-image-slider-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/image-slider/elementor-image-slider-js.js');
 		wp_register_script('elementor-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
 		wp_register_style('elementor-swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
-		wp_register_script('list-item-on-hover-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/list-item-on-hover/list-item-on-hover.js');
 
-		wp_enqueue_style('obsius-swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
+		if (is_post_type_archive('fundings')) {
+			wp_enqueue_style('data-aos', 'https://unpkg.com/aos@2.3.4/dist/aos.js');
+		}
+
 		wp_enqueue_style('obsius-child-style', get_stylesheet_directory_uri() . '/style.css', array($main_style));
+		wp_register_script('list-item-on-hover-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/list-item-on-hover/list-item-on-hover.js');
 		wp_enqueue_script('obsius-swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
 		wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js');
+
+		if (is_post_type_archive('fundings')) {
+			wp_enqueue_script('data-aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js');
+		}
 
 		wp_enqueue_script('module_handle', get_stylesheet_directory_uri() . '/assets/javascripts/main.js');
 	}

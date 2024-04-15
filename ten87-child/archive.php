@@ -43,3 +43,7 @@
     </div>
 </section>
 <?php get_footer() ?>
+
+<script>
+  AOS.init();
+</script>

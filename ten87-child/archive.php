@@ -8,7 +8,7 @@
                     <?php while (have_posts()) { ?>
                         <?php the_post() ?>
 
-                        <div class="qodef-e qodef-grid-item  post-<?php the_ID() ?> team type-team status-publish has-post-thumbnail hentry post-counter-<?= $count ?>" data-aos="fade-up">
+                        <div class="qodef-e qodef-grid-item  post-<?php the_ID() ?> team type-team status-publish has-post-thumbnail hentry post-counter-<?= $count ?>" data-aos="fade-up" data-aos-duration="1000">
                             <div class="qodef-e-inner">
                                 <div class="qodef-e-image">
                                     <div class="qodef-e-media-image">

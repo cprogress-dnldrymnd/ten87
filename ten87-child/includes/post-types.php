@@ -270,7 +270,8 @@ function action_register_post_type_args($args, $post_type)
 			'slug' => 'community-2'
 		);
 		$args['has_archive'] = true;
-		$argc['publicly_queryable'] = true;
+		$args['publicly_queryable'] = true;
+		$args['exclude_from_search'] = true;
 	}
 
 	return $args;

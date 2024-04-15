@@ -1,6 +1,9 @@
 <?php
 function action_after_header()
 {
+
+
+
     $args = array(
         'numberposts' => -1,
         'post_type'   => 'templates',
@@ -13,10 +16,15 @@ function action_after_header()
         )
     );
 
+
     $templates = get_posts($args);
 
-    foreach($templates as $template) {
-        echo do_shortcode("[custom_template post_id=$template->ID]");
+    foreach ($templates as $template) {
+        $display_location_condition = get__post_meta_by_id($template->ID, 'display_location_condition');
+
+        if ($display_location_condition == '') {
+            echo do_shortcode("[custom_template post_id=$template->ID]");
+        }
     }
 }
 

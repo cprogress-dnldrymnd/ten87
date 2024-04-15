@@ -4,9 +4,11 @@
         <div class="elementor-widget-container">
             <div class="qodef-shortcode qodef-m  qodef-team-list qodef-item-layout--info-below qodef-grid qodef-layout--columns  qodef-gutter--normal qodef-col-num--4 qodef-item-layout--info-below qodef-pagination--on qodef-pagination-type--infinite-scroll qodef-responsive--custom qodef-col-num--1440--4 qodef-col-num--1366--4 qodef-col-num--1024--2 qodef-col-num--768--2 qodef-col-num--680--1 qodef-col-num--480--1">
                 <div class="qodef-grid-inner clear">
+                    <?php $count = 1; ?>
                     <?php while (have_posts()) { ?>
                         <?php the_post() ?>
-                        <div class="qodef-e qodef-grid-item  post-<?php the_ID() ?> team type-team status-publish has-post-thumbnail hentry">
+
+                        <div class="qodef-e qodef-grid-item  post-<?php the_ID() ?> team type-team status-publish has-post-thumbnail hentry post-counter-<?= $count ?>">
                             <div class="qodef-e-inner">
                                 <div class="qodef-e-image">
                                     <div class="qodef-e-media-image">
@@ -27,6 +29,13 @@
                                 </div>
                             </div>
                         </div>
+
+                        <?php $count++ ?>
+                        <?php
+                        if ($count % 4 == 0) {
+                            $count = 1;
+                        }
+                        ?>
                     <?php } ?>
                 </div>
             </div>

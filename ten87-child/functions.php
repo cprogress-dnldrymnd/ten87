@@ -44,6 +44,7 @@ function tissue_paper_register_custom_fields()
 require_once('includes/post-types.php');
 require_once('includes/shortcodes.php');
 require_once('includes/elementor.php');
+require_once('includes/hooks.php');
 
 
 function action_wp_footer()

@@ -16,7 +16,7 @@ function action_after_header()
     $templates = get_posts($args);
 
     foreach($templates as $template) {
-        echo do_shortcode("[custom_template post_id=$template->ID]")
+        echo do_shortcode("[custom_template post_id=$template->ID]");
     }
 }
 

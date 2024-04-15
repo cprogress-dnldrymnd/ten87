@@ -4,7 +4,7 @@
         <div class="elementor-widget-container">
             <div class="qodef-shortcode qodef-m  qodef-team-list qodef-item-layout--info-below qodef-grid qodef-layout--columns  qodef-gutter--normal qodef-col-num--4 qodef-item-layout--info-below qodef-pagination--on qodef-pagination-type--infinite-scroll qodef-responsive--custom qodef-col-num--1440--4 qodef-col-num--1366--4 qodef-col-num--1024--2 qodef-col-num--768--2 qodef-col-num--680--1 qodef-col-num--480--1">
                 <div class="qodef-grid-inner clear">
-                    <?php $count = 1; ?>
+                    <?php $count = 0; ?>
                     <?php while (have_posts()) { ?>
                         <?php the_post() ?>
 
@@ -33,7 +33,7 @@
                         <?php $count++ ?>
                         <?php
                         if ($count % 4 == 0) {
-                            $count = 1;
+                            $count = 0;
                         }
                         ?>
                     <?php } ?>

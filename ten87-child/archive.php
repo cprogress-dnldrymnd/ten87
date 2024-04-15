@@ -1,6 +1,4 @@
 <?php get_header() ?>
-<?= do_shortcode('[custom_template post_id=7114]') ?>
-
 <section class="archive-section">
     <div class="elementor-element elementor-element-d906c2c elementor-widget elementor-widget-obsius_core_team_list" data-id="d906c2c" data-element_type="widget" id="our-community" data-widget_type="obsius_core_team_list.default">
         <div class="elementor-widget-container">

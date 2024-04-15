@@ -83,7 +83,7 @@ Container::make('post_meta', __('Template Options'))
 				->set_conditional_logic(array(
 					array(
 						'field' => 'display_location_condition',
-						'value' => 'post_type', // Optional, defaults to "". Should be an array if "IN" or "NOT IN" operators are used.
+						'value' => 'post_type_archive', // Optional, defaults to "". Should be an array if "IN" or "NOT IN" operators are used.
 						'compare' => '=', // Optional, defaults to "=". Available operators: =, <, >, <=, >=, IN, NOT IN
 					)
 				)),

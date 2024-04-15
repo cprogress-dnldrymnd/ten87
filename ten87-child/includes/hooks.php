@@ -6,14 +6,18 @@ function action_after_header()
         'post_type'   => 'templates',
         'meta_query' => array(
             array(
-                'key'   => 'featured',
-                'value' => 'yes',
-                'compare' => ''
+                'key'   => '_display_location',
+                'value' => 'shortcode',
+                'compare' => '!='
             )
         )
     );
 
     $templates = get_posts($args);
+
+    foreach($templates as $template) {
+        echo do_shortcode("[custom_template post_id=$template->ID]")
+    }
 }
 
 add_action('after_header', 'action_after_header');

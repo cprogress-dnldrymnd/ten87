@@ -1998,7 +1998,7 @@ body {
 }
 
 .section-specs {
-    @media(min-width: 992px) {
+    @media (min-width: 992px) {
         & + * {
             transition: 500ms;
         }
@@ -2026,6 +2026,9 @@ body {
         .qodef-cursor-dot-small {
             height: 21px !important;
             width: 21px !important;
+            &[style~="24px"] {
+                transform: scale(1.5);
+            }
         }
     }
 }

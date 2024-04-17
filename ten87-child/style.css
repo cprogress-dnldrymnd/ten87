@@ -1066,9 +1066,6 @@ body.has-custom-page-heading #qodef-page-mobile-header {
         @media (max-width: 1199px) {
           .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
             font-size: 25px; } }
-        @media (min-width: 992px) {
-          .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul {
-            position: absolute; } }
       @media (max-width: 991px) {
         .list-item-on-hover .list-item-box .list-item-inner .list-item-content {
           width: 100%;

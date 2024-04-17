@@ -1444,21 +1444,7 @@ body.has-custom-page-heading {
                 position: absolute;
 
                 .list-item-content {
-                    position: relative;
-
-                    > ul {
-                        > li {
-                            > ul {
-                                @media (min-width: 992px) {
-                                    margin-top: var(--offset);
-                                }
-                            }
-                        }
-                    }
-
-                    @media (min-width: 992px) {
-                        margin-top: var(--offset);
-                    }
+                    position: static;
                 }
             }
         }

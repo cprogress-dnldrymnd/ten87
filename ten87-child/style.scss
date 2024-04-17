@@ -1439,6 +1439,29 @@ body.has-custom-page-heading {
             }
         }
 
+        &.fixed-positioning {
+            > .list-item {
+                position: absolute;
+
+                .list-item-content {
+                    position: relative;
+
+                    > ul {
+                        > li {
+                            > ul {
+                                @media (min-width: 992px) {
+                                    margin-top: var(--offset);
+                                }
+                            }
+                        }
+                    }
+
+                    @media (min-width: 992px) {
+                        margin-top: var(--offset);
+                    }
+                }
+            }
+        }
 
         > .list-item {
             position: relative;

@@ -254,3 +254,16 @@ function action_obsius_action_before_body_tag_close()
 }
 
 add_action('obsius_action_before_body_tag_close', 'action_obsius_action_before_body_tag_close');
+
+
+add_filter('gettext', 'translate_text', 30);
+add_filter('ngettext', 'translate_text', 30);
+function translate_text($translated)
+{
+	$words = array(
+		// 'word to translate' => 'translation'
+		'Obsius' => 'Ten87',
+	);
+	$translated = str_ireplace(array_keys($words), $words, $translated);
+	return $translated;
+}

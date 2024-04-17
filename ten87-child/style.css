@@ -1400,7 +1400,7 @@ body:not(.home) #qodef-page-outer {
         border-color: var(--accent-color);
         color: #fff; }
 
-.wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label:before {
+.wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label:before, .wpcf7-radio .wpcf7-list-item .wpcf7-list-item-label:before {
   display: flex !important;
   align-items: center;
   justify-content: center;

@@ -2016,16 +2016,16 @@ body {
         height: 41px;
         width: 41px;
         .qodef-cursor-dot-large {
-            height: 41px;
-            width: 41px;
+            height: 41px !important;
+            width: 41px !important;
         }
     }
     #qodef-cursor-dot-small-holder {
         height: 21px;
         width: 21px;
         .qodef-cursor-dot-small {
-            height: 21px;
-            width: 21px;
+            height: 21px !important;
+            width: 21px !important;
         }
     }
 }

@@ -1341,13 +1341,13 @@ body:not(.home) #qodef-page-outer {
     height: 41px;
     width: 41px; }
     #qodef-custom-cursor #qodef-cursor-dot-large-holder .qodef-cursor-dot-large {
-      height: 41px;
-      width: 41px; }
+      height: 41px !important;
+      width: 41px !important; }
   #qodef-custom-cursor #qodef-cursor-dot-small-holder {
     height: 21px;
     width: 21px; }
     #qodef-custom-cursor #qodef-cursor-dot-small-holder .qodef-cursor-dot-small {
-      height: 21px;
-      width: 21px; }
+      height: 21px !important;
+      width: 21px !important; }
 
 /*# sourceMappingURL=style.css.map */

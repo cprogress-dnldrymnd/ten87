@@ -328,14 +328,6 @@ body {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical; }
-  .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content .modal-trigger {
-    border: none;
-    background: transparent;
-    font-size: 20px;
-    display: inline-block;
-    padding: 0;
-    text-decoration: underline;
-    font-family: "Ten87SansV7", sans-serif; }
 .qodef-team-list .qodef-m-top-info {
   align-items: flex-start;
   margin-bottom: 50px; }
@@ -350,6 +342,15 @@ body {
   @media (max-width: 1024px) {
     .qodef-team-list .qodef-m-top-info {
       flex-direction: column; } }
+
+.modal-trigger.modal-trigger {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0;
+  text-decoration: underline;
+  font-family: "Ten87SansV7", sans-serif; }
 
 .cta-style-1 .qodef-qi-section-title {
   display: flex;
@@ -1233,7 +1234,8 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 body.modal-active {
   overflow: hidden;
   padding-right: 17px; }
-  body.modal-active #modal-form, body.modal-active .modal-form-backdrop {
+  body.modal-active #modal-form,
+  body.modal-active .modal-form-backdrop {
     transform: translateX(0); }
 
 .modal-form-backdrop {
@@ -1309,7 +1311,8 @@ body.modal-active {
 body:not(.home) #qodef-page-outer {
   margin-top: 0 !important; }
 
-.post-type-archive-fundings .qodef-m-content, .post-type-archive-fundings #qodef-page-inner {
+.post-type-archive-fundings .qodef-m-content,
+.post-type-archive-fundings #qodef-page-inner {
   width: 100% !important;
   max-width: 100% !important;
   padding-left: 50px;
@@ -1319,5 +1322,17 @@ body:not(.home) #qodef-page-outer {
 
 #qodef-custom-cursor .qodef-custom-cursor > * {
   background: #fff; }
+
+.qodef-team-list .qodef-e-title {
+  font-size: 40px; }
+  @media (max-width: 991px) {
+    .qodef-team-list .qodef-e-title {
+      font-size: 30px; } }
+  @media (max-width: 767px) {
+    .qodef-team-list .qodef-e-title {
+      font-size: 25px; } }
+
+.qodef-team-list .qodef-e-role {
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

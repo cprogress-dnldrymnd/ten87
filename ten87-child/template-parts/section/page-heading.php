@@ -61,7 +61,7 @@ if (is_archive()) {
             <?php if (get_post_type() == 'studios' && is_single()) { ?>
                 <div class="button-group-box">
                     <div class="qodef-qi-button-holder qodef-qi-button-black">
-                        <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="" target="_self">
+                        <a class="qodef-shortcode qodef-m  qodef-qi-button qodef-html--link qodef-layout--filled qodef-type--standard   qodef-icon--right qodef-hover--icon-move-horizontal-short" href="/contact-us/" target="_self">
                             <span class="qodef-m-text">Hire A Studio</span>
                             <span class="qodef-m-icon ">
                                 <span class="qodef-m-icon-inner">

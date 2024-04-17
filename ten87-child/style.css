@@ -1349,7 +1349,7 @@ body:not(.home) #qodef-page-outer {
     #qodef-custom-cursor #qodef-cursor-dot-small-holder .qodef-cursor-dot-small {
       height: 21px !important;
       width: 21px !important; }
-      #qodef-custom-cursor #qodef-cursor-dot-small-holder .qodef-cursor-dot-small[style~="24px"] {
+      #qodef-custom-cursor #qodef-cursor-dot-small-holder .qodef-cursor-dot-small[style="top: 0px; left: 0px; height: 24px; width: 24px;"] {
         transform: scale(1.5); }
 
 /*# sourceMappingURL=style.css.map */

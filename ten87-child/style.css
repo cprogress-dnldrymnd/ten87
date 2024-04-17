@@ -1355,13 +1355,18 @@ body:not(.home) #qodef-page-outer {
 .wpcf7-radio,
 .wpcf7-checkbox {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem; }
   .wpcf7-radio .wpcf7-list-item,
   .wpcf7-checkbox .wpcf7-list-item {
     position: relative;
     margin-bottom: 5px;
-    margin-right: 5px;
-    margin-left: 0; }
+    margin-left: 0;
+    flex: 0 0 50%;
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
     @media (max-width: 767px) {
       .wpcf7-radio .wpcf7-list-item,
       .wpcf7-checkbox .wpcf7-list-item {

@@ -1317,4 +1317,7 @@ body:not(.home) #qodef-page-outer {
 .post-type-archive-fundings .qodef-page-title {
   display: none; }
 
+#qodef-custom-cursor .qodef-custom-cursor > div {
+  background: #fff; }
+
 /*# sourceMappingURL=style.css.map */

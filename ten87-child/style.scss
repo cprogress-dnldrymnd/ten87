@@ -1991,3 +1991,11 @@ body {
         display: none;
     }
 }
+
+#qodef-custom-cursor{
+    .qodef-custom-cursor {
+        > div {
+            background: #fff;
+        }
+    }
+}

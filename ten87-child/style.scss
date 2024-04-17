@@ -2047,6 +2047,9 @@ body {
             flex: 0 0 100%;
             width: 100%;
         }
+        label {
+            margin: 0;
+        }
         .wpcf7-list-item-label {
             padding: 1rem;
             border-radius: 40px;
@@ -2062,6 +2065,7 @@ body {
             line-height: 1;
             font-size: 17px;
             text-align: center;
+            
         }
         input {
             display: none;
@@ -2084,5 +2088,15 @@ body {
                 color: var(--accent-color);
             }
         }
+    }
+}
+
+
+.checkbox-holder {
+    border: 1px solid !important;
+    padding: 15px 15px 0 15px;
+    border-radius: 10px;
+    .checkbox-label {
+        margin-bottom: 1rem;
     }
 }

@@ -1368,6 +1368,9 @@ body:not(.home) #qodef-page-outer {
       .wpcf7-checkbox .wpcf7-list-item {
         flex: 0 0 100%;
         width: 100%; } }
+    .wpcf7-radio .wpcf7-list-item label,
+    .wpcf7-checkbox .wpcf7-list-item label {
+      margin: 0; }
     .wpcf7-radio .wpcf7-list-item .wpcf7-list-item-label,
     .wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label {
       padding: 1rem;
@@ -1398,5 +1401,12 @@ body:not(.home) #qodef-page-outer {
   justify-content: center;
   font-weight: bold;
   color: var(--accent-color); }
+
+.checkbox-holder {
+  border: 1px solid !important;
+  padding: 15px 15px 0 15px;
+  border-radius: 10px; }
+  .checkbox-holder .checkbox-label {
+    margin-bottom: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

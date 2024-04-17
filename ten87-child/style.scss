@@ -1995,5 +1995,15 @@ body {
 }
 .qodef-team-list .qodef-e-role {
     font-size: 20px;
-  
+}
+
+.section-specs {
+    & + * {
+        transition: 500ms;
+    }
+    &:hover {
+        & + * {
+            opacity: 0;
+        }
+    }
 }

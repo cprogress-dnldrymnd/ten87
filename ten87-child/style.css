@@ -1329,4 +1329,9 @@ body:not(.home) #qodef-page-outer {
 .qodef-team-list .qodef-e-role {
   font-size: 20px; }
 
+.section-specs + * {
+  transition: 500ms; }
+.section-specs:hover + * {
+  opacity: 0; }
+
 /*# sourceMappingURL=style.css.map */

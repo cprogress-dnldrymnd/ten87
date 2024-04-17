@@ -2037,16 +2037,16 @@ body {
 .wpcf7-checkbox {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
     .wpcf7-list-item {
         position: relative;
         margin-bottom: 1rem;
         margin-left: 0;
         flex: 0 0 50%;
         width: 50%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
         @media (max-width: 767px) {
             flex: 0 0 100%;
             width: 100%;

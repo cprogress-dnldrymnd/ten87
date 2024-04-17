@@ -1356,8 +1356,8 @@ body:not(.home) #qodef-page-outer {
 .wpcf7-checkbox {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem; }
+  margin-left: -7.5px;
+  margin-right: -7.5px; }
   .wpcf7-radio .wpcf7-list-item,
   .wpcf7-checkbox .wpcf7-list-item {
     position: relative;
@@ -1365,8 +1365,8 @@ body:not(.home) #qodef-page-outer {
     margin-left: 0;
     flex: 0 0 50%;
     width: 50%;
-    padding-left: 1rem;
-    padding-right: 1rem; }
+    padding-left: 7.5px;
+    padding-right: 7.5px; }
     @media (max-width: 767px) {
       .wpcf7-radio .wpcf7-list-item,
       .wpcf7-checkbox .wpcf7-list-item {

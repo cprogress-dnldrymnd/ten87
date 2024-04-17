@@ -1337,16 +1337,16 @@ body:not(.home) #qodef-page-outer {
 
 #qodef-custom-cursor {
   mix-blend-mode: difference !important; }
-  #qodef-custom-cursor .qodef-cursor-dot-large-holder {
+  #qodef-custom-cursor #qodef-cursor-dot-large-holder {
     height: 41px;
     width: 41px; }
-    #qodef-custom-cursor .qodef-cursor-dot-large-holder .qodef-cursor-dot-large {
+    #qodef-custom-cursor #qodef-cursor-dot-large-holder .qodef-cursor-dot-large {
       height: 41px;
       width: 41px; }
-  #qodef-custom-cursor .qodef-cursor-dot-small-holder {
+  #qodef-custom-cursor #qodef-cursor-dot-small-holder {
     height: 21px;
     width: 21px; }
-    #qodef-custom-cursor .qodef-cursor-dot-small-holder .qodef-cursor-dot-small {
+    #qodef-custom-cursor #qodef-cursor-dot-small-holder .qodef-cursor-dot-small {
       height: 21px;
       width: 21px; }
 

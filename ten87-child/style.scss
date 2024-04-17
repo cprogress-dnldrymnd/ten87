@@ -2012,7 +2012,7 @@ body {
 
 #qodef-custom-cursor {
     mix-blend-mode: difference !important;
-    .qodef-cursor-dot-large-holder {
+    #qodef-cursor-dot-large-holder {
         height: 41px;
         width: 41px;
         .qodef-cursor-dot-large {
@@ -2020,7 +2020,7 @@ body {
             width: 41px;
         }
     }
-    .qodef-cursor-dot-small-holder {
+    #qodef-cursor-dot-small-holder {
         height: 21px;
         width: 21px;
         .qodef-cursor-dot-small {

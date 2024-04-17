@@ -19,7 +19,8 @@ class newPostType
 		$this->has_archive = isset($param['has_archive']) ? $param['has_archive'] : true;
 		$this->hierarchical = isset($param['hierarchical']) ? $param['hierarchical'] : false;
 		$this->taxonomies = isset($param['taxonomies']) ? $param['taxonomies'] : false;
-
+		$this->post_type = isset($param['post_type']) ? $param['post_type'] : $this->name;
+		
 
 
 		if (isset($param['rewrite'])) {
@@ -32,7 +33,7 @@ class newPostType
 	function create_post_type()
 	{
 		register_post_type(
-			strtolower($this->name),
+			strtolower($this->post_type),
 			array(
 				'labels'              => array(
 					'name'               => _x($this->name, 'post type general name'),
@@ -176,8 +177,9 @@ new newPostType(
 
 new newPostType(
 	array(
-		'name'          => 'Fundings',
+		'name'          => 'Funding',
 		'singular_name' => 'Funding',
+		'post_type' => 'fundings',
 		'icon'          => 'dashicons-media-text',
 		'rewrite'       => array('slug' => 'funding-for-musicians', 'with_front' => true),
 		'has_archive'   => true,

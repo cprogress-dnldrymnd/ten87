@@ -1361,7 +1361,7 @@ body:not(.home) #qodef-page-outer {
   .wpcf7-radio .wpcf7-list-item,
   .wpcf7-checkbox .wpcf7-list-item {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
     margin-left: 0;
     flex: 0 0 50%;
     width: 50%;

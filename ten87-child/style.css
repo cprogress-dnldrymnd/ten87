@@ -1382,7 +1382,7 @@ body:not(.home) #qodef-page-outer {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid;
+      border: 1px solid;
       line-height: 1;
       font-size: 17px;
       text-align: center; }

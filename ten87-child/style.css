@@ -1375,7 +1375,7 @@ body:not(.home) #qodef-page-outer {
     .wpcf7-radio .wpcf7-list-item .wpcf7-list-item-label,
     .wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label {
       padding: 1rem;
-      border-radius: 5px;
+      border-radius: 40px;
       border: 1px solid lightgray;
       font-weight: 400;
       width: 100%;
@@ -1383,22 +1383,19 @@ body:not(.home) #qodef-page-outer {
       cursor: pointer;
       display: flex;
       align-items: center; }
-      .wpcf7-radio .wpcf7-list-item .wpcf7-list-item-label:before,
-      .wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label:before {
-        content: "";
-        height: 20px;
-        width: 20px;
-        flex: 0 0 20px;
-        display: inline-block;
-        margin-right: 5px;
-        border: 1px solid lightgray;
-        background-color: #fff; }
     .wpcf7-radio .wpcf7-list-item input,
     .wpcf7-checkbox .wpcf7-list-item input {
       display: none; }
       .wpcf7-radio .wpcf7-list-item input:checked + .wpcf7-list-item-label,
       .wpcf7-checkbox .wpcf7-list-item input:checked + .wpcf7-list-item-label {
-        background-color: #e01f26;
+        background-color: var(--accent-color);
         color: #fff; }
+
+.wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label:before {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--accent-color); }
 
 /*# sourceMappingURL=style.css.map */

@@ -1998,12 +1998,14 @@ body {
 }
 
 .section-specs {
-    & + * {
-        transition: 500ms;
-    }
-    &:hover {
+    @media(min-width: 992px) {
         & + * {
-            opacity: 0;
+            transition: 500ms;
+        }
+        &:hover {
+            & + * {
+                opacity: 0;
+            }
         }
     }
 }

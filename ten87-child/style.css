@@ -1355,18 +1355,14 @@ body:not(.home) #qodef-page-outer {
 .wpcf7-radio,
 .wpcf7-checkbox {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -1rem;
-  margin-right: -1rem; }
+  flex-wrap: wrap; }
   .wpcf7-radio .wpcf7-list-item,
   .wpcf7-checkbox .wpcf7-list-item {
     flex: 0 0 33.3333333%;
     width: 33.3333333%;
-    margin: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
     position: relative;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin-right: 1rem; }
     @media (max-width: 767px) {
       .wpcf7-radio .wpcf7-list-item,
       .wpcf7-checkbox .wpcf7-list-item {
@@ -1382,7 +1378,12 @@ body:not(.home) #qodef-page-outer {
       font-size: 14px;
       cursor: pointer;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--accent-color);
+      line-height: 1;
+      font-size: 17px;
+      text-align: center; }
     .wpcf7-radio .wpcf7-list-item input,
     .wpcf7-checkbox .wpcf7-list-item input {
       display: none; }

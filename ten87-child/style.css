@@ -1372,7 +1372,7 @@ body:not(.home) #qodef-page-outer {
       margin: 0; }
     .wpcf7-radio .wpcf7-list-item .wpcf7-list-item-label,
     .wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label {
-      padding: 1rem 10px;
+      padding: 1rem;
       border-radius: 40px;
       border: 1px solid lightgray;
       font-weight: 400;
@@ -1382,7 +1382,7 @@ body:not(.home) #qodef-page-outer {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid var(--accent-color);
+      border: 2px solid;
       line-height: 1;
       font-size: 17px;
       text-align: center; }
@@ -1392,6 +1392,7 @@ body:not(.home) #qodef-page-outer {
       .wpcf7-radio .wpcf7-list-item input:checked + .wpcf7-list-item-label,
       .wpcf7-checkbox .wpcf7-list-item input:checked + .wpcf7-list-item-label {
         background-color: var(--accent-color);
+        border-color: var(--accent-color);
         color: #fff; }
 
 .wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label:before {

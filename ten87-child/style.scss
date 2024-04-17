@@ -1444,7 +1444,7 @@ body.has-custom-page-heading {
                 position: absolute;
 
                 .list-item-content {
-                    position: static;
+                    position: relative;
                 }
             }
         }
@@ -1631,7 +1631,9 @@ body.has-custom-page-heading {
                         font-size: 25px;
                     }
 
-                
+                    @media (min-width: 992px) {
+                        position: absolute;
+                    }
                 }
 
                 @media (max-width: 991px) {

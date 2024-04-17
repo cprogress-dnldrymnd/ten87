@@ -2026,7 +2026,7 @@ body {
         .qodef-cursor-dot-small {
             height: 21px !important;
             width: 21px !important;
-            &[style="top: 0px; left: 0px; height: 24px; width: 24px;"] {
+            &[style*="24px"] {
                 transform: scale(1.5);
             }
         }

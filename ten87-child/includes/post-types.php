@@ -20,7 +20,7 @@ class newPostType
 		$this->hierarchical = isset($param['hierarchical']) ? $param['hierarchical'] : false;
 		$this->taxonomies = isset($param['taxonomies']) ? $param['taxonomies'] : false;
 		$this->post_type = isset($param['post_type']) ? $param['post_type'] : $this->name;
-		
+
 
 
 		if (isset($param['rewrite'])) {
@@ -279,3 +279,16 @@ function action_register_post_type_args($args, $post_type)
 	return $args;
 }
 add_filter('register_post_type_args', 'action_register_post_type_args', 999, 2);
+
+
+function faq_query($query)
+{
+
+	if (isset($query->query['post_type'])) {
+		if ($query->query['post_type'] === 'post') {
+			$query->set('posts_per_page', -1);
+			$query->set('orderby', 'menu_order');
+		}
+	}
+}
+add_action('pre_get_posts', 'faq_query', 1);

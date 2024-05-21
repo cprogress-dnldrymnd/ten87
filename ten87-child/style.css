@@ -1292,7 +1292,8 @@ body.modal-active {
         #modal-form .modal-content .row > div:first-child {
           background-color: var(--cream-color);
           border-radius: 20px;
-          overflow: hidden; }
+          overflow: hidden;
+          min-height: 100vh; }
         #modal-form .modal-content .row > div:last-child {
           text-align: center;
           font-size: 40px;

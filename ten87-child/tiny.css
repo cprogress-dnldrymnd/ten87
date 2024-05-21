@@ -1,3 +1,4 @@
 .mceContentBody.wp-editor {
-    background-color:red;
+    background-color:#fff !important;
+    color: #000 !important;
 }

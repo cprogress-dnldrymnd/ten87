@@ -608,6 +608,8 @@ body {
     .continuos-scroll .swiper-wrapper .swiper-slide {
       width: auto !important;
       max-width: inherit !important; }
+      .continuos-scroll .swiper-wrapper .swiper-slide img {
+        max-height: 50px; }
 
 .logo-slider {
   position: relative;

@@ -920,6 +920,9 @@ body {
         .swiper-slide {
             width: auto !important;
             max-width: inherit !important;
+            img {
+                max-height: 50px;
+            }
         }
     }
 }

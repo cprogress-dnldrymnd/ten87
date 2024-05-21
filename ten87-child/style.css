@@ -1420,4 +1420,8 @@ body:not(.home) #qodef-page-outer {
   .checkbox-holder .checkbox-label {
     margin-bottom: 1rem; }
 
+.testimonial-section .qodef-e-media-image {
+  border-radius: 50%;
+  overflow: hidden; }
+
 /*# sourceMappingURL=style.css.map */

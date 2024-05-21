@@ -946,6 +946,13 @@ body.has-custom-page-heading #qodef-page-mobile-header {
     position: relative;
     left: 0;
     right: 0; }
+    .list-item-on-hover .list-item-box > .list-item:last-child .list-item-content > ul:before {
+      content: '';
+      position: absolute;
+      left: -100vh;
+      right: -100vh;
+      background-color: var(--cream-color);
+      height: 100%; }
     .list-item-on-hover .list-item-box > .list-item:hover {
       z-index: 99; }
       @media (min-width: 992px) {
@@ -1026,13 +1033,6 @@ body.has-custom-page-heading #qodef-page-mobile-header {
         left: 0;
         font-size: 29px;
         background-color: var(--cream-color); }
-        .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul:before {
-          content: '';
-          position: absolute;
-          left: -100vh;
-          right: -100vh;
-          background-color: var(--cream-color);
-          height: 100%; }
         .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li {
           display: flex;
           justify-content: space-between; }

@@ -1454,7 +1454,20 @@ body.has-custom-page-heading {
             position: relative;
             left: 0;
             right: 0;
-
+            &:last-child {
+                .list-item-content {
+                    > ul {
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            left: -100vh;
+                            right: -100vh;
+                            background-color: var(--cream-color);
+                            height: 100%;
+                        }
+                    }
+                }
+            }
             &:hover {
                 z-index: 99;
 
@@ -1576,14 +1589,7 @@ body.has-custom-page-heading {
                     left: 0;
                     font-size: 29px;
                     background-color: var(--cream-color);
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        left: -100vh;
-                        right: -100vh;
-                        background-color: var(--cream-color);
-                        height: 100%;
-                    }
+                 
                     > li {
                         display: flex;
                         justify-content: space-between;

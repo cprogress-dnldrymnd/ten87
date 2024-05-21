@@ -1921,8 +1921,15 @@ body {
         display: flex;
         align-items: center;
         .image-box {
+            padding: 50%;
+            position: relative;
             img {
                 width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                object-fit: cover;
             }
         }
         .row {

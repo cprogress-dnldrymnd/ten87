@@ -1274,8 +1274,16 @@ body.modal-active {
     height: 100%;
     display: flex;
     align-items: center; }
-    #modal-form .modal-content .image-box img {
-      width: 100%; }
+    #modal-form .modal-content .image-box {
+      padding: 50%;
+      position: relative; }
+      #modal-form .modal-content .image-box img {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        object-fit: cover; }
     #modal-form .modal-content .row {
       display: flex;
       align-items: center; }

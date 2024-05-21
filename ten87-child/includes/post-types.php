@@ -286,7 +286,7 @@ function post_query($query)
 
 	if (isset($query->query['post_type'])) {
 		if ($query->query['post_type'] === 'post') {
-			$args =  array( 'post_date' => 'DESC', 'menu_order' => 'ASC' );
+			$args =  array('menu_order' => 'ASC', 'date' => 'DESC');
 			$query->set('orderby', $args);
 		}
 	}

@@ -223,7 +223,7 @@ body {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            transition: 600ms;
+            transition: 700ms;
             color: var(--text-color) !important;
 
             &.hover {
@@ -1959,6 +1959,7 @@ body {
                 font-family: "Ten87SansV7", sans-serif;
                 font-weight: bold;
                 margin: 0;
+                text-transform: initial;
             }
             .position-box,
             .description-box {

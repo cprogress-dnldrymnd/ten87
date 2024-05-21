@@ -174,7 +174,7 @@ body {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      transition: 600ms;
+      transition: 700ms;
       color: var(--text-color) !important; }
       #qodef-page-header .qodef-header-logo-link.qodef-header-logo-link svg.hover {
         width: 0%; }
@@ -1304,7 +1304,8 @@ body.modal-active {
       #modal-form .modal-content .content-box h4 {
         font-family: "Ten87SansV7", sans-serif;
         font-weight: bold;
-        margin: 0; }
+        margin: 0;
+        text-transform: initial; }
       #modal-form .modal-content .content-box .position-box,
       #modal-form .modal-content .content-box .description-box {
         margin-bottom: 1rem; }

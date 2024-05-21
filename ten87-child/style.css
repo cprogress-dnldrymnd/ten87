@@ -1022,7 +1022,8 @@ body.has-custom-page-heading #qodef-page-mobile-header {
         top: 0;
         right: 0;
         left: 0;
-        font-size: 29px; }
+        font-size: 29px;
+        background-color: var(--cream-color); }
         .list-item-on-hover .list-item-box .list-item-inner .list-item-content > ul > li {
           display: flex;
           justify-content: space-between; }

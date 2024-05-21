@@ -18,7 +18,7 @@
 	do_action('obsius_action_after_body_tag_open');
 	?>
 	<?php if (is_front_page()) { ?>
-		<div class="home-cursor">
+		<div class="home-cursor" style="display: none;">
 			<div class="inner">
 				<svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59px" height="59px" viewBox="0 0 59 59" version="1.1">
 					<g id="surface1">

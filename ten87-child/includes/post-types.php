@@ -281,14 +281,15 @@ function action_register_post_type_args($args, $post_type)
 add_filter('register_post_type_args', 'action_register_post_type_args', 999, 2);
 
 
-function faq_query($query)
+function post_query($query)
 {
 
 	if (isset($query->query['post_type'])) {
 		if ($query->query['post_type'] === 'post') {
 			$query->set('posts_per_page', -1);
 			$query->set('orderby', 'menu_order');
+			$query->set('order', 'ASC');
 		}
 	}
 }
-add_action('pre_get_posts', 'faq_query', 1);
+add_action('pre_get_posts', 'post_query', 1);

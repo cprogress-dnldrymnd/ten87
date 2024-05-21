@@ -1290,7 +1290,7 @@ body.modal-active {
       #modal-form .modal-content .row > div {
         flex: 0 0 50%; }
         #modal-form .modal-content .row > div:first-child {
-          background-color: var(--white-color);
+          background-color: var(--cream-color);
           border-radius: 20px;
           overflow: hidden; }
         #modal-form .modal-content .row > div:last-child {

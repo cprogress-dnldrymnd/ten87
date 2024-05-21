@@ -1265,7 +1265,9 @@ body.modal-active {
   z-index: 99999;
   transform: translateX(100%);
   transition: 600ms;
-  overflow: auto; }
+  overflow: auto;
+  padding-top: 32px;
+  padding-bottom: 32px; }
   #modal-form .modal-content {
     max-width: 1000px;
     margin-left: auto;
@@ -1293,7 +1295,7 @@ body.modal-active {
           background-color: var(--cream-color);
           border-radius: 20px;
           overflow: hidden;
-          min-height: 100vh; }
+          min-height: calc(100vh - 64px); }
         #modal-form .modal-content .row > div:last-child {
           text-align: center;
           font-size: 40px;

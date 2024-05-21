@@ -1911,7 +1911,8 @@ body {
     transform: translateX(100%);
     transition: 600ms;
     overflow: auto;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
     .modal-content {
         max-width: 1000px;
         margin-left: auto;
@@ -1941,7 +1942,7 @@ body {
                     background-color: var(--cream-color);
                     border-radius: 20px;
                     overflow: hidden;
-                    min-height: 100vh;
+                    min-height: calc(100vh - 64px);
 
                 }
                 &:last-child {

@@ -267,3 +267,13 @@ function translate_text($translated)
 	$translated = str_ireplace(array_keys($words), $words, $translated);
 	return $translated;
 }
+
+
+// Add custom styles to TinyMCE editor
+if ( ! function_exists('tdav_css') ) {
+    function tdav_css($wp) {
+        $wp .= ',' . get_bloginfo('stylesheet_directory') . '/tiny.css';
+        return $wp;
+    }
+}
+add_filter( 'mce_css', 'tdav_css' );

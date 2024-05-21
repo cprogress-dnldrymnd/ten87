@@ -1998,18 +1998,7 @@ body {
     font-size: 20px;
 }
 
-.section-specs {
-    @media (min-width: 992px) {
-        & + * {
-            transition: 500ms;
-        }
-        &:hover {
-            & + * {
-                opacity: 0;
-            }
-        }
-    }
-}
+
 
 #qodef-custom-cursor {
     mix-blend-mode: difference !important;

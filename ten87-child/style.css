@@ -1426,4 +1426,7 @@ body:not(.home) #qodef-page-outer {
   border-radius: 50%;
   overflow: hidden; }
 
+.elementor-text-editor {
+  font-family: "SuisseBPIntl", sans-serif; }
+
 /*# sourceMappingURL=style.css.map */

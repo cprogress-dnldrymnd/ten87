@@ -568,8 +568,23 @@ body {
                 margin-bottom: 0;
 
                 img {
+                    height: 355px;
+                    width: 355px;
+                    object-fit: cover;
+
+                    @media (max-width: 1439px) and(min-width: 768px) {
+                        height: 25vw;
+                        width: 25vw;
+                    }
+
                     @media (max-width: 767px) {
-                        max-width: 300px;
+                        height: 300px;
+                        width: 300px;
+                    }
+
+                    @media (max-width: 575px) {
+                        height: 250px;
+                        width: 250px;
                     }
                 }
             }
@@ -1461,7 +1476,7 @@ body.has-custom-page-heading {
                 .list-item-content {
                     > ul {
                         &:before {
-                            content: '';
+                            content: "";
                             position: absolute;
                             left: -100vh;
                             right: -100vh;
@@ -1592,7 +1607,7 @@ body.has-custom-page-heading {
                     left: 0;
                     font-size: 29px;
                     background-color: var(--cream-color);
-                 
+
                     > li {
                         display: flex;
                         justify-content: space-between;
@@ -1943,7 +1958,6 @@ body {
                     border-radius: 20px;
                     overflow: hidden;
                     min-height: calc(100vh - 64px);
-
                 }
                 &:last-child {
                     text-align: center;
@@ -2027,8 +2041,6 @@ body {
     font-size: 20px;
 }
 
-
-
 #qodef-custom-cursor {
     mix-blend-mode: difference !important;
     #qodef-cursor-dot-large-holder {
@@ -2074,7 +2086,7 @@ body {
             margin: 0;
         }
         .wpcf7-list-item-label {
-            padding: 1rem ;
+            padding: 1rem;
             border-radius: 40px;
             border: 1px solid lightgray;
             font-weight: 400;
@@ -2088,8 +2100,6 @@ body {
             line-height: 1;
             font-size: 17px;
             text-align: center;
-
-            
         }
         input {
             display: none;
@@ -2102,7 +2112,8 @@ body {
     }
 }
 
-.wpcf7-checkbox, .wpcf7-radio {
+.wpcf7-checkbox,
+.wpcf7-radio {
     .wpcf7-list-item {
         .wpcf7-list-item-label {
             &:before {
@@ -2115,7 +2126,6 @@ body {
         }
     }
 }
-
 
 .checkbox-holder {
     margin-bottom: 47px;

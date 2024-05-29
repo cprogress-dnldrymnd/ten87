@@ -375,9 +375,22 @@ body {
     .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image {
       flex: 0 0 25%;
       margin-bottom: 0; }
-      @media (max-width: 767px) {
-        .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image img {
-          max-width: 300px; } }
+      .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image img {
+        height: 355px;
+        width: 355px;
+        object-fit: cover; }
+        @media (max-width: 1439px) and (min-width: 768px) {
+          .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image img {
+            height: 25vw;
+            width: 25vw; } }
+        @media (max-width: 767px) {
+          .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image img {
+            height: 300px;
+            width: 300px; } }
+        @media (max-width: 575px) {
+          .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-media-image img {
+            height: 250px;
+            width: 250px; } }
     .elementor-widget-obsius_core_testimonials_list .qodef-testimonials-list.qodef-testimonials-list .qodef-e-inner .qodef-e-content {
       display: flex;
       flex-direction: column-reverse;
@@ -949,7 +962,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
     left: 0;
     right: 0; }
     .list-item-on-hover .list-item-box > .list-item:last-child .list-item-content > ul:before {
-      content: '';
+      content: "";
       position: absolute;
       left: -100vh;
       right: -100vh;
@@ -1419,7 +1432,8 @@ body:not(.home) #qodef-page-outer {
         border-color: var(--accent-color);
         color: #fff; }
 
-.wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label:before, .wpcf7-radio .wpcf7-list-item .wpcf7-list-item-label:before {
+.wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label:before,
+.wpcf7-radio .wpcf7-list-item .wpcf7-list-item-label:before {
   display: flex !important;
   align-items: center;
   justify-content: center;

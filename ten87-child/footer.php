@@ -1,5 +1,5 @@
 			<?php do_action('before_footer'); ?>
-			
+
 			</div><!-- close #qodef-page-inner div from header.php -->
 			</div><!-- close #qodef-page-outer div from header.php -->
 			<?php
@@ -41,6 +41,7 @@
 			// Hook to include additional content before body tag closed
 			do_action('obsius_action_before_body_tag_close');
 			?>
+
 			<?php wp_footer(); ?>
 			</body>
 

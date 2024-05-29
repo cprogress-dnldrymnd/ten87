@@ -268,25 +268,28 @@ function post_query($query)
 	}
 }
 add_action('pre_get_posts', 'post_query', 9999);
+function na_remove_slug($post_link, $post, $leavename)
+{
 
-function remove_studios_post_type_slug($post_link, $post, $leavename) {
+	if ('studios' != $post->post_type || 'publish' != $post->post_status) {
+		return $post_link;
+	}
 
-    // Check if this is a 'studios' post
-    if ($post->post_type === 'studios') {
-        $post_link = str_replace('/studios/', '/', $post_link); // Remove '/studios/'
-    }
+	$post_link = str_replace('/' . $post->post_type . '/', '/', $post_link);
 
-    return $post_link;
+	return $post_link;
 }
-add_filter('post_type_link', 'remove_studios_post_type_slug', 10, 3);
+add_filter('post_type_link', 'na_remove_slug', 10, 3);
 
-// Fix potential 404 errors for paginated 'studios' posts
-function studios_pagination_fix($query) {
-    if ( ! $query->is_main_query() ) return;
-    if ( 2 != count($query->query) || ! isset($query->query['page']) ) return;
+function na_parse_request($query)
+{
 
-    if ( ! empty( $query->query['name'] ) ) {
-        $query->set( 'post_type', array( 'post', 'studios', 'page' ) );
-    }
+	if (!$query->is_main_query() || 2 != count($query->query) || !isset($query->query['page'])) {
+		return;
+	}
+
+	if (!empty($query->query['name'])) {
+		$query->set('post_type', array('post', 'studios', 'page'));
+	}
 }
-add_action('pre_get_posts', 'studios_pagination_fix'); 
+add_action('pre_get_posts', 'na_parse_request');

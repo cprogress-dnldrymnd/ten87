@@ -167,7 +167,7 @@ new newPostType(
 		'name'          => 'Studios',
 		'singular_name' => 'Studio',
 		'icon'          => 'dashicons-media-text',
-		'has_archive'   => true,
+		'has_archive'   => false,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => false,
 		'taxonomies'    => array('studio_category'),
@@ -272,28 +272,33 @@ add_action('pre_get_posts', 'post_query', 9999);
 
 
 
-function na_remove_slug($post_link, $post, $leavename)
-{
-
-	if ('studios' != $post->post_type || 'publish' != $post->post_status) {
-		return $post_link;
-	}
-
-	$post_link = str_replace('/' . $post->post_type . '/', '/', $post_link);
-
-	return $post_link;
+// Remove 'studios' slug from permalinks
+function remove_studios_post_type_slug($post_link, $post) {
+    if ($post->post_type === 'studios') {
+        $post_link = str_replace('/studios/', '/', $post_link); 
+    }
+    return $post_link;
 }
-add_filter('post_type_link', 'na_remove_slug', 10, 3);
+add_filter('post_type_link', 'remove_studios_post_type_slug', 10, 2);
 
-function na_parse_request($query)
-{
 
-	if (!$query->is_main_query() || 2 != count($query->query) || !isset($query->query['page'])) {
-		return;
-	}
-
-	if (!empty($query->query['name'])) {
-		$query->set('post_type', array('post', 'studios', 'page'));
-	}
+// Fix 404 error for single 'studios' posts
+function fix_studios_single_permalink($permalink, $post_id, $leavename, $sample) {
+    if (get_post_type($post_id) === 'studios' && !empty($permalink)) {
+        $permalink = str_replace('%studios%', '', $permalink); // Remove %studios% placeholder
+    }
+    return $permalink;
 }
-add_action('pre_get_posts', 'na_parse_request');
+add_filter('post_type_link', 'fix_studios_single_permalink', 10, 4);
+
+// Fix 404 error for paginated 'studios' posts
+function studios_pagination_fix($query) {
+    if (
+        !empty($query->query_vars['pagename']) &&
+        $query->is_main_query() &&
+        empty($query->query_vars['post_type']) 
+    ) {
+        $query->set('post_type', array('post', 'studios', 'page')); // Allow 'studios' post type
+    }
+}
+add_action('pre_get_posts', 'studios_pagination_fix'); 

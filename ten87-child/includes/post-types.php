@@ -291,3 +291,18 @@ function fix_studio_category_archive_404($query)
 	}
 }
 add_action('parse_query', 'fix_studio_category_archive_404');
+
+// Add a custom rewrite rule to handle the 'studios' post type
+function studios_rewrite_rule()
+{
+	add_rewrite_rule('^([^/]+)/?$', 'index.php?studio_category=$matches[1]', 'top');
+}
+add_action('init', 'studios_rewrite_rule', 10, 0);
+
+// Flush permalinks after adding the rewrite rule
+function studios_flush_rewrite_rules()
+{
+	studios_rewrite_rule();
+	flush_rewrite_rules();
+}
+register_activation_hook(__FILE__, 'studios_flush_rewrite_rules');

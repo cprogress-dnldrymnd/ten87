@@ -171,7 +171,7 @@ new newPostType(
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => false,
 		'taxonomies'    => array('studio_category'),
-		'rewrite'       => array('slug' => false),
+		'rewrite' => array('slug' => '', 'with_front' => false),
 	)
 );
 

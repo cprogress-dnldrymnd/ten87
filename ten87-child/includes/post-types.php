@@ -269,6 +269,39 @@ function post_query($query)
 add_action('pre_get_posts', 'post_query', 9999);
 
 
+
+
+// Remove 'studios' slug from permalinks
+function remove_studios_post_type_slug($post_link, $post) {
+    if ($post->post_type === 'studios') {
+        $post_link = str_replace('/studios/', '/', $post_link); 
+    }
+    return $post_link;
+}
+add_filter('post_type_link', 'remove_studios_post_type_slug', 10, 2);
+
+
+// Fix 404 error for single 'studios' posts
+function fix_studios_single_permalink($permalink, $post_id, $leavename, $sample) {
+    if (get_post_type($post_id) === 'studios' && !empty($permalink)) {
+        $permalink = str_replace('%studios%', '', $permalink); // Remove %studios% placeholder
+    }
+    return $permalink;
+}
+add_filter('post_type_link', 'fix_studios_single_permalink', 10, 4);
+
+// Fix 404 error for paginated 'studios' posts
+function studios_pagination_fix($query) {
+    if (
+        !empty($query->query_vars['pagename']) &&
+        $query->is_main_query() &&
+        empty($query->query_vars['post_type']) 
+    ) {
+        $query->set('post_type', array('post', 'studios', 'page')); // Allow 'studios' post type
+    }
+}
+add_action('pre_get_posts', 'studios_pagination_fix'); 
+
 // Add a custom rewrite rule to handle the 'studios' post type
 function studios_rewrite_rule() {
     add_rewrite_rule('^([^/]+)/?$', 'index.php?studios=$matches[1]', 'top');

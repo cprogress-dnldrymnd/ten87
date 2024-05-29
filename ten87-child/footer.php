@@ -1,5 +1,5 @@
 			<?php do_action('before_footer'); ?>
-			
+
 			</div><!-- close #qodef-page-inner div from header.php -->
 			</div><!-- close #qodef-page-outer div from header.php -->
 			<?php
@@ -41,6 +41,43 @@
 			// Hook to include additional content before body tag closed
 			do_action('obsius_action_before_body_tag_close');
 			?>
+			<?php
+			function update_existing_image_alts()
+			{
+				// Query all image attachments
+				$query = new WP_Query(array(
+					'post_type'      => 'attachment',
+					'post_mime_type' => 'image',  // Only target images
+					'post_status'    => 'inherit',
+					'posts_per_page' => -1,        // Get all images
+				));
+
+				// Loop through each image attachment
+				while ($query->have_posts()) {
+					$query->the_post();
+					$attachment_id = get_the_ID();
+
+					// Get attachment metadata
+					$attachment = get_post_meta($attachment_id, '_wp_attachment_metadata', true);
+					if (empty($attachment['image_meta']['alt']) && !empty($attachment['file'])) {
+
+						// Extract filename (without extension)
+						$filename = pathinfo($attachment['file'], PATHINFO_FILENAME);
+
+						// Update alt text in metadata
+						$attachment['image_meta']['alt'] = $filename;
+						wp_update_attachment_metadata($attachment_id, $attachment);
+					}
+				}
+
+				wp_reset_postdata();
+			}
+
+			// Call the function to update alt text
+			update_existing_image_alts();
+
+			?>
+
 			<?php wp_footer(); ?>
 			</body>
 

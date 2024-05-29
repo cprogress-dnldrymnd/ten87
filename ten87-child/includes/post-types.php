@@ -292,17 +292,31 @@ function fix_studio_category_archive_404($query)
 }
 add_action('parse_query', 'fix_studio_category_archive_404');
 
-// Add a custom rewrite rule to handle the 'studios' post type
-function studios_rewrite_rule()
+function remove_studio_category_term_slug_rewrite_rules()
 {
-	add_rewrite_rule('^([^/]+)/?$', 'index.php?studio_category=$matches[1]', 'top');
-}
-add_action('init', 'studios_rewrite_rule', 10, 0);
+	// Get all studio_category terms
+	$terms = get_terms(array(
+		'taxonomy' => 'studio_category',
+		'hide_empty' => false,
+	));
 
-// Flush permalinks after adding the rewrite rule
-function studios_flush_rewrite_rules()
+	// Add rewrite rules for each term
+	if (!is_wp_error($terms) && !empty($terms)) {
+		foreach ($terms as $term) {
+			add_rewrite_rule(
+				'^' . $term->slug . '/?$', // Match the term slug directly
+				'index.php?studio_category=' . $term->slug,
+				'top'
+			);
+		}
+	}
+}
+add_action('init', 'remove_studio_category_term_slug_rewrite_rules', 10, 0);
+
+// Flush permalinks
+function flush_studio_category_term_rewrite_rules()
 {
-	studios_rewrite_rule();
+	remove_studio_category_term_slug_rewrite_rules();
 	flush_rewrite_rules();
 }
-register_activation_hook(__FILE__, 'studios_flush_rewrite_rules');
+register_activation_hook(__FILE__, 'flush_studio_category_term_rewrite_rules');

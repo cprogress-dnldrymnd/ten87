@@ -272,7 +272,7 @@ function remove_post_type_slug_from_studio_category_archive($tax_link, $term, $t
 {
 	if ($taxonomy === 'studio_category') {
 		// Assuming your post type is 'studios', replace if different
-		$tax_link = str_replace('/studios/', '/', $tax_link);
+		$tax_link = str_replace('/studio_category/', '/', $tax_link);
 	}
 	return $tax_link;
 }

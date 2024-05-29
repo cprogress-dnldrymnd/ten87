@@ -269,31 +269,3 @@ function post_query($query)
 }
 add_action('pre_get_posts', 'post_query', 9999);
 
-
-function remove_studios_slugs($post_link, $post, $leavename) {
-
-    // Check if this is a 'studios' post
-    if ($post->post_type !== 'studios' || $post->post_status !== 'publish') {
-        return $post_link; // Leave other post types untouched
-    }
-
-    // Remove the 'studios' post type base
-    $post_link = str_replace('/studios/', '/', $post_link);
-
-    // Remove any taxonomy slug (adjust 'studio_category' if needed)
-    $post_link = preg_replace('#/studio_category/([^/]+)/#', '/', $post_link); 
-
-    return $post_link;
-}
-add_filter('post_type_link', 'remove_studios_slugs', 10, 3);
-
-// Fix potential 404 errors for paginated 'studios' posts
-function studios_pagination_fix($query) {
-    if ( ! $query->is_main_query() ) return;
-    if ( 2 != count($query->query) || ! isset($query->query['page']) ) return;
-
-    if ( ! empty( $query->query['name'] ) ) {
-        $query->set( 'post_type', array( 'post', 'studios', 'page' ) );
-    }
-}
-add_action('pre_get_posts', 'studios_pagination_fix'); 

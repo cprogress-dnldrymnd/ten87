@@ -198,30 +198,6 @@ new newPostType(
 	)
 );
 
-function wpa_studio_post_link($post_link, $id = 0)
-{
-	$post = get_post($id);
-	if (is_object($post)) {
-		$terms = wp_get_object_terms($post->ID, 'studio_category');
-		if ($terms) {
-			return str_replace('studios', 'studios/' . $terms[0]->slug, $post_link);
-		}
-	}
-	return $post_link;
-}
-add_filter('post_type_link', 'wpa_studio_post_link', 1, 3);
-
-function archive_rewrite_rules()
-{
-	add_rewrite_rule(
-		'^studios/(.*)/(.*)/?$',
-		'index.php?post_type=studios&name=$matches[2]',
-		'top'
-	);
-	//flush_rewrite_rules(); // use only once
-}
-
-add_action('init', 'archive_rewrite_rules');
 
 add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
 function prefix_disable_gutenberg($current_status, $post_type)

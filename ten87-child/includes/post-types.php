@@ -290,24 +290,28 @@ function fix_studio_category_archive_404($query)
 		$query->set('post_type', array('studios')); // Set your post type here
 	}
 }
+
 add_action('parse_query', 'fix_studio_category_archive_404');
-
-// Add a custom rewrite rule to handle the 'studios' post type
-function studios_rewrite_rule()
+// Add custom rewrite rules
+function remove_studio_category_slug_rewrite_rules()
 {
-	if (is_tax('studio_category')) {
-		add_rewrite_rule('^([^/]+)/?$', 'index.php?studio_category=$matches[1]', 'top');
-	}
+	add_rewrite_rule(
+		'^studio_category/([^/]+)/page/?([0-9]{1,})/?$', // Rule for paginated archives
+		'index.php?studio_category=$matches[1]&paged=$matches[2]',
+		'top'
+	);
+	add_rewrite_rule(
+		'^studio_category/([^/]+)/?$', // Rule for non-paginated archives
+		'index.php?studio_category=$matches[1]',
+		'top'
+	);
 }
-add_action('init', 'studios_rewrite_rule', 10, 0);
+add_action('init', 'remove_studio_category_slug_rewrite_rules', 10, 0);
 
-// Flush permalinks after adding the rewrite rule
-function studios_flush_rewrite_rules()
+// Flush permalinks
+function flush_studio_category_rewrite_rules()
 {
-	if (is_tax('studio_category')) {
-
-		studios_rewrite_rule();
-		flush_rewrite_rules();
-	}
+	remove_studio_category_slug_rewrite_rules();
+	flush_rewrite_rules();
 }
-register_activation_hook(__FILE__, 'studios_flush_rewrite_rules');
+register_activation_hook(__FILE__, 'flush_studio_category_rewrite_rules');

@@ -167,7 +167,7 @@ new newPostType(
 		'icon'          => 'dashicons-media-text',
 		'rewrite'       => array('slug' => 'l', 'with_front' => true),
 		'has_archive'   => true,
-		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt', 'page-attribute'),
+		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
 		'show_in_rest'  => true,
 		'taxonomies'    => array('studio_category'),
 	)

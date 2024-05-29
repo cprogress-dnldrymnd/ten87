@@ -268,28 +268,30 @@ function post_query($query)
 	}
 }
 add_action('pre_get_posts', 'post_query', 9999);
-function na_remove_slug($post_link, $post, $leavename)
+
+
+
+// Function to remove the 'studios' post type slug
+function remove_studios_post_type_slug($post_link, $post)
 {
-
-	if ('studios' != $post->post_type || 'publish' != $post->post_status) {
-		return $post_link;
+	if ($post->post_type === 'studios') {
+		$post_link = str_replace('/studios/', '/', $post_link);
 	}
-
-	$post_link = str_replace('/' . $post->post_type . '/', '/', $post_link);
-
 	return $post_link;
 }
-add_filter('post_type_link', 'na_remove_slug', 10, 3);
+add_filter('post_type_link', 'remove_studios_post_type_slug', 10, 2); // Note: 2 arguments for this filter
 
-function na_parse_request($query)
+// Fix 404 error for single 'studios' posts
+function studios_404_fix($query)
 {
-
-	if (!$query->is_main_query() || 2 != count($query->query) || !isset($query->query['page'])) {
-		return;
-	}
-
-	if (!empty($query->query['name'])) {
-		$query->set('post_type', array('post', 'studios', 'page'));
+	if (
+		!is_admin() && // Don't run in the WordPress admin area
+		$query->is_main_query() && // Only modify the main query
+		!empty($query->query['name']) && // Check if trying to access by name
+		empty($query->query['post_type']) && // No post type specified
+		!$query->is_page() // Not a page
+	) {
+		$query->set('post_type', array('post', 'studios')); // Allow 'studios' post type
 	}
 }
-add_action('pre_get_posts', 'na_parse_request');
+add_action('parse_query', 'studios_404_fix');

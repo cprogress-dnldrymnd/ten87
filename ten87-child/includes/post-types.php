@@ -169,7 +169,7 @@ new newPostType(
 		'icon'          => 'dashicons-media-text',
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
-		'show_in_rest'  => true,
+		'show_in_rest'  => false,
 		'taxonomies'    => array('studio_category'),
 		'rewrite'       => array('slug' => false),
 	)

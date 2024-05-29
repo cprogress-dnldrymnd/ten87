@@ -14,7 +14,8 @@ function post_slider($atts)
 
     $args = array(
         'numberposts' => -1,
-        'post_type' => $post_type
+        'post_type' => $post_type,
+        'orderby'    => 'menu_order',
     );
 
     $posts = get_posts($args);

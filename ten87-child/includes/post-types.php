@@ -167,10 +167,11 @@ new newPostType(
 		'name'          => 'Studios',
 		'singular_name' => 'Studio',
 		'icon'          => 'dashicons-media-text',
-		'has_archive'   => false,
+		'rewrite'       => array('slug' => '/', 'with_front' => true),
+		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
-		'show_in_rest'  => false,
-		'rewrite' => array('slug' => '', 'with_front' => false),
+		'show_in_rest'  => true,
+		'taxonomies'    => array('studio_category'),
 	)
 );
 
@@ -197,6 +198,30 @@ new newPostType(
 	)
 );
 
+function wpa_studio_post_link($post_link, $id = 0)
+{
+	$post = get_post($id);
+	if (is_object($post)) {
+		$terms = wp_get_object_terms($post->ID, 'studio_category');
+		if ($terms) {
+			return str_replace('studios', 'studios/' . $terms[0]->slug, $post_link);
+		}
+	}
+	return $post_link;
+}
+add_filter('post_type_link', 'wpa_studio_post_link', 1, 3);
+
+function archive_rewrite_rules()
+{
+	add_rewrite_rule(
+		'^studios/(.*)/(.*)/?$',
+		'index.php?post_type=studios&name=$matches[2]',
+		'top'
+	);
+	//flush_rewrite_rules(); // use only once
+}
+
+add_action('init', 'archive_rewrite_rules');
 
 add_filter('use_block_editor_for_post_type', 'prefix_disable_gutenberg', 10, 2);
 function prefix_disable_gutenberg($current_status, $post_type)
@@ -267,50 +292,3 @@ function post_query($query)
 	}
 }
 add_action('pre_get_posts', 'post_query', 9999);
-
-
-
-
-// Remove 'studios' slug from permalinks
-function remove_studios_post_type_slug($post_link, $post) {
-    if ($post->post_type === 'studios') {
-        $post_link = str_replace('/studios/', '/', $post_link); 
-    }
-    return $post_link;
-}
-add_filter('post_type_link', 'remove_studios_post_type_slug', 10, 2);
-
-
-// Fix 404 error for single 'studios' posts
-function fix_studios_single_permalink($permalink, $post_id, $leavename, $sample) {
-    if (get_post_type($post_id) === 'studios' && !empty($permalink)) {
-        $permalink = str_replace('%studios%', '', $permalink); // Remove %studios% placeholder
-    }
-    return $permalink;
-}
-add_filter('post_type_link', 'fix_studios_single_permalink', 10, 4);
-
-// Fix 404 error for paginated 'studios' posts
-function studios_pagination_fix($query) {
-    if (
-        !empty($query->query_vars['pagename']) &&
-        $query->is_main_query() &&
-        empty($query->query_vars['post_type']) 
-    ) {
-        $query->set('post_type', array('post', 'studios', 'page')); // Allow 'studios' post type
-    }
-}
-add_action('pre_get_posts', 'studios_pagination_fix'); 
-
-// Add a custom rewrite rule to handle the 'studios' post type
-function studios_rewrite_rule() {
-    add_rewrite_rule('^([^/]+)/?$', 'index.php?studios=$matches[1]', 'top');
-}
-add_action('init', 'studios_rewrite_rule', 10, 0);
-
-// Flush permalinks after adding the rewrite rule
-function studios_flush_rewrite_rules() {
-    studios_rewrite_rule();
-    flush_rewrite_rules();
-}
-register_activation_hook(__FILE__, 'studios_flush_rewrite_rules');

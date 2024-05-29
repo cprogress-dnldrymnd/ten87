@@ -146,6 +146,21 @@ class newTaxonomy
 	}
 }
 
+new newTaxonomy(
+	array(
+		'taxonomy'  => 'studio_category',
+		'post_type' => 'studios',
+		'args'      => array(
+			'hierarchical' => true,
+			'label'        => 'Studio Categories',
+			'query_var'    => true,
+			'rewrite'      => array(
+				'slug'         => 'studios',
+				'with_front' => true
+			)
+		)
+	)
+);
 
 new newPostType(
 	array(

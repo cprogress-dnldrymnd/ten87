@@ -268,3 +268,26 @@ function post_query($query)
 	}
 }
 add_action('pre_get_posts', 'post_query', 9999);
+
+// Remove post type slug from 'studio_category' taxonomy archive URLs
+function remove_post_type_slug_from_studio_category_archive($tax_link, $term, $taxonomy) {
+    if ($taxonomy === 'studio_category') { 
+        // Assuming your post type is 'studios', replace if different
+        $tax_link = str_replace('/studios/', '/', $tax_link); 
+    }
+    return $tax_link;
+}
+add_filter('term_link', 'remove_post_type_slug_from_studio_category_archive', 10, 3);
+
+// Fix potential 404 errors
+function fix_studio_category_archive_404($query) {
+    if (
+        !is_admin() && 
+        $query->is_main_query() &&
+        $query->is_tax('studio_category') && 
+        empty($query->query_vars['post_type']) 
+    ) {
+        $query->set('post_type', array('studios')); // Set your post type here
+    }
+}
+add_action('parse_query', 'fix_studio_category_archive_404');

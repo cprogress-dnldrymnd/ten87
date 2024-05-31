@@ -332,7 +332,26 @@ add_filter('manage_team_posts_columns', 'add_team_id_column');
 // Populate the custom column with data
 function display_team_id_column($column, $post_id) {
     if ($column === 'team_id') {
-        echo $post_id;
+        echo '<span class="copy-to-clipboard" data-clipboard-text="' . $post_id . '">' . $post_id . '</span>';
     }
 }
 add_action('manage_team_posts_custom_column', 'display_team_id_column', 10, 2);
+
+// Enqueue Clipboard.js and custom script
+function enqueue_clipboard_scripts() {
+    wp_enqueue_script('clipboard', 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js', array(), null, true); // Use a CDN for Clipboard.js
+    wp_add_inline_script('clipboard', '
+        document.addEventListener("DOMContentLoaded", function() {
+            var clipboard = new ClipboardJS(".copy-to-clipboard");
+
+            clipboard.on("success", function(e) {
+                // Optional: Provide visual feedback (e.g., change the text color temporarily)
+                e.trigger.textContent = "Copied!";
+                setTimeout(function() {
+                    e.trigger.textContent = e.trigger.dataset.clipboardText;
+                }, 1500);
+            });
+        });
+    ');
+}
+add_action('admin_enqueue_scripts', 'enqueue_clipboard_scripts');

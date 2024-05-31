@@ -320,3 +320,19 @@ function flush_studio_category_term_rewrite_rules()
 	flush_rewrite_rules();
 }
 register_activation_hook(__FILE__, 'flush_studio_category_term_rewrite_rules');
+
+
+// Add the custom column
+function add_team_id_column($columns) {
+    $columns['team_id'] = 'Team ID';
+    return $columns;
+}
+add_filter('manage_team_posts_columns', 'add_team_id_column');
+
+// Populate the custom column with data
+function display_team_id_column($column, $post_id) {
+    if ($column === 'team_id') {
+        echo $post_id;
+    }
+}
+add_action('manage_team_posts_custom_column', 'display_team_id_column', 10, 2);

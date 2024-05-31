@@ -88,3 +88,4 @@ function set_image_alt_to_filename( $image, $attachment_id, $size ) {
     return $image;
 }
 add_filter( 'wp_get_attachment_image_attributes', 'set_image_alt_to_filename', 10, 3 );
+

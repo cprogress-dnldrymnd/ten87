@@ -330,7 +330,7 @@ add_filter('manage_team_posts_columns', 'add_team_id_column');
 // Populate the custom column with data
 function display_team_id_column($column, $post_id) {
     if ($column === 'team_id') {
-        echo '<button class="copy-to-clipboard button" data-clipboard-text="' . $post_id . '">' . $post_id . '</button>';
+        echo '<span class="copy-to-clipboard button" data-clipboard-text="' . $post_id . '">' . $post_id . '</span>';
     }
 }
 add_action('manage_team_posts_custom_column', 'display_team_id_column', 10, 2);

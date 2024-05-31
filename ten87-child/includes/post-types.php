@@ -354,11 +354,11 @@ function enqueue_clipboard_scripts() {
 }
 add_action('admin_enqueue_scripts', 'enqueue_clipboard_scripts');
 
-function custom_permalink_structure( $post_link, $post, $leavename ) {
-    if ( 'post' != $post->post_type || empty( $post->post_name ) ) {
-        return $post_link;
+function custom_permalink_structure( $post_link, $post ) {
+    if ( $post->post_type === 'post' ) {
+        return home_url( '/blog/' . $post->post_name . '/' );
+    } else {
+        return $post_link; 
     }
-
-    return home_url( '/blog/' . $post->post_name . '/' );
 }
-add_filter( 'post_type_link', 'custom_permalink_structure', 10, 3 );
+add_filter( 'post_permalink', 'custom_permalink_structure', 10, 2 );

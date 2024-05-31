@@ -362,3 +362,14 @@ function custom_permalink_structure( $post_link, $post ) {
     }
 }
 add_filter( 'post_permalink', 'custom_permalink_structure', 10, 2 );
+
+function modify_cpt_slug($args, $post_type)
+{
+
+	if ($post_type == 'studios' || $post_type == 'events' || $post_type == 'webinars') {
+		$args['rewrite'] = array('with_front' => false);
+	} 
+
+	return $args;
+}
+add_filter('register_post_type_args', 'modify_cpt_slug', 10, 2);

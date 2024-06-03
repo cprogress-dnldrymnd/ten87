@@ -91,11 +91,11 @@ Container::make('post_meta', __('Template Options'))
 	);
 
 
-Container::make('post_meta', __('Page Heading Settings'))
+Container::make('post_meta', __(' Settings'))
 	->where('post_type', '=', 'fundings')
 	->add_fields(
 		array(
 			Field::make('checkbox', 'has_readmore', __('Has Readmore'))
-			->set_help_text('Check this to display readmore in popup.'),
+				->set_help_text('Check this to display readmore in popup.'),
 		)
 	);

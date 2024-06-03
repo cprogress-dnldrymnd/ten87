@@ -237,16 +237,16 @@ function action_obsius_action_before_body_tag_close()
 
 				if (jQuery(this).hasClass('has-readmore')) {
 					jQuery('#modal-form .description-box').addClass('has-readmore');
-					$description = $description + '<p> <button class="modal-trigger has-readmore">Read More </button> </p>';
+					$description_val = $description + '<p> <button class="modal-trigger has-readmore">Read More </button> </p>';
 				} else {
-					$description = $description;
+					$description_val = $description;
 					jQuery('#modal-form .description-box').removeClass('has-readmore');
 				}
 
 				jQuery('#modal-form .image-box img').attr('src', $image);
 				jQuery('#modal-form .name-box h4').html($name);
 				jQuery('#modal-form .position-box span').html($position);
-				jQuery('#modal-form .description-box').html($description);
+				jQuery('#modal-form .description-box').html($description_val);
 				jQuery('#modal-form .social-box').html($socials);
 
 				jQuery('body').addClass('modal-active');

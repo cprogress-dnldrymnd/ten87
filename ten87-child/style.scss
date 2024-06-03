@@ -1989,6 +1989,13 @@ body {
             .description-box {
                 margin-bottom: 1rem;
             }
+            .description-box {
+                &:not(.has-readmore) {
+                    .modal-trigger.modal-trigger {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -2018,8 +2025,6 @@ body {
     .qodef-page-title {
         display: none;
     }
-
-    
 }
 
 #qodef-custom-cursor {

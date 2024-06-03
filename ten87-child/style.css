@@ -1333,6 +1333,8 @@ body.modal-active {
       #modal-form .modal-content .content-box .position-box,
       #modal-form .modal-content .content-box .description-box {
         margin-bottom: 1rem; }
+      #modal-form .modal-content .content-box .description-box:not(.has-readmore) .modal-trigger.modal-trigger {
+        display: none; }
 
 .qodef-team-list .qodef-team-member-social-icons {
   margin-top: 1rem; }

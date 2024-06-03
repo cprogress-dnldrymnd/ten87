@@ -203,6 +203,10 @@ function action_obsius_action_before_body_tag_close()
 									<p>
 
 									</p>
+
+									<button class="modal-trigger " post_id="7104">
+										Read More
+									</button>
 								</div>
 								<div class="social-box">
 
@@ -231,7 +235,7 @@ function action_obsius_action_before_body_tag_close()
 				$description = jQuery('.post-' + $post_id + ' .qodef-e-excerpt').html();
 				$socials = jQuery('.post-' + $post_id + ' .qodef-team-member-social-icons').html();
 
-				if(jQuery(this).hasClass('has-readmore')) {
+				if (jQuery(this).hasClass('has-readmore')) {
 					jQuery('#modal-form .description-box').addClass('has-readmore');
 				} else {
 					jQuery('#modal-form .description-box').removeClass('has-readmore');
@@ -274,10 +278,11 @@ function translate_text($translated)
 
 
 // Add custom styles to TinyMCE editor
-if ( ! function_exists('tdav_css') ) {
-    function tdav_css($wp) {
-        $wp .= ',' . get_bloginfo('stylesheet_directory') . '/tiny.css';
-        return $wp;
-    }
+if (!function_exists('tdav_css')) {
+	function tdav_css($wp)
+	{
+		$wp .= ',' . get_bloginfo('stylesheet_directory') . '/tiny.css';
+		return $wp;
+	}
 }
-add_filter( 'mce_css', 'tdav_css' );
+add_filter('mce_css', 'tdav_css');

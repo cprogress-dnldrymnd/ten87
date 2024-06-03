@@ -6,7 +6,10 @@
                 <div class="qodef-grid-inner clear">
                     <?php $count = 0; ?>
                     <?php while (have_posts()) { ?>
-                        <?php the_post() ?>
+                        <?php
+                        the_post();
+                        $has_readmore = carbon_get_post_meta(get_the_ID(), 'has_readmore')
+                        ?>
 
                         <div class="qodef-e qodef-grid-item  post-<?php the_ID() ?> team type-team status-publish has-post-thumbnail hentry post-counter-<?= $count ?>" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="<?= 200 * $count ?>">
                             <div class="qodef-e-inner">
@@ -23,7 +26,7 @@
                                         <?php the_content() ?>
                                     </div>
                                     <p>
-                                        <button class="modal-trigger" post_id="<?php the_ID() ?>">Read More </button>
+                                        <button class="modal-trigger <?= $has_readmore ? 'has-readmore' : '' ?>" post_id="<?php the_ID() ?>">Read More </button>
                                     </p>
 
                                 </div>
@@ -45,5 +48,5 @@
 <?php get_footer() ?>
 
 <script>
-  AOS.init();
+    AOS.init();
 </script>

@@ -56,13 +56,6 @@ require_once('includes/hooks.php');
 
 function action_wp_footer()
 {
-	$args = array(
-		'numberposts' => -1,
-		'post_type'   => 'fundings'
-	);
-
-	$fundings = get_posts($args);
-
 ?>
 	<script>
 		jQuery(document).ready(function() {
@@ -78,12 +71,7 @@ function action_wp_footer()
 				},
 			});
 
-			<?php foreach ($fundings as $funding) { ?>
-				<?php $has_readmore = carbon_get_post_meta($funding->ID, 'has_readmore') ?>
-				<?php if ($has_readmore) { ?>
-					jQuery('.post-<?= $funding->ID ?> .qodef-e-excerpt').addClass('has-readmore');
-				<?php } ?>
-			<?php } ?>
+
 		});
 	</script>
 <?php
@@ -281,11 +269,10 @@ function translate_text($translated)
 
 
 // Add custom styles to TinyMCE editor
-if (!function_exists('tdav_css')) {
-	function tdav_css($wp)
-	{
-		$wp .= ',' . get_bloginfo('stylesheet_directory') . '/tiny.css';
-		return $wp;
-	}
+if ( ! function_exists('tdav_css') ) {
+    function tdav_css($wp) {
+        $wp .= ',' . get_bloginfo('stylesheet_directory') . '/tiny.css';
+        return $wp;
+    }
 }
-add_filter('mce_css', 'tdav_css');
+add_filter( 'mce_css', 'tdav_css' );

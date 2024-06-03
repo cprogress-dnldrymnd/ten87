@@ -81,7 +81,7 @@ function action_wp_footer()
 			<?php foreach ($fundings as $funding) { ?>
 				<?php $has_readmore = carbon_get_post_meta($funding->ID, 'has_readmore') ?>
 				<?php if ($has_readmore) { ?>
-					jQuery('.post-<?= $funding->ID ?>').addClass('has-readmore');
+					jQuery('.post-<?= $funding->ID ?> .qodef-e-excerpt').addClass('has-readmore');
 				<?php } ?>
 			<?php } ?>
 		});

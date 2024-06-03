@@ -203,11 +203,11 @@ function action_obsius_action_before_body_tag_close()
 									<p>
 
 									</p>
-
-									<button class="modal-trigger " post_id="7104">
-										Read More
-									</button>
 								</div>
+
+								<button class="readmore-popup">
+									Read More
+								</button>
 								<div class="social-box">
 
 								</div>

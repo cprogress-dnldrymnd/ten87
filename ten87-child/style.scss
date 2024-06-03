@@ -1989,13 +1989,6 @@ body {
             .description-box {
                 margin-bottom: 1rem;
             }
-            .description-box {
-                &:not(.has-readmore) {
-                    .modal-trigger.modal-trigger {
-                        display: none;
-                    }
-                }
-            }
         }
     }
 }

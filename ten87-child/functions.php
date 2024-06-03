@@ -237,6 +237,7 @@ function action_obsius_action_before_body_tag_close()
 
 				if (jQuery(this).hasClass('has-readmore')) {
 					jQuery('#modal-form .description-box').addClass('has-readmore');
+					$description = $description + '<p> <button class="modal-trigger has-readmore">Read More </button> </p>';
 				} else {
 					jQuery('#modal-form .description-box').removeClass('has-readmore');
 				}

@@ -184,7 +184,7 @@ function action_obsius_action_before_body_tag_close()
 {
 ?>
 	<div class="modal-form-backdrop modal-close"></div>
-	<div class="modal-close">
+	<div class="modal-close modal-close-btn">
 		&#10006;
 	</div>
 	<div class="modal-form" id="modal-form">

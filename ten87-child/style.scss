@@ -1916,6 +1916,19 @@ body {
     transition: 300ms;
     transform: translateX(100%);
 }
+.modal-close-btn {
+    font-size: 40px;
+    color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
 #modal-form {
     position: fixed;
     left: 0;
@@ -1957,22 +1970,6 @@ body {
                     border-radius: 20px;
                     overflow: hidden;
                     min-height: calc(100vh - 64px);
-                }
-                &:last-child {
-                    text-align: center;
-                    font-size: 40px;
-                    color: var(--accent-color);
-                    .modal-close {
-                        background-color: rgba(255, 255, 255, 0.9);
-                        width: 70px;
-                        height: 70px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-left: auto;
-                        margin-right: auto;
-                        border-radius: 10px;
-                    }
                 }
             }
         }
@@ -2017,8 +2014,6 @@ body {
     .qodef-page-title {
         display: none;
     }
-
-    
 }
 
 #qodef-custom-cursor {

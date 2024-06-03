@@ -1269,6 +1269,19 @@ body.modal-active {
   transition: 300ms;
   transform: translateX(100%); }
 
+.modal-close-btn {
+  font-size: 40px;
+  color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; }
+
 #modal-form {
   position: fixed;
   left: 0;
@@ -1308,20 +1321,6 @@ body.modal-active {
           border-radius: 20px;
           overflow: hidden;
           min-height: calc(100vh - 64px); }
-        #modal-form .modal-content .row > div:last-child {
-          text-align: center;
-          font-size: 40px;
-          color: var(--accent-color); }
-          #modal-form .modal-content .row > div:last-child .modal-close {
-            background-color: rgba(255, 255, 255, 0.9);
-            width: 70px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 10px; }
     #modal-form .modal-content .content-box {
       padding: 2rem; }
       #modal-form .modal-content .content-box h4 {

@@ -95,7 +95,7 @@ Container::make('post_meta', __(' Settings'))
 	->where('post_type', '=', 'fundings')
 	->add_fields(
 		array(
-			Field::make('checkbox', 'has_readmore', __('Has Readmore'))
+			Field::make('checkbox', 'has_readmore', __('Has Read more'))
 				->set_help_text('Check this to display readmore in popup.'),
 		)
 	);

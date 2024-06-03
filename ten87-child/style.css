@@ -344,7 +344,8 @@ body {
     .qodef-team-list .qodef-m-top-info {
       flex-direction: column; } }
 
-.modal-trigger.modal-trigger, .readmore-popup.readmore-popup {
+.modal-trigger.modal-trigger,
+.readmore-popup.readmore-popup {
   border: none;
   background: transparent;
   font-size: 20px;
@@ -1339,7 +1340,7 @@ body.modal-active {
         display: -webkit-box;
         -webkit-line-clamp: 7;
         -webkit-box-orient: vertical; }
-      #modal-form .modal-content .content-box .description-box:not(.has-readmore) .readmore-popup {
+      #modal-form .modal-content .content-box .description-box:not(.has-readmore) + .readmore-popup {
         display: none !important; }
 
 .qodef-team-list .qodef-team-member-social-icons {

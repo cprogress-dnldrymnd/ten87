@@ -525,7 +525,8 @@ body {
         }
     }
 }
-.modal-trigger.modal-trigger, .readmore-popup.readmore-popup {
+.modal-trigger.modal-trigger,
+.readmore-popup.readmore-popup {
     border: none;
     background: transparent;
     font-size: 20px;
@@ -1999,7 +2000,7 @@ body {
                 }
 
                 &:not(.has-readmore) {
-                    .readmore-popup {
+                    & + .readmore-popup {
                         display: none !important;
                     }
                 }

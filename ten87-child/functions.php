@@ -256,6 +256,12 @@ function action_obsius_action_before_body_tag_close()
 
 				e.preventDefault();
 			});
+
+			jQuery('.readmore-popup').click(function(e) {
+				jQuery('.description-box.has-readmore').removeClass('has-readmore');
+
+				e.preventDefault();
+			});
 		});
 	</script>
 <?php

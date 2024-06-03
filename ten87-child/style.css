@@ -1339,6 +1339,8 @@ body.modal-active {
         display: -webkit-box;
         -webkit-line-clamp: 7;
         -webkit-box-orient: vertical; }
+      #modal-form .modal-content .content-box .description-box:not(.has-readmore) .readmore-popup {
+        display: none !important; }
 
 .qodef-team-list .qodef-team-member-social-icons {
   margin-top: 1rem; }

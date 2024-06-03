@@ -184,6 +184,9 @@ function action_obsius_action_before_body_tag_close()
 {
 ?>
 	<div class="modal-form-backdrop modal-close"></div>
+	<div class="modal-close">
+		&#10006;
+	</div>
 	<div class="modal-form" id="modal-form">
 		<div class="modal-holder">
 			<div class="inner">
@@ -211,9 +214,7 @@ function action_obsius_action_before_body_tag_close()
 							</div>
 						</div>
 						<div class="close-holder">
-							<div class="modal-close">
-								&#10006;
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -270,10 +271,11 @@ function translate_text($translated)
 
 
 // Add custom styles to TinyMCE editor
-if ( ! function_exists('tdav_css') ) {
-    function tdav_css($wp) {
-        $wp .= ',' . get_bloginfo('stylesheet_directory') . '/tiny.css';
-        return $wp;
-    }
+if (!function_exists('tdav_css')) {
+	function tdav_css($wp)
+	{
+		$wp .= ',' . get_bloginfo('stylesheet_directory') . '/tiny.css';
+		return $wp;
+	}
 }
-add_filter( 'mce_css', 'tdav_css' );
+add_filter('mce_css', 'tdav_css');

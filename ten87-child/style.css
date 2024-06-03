@@ -1300,8 +1300,7 @@ body.modal-active {
         height: 100%;
         object-fit: cover; }
     #modal-form .modal-content .row {
-      display: flex;
-      align-items: center; }
+      display: flex; }
       #modal-form .modal-content .row > div {
         flex: 0 0 50%; }
         #modal-form .modal-content .row > div:first-child {

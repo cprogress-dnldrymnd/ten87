@@ -1950,7 +1950,6 @@ body {
         }
         .row {
             display: flex;
-            align-items: center;
             > div {
                 flex: 0 0 50%;
                 &:first-child {
@@ -2018,6 +2017,8 @@ body {
     .qodef-page-title {
         display: none;
     }
+
+    
 }
 
 #qodef-custom-cursor {

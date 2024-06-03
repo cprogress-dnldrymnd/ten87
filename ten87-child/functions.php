@@ -57,7 +57,7 @@ require_once('includes/hooks.php');
 function action_wp_footer()
 {
 	$args = array(
-		'numberposts' => 10,
+		'numberposts' => -1,
 		'post_type'   => 'fundings'
 	);
 

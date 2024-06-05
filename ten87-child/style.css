@@ -1480,12 +1480,12 @@ body:not(.home) #qodef-page-outer {
     margin: 0 !important;
     padding-left: 10px !important;
     padding-right: 10px !important; }
-    #qodef-top-area-inner .qodef-widget-holder .qodef-widget-holder p {
+    #qodef-top-area-inner .qodef-widget-holder p {
       color: #000 !important;
       font-size: 24px;
       margin: 0 !important; }
       @media (max-width: 575px) {
-        #qodef-top-area-inner .qodef-widget-holder .qodef-widget-holder p {
+        #qodef-top-area-inner .qodef-widget-holder p {
           font-size: 18px; } }
 
 /*# sourceMappingURL=style.css.map */

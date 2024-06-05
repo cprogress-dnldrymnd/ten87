@@ -1489,4 +1489,7 @@ body:not(.home) #qodef-page-outer {
         #qodef-top-area-inner .qodef-widget-holder p {
           font-size: 18px; } }
 
+.mb-0.mb-0.mb-0.mb-0.mb-0 {
+  margin-bottom: 0 !important; }
+
 /*# sourceMappingURL=style.css.map */

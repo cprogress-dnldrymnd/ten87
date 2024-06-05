@@ -301,7 +301,8 @@ body {
 .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-inner {
   position: relative; }
 .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-image {
-  position: relative; }
+  position: relative;
+  padding: 50% 0; }
   .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-image img {
     border-radius: 20px;
     position: absolute;

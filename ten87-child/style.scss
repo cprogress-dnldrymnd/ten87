@@ -1294,7 +1294,7 @@ body.has-custom-page-heading {
     #qodef-page-mobile-header {
         position: absolute;
         left: 0;
-        top: 0;
+        top: 62px;
         right: 0;
         @media (max-width: 1024px) {
             border-bottom: 1px solid;
@@ -2169,4 +2169,25 @@ body {
 
 .elementor-text-editor {
     font-family: "SuisseBPIntl", sans-serif;
+}
+
+#qodef-top-area-inner {
+    justify-content: center;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    .qodef-widget-holder {
+        margin: 0 !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        .qodef-widget-holder {
+            p {
+                color: #000 !important;
+                font-size: 24px;
+                margin: 0 !important;
+                @media(max-width: 575px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }

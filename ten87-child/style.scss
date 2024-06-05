@@ -459,9 +459,15 @@ body {
             }
 
             .qodef-e-image {
+                position: relative;
                 img {
-                    width: 100% !important;
                     border-radius: 20px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover;
                 }
             }
 

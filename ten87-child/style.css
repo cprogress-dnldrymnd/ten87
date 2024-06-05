@@ -300,9 +300,16 @@ body {
 
 .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-inner {
   position: relative; }
-.qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-image img {
-  width: 100% !important;
-  border-radius: 20px; }
+.qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-image {
+  position: relative; }
+  .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-image img {
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover; }
 .qodef-team-list .qodef-grid-inner .qodef-grid-item.type-team .qodef-e-content {
   opacity: 1;
   z-index: 1;

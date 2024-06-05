@@ -947,9 +947,10 @@ body.has-custom-page-heading #qodef-page-mobile-header {
   list-style: none;
   padding: 0; }
   .list-with-underline ul li {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    border-bottom: 2px solid; }
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 2px solid;
+    line-height: 1.2; }
     .list-with-underline ul li:first-child {
       border-top: 2px solid; }
   @media (min-width: 992px) {

@@ -1431,10 +1431,10 @@ body.has-custom-page-heading {
         padding: 0;
 
         li {
-            padding-bottom: 20px;
-            padding-top: 20px;
+            padding-bottom: 30px;
+            padding-top: 30px;
             border-bottom: 2px solid;
-
+            line-height: 1.2;
             &:first-child {
                 border-top: 2px solid;
             }

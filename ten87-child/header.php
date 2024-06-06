@@ -6,6 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 	<?php do_action('elementor_header') ?>
 	<?php wp_head(); ?>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LHCJBVFXS5"></script>
+	<script>
+		function gtag() {
+			dataLayer.push(arguments)
+		}
+		window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-LHCJBVFXS5")
+	</script>
+	
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">

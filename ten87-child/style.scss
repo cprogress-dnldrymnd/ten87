@@ -2224,7 +2224,7 @@ body {
         transition-timing-function: linear !important;
     }
     .text-holder {
-        display: flex;
+        display: inline-flex;
         align-items: center;
     }
     svg {

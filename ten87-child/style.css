@@ -1254,7 +1254,7 @@ body.has-custom-page-heading #qodef-page-mobile-header {
 @media (max-width: 575px) {
   .qodef-h1,
   h1 {
-    font-size: 40px !important; } }
+    font-size: 50px !important; } }
 
 @media (min-width: 1680px) {
   .qodef-h2,

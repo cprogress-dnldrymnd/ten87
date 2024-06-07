@@ -377,6 +377,7 @@ body {
 
 .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-next,
 .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-prev {
+  display: none;
   width: 60px !important;
   height: 60px !important;
   background-color: rgba(255, 255, 255, 0.5);
@@ -399,6 +400,9 @@ body {
 @media (max-width: 767px) {
   .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-prev {
     left: 10px !important; } }
+.qodef-shortcode:hover .swiper-button-next,
+.qodef-shortcode:hover .swiper-button-prev {
+  display: block; }
 
 .elementor-widget-obsius_core_testimonials_list {
   max-width: 1420px;

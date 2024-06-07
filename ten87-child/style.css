@@ -1514,6 +1514,8 @@ body:not(.home) #qodef-page-outer {
 
 .swiper-banner .swiper-wrapper {
   transition-timing-function: linear !important; }
+  .swiper-banner .swiper-wrapper .swiper-slide {
+    width: auto; }
 .swiper-banner .text-holder {
   display: inline-flex;
   align-items: center; }

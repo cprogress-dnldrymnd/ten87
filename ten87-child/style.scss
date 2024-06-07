@@ -2222,6 +2222,9 @@ body {
 .swiper-banner {
     .swiper-wrapper {
         transition-timing-function: linear !important;
+        .swiper-slide {
+            width: auto;
+        }
     }
     .text-holder {
         display: inline-flex;

@@ -84,7 +84,7 @@ function action_wp_footer()
 					delay: 0,
 					disableOnInteraction: false
 				},
-				spaceBetween: 60,
+				spaceBetween: 100,
 			});
 
 		});

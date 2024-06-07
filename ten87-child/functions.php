@@ -76,6 +76,7 @@ function action_wp_footer()
 			var swiperBanner = new Swiper(".swiper-banner", {
 				slidesPerView: "auto",
 				autoplay: true,
+				loop: true,
 				freeMode: true,
 				centeredSlides: true,
 				speed: 5000,

@@ -375,6 +375,31 @@ body {
   .cta-style-1 .qodef-qi-section-title .qodef-m-button {
     width: auto !important; }
 
+.qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-next,
+.qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-prev {
+  width: 60px !important;
+  height: 60px !important;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%; }
+  .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-next img,
+  .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-prev img {
+    width: 35px !important; }
+    @media (max-width: 767px) {
+      .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-next img,
+      .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-prev img {
+        width: 20px !important; } }
+  @media (max-width: 767px) {
+    .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-next,
+    .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-prev {
+      width: 40px !important;
+      height: 40px !important; } }
+@media (max-width: 767px) {
+  .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-next {
+    right: 10px !important; } }
+@media (max-width: 767px) {
+  .qodef-shortcode:not(.qodef-testimonials-list) .swiper-button-prev {
+    left: 10px !important; } }
+
 .elementor-widget-obsius_core_testimonials_list {
   max-width: 1420px;
   margin-left: auto;

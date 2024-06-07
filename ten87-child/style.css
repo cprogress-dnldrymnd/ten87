@@ -1512,6 +1512,8 @@ body:not(.home) #qodef-page-outer {
   padding-left: 10px !important;
   padding-right: 10px !important; }
 
+.swiper-banner .swiper-wrapper {
+  transition-timing-function: linear !important; }
 .swiper-banner .text-holder {
   display: flex;
   align-items: center; }

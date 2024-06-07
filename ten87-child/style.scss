@@ -2220,6 +2220,9 @@ body {
 }
 
 .swiper-banner {
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
     .text-holder {
         display: flex;
         align-items: center;

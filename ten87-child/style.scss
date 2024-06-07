@@ -2246,6 +2246,9 @@ body {
             font-size: 18px;
         }
     }
+    &:not(.swiper-container-initialized) {
+        opacity: 0;
+    }
 }
 .mb-0.mb-0.mb-0.mb-0.mb-0 {
     margin-bottom: 0 !important;

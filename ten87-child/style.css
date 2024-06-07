@@ -1532,6 +1532,8 @@ body:not(.home) #qodef-page-outer {
   @media (max-width: 575px) {
     .swiper-banner .text {
       font-size: 18px; } }
+.swiper-banner:not(.swiper-container-initialized) {
+  opacity: 0; }
 
 .mb-0.mb-0.mb-0.mb-0.mb-0 {
   margin-bottom: 0 !important; }

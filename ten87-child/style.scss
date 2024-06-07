@@ -402,7 +402,7 @@ body {
                     }
                 }
                 @media(max-width: 575px) {
-                    font-size: 18px;
+                    font-size: 18px !important;
                     line-height: 1.4;
                 }
             }

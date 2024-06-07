@@ -2217,22 +2217,26 @@ body {
     justify-content: center;
     padding-left: 10px !important;
     padding-right: 10px !important;
-    .qodef-widget-holder {
+}
+
+.swiper-banner {
+    .text-holder {
+        display: flex;
+        align-items: center;
+    }
+    svg {
+        margin-right: 10px;
+    }
+    .text {
+        color: #000 !important;
+        font-size: 24px;
         margin: 0 !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        p {
-            color: #000 !important;
-            font-size: 24px;
-            margin: 0 !important;
-            font-family: "Ten87SansV7", sans-serif;
-            @media (max-width: 575px) {
-                font-size: 18px;
-            }
+        font-family: "Ten87SansV7", sans-serif;
+        @media (max-width: 575px) {
+            font-size: 18px;
         }
     }
 }
-
 .mb-0.mb-0.mb-0.mb-0.mb-0 {
     margin-bottom: 0 !important;
 }

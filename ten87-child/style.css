@@ -1511,18 +1511,20 @@ body:not(.home) #qodef-page-outer {
   justify-content: center;
   padding-left: 10px !important;
   padding-right: 10px !important; }
-  #qodef-top-area-inner .qodef-widget-holder {
-    margin: 0 !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important; }
-    #qodef-top-area-inner .qodef-widget-holder p {
-      color: #000 !important;
-      font-size: 24px;
-      margin: 0 !important;
-      font-family: "Ten87SansV7", sans-serif; }
-      @media (max-width: 575px) {
-        #qodef-top-area-inner .qodef-widget-holder p {
-          font-size: 18px; } }
+
+.swiper-banner .text-holder {
+  display: flex;
+  align-items: center; }
+.swiper-banner svg {
+  margin-right: 10px; }
+.swiper-banner .text {
+  color: #000 !important;
+  font-size: 24px;
+  margin: 0 !important;
+  font-family: "Ten87SansV7", sans-serif; }
+  @media (max-width: 575px) {
+    .swiper-banner .text {
+      font-size: 18px; } }
 
 .mb-0.mb-0.mb-0.mb-0.mb-0 {
   margin-bottom: 0 !important; }

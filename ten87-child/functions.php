@@ -72,6 +72,12 @@ function action_wp_footer()
 			});
 
 
+
+			var swiperBanner = new Swiper(".swiper-banner", {
+				slidesPerView: "auto",
+				spaceBetween: 30,
+			});
+
 		});
 	</script>
 <?php

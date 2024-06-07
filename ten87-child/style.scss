@@ -2217,6 +2217,10 @@ body {
     justify-content: center;
     padding-left: 10px !important;
     padding-right: 10px !important;
+    .qodef-widget-holder {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .swiper-banner {

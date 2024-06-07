@@ -75,7 +75,7 @@ body {
   line-height: 1 !important; }
   @media (max-width: 575px) {
     .qodef-section-title .qodef-m-subtitle-text {
-      font-size: 30px; } }
+      font-size: 30px !important; } }
 
 .qodef-qi-button {
   font-family: "Ten87SansV7", sans-serif;

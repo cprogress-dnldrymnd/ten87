@@ -401,6 +401,10 @@ body {
                         }
                     }
                 }
+                @media(max-width: 575px) {
+                    font-size: 18px;
+                    line-height: 1.4;
+                }
             }
 
             .qodef-m-button {

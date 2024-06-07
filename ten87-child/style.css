@@ -268,6 +268,10 @@ body {
             display: inline-block;
             background-position: center;
             margin-right: 10px; }
+      @media (max-width: 575px) {
+        .elementor-column-hover .elementor-widget-wrap .elementor-element .qodef-m-text {
+          font-size: 18px;
+          line-height: 1.4; } }
     .elementor-column-hover .elementor-widget-wrap .elementor-element .qodef-m-button {
       margin: 0;
       max-height: 0;

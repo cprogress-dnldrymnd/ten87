@@ -2255,8 +2255,11 @@ body {
 }
 
 section.single-rate-cards {
+    padding-top: 50px;
+    padding-bottom: 50px;
     .row {
         display: flex;
+        align-items: center;
         .col {
             flex: 0 0 50%;
             max-width: 50%;

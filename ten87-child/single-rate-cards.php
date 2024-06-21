@@ -15,12 +15,16 @@
                 </div>
             </div>
             <?php if ($media) { ?>
-                <?php 
+                <?php
                 $mime_type = get_post_mime_type($media);
                 echo $mime_type;
                 ?>
                 <div class="media">
-                    
+                    <?php if (str_contains($mime_type, 'image')) { ?>
+                        <img src="<?= wp_get_attachment_image_url($media, 'large') ?>">
+                    <?php } else if (str_contains($mime_type, 'video')) { ?>
+                        <video src="<?= wp_get_attachment_url($media) ?>"></video>
+                    <?php } ?>
                 </div>
             <?php } ?>
         </div>

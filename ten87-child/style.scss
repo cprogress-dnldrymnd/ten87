@@ -2253,3 +2253,13 @@ body {
 .mb-0.mb-0.mb-0.mb-0.mb-0 {
     margin-bottom: 0 !important;
 }
+
+section.single-rate-cards {
+    .row {
+        display: flex;
+        .col {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}

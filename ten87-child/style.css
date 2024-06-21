@@ -1538,4 +1538,10 @@ body:not(.home) #qodef-page-outer {
 .mb-0.mb-0.mb-0.mb-0.mb-0 {
   margin-bottom: 0 !important; }
 
+section.single-rate-cards .row {
+  display: flex; }
+  section.single-rate-cards .row .col {
+    flex: 0 0 50%;
+    max-width: 50%; }
+
 /*# sourceMappingURL=style.css.map */

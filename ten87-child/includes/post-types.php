@@ -192,7 +192,7 @@ new newPostType(
 		'singular_name' => 'Rate Card',
 		'post_type' => 'rate-cards',
 		'icon'          => 'dashicons-media-text',
-		'rewrite'       => array('slug' => 'funding-for-musicians', 'with_front' => false),
+		'rewrite'       => array('slug' => 'rate-cards', 'with_front' => false),
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail'),
 		'show_in_rest'  => false,

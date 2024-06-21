@@ -2303,7 +2303,7 @@ section.single-rate-cards {
         display: none !important;
     }
     .qodef-page-title .qodef-m-title {
-        font-size: 0;
+        font-size: 0 !important;
         &:before {
             content: "Rate Cards";
             font-size: 80px;

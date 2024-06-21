@@ -1575,7 +1575,7 @@ section.single-rate-cards {
 .post-type-archive-rate-cards .qodef-e-excerpt {
   display: none !important; }
 .post-type-archive-rate-cards .qodef-page-title .qodef-m-title {
-  font-size: 0; }
+  font-size: 0 !important; }
   .post-type-archive-rate-cards .qodef-page-title .qodef-m-title:before {
     content: "Rate Cards";
     font-size: 80px; }

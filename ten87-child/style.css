@@ -1558,8 +1558,8 @@ section.single-rate-cards {
   section.single-rate-cards .media {
     border-radius: 15px;
     overflow: hidden;
-    padding-left: 1rem;
-    padding-right: 1rem; }
+    margin-left: 1rem;
+    margin-right: 1rem; }
     section.single-rate-cards .media img,
     section.single-rate-cards .media video {
       width: 100%; }

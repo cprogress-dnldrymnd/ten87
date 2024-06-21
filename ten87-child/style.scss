@@ -2295,12 +2295,17 @@ section.single-rate-cards {
     }
 }
 
-
 .post-type-archive-rate-cards {
     #qodef-page-inner {
         padding-top: 0;
     }
     .qodef-e-excerpt {
         display: none !important;
+    }
+    .qodef-page-title .qodef-m-title {
+        font-size: 0;
+        &:before {
+            content: "Rate Cards";
+        }
     }
 }

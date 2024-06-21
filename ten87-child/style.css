@@ -1544,4 +1544,10 @@ section.single-rate-cards .row {
     flex: 0 0 50%;
     max-width: 50%; }
 
+.single-rate-cards #qodef-page-inner {
+  padding-top: 0; }
+.single-rate-cards .qodef-page-title {
+  height: auto;
+  padding-top: 100px; }
+
 /*# sourceMappingURL=style.css.map */

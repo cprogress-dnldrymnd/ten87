@@ -2265,6 +2265,12 @@ section.single-rate-cards {
             max-width: 50%;
         }
     }
+    .media {
+        border-radius: 15px;
+        img, video {
+            width: 100%;
+        }
+    }
 }
 .single-rate-cards {
     #qodef-page-inner {

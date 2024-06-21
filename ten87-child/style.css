@@ -1547,6 +1547,10 @@ section.single-rate-cards {
     section.single-rate-cards .row .col {
       flex: 0 0 50%;
       max-width: 50%; }
+  section.single-rate-cards .media {
+    border-radius: 15px; }
+    section.single-rate-cards .media img, section.single-rate-cards .media video {
+      width: 100%; }
 
 .single-rate-cards #qodef-page-inner {
   padding-top: 0; }

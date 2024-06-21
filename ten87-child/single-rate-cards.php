@@ -1,5 +1,14 @@
 <?php get_header() ?>
-<section class="single-rate-cards">
-
-</section>
+<?php while (have_posts()) { ?>
+    <?php
+    the_post();
+    ?>
+    <section class="single-rate-cards">
+        <div class="container">
+            <div class="featured-image">
+                <?php the_post_thumbnail('large'); ?>
+            </div>
+        </div>
+    </section>
+<?php } ?>
 <?php get_footer() ?>

@@ -22,7 +22,7 @@
                     <?php if (str_contains($mime_type, 'image')) { ?>
                         <img src="<?= wp_get_attachment_image_url($media, 'large') ?>">
                     <?php } else if (str_contains($mime_type, 'video')) { ?>
-                        <video src="<?= wp_get_attachment_url($media) ?>"></video>
+                        <video src="<?= wp_get_attachment_url($media) ?>" controls autoplay></video>
                     <?php } ?>
                 </div>
             <?php } ?>

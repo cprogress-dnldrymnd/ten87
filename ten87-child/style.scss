@@ -2306,6 +2306,13 @@ section.single-rate-cards {
         font-size: 0;
         &:before {
             content: "Rate Cards";
+            font-size: 80px;
+            @media (max-width: 767px) {
+                font-size: 60px;
+            }
+            @media (max-width: 575px) { 
+                font-size: 50px;
+            }
         }
     }
 }

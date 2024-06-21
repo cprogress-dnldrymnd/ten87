@@ -1577,6 +1577,13 @@ section.single-rate-cards {
 .post-type-archive-rate-cards .qodef-page-title .qodef-m-title {
   font-size: 0; }
   .post-type-archive-rate-cards .qodef-page-title .qodef-m-title:before {
-    content: "Rate Cards"; }
+    content: "Rate Cards";
+    font-size: 80px; }
+    @media (max-width: 767px) {
+      .post-type-archive-rate-cards .qodef-page-title .qodef-m-title:before {
+        font-size: 60px; } }
+    @media (max-width: 575px) {
+      .post-type-archive-rate-cards .qodef-page-title .qodef-m-title:before {
+        font-size: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

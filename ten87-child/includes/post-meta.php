@@ -99,3 +99,11 @@ Container::make('post_meta', __(' Settings'))
 				->set_help_text('Check this to display readmore in popup.'),
 		)
 	);
+
+Container::make('post_meta', __('Rate Cards Settings'))
+	->where('post_type', '=', 'rate-cards')
+	->add_fields(
+		array(
+			Field::make('file', 'media', __('Media')),
+		)
+	);

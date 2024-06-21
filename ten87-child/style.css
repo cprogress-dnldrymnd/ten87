@@ -1546,11 +1546,22 @@ section.single-rate-cards {
     align-items: center; }
     section.single-rate-cards .row .col {
       flex: 0 0 50%;
-      max-width: 50%; }
+      max-width: 50%;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+      @media (max-width: 991px) {
+        section.single-rate-cards .row .col {
+          flex: 0 0 100%;
+          max-width: 100%; }
+          section.single-rate-cards .row .col:not(:last-child) {
+            margin-bottom: 2rem; } }
   section.single-rate-cards .media {
     border-radius: 15px;
-    overflow: hidden; }
-    section.single-rate-cards .media img, section.single-rate-cards .media video {
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    section.single-rate-cards .media img,
+    section.single-rate-cards .media video {
       width: 100%; }
 
 .single-rate-cards #qodef-page-inner {

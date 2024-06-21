@@ -2263,12 +2263,24 @@ section.single-rate-cards {
         .col {
             flex: 0 0 50%;
             max-width: 50%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            @media (max-width: 991px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+            }
         }
     }
     .media {
         border-radius: 15px;
         overflow: hidden;
-        img, video {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        img,
+        video {
             width: 100%;
         }
     }

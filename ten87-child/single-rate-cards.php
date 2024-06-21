@@ -8,6 +8,9 @@
             <div class="featured-image">
                 <?php the_post_thumbnail('large'); ?>
             </div>
+            <div class="the-content">
+                <?php the_content() ?>
+            </div>
         </div>
     </section>
 <?php } ?>

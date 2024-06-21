@@ -17,7 +17,6 @@
             <?php if ($media) { ?>
                 <?php
                 $mime_type = get_post_mime_type($media);
-                echo $mime_type;
                 ?>
                 <div class="media">
                     <?php if (str_contains($mime_type, 'image')) { ?>

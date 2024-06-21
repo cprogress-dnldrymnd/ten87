@@ -1548,7 +1548,8 @@ section.single-rate-cards {
       flex: 0 0 50%;
       max-width: 50%; }
   section.single-rate-cards .media {
-    border-radius: 15px; }
+    border-radius: 15px;
+    overflow: hidden; }
     section.single-rate-cards .media img, section.single-rate-cards .media video {
       width: 100%; }
 

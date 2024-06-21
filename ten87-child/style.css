@@ -1570,4 +1570,9 @@ section.single-rate-cards {
   height: auto;
   padding-top: 100px; }
 
+.post-type-archive-rate-cards #qodef-page-inner {
+  padding-top: 0; }
+.post-type-archive-rate-cards .qodef-e-excerpt {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */

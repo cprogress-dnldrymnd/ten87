@@ -2294,3 +2294,13 @@ section.single-rate-cards {
         padding-top: 100px;
     }
 }
+
+
+.post-type-archive-rate-cards {
+    #qodef-page-inner {
+        padding-top: 0;
+    }
+    .qodef-e-excerpt {
+        display: none !important;
+    }
+}

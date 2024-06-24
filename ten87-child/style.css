@@ -356,7 +356,7 @@ body {
     .qodef-team-list .qodef-m-top-info {
       flex-direction: column; } }
 
-.modal-trigger.modal-trigger, .readmore-link.readmore-link
+.modal-trigger.modal-trigger, .readmore-link.readmore-link,
 .readmore-popup.readmore-popup {
   border: none;
   background: transparent;

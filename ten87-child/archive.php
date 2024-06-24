@@ -25,9 +25,15 @@
                                     <div itemprop="description" class="qodef-e-excerpt">
                                         <?php the_content() ?>
                                     </div>
-                                    <p>
-                                        <button class="modal-trigger <?= $has_readmore ? 'has-readmore' : '' ?>" post_id="<?php the_ID() ?>">Read More </button>
-                                    </p>
+                                    <?php if (get_post_type() == 'rate-cards') { ?>
+                                        <p>
+                                            <a href="<?php the_permalink()?>">Read More </button>
+                                        </p>
+                                    <?php } else { ?>
+                                        <p>
+                                            <button class="modal-trigger <?= $has_readmore ? 'has-readmore' : '' ?>" post_id="<?php the_ID() ?>">Read More </button>
+                                        </p>
+                                    <?php } ?>
 
                                 </div>
                             </div>

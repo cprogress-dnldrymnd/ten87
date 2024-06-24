@@ -2277,8 +2277,6 @@ section.single-rate-cards {
     .media {
         border-radius: 15px;
         overflow: hidden;
-        margin-left: 1rem;
-        margin-right: 1rem;
         img,
         video {
             width: 100%;
@@ -2288,6 +2286,10 @@ section.single-rate-cards {
 .single-rate-cards {
     #qodef-page-inner {
         padding-top: 0;
+        padding-top: 0;
+        max-width: 100%;
+        padding: 0;
+        width: 100%;
     }
     .qodef-page-title {
         height: auto;

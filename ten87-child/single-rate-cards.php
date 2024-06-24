@@ -18,11 +18,11 @@
             </div>
         <?php } ?>
         <div class="container">
-            <div class="featured-image">
-                <?php the_post_thumbnail('large'); ?>
-            </div>
             <div class="the-content">
                 <?php the_content() ?>
+            </div>
+            <div class="featured-image">
+                <?php the_post_thumbnail('large'); ?>
             </div>
         </div>
     </section>

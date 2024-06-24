@@ -27,7 +27,7 @@
                                     </div>
                                     <?php if (get_post_type() == 'rate-cards') { ?>
                                         <p>
-                                            <a href="<?php the_permalink()?>">Read More </a>
+                                            <a class="readmore-link" href="<?php the_permalink()?>">Read More </a>
                                         </p>
                                     <?php } else { ?>
                                         <p>

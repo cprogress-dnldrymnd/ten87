@@ -44,20 +44,6 @@
 
 			<?php wp_footer(); ?>
 			</body>
-			<script>
-				jQuery(document).ready(function() {
-					$custom_swiper = jQuery('.qodef-testimonials-list').clone();
-					$custom_swiper.removeClass('swiper-container-initialized swiper-container-horizontal qodef-swiper--initialized').addClass('custom-testimonial swiper');
-					$custom_swiper.insertAfter('#testimonial-holder');
-
-
-					setTimeout(function() {
-						var newSwiper = new Swiper('.custom-testimonial', {
-							pauseOnMouseEnter: true,
-						});
-
-					}, 1000);
-				});
-			</script>
+			
 
 			</html>

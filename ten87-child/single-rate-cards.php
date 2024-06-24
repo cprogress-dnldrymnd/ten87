@@ -18,15 +18,12 @@
             </div>
         <?php } ?>
         <div class="container">
-            <div class="row">
-                <div class="col featured-image">
-                    <?php the_post_thumbnail('large'); ?>
-                </div>
-                <div class="col the-content">
-                    <?php the_content() ?>
-                </div>
+            <div class="featured-image">
+                <?php the_post_thumbnail('large'); ?>
             </div>
-
+            <div class="the-content">
+                <?php the_content() ?>
+            </div>
         </div>
     </section>
 <?php } ?>

@@ -46,7 +46,7 @@
 			</body>
 			<script>
 				jQuery(document).ready(function() {
-					$custom_swiper = jQuery('.qodef-testimonials-list');
+					$custom_swiper = jQuery('.qodef-testimonials-list').clone();
 					$custom_swiper.removeClass('swiper-container-initialized swiper-container-horizontal qodef-swiper--initialized').addClass('custom-testimonial');
 					$custom_swiper.insertAfter('#testimonial-holder');
 

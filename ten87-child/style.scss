@@ -2275,8 +2275,9 @@ section.single-rate-cards {
         }
     }
     .media {
-        border-radius: 15px;
+        border-radius: 0;
         overflow: hidden;
+        margin-bottom: rem;
         img,
         video {
             width: 100%;

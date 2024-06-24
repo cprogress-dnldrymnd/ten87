@@ -1556,8 +1556,9 @@ section.single-rate-cards {
           section.single-rate-cards .row .col:not(:last-child) {
             margin-bottom: 2rem; } }
   section.single-rate-cards .media {
-    border-radius: 15px;
-    overflow: hidden; }
+    border-radius: 0;
+    overflow: hidden;
+    margin-bottom: rem; }
     section.single-rate-cards .media img,
     section.single-rate-cards .media video {
       width: 100%; }

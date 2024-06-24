@@ -50,9 +50,13 @@
 					$custom_swiper.removeClass('swiper-container-initialized swiper-container-horizontal qodef-swiper--initialized').addClass('custom-testimonial swiper');
 					$custom_swiper.insertAfter('#testimonial-holder');
 
-					var newSwiper = new Swiper('.custom-testimonial', {
-						pauseOnMouseEnter: true,
-					});
+
+					setTimeout(function() {
+						var newSwiper = new Swiper('.custom-testimonial', {
+							pauseOnMouseEnter: true,
+						});
+
+					}, 1000);
 				});
 			</script>
 

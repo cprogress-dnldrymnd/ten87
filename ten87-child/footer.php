@@ -44,5 +44,11 @@
 
 			<?php wp_footer(); ?>
 			</body>
+			<script>
+				// Create a new Swiper instance
+				var newSwiper = new Swiper('.qodef-testimonials-list', {
+					pauseOnMouseEnter: true,
+				});
+			</script>
 
 			</html>

@@ -34,55 +34,53 @@ class Elementor_Testimonial_Carousel extends \Elementor\Widget_Base
         $this->start_controls_section(
             'content_section',
             [
-                'label' => esc_html__('CTA Settings', 'elementor-oembed-widget'),
+                'label' => esc_html__('Testimonial Settings', 'elementor-oembed-widget'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
 
 
         $this->add_control(
-            'cta_text',
+            'number_of_slides_desktop',
             [
-                'label' => esc_html__('CTA Heading', 'textdomain'),
-                'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => 'Lorem ipsum dolor sit',
+                'label' => esc_html__('Number of Slides Desktop', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::NUMBER,
+                'default' => '1',
+            ]
+        );
+
+
+        $this->add_control(
+            'number_of_slides_desktop_tablet',
+            [
+                'label' => esc_html__('Number of Slides Tablet', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::NUMBER,
+                'default' => '1',
+            ]
+        );
+        $this->add_control(
+            'number_of_slides_desktop_mobile',
+            [
+                'label' => esc_html__('Number of Slides Mobile', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::NUMBER,
+                'default' => '1',
             ]
         );
 
         $this->add_control(
-            'cta_url',
+            'slide_duration',
             [
-                'label' => esc_html__('CTA URL', 'textdomain'),
-                'type' => \Elementor\Controls_Manager::URL,
-                'options' => [ 'url', 'is_external', 'nofollow' ],
-                'label_block' => true,
+                'label' => esc_html__('Slide Duration', 'textdomain'),
+                'type' => \Elementor\Controls_Manager::NUMBER,
+                'default' => '15000',
             ]
         );
 
-        $this->add_control(
-			'icon',
-			[
-				'label' => esc_html__( 'Icon', 'textdomain' ),
-				'type' => \Elementor\Controls_Manager::ICONS,
-				'default' => [
-					'value' => 'fas fa-circle',
-					'library' => 'fa-solid',
-				],
-				'recommended' => [
-					'fa-solid' => [
-						'circle',
-						'dot-circle',
-						'square-full',
-					],
-					'fa-regular' => [
-						'circle',
-						'dot-circle',
-						'square-full',
-					],
-				],
-			]
-		);
 
+        
+       
+
+     
         $this->end_controls_section();
     }
 

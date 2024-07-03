@@ -2433,4 +2433,14 @@ section.single-rate-cards {
     .qodef-e-excerpt {
         display: none !important;
     }
+    .qodef-grid-item {
+        padding-bottom: 55px;
+        .qodef-e-inner,.qodef-e-content {
+            position: static !important;
+        }
+        .qodef-info--bottom {
+            position: absolute !important;
+            bottom: 0;
+        }
+    }
 }

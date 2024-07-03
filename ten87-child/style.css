@@ -1684,5 +1684,12 @@ section.single-rate-cards {
     margin-left: calc(25% + 2rem); } }
 .qodef-addons-blog-list .qodef-e-excerpt {
   display: none !important; }
+.qodef-addons-blog-list .qodef-grid-item {
+  padding-bottom: 55px; }
+  .qodef-addons-blog-list .qodef-grid-item .qodef-e-inner, .qodef-addons-blog-list .qodef-grid-item .qodef-e-content {
+    position: static !important; }
+  .qodef-addons-blog-list .qodef-grid-item .qodef-info--bottom {
+    position: absolute !important;
+    bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

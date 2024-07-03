@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
         $number_of_slides_mobile = jQuery(this).attr('number_of_slides_mobile');
         $slide_duration = jQuery(this).attr('slide_duration');
 
-        var swiper_testimonial_carousel = new Swiper(".swiper-testimonial-carousel", {
+        var swiper = new Swiper(".swiper-testimonial-carousel", {
             loop: true,
             spaceBetween: 30,
             autoplay: {
@@ -33,6 +33,12 @@ jQuery(document).ready(function () {
                 prevEl: ".swiper-button-prev",
             },
 
+        });
+
+        jQuery(".swiper-testimonial-carousel").hover(function () {
+            (this).swiper.autoplay.stop();
+        }, function () {
+            (this).swiper.autoplay.start();
         });
 
     });

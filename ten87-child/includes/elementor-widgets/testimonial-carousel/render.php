@@ -18,7 +18,7 @@ $testimonials = get_posts(array(
                 <div class="swiper-slide">
                     <div class="inner">
                         <div class="image-box">
-                            <?= get_the_post_thumbnail('large', $testimonial->ID) ?>
+                            <?= get_the_post_thumbnail($testimonial->ID, 'large') ?>
                         </div>
                         <div class="content-box">
                             <?= wpautop($qodef_testimonials_text) ?>

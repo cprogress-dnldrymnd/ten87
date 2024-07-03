@@ -29,11 +29,11 @@ $testimonials = get_posts(array(
             <?php } ?>
         </div>
         <div class="swiper-navigation">
-            <div class="swiper-button-prev swiper-button-outside swiper-button-prev-553" tabindex="0" role="button" aria-label="Previous slide">
-                <img decoding="async" src="https://ten87.studio/wp-content/themes/ten87-child/assets/images/arrow-black.svg" alt="" style="border-bottom-color: rgba(0, 0, 0, 0);">
+            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
+                <img decoding="async" src="https://ten87.studio/wp-content/themes/ten87-child/assets/images/arrow-black.svg">
             </div>
-            <div class="swiper-button-next swiper-button-outside swiper-button-next-553" tabindex="0" role="button" aria-label="Next slide">
-                <img decoding="async" src="https://ten87.studio/wp-content/themes/ten87-child/assets/images/arrow-black.svg" alt="" style="border-bottom-color: rgba(0, 0, 0, 0);">
+            <div class="swiper-button-next " tabindex="0" role="button" aria-label="Next slide">
+                <img decoding="async" src="https://ten87.studio/wp-content/themes/ten87-child/assets/images/arrow-black.svg">
             </div>
         </div>
     </div>

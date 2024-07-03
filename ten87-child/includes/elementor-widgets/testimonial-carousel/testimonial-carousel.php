@@ -51,7 +51,7 @@ class Elementor_Testimonial_Carousel extends \Elementor\Widget_Base
 
 
         $this->add_control(
-            'number_of_slides_desktop_tablet',
+            'number_of_slides_tablet',
             [
                 'label' => esc_html__('Number of Slides Tablet', 'textdomain'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
@@ -59,7 +59,7 @@ class Elementor_Testimonial_Carousel extends \Elementor\Widget_Base
             ]
         );
         $this->add_control(
-            'number_of_slides_desktop_mobile',
+            'number_of_slides_mobile',
             [
                 'label' => esc_html__('Number of Slides Mobile', 'textdomain'),
                 'type' => \Elementor\Controls_Manager::NUMBER,
@@ -76,14 +76,12 @@ class Elementor_Testimonial_Carousel extends \Elementor\Widget_Base
             ]
         );
 
-
-        
-       
-
-     
         $this->end_controls_section();
     }
-
+    public function get_script_depends()
+    {
+        return ['swiper', 'testimonial-carousel'];
+    }
     /**
      * Render oEmbed widget output on the frontend.
      *

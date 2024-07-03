@@ -34,7 +34,7 @@ jQuery('.swiper-testimonial-carousel').each(function (index, element) {
 
     });
 
-    (this).hover(function () {
+    jQuery(this).hover(function () {
         (this).swiper.autoplay.stop();
         console.log('xx');
     }, function () {

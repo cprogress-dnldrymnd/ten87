@@ -16,13 +16,15 @@ $testimonials = get_posts(array(
                 $qodef_testimonials_text = get_post_meta($testimonial->ID, 'qodef_testimonials_text', true);
                 ?>
                 <div class="swiper-slide">
-                    <div class="image-box">
-                        <?= get_the_post_thumbnail('large', $testimonial->ID) ?>
-                    </div>
-                    <div class="content-box">
-                        <?= wpautop($qodef_testimonials_text) ?>
-                        <div class="author">
-                            <?= $testimonial->post_title ?>
+                    <div class="inner">
+                        <div class="image-box">
+                            <?= get_the_post_thumbnail('large', $testimonial->ID) ?>
+                        </div>
+                        <div class="content-box">
+                            <?= wpautop($qodef_testimonials_text) ?>
+                            <div class="author">
+                                <?= $testimonial->post_title ?>
+                            </div>
                         </div>
                     </div>
                 </div>

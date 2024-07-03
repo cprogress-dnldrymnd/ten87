@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
             spaceBetween: 30,
             autoplay: {
                 delay: $slide_duration,
-                disableOnInteraction: true,
+                disableOnInteraction: false,
                 pauseOnMouseEnter: true,
             },
             breakpoints: {

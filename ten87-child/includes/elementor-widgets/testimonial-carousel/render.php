@@ -28,7 +28,7 @@ $testimonials = get_posts(array(
                             </svg>
                             <?= wpautop($qodef_testimonials_text) ?>
                             <div class="author">
-                                <?= $testimonial->post_title ?>
+                                - <?= $testimonial->post_title ?>
                             </div>
                         </div>
                     </div>

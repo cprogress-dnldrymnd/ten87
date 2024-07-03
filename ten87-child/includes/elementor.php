@@ -13,6 +13,7 @@ function register_new_widgets($widgets_manager)
 	$widgets_manager->register(new \Elementor_Image_Slider());
 	$widgets_manager->register(new \Elementor_List_Item_On_Hover());
 	$widgets_manager->register(new \Elementor_Blob());
+	$widgets_manager->register(new \Elementor_Testimonial_Carousel());
 }
 add_action('elementor/widgets/register', 'register_new_widgets');
 

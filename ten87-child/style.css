@@ -1046,6 +1046,9 @@ body.has-custom-page-heading #qodef-page-mobile-header {
       .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 {
         margin: 0;
         padding-bottom: 100px; }
+        @media (max-width: 767px) {
+          .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 {
+            font-size: 30px; } }
         .list-item-on-hover .list-item-box .list-item-inner .list-item-title h2 .icon {
           display: flex;
           position: relative; }

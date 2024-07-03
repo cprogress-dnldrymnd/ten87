@@ -2429,6 +2429,8 @@ section.single-rate-cards {
 }
 
 
-.qodef-addons-blog-list .qodef-e-excerpt {
-	display: none !important;
+.qodef-addons-blog-list {
+    .qodef-e-excerpt {
+        display: none !important;
+    }
 }

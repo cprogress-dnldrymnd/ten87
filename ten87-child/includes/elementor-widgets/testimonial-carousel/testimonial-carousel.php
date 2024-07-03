@@ -80,7 +80,7 @@ class Elementor_Testimonial_Carousel extends \Elementor\Widget_Base
     }
     public function get_script_depends()
     {
-        return ['swiper', 'testimonial-carousel'];
+        return ['swiper', 'testimonial-carousel-js'];
     }
     /**
      * Render oEmbed widget output on the frontend.

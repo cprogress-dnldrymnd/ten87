@@ -101,7 +101,7 @@ jQuery(document).ready(function () {
 function anim() {
     let $banner = document.getElementById('home-hero');
 
-    if ($banner) {
+    if ($banner.length > 0) {
         $banner.addEventListener("mousemove", e => {
             let x = e.clientX;
             let y = e.clientY;

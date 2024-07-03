@@ -21,11 +21,16 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 		wp_enqueue_script('obsius-swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
 		wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js');
 
+
+
 		if (is_post_type_archive('fundings')) {
 			wp_enqueue_script('data-aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js');
 		}
-
-		wp_enqueue_script('module_handle', get_stylesheet_directory_uri() . '/assets/javascripts/main.js');
+		if (is_front_page()) {
+			wp_enqueue_script('module_handle', get_stylesheet_directory_uri() . '/assets/javascripts/homepage.js');
+		} else {
+			wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/javascripts/main.js');
+		}
 	}
 
 	add_action('wp_enqueue_scripts', 'obsius_child_theme_enqueue_scripts');

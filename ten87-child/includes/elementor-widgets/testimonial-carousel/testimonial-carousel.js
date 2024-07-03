@@ -11,6 +11,7 @@ jQuery(document).ready(function () {
             autoplay: {
                 delay: $slide_duration,
                 disableOnInteraction: true,
+                pauseOnMouseEnter: true,
             },
             breakpoints: {
                 0: {

@@ -29,6 +29,5 @@ get_header();
             <?= swiper_navigation() ?>
         </div>
     </div>
-<?php
 
 <?php get_footer() ?>

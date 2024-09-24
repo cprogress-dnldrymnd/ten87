@@ -75,17 +75,28 @@ function action_before_footer()
 add_action('before_footer', 'action_before_footer');
 
 
-function set_image_alt_to_filename( $image, $attachment_id, $size ) {
+function set_image_alt_to_filename($image, $attachment_id, $size)
+{
     // Check if alt attribute is empty
-    if ( empty( $image['alt'] ) ) {
+    if (empty($image['alt'])) {
         // Get attachment metadata
-        $attachment = get_post_meta( $attachment_id, '_wp_attachment_metadata', true );
-        if ( $attachment && ! empty( $attachment['file'] ) ) {
+        $attachment = get_post_meta($attachment_id, '_wp_attachment_metadata', true);
+        if ($attachment && ! empty($attachment['file'])) {
             // Extract filename from the file path
-            $image['alt'] = pathinfo( $attachment['file'], PATHINFO_FILENAME );
+            $image['alt'] = pathinfo($attachment['file'], PATHINFO_FILENAME);
         }
     }
     return $image;
 }
-add_filter( 'wp_get_attachment_image_attributes', 'set_image_alt_to_filename', 10, 3 );
+add_filter('wp_get_attachment_image_attributes', 'set_image_alt_to_filename', 10, 3);
 
+add_action('pre_get_posts', 'rand_products');
+
+function rand_products($query)
+{
+    if (! is_admin() && $query->is_main_query()) {
+        if (get_post_type() == 'studios') {
+            $query->set('orderby', 'menu_order');
+        }
+    }
+}

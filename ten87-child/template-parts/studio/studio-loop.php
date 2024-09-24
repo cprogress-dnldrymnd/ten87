@@ -11,7 +11,6 @@
                         'post_excerpt' => get_the_excerpt($post),
                         'post_id' => get_the_ID()
                     );
-
                     get_template_part('template-parts/studio/studio-swiper-slide', 'null', $args);
                     ?>
                 <?php } ?>

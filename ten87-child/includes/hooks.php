@@ -89,16 +89,3 @@ function set_image_alt_to_filename($image, $attachment_id, $size)
     return $image;
 }
 add_filter('wp_get_attachment_image_attributes', 'set_image_alt_to_filename', 10, 3);
-
-add_action('pre_get_posts', 'rand_products');
-
-function rand_products($query)
-{
-    if (! is_admin() && $query->is_main_query()) {
-        if (get_post_type() == 'studios') {
-            $query->set('post_type', 'post');
-            $query->set('orderby', 'menu_order');
-            $query->set('order', 'asc');
-        }
-    }
-}

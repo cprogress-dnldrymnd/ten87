@@ -96,9 +96,9 @@ function rand_products($query)
 {
     if (! is_admin() && $query->is_main_query()) {
         if (get_post_type() == 'studios') {
-            $query->set('orderby', '_menu_order');
+            $query->set('post_type', 'post');
+            $query->set('orderby', 'menu_order');
             $query->set('order', 'asc');
-
         }
     }
 }

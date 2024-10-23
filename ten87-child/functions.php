@@ -8,8 +8,6 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 	{
 		$main_style = 'obsius-main';
 		wp_register_script('elementor-image-slider-js', get_stylesheet_directory_uri() . '/includes/elementor-widgets/image-slider/elementor-image-slider-js.js');
-		wp_register_script('ten87-swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js');
-		wp_register_style('ten87-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
 
 		if (is_post_type_archive('fundings')) {
 			wp_enqueue_style('data-aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css');

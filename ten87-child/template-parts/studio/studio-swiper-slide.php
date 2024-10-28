@@ -5,9 +5,7 @@ $post_excerpt = $args['post_excerpt'];
 $post_id = $args['post_id'];
 ?>
 <div class="swiper-slide elementor-section elementor-section-boxed">
-    <div class="bg-image">
-        <img src="<?= $bg ?>" alt="bg-image">
-    </div>
+  
     <div class="elementor-container">
 
         <div class="inner">
@@ -60,5 +58,8 @@ $post_id = $args['post_id'];
                 </div>
             </div>
         </div>
+    </div>
+    <div class="bg-image">
+        <img src="<?= $bg ?>" alt="bg-image">
     </div>
 </div>

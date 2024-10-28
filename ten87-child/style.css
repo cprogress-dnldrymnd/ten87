@@ -518,25 +518,27 @@ body {
         position: absolute;
         left: 0;
         top: 0; } }
-  .post-slider-holder .swiper-slide .bg-image:after {
-    content: "";
-    position: absolute;
-    top: auto;
-    background: transparent linear-gradient(180deg, #00000000 0%, #000000e6 100%) 0% 0% no-repeat;
-    height: 466px;
-    bottom: 0;
-    left: 0;
-    right: 0; }
   @media (min-width: 1025px) {
     .post-slider-holder .swiper-slide .bg-image {
       position: absolute;
       left: 0;
       top: 0;
       right: 0;
-      bottom: 0; } }
+      bottom: 0; }
+      .post-slider-holder .swiper-slide .bg-image:after {
+        content: "";
+        position: absolute;
+        top: auto;
+        background: transparent linear-gradient(180deg, #00000000 0%, #000000e6 100%) 0% 0% no-repeat;
+        height: 466px;
+        bottom: 0;
+        left: 0;
+        right: 0; } }
   @media (max-width: 1024px) {
     .post-slider-holder .swiper-slide .bg-image {
-      padding: 35%; } }
+      padding: 35%;
+      position: relative;
+      width: 100%; } }
   .post-slider-holder .swiper-slide .elementor-container {
     width: 100%;
     position: relative;
@@ -552,6 +554,9 @@ body {
       .post-slider-holder .swiper-slide .elementor-container .inner h3,
       .post-slider-holder .swiper-slide .elementor-container .inner .qodef-qi-button {
         color: inherit; }
+      @media (max-width: 1024px) {
+        .post-slider-holder .swiper-slide .elementor-container .inner {
+          color: var(--black-color); } }
   @media (max-width: 1024px) {
     .post-slider-holder .swiper-slide {
       min-height: 500px;

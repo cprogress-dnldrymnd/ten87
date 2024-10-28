@@ -756,25 +756,27 @@ body {
                 }
             }
 
-            &:after {
-                content: "";
-                position: absolute;
-                top: auto;
-                background: transparent linear-gradient(180deg, #00000000 0%, #000000e6 100%) 0% 0% no-repeat;
-                height: 466px;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
             @media (min-width: 1025px) {
                 position: absolute;
                 left: 0;
                 top: 0;
                 right: 0;
                 bottom: 0;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: auto;
+                    background: transparent linear-gradient(180deg, #00000000 0%, #000000e6 100%) 0% 0% no-repeat;
+                    height: 466px;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
             }
             @media (max-width: 1024px) {
                 padding: 35%;
+                position: relative;
+                width: 100%;
             }
         }
         .elementor-container {
@@ -796,6 +798,9 @@ body {
                 h3,
                 .qodef-qi-button {
                     color: inherit;
+                }
+                @media (max-width: 1024px) {
+                    color: var(--black-color);
                 }
             }
         }

@@ -555,7 +555,8 @@ body {
   @media (max-width: 1024px) {
     .post-slider-holder .swiper-slide {
       min-height: 500px;
-      padding-bottom: 100px; } }
+      padding-bottom: 100px;
+      padding-top: 0; } }
 
 .qodef-qi-button-holder {
   max-width: 350px !important;

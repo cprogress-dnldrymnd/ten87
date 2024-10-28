@@ -517,6 +517,15 @@ body {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+    .post-slider-holder .swiper-slide .bg-image:after {
+      content: "";
+      position: absolute;
+      top: auto;
+      background: transparent linear-gradient(180deg, #00000000 0%, #000000e6 100%) 0% 0% no-repeat;
+      height: 466px;
+      bottom: 0;
+      left: 0;
+      right: 0; }
   .post-slider-holder .swiper-slide .elementor-container {
     width: 100%;
     position: relative;
@@ -532,15 +541,6 @@ body {
       .post-slider-holder .swiper-slide .elementor-container .inner h3,
       .post-slider-holder .swiper-slide .elementor-container .inner .qodef-qi-button {
         color: inherit; }
-  .post-slider-holder .swiper-slide:before {
-    content: "";
-    position: absolute;
-    top: auto;
-    background: transparent linear-gradient(180deg, #00000000 0%, #000000e6 100%) 0% 0% no-repeat;
-    height: 466px;
-    bottom: 0;
-    left: 0;
-    right: 0; }
   @media (max-width: 1024px) {
     .post-slider-holder .swiper-slide {
       min-height: 500px;

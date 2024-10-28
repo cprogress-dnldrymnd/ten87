@@ -356,7 +356,8 @@ body {
     .qodef-team-list .qodef-m-top-info {
       flex-direction: column; } }
 
-.modal-trigger.modal-trigger, .readmore-link.readmore-link,
+.modal-trigger.modal-trigger,
+.readmore-link.readmore-link,
 .readmore-popup.readmore-popup {
   border: none;
   background: transparent;
@@ -506,6 +507,16 @@ body {
   padding-top: 100px;
   padding-bottom: 180px;
   overflow: hidden; }
+  .post-slider-holder .swiper-slide .bg-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; }
+    .post-slider-holder .swiper-slide .bg-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   .post-slider-holder .swiper-slide .elementor-container {
     width: 100%;
     position: relative;
@@ -1637,7 +1648,8 @@ section.single-rate-cards {
   display: flex;
   margin-top: 2rem; }
 
-.testimonial-carousel-holder .swiper-button-prev, .testimonial-carousel-holder .swiper-button-next {
+.testimonial-carousel-holder .swiper-button-prev,
+.testimonial-carousel-holder .swiper-button-next {
   position: static;
   transform: none;
   margin: 0 !important;
@@ -1690,7 +1702,8 @@ section.single-rate-cards {
   display: none !important; }
 .qodef-addons-blog-list .qodef-grid-item {
   padding-bottom: 55px; }
-  .qodef-addons-blog-list .qodef-grid-item .qodef-e-inner, .qodef-addons-blog-list .qodef-grid-item .qodef-e-content {
+  .qodef-addons-blog-list .qodef-grid-item .qodef-e-inner,
+  .qodef-addons-blog-list .qodef-grid-item .qodef-e-content {
     position: static !important; }
   .qodef-addons-blog-list .qodef-grid-item .qodef-info--bottom {
     position: absolute !important;

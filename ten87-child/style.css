@@ -506,7 +506,8 @@ body {
   align-items: flex-end;
   padding-top: 100px;
   padding-bottom: 180px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: auto; }
   .post-slider-holder .swiper-slide .bg-image {
     position: absolute;
     left: 0;

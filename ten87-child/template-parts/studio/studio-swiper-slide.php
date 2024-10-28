@@ -4,7 +4,10 @@ $title = $args['title'];
 $post_excerpt = $args['post_excerpt'];
 $post_id = $args['post_id'];
 ?>
-<div class="swiper-slide elementor-section elementor-section-boxed" style="background-image: url(<?= $bg ?>);">
+<div class="swiper-slide elementor-section elementor-section-boxed">
+    <div class="bg-image">
+        <img src="<?= $bg ?>" alt="bg-image">
+    </div>
     <div class="elementor-container">
         <div class="inner">
             <div class="heading-box">

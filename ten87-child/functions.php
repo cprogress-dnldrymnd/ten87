@@ -28,7 +28,7 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 		if (is_front_page()) {
 			wp_enqueue_script('module_handle', get_stylesheet_directory_uri() . '/assets/javascripts/homepage.js');
 		}
-		wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/javascripts/main.js');
+		wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/javascripts/main-js.js');
 	}
 
 	add_action('wp_enqueue_scripts', 'obsius_child_theme_enqueue_scripts');

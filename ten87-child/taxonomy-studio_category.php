@@ -39,10 +39,12 @@ $posts = get_posts($args);
 
 <script>
     jQuery(document).ready(function() {
-        jQuery('.qodef-section-title h1').addClass('animate');
+        setTimeout(function() {
+            jQuery('.qodef-section-title h1').addClass('animate');
+        }, 600);
         setTimeout(function() {
             jQuery('.qodef-section-title .qodef-section-title').addClass('animate');
-        }, 300);
+        }, 1000);
     });
 </script>
 

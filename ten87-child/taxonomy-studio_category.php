@@ -37,4 +37,13 @@ $posts = get_posts($args);
     </div>
 </div>
 
+<script>
+    jQuery(document).ready(function() {
+        jQuery('.qodef-section-title h1').addClass('animate');
+        setTimeout(function() {
+            jQuery('.qodef-section-title .qodef-section-title').addClass('animate');
+        }, 300);
+    });
+</script>
+
 <?php get_footer() ?>

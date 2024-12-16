@@ -22,7 +22,6 @@ if (!function_exists('obsius_child_theme_enqueue_scripts')) {
 		wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js');
 
 
-
 		if (is_post_type_archive('fundings')) {
 			wp_enqueue_script('data-aos', 'https://unpkg.com/aos@2.3.1/dist/aos.js');
 		}

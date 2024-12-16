@@ -37,18 +37,6 @@ $posts = get_posts($args);
     </div>
 </div>
 
-<script>
-    jQuery(document).ready(function() {
-        setTimeout(function() {
-            jQuery('.qodef-section-title h1').addClass('animate');
-        }, 600);
-        setTimeout(function() {
-            jQuery('.qodef-section-title .qodef-section-title').addClass('animate');
-        }, 1000);
-        setTimeout(function() {
-            jQuery('.tax-studio_category .mySwiperPostSlider').addClass('animate');
-        }, 1400);
-    });
-</script>
+
 
 <?php get_footer() ?>

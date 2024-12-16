@@ -17,7 +17,7 @@ $args = array(
 $posts = get_posts($args);
 
 ?>
-<div class="post-slider-holder">
+<div class="post-slider-holder fadeInRight">
     <div class="swiper mySwiperPostSlider">
         <div class="swiper-wrapper">
             <?php foreach ($posts as $post) { ?>

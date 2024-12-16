@@ -45,6 +45,9 @@ $posts = get_posts($args);
         setTimeout(function() {
             jQuery('.qodef-section-title .qodef-section-title').addClass('animate');
         }, 1000);
+        setTimeout(function() {
+            jQuery('.tax-studio_category .mySwiperPostSlider').addClass('animate');
+        }, 1400);
     });
 </script>
 
